@@ -1,0 +1,47 @@
+# ============================================================
+# BUILD SETTINGS
+# Tells Netlify how to build your React app
+# ============================================================
+[build]
+  command = "npm run build"
+  # This is the command Netlify runs to compile your React code
+  # into plain HTML/CSS/JS that browsers can read
+
+  publish = "dist"
+  # After building, Vite puts the finished files in a "dist" folder
+  # This tells Netlify that's where the deployable files are
+
+# ============================================================
+# ROUTING FIX
+# Without this, refreshing any page except the homepage
+# gives a 404 error on Netlify
+# React Router handles URLs in the browser, but Netlify
+# needs to be told to always serve index.html for any URL
+# ============================================================
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ============================================================
+# SECURITY HEADERS
+# Same protection as the .htaccess file but in Netlify format
+# ============================================================
+[[headers]]
+  for = "/*"
+  [headers.values]
+
+    # Prevents clickjacking — stops your site being embedded in iframes
+    X-Frame-Options = "DENY"
+
+    # Stops browsers misinterpreting file types
+    X-Content-Type-Options = "nosniff"
+
+    # Controls information shared when clicking external links
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Blocks scripts from accessing camera, microphone, location
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+    # Whitelist of allowed content sources
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://api.emailjs.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self' https://fonts.gstatic.com; frame-src 'none'"
