@@ -144,6 +144,7 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" />
                 <span>contact@preaumate.com</span>
               </li>
+              {/*
               <li className="flex items-start gap-3 text-gray-400">
                 <Phone className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" />
                 <span>+1 (555) 123-4567</span>
@@ -156,6 +157,7 @@ const Footer = () => {
                   Tech Valley, CA 94025
                 </span>
               </li>
+              */}
             </ul>
           </div>
         </div>

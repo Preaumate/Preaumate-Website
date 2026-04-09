@@ -1,39 +1,41 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
-import AnimatedLogo from '@/components/AnimatedLogo';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import AnimatedLogo from "@/components/AnimatedLogo";
+import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
+    const element = document.getElementById("contact");
     if (element) {
       const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: elementPosition - offset,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
 
   return (
-    <section 
-      id="hero" 
+    <section
+      id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-teal-800 to-emerald-700" />
-      
+
       {/* Background Image Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1582533632670-55d43ff95331)',
-          backgroundBlendMode: 'overlay'
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1582533632670-55d43ff95331)",
+          backgroundBlendMode: "overlay",
         }}
       />
-      
+
       {/* Animated Geometric Patterns */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
         {[...Array(20)].map((_, i) => (
@@ -43,7 +45,7 @@ const HeroSection = () => {
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              rotate: Math.random() * 360
+              rotate: Math.random() * 360,
             }}
             animate={{
               rotate: [0, 360],
@@ -52,7 +54,7 @@ const HeroSection = () => {
             transition={{
               duration: 10 + Math.random() * 10,
               repeat: Infinity,
-              ease: "linear"
+              ease: "linear",
             }}
           />
         ))}
@@ -83,7 +85,8 @@ const HeroSection = () => {
             transition={{ delay: 4, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto"
           >
-            Transform your manufacturing with AI-powered automation, predictive analytics, and smart factory solutions.
+            Transform your manufacturing with AI-powered automation, predictive
+            analytics, and smart factory solutions.
           </motion.p>
 
           {/* CTA Button */}
@@ -95,10 +98,10 @@ const HeroSection = () => {
           >
             <Button
               onClick={scrollToContact}
-              className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold py-4 px-8 rounded-lg text-lg shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 inline-flex items-center gap-3"
+              className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold py-4 px-8 rounded-lg text-lg shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto h-auto min-h-[3.5rem] whitespace-normal"
             >
               Start Your Automation Journey
-              <ArrowRight className="w-6 h-6" />
+              <ArrowRight className="w-6 h-6 flex-shrink-0" />
             </Button>
           </motion.div>
         </div>
