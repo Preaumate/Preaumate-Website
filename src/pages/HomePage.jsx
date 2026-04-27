@@ -32,7 +32,7 @@ const loadTawkTo = () => {
   const s1 = document.createElement('script');
   s1.id = 'tawkto-script';
   s1.async = true;
-  s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
+  s1.src = 'https://embed.tawk.to/69d715a8a5ae3e1c3b561962/1jlo2p6mb';
   s1.charset = 'UTF-8';
   s1.setAttribute('crossorigin', '*');
   document.head.appendChild(s1);
@@ -64,16 +64,17 @@ const HomePage = () => {
         />
       </Helmet>
 
-      <div className="min-h-screen" style={{ background: '#0f172a' }}>
+      <div className="min-h-screen" style={{ background: '#0a1628' }}>
         <Header />
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <StatsBar />
+        
+        <FeaturesBar />
         <section
           id="contact"
           className="py-24"
-          style={{ background: '#0f172a' }}
+          style={{ background: '#0a1628' }}
         >
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
@@ -103,7 +104,7 @@ const HomePage = () => {
             <ContactForm />
           </div>
         </section>
-        <FeaturesBar />
+       
         <Footer />
       </div>
 

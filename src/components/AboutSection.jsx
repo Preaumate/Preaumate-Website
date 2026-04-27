@@ -44,11 +44,12 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-24"
-      style={{ background: '#1e293b' }}
+      className="py-24 bg-slate-800"
+      //style={{ background: '#1e293b' }}
+      
     >
       <div className="container mx-auto px-6">
-
+      
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -162,6 +163,8 @@ const AboutSection = () => {
         </div>
 
       </div>
+      {/* Bottom fade into next section */}
+      
     </section>
   );
 };

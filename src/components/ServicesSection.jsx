@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bot, Wifi, Factory, BarChart3 } from 'lucide-react';
+import { Bot, Waypoints, Wifi, Forklift, Factory, BarChart3, ClipboardCheck } from 'lucide-react';
 
 const services = [
   {
@@ -11,11 +11,25 @@ const services = [
     bg: 'rgba(16,185,129,0.1)',
   },
   {
-    icon: Wifi,
-    title: 'IoT Integration',
-    description: 'Connect your entire factory floor with smart sensors and real-time data pipelines for full visibility.',
+    icon: Waypoints,
+    title: 'Assembly Automation',
+    description: 'Streamline your production with flexible and efficient assembly automation solutions.',
     color: '#0ea5e9',
     bg: 'rgba(14,165,233,0.1)',
+  },
+    {
+    icon: Forklift,
+    title: 'Material handling',
+    description: 'Intelligent material handling solutions that improve flow, safety, and operational efficiency.',
+    color: '#8b5cf6',
+    bg: 'rgba(139,92,246,0.1)',
+  },
+    {
+    icon: ClipboardCheck,
+    title: 'Quality Control',
+    description: 'Advanced inspection and quality control systems to ensure consistency and excellence.',
+    color: '#f59e0b',
+    bg: 'rgba(245,158,11,0.1)',
   },
   {
     icon: Factory,
@@ -31,6 +45,13 @@ const services = [
     color: '#f59e0b',
     bg: 'rgba(245,158,11,0.1)',
   },
+    {
+    icon: Wifi,
+    title: 'IoT Integration',
+    description: 'Connect your entire factory floor with smart sensors and real-time data pipelines for full visibility.',
+    color: '#0ea5e9',
+    bg: 'rgba(14,165,233,0.1)',
+  }
 ];
 
 const ServicesSection = () => {
@@ -38,7 +59,7 @@ const ServicesSection = () => {
     <section
       id="services"
       className="py-24"
-      style={{ background: '#0f172a' }}
+      style={{ background: '#0a1628' }}
     >
       <div className="container mx-auto px-6">
 
@@ -77,7 +98,7 @@ const ServicesSection = () => {
 
         {/* Services grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => {
+          {services.slice(0,4).map((service, index) => {
             const Icon = service.icon;
             return (
               <motion.div
