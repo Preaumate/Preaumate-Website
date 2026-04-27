@@ -3,7 +3,24 @@
 @tailwind utilities;
 
 body {
-  background-color: #0f172a;
-  color: white;
+  background-color: #0a1628;
+  color: #f0f4ff;
   font-family: 'DM Sans', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar to match dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a1628;
+}
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 3px;
 }

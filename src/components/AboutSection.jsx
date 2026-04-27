@@ -1,39 +1,55 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Zap, Activity, Gauge, TrendingUp } from 'lucide-react';
+import { Cpu, Activity, Zap, Shield } from 'lucide-react';
 
 const features = [
   {
-    icon: Zap,
+    icon: Cpu,
     title: 'AI-Powered Automation',
-    description: 'Leverage cutting-edge artificial intelligence to automate complex industrial processes, reduce human error, and optimize production efficiency.',
-    color: 'from-emerald-500 to-teal-500'
+    description: 'Leverage cutting-edge artificial intelligence to automate complex industrial processes with unprecedented accuracy.',
+    color: '#10b981',
+    bg: 'rgba(16,185,129,0.1)',
   },
   {
     icon: Activity,
     title: 'Real-Time Monitoring',
-    description: 'Monitor your entire operation in real-time with advanced IoT sensors and dashboards that provide actionable insights at a glance.',
-    color: 'from-teal-500 to-cyan-500'
+    description: 'Monitor every aspect of your production line in real time with advanced IoT sensor networks and dashboards.',
+    color: '#0ea5e9',
+    bg: 'rgba(14,165,233,0.1)',
   },
   {
-    icon: Gauge,
-    title: 'Energy Optimization',
-    description: 'Reduce energy consumption by up to 40% with intelligent systems that analyze and optimize power usage across your facility.',
-    color: 'from-cyan-500 to-blue-500'
+    icon: Zap,
+    title: 'Energy Optimisation',
+    description: 'Reduce energy consumption by up to 40% through intelligent load balancing and predictive power management.',
+    color: '#f59e0b',
+    bg: 'rgba(245,158,11,0.1)',
   },
   {
-    icon: TrendingUp,
+    icon: Shield,
     title: 'Predictive Maintenance',
-    description: 'Prevent costly downtime with machine learning algorithms that predict equipment failures before they happen, saving time and money.',
-    color: 'from-blue-500 to-emerald-500'
-  }
+    description: 'Prevent costly downtime by predicting equipment failures before they happen using machine learning models.',
+    color: '#8b5cf6',
+    bg: 'rgba(139,92,246,0.1)',
+  },
+];
+
+const stats = [
+  { number: '200+', label: 'Projects Delivered' },
+  { number: '98%',  label: 'Client Satisfaction' },
+  { number: '40%',  label: 'Average Energy Saved' },
+  { number: '15+',  label: 'Years Experience' },
 ];
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section
+      id="about"
+      className="py-24"
+      style={{ background: '#1e293b' }}
+    >
       <div className="container mx-auto px-6">
-        {/* Section Header */}
+
+        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,80 +57,110 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Excellence in Industrial Automation
+          <span
+            className="inline-block text-xs font-bold tracking-widest mb-4 px-4 py-1.5 rounded-full"
+            style={{
+              background: 'rgba(16,185,129,0.1)',
+              border: '1px solid rgba(16,185,129,0.25)',
+              color: '#10b981'
+            }}
+          >
+            ABOUT PREAUMATE
+          </span>
+          <h2
+            className="text-4xl md:text-5xl font-black mb-4"
+            style={{ color: '#f0f4ff' }}
+          >
+            Why Choose Us
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Preaumate combines decades of industrial expertise with cutting-edge technology to deliver automation solutions that drive real business results.
+          <p
+            className="text-lg max-w-2xl mx-auto"
+            style={{ color: '#94a3b8' }}
+          >
+            We combine deep industrial expertise with cutting-edge technology
+            to deliver automation solutions that actually work on the factory floor.
           </p>
         </motion.div>
 
-        {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Feature cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <motion.div
                 key={feature.title}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ 
-                  y: -10,
-                  transition: { duration: 0.3 }
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="p-6 rounded-xl transition-all duration-300"
+                style={{
+                  background: '#0f172a',
+                  border: '1px solid rgba(16,185,129,0.12)',
                 }}
-                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 group"
+                onMouseEnter={e => {
+                  e.currentTarget.style.borderColor = feature.color;
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.borderColor = 'rgba(16,185,129,0.12)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
               >
-                {/* Icon with Gradient Background */}
-                <div className={`w-16 h-16 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-8 h-8 text-white" />
+                <div
+                  className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
+                  style={{ background: feature.bg }}
+                >
+                  <Icon className="w-6 h-6" style={{ color: feature.color }} />
                 </div>
-
-                {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3
+                  className="text-base font-bold mb-3"
+                  style={{ color: '#f0f4ff' }}
+                >
                   {feature.title}
                 </h3>
-
-                {/* Description */}
-                <p className="text-gray-600 leading-relaxed">
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: '#94a3b8' }}
+                >
                   {feature.description}
                 </p>
-
-                {/* Accent Border */}
-                <div className={`mt-6 h-1 w-0 group-hover:w-full bg-gradient-to-r ${feature.color} transition-all duration-500 rounded-full`} />
               </motion.div>
             );
           })}
         </div>
 
-        {/* Bottom Stats Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
-        >
-          <div>
-            <div className="text-5xl font-bold bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent mb-2">
-              500+
-            </div>
-            <p className="text-gray-600 text-lg">Successful Implementations</p>
-          </div>
-          <div>
-            <div className="text-5xl font-bold bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent mb-2">
-              40%
-            </div>
-            <p className="text-gray-600 text-lg">Average Efficiency Increase</p>
-          </div>
-          <div>
-            <div className="text-5xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent mb-2">
-              24/7
-            </div>
-            <p className="text-gray-600 text-lg">Expert Support Available</p>
-          </div>
-        </motion.div>
+        {/* Stats row */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="text-center p-6 rounded-xl"
+              style={{
+                background: '#0f172a',
+                border: '1px solid rgba(16,185,129,0.12)'
+              }}
+            >
+              <div
+                className="text-3xl font-black mb-1"
+                style={{ color: '#10b981' }}
+              >
+                {stat.number}
+              </div>
+              <div
+                className="text-sm"
+                style={{ color: '#64748b' }}
+              >
+                {stat.label}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
       </div>
     </section>
   );

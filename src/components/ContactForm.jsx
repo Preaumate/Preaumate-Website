@@ -105,91 +105,127 @@ const ContactForm = () => {
     }
   };
 
+  const inputStyle = (fieldName) => ({
+    background: '#0f172a',
+    border: `1px solid ${errors[fieldName]
+      ? '#ef4444'
+      : 'rgba(16,185,129,0.2)'}`,
+    color: '#f0f4ff',
+    borderRadius: '8px',
+    width: '100%',
+    padding: '12px 16px',
+    fontSize: '14px',
+    outline: 'none',
+  });
+
+  const labelStyle = {
+    display: 'block',
+    fontSize: '13px',
+    fontWeight: '500',
+    marginBottom: '6px',
+    color: '#94a3b8'
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="w-full max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-8"
+      className="w-full max-w-2xl mx-auto rounded-2xl p-8"
+      style={{
+        background: '#1e293b',
+        border: '1px solid rgba(16,185,129,0.2)',
+      }}
     >
-      <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">Get in Touch</h2>
-      <p className="text-gray-600 text-center mb-8">
-        Ready to transform your industrial operations? Let's discuss your automation needs.
+      <h2
+        className="text-3xl font-bold mb-2 text-center"
+        style={{ color: '#f0f4ff' }}
+      >
+        Get in Touch
+      </h2>
+      <p
+        className="text-center mb-8"
+        style={{ color: '#64748b' }}
+      >
+        Ready to transform your industrial operations? Let's discuss your needs.
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-5">
 
         {/* Company Name */}
         <div>
-          <label htmlFor="companyName" className="block text-sm font-medium text-gray-700 mb-2">
-            Company Name <span className="text-red-500">*</span>
+          <label style={labelStyle}>
+            Company Name <span style={{ color: '#ef4444' }}>*</span>
           </label>
           <input
             type="text"
-            id="companyName"
             name="companyName"
             value={formData.companyName}
             onChange={handleChange}
-            className={`w-full px-4 py-3 bg-white text-gray-900 border ${
-              errors.companyName ? 'border-red-500' : 'border-gray-300'
-            } rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all`}
             placeholder="Enter your company name"
+            style={inputStyle('companyName')}
           />
-          {errors.companyName && <p className="text-red-500 text-sm mt-1">{errors.companyName}</p>}
+          {errors.companyName && (
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
+              {errors.companyName}
+            </p>
+          )}
         </div>
 
         {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-            Email Address <span className="text-red-500">*</span>
+          <label style={labelStyle}>
+            Email Address <span style={{ color: '#ef4444' }}>*</span>
           </label>
           <input
             type="email"
-            id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className={`w-full px-4 py-3 bg-white text-gray-900 border ${
-              errors.email ? 'border-red-500' : 'border-gray-300'
-            } rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all`}
             placeholder="your.email@company.com"
+            style={inputStyle('email')}
           />
-          {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+          {errors.email && (
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
+              {errors.email}
+            </p>
+          )}
         </div>
 
         {/* Phone */}
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-            Phone Number <span className="text-red-500">*</span>
+          <label style={labelStyle}>
+            Phone Number <span style={{ color: '#ef4444' }}>*</span>
           </label>
           <input
             type="tel"
-            id="phone"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className={`w-full px-4 py-3 bg-white text-gray-900 border ${
-              errors.phone ? 'border-red-500' : 'border-gray-300'
-            } rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all`}
-            placeholder="+1 (555) 123-4567"
+            placeholder="+31 (0) 000 000 000"
+            style={inputStyle('phone')}
           />
-          {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+          {errors.phone && (
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
+              {errors.phone}
+            </p>
+          )}
         </div>
 
         {/* Service Interest */}
         <div>
-          <label htmlFor="serviceInterest" className="block text-sm font-medium text-gray-700 mb-2">
-            Service Interest <span className="text-red-500">*</span>
+          <label style={labelStyle}>
+            Service Interest <span style={{ color: '#ef4444' }}>*</span>
           </label>
           <select
-            id="serviceInterest"
             name="serviceInterest"
             value={formData.serviceInterest}
             onChange={handleChange}
-            className={`w-full px-4 py-3 bg-white text-gray-900 border ${
-              errors.serviceInterest ? 'border-red-500' : 'border-gray-300'
-            } rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all`}
+            style={{
+              ...inputStyle('serviceInterest'),
+              cursor: 'pointer'
+            }}
           >
             <option value="">Select a service...</option>
             <option value="Robotic Process Automation">Robotic Process Automation</option>
@@ -198,33 +234,49 @@ const ContactForm = () => {
             <option value="Predictive Analytics">Predictive Analytics</option>
             <option value="General Consultation">General Consultation</option>
           </select>
-          {errors.serviceInterest && <p className="text-red-500 text-sm mt-1">{errors.serviceInterest}</p>}
+          {errors.serviceInterest && (
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
+              {errors.serviceInterest}
+            </p>
+          )}
         </div>
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-            Message <span className="text-red-500">*</span>
+          <label style={labelStyle}>
+            Message <span style={{ color: '#ef4444' }}>*</span>
           </label>
           <textarea
-            id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
             rows={5}
-            className={`w-full px-4 py-3 bg-white text-gray-900 border ${
-              errors.message ? 'border-red-500' : 'border-gray-300'
-            } rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all resize-none`}
             placeholder="Tell us about your automation needs..."
+            style={{
+              ...inputStyle('message'),
+              resize: 'none'
+            }}
           />
-          {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+          {errors.message && (
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
+              {errors.message}
+            </p>
+          )}
         </div>
 
-        {/* Submit Button */}
+        {/* Submit */}
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-lg font-bold text-white border-0 transition-all duration-300"
+          style={{
+            background: isSubmitting
+              ? 'rgba(16,185,129,0.5)'
+              : 'linear-gradient(135deg, #10b981, #059669)',
+            boxShadow: '0 0 20px rgba(16,185,129,0.3)',
+            minHeight: '3.25rem',
+            cursor: isSubmitting ? 'not-allowed' : 'pointer',
+          }}
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
           <Send className="w-5 h-5" />

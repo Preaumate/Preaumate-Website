@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedLogo from "@/components/AnimatedLogo";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,27 +18,50 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [menuOpen]);
 
-  const scrollToSection = (sectionId) => {
-    setMenuOpen(false);
+//  const scrollToSection = (sectionId) => {
+//    setMenuOpen(false);
+//
+//    // Small delay to let the menu close animation finish
+//    // before attempting to scroll to the section
+//    setTimeout(() => {
+//      const element = document.getElementById(sectionId);
+//      if (element) {
+//        const offset = 80;
+//        const elementPosition =
+//          element.getBoundingClientRect().top + window.pageYOffset;
+//        window.scrollTo({
+//          top: elementPosition - offset,
+//          behavior: "smooth",
+//        });
+//      }
+//    }, 300);
+//
+//    // Close menu after clicking a link
+//    setMenuOpen(false);
+//  };
 
-    // Small delay to let the menu close animation finish
-    // before attempting to scroll to the section
+const scrollToSection = (sectionId) => {
+  setMenuOpen(false);
+  
+  // Check if we're already on homepage (/)
+  if (window.location.pathname === '/' || window.location.pathname === '') {
+    // Same-page scroll (your existing logic)
     setTimeout(() => {
       const element = document.getElementById(sectionId);
       if (element) {
         const offset = 80;
-        const elementPosition =
-          element.getBoundingClientRect().top + window.pageYOffset;
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({
           top: elementPosition - offset,
           behavior: "smooth",
         });
       }
     }, 300);
-
-    // Close menu after clicking a link
-    setMenuOpen(false);
-  };
+  } else {
+    // Navigate to home + section (Router handles smooth if configured)
+    navigate(`/#${sectionId}`);
+  }
+};
 
   return (
     <motion.header
@@ -75,6 +100,18 @@ const Header = () => {
               className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium"
             >
               Services
+            </button>
+            <button
+              onClick={() => navigate('/blog')} 
+              className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium"
+            >
+              Blog
+            </button>
+            <button
+              onClick={() => navigate('/qa')}
+              className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium"
+            >
+              Q&A
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -152,6 +189,18 @@ const Header = () => {
                   className="text-gray-300 font-medium text-left py-4 px-2 border-b border-slate-800 active:text-emerald-400 active:bg-slate-800 transition-colors duration-150 w-full"
                 >
                   Services
+                </button>
+                <button
+                  onClick={() => navigate('/blog')}
+                  className="text-gray-300 font-medium text-left py-4 px-2 border-b border-slate-800 active:text-emerald-400 active:bg-slate-800 transition-colors duration-150 w-full"
+                >
+                  Blog
+                </button>
+                <button
+                  onClick={() => navigate('/qa')}
+                  className="text-gray-300 font-medium text-left py-4 px-2 border-b border-slate-800 active:text-emerald-400 active:bg-slate-800 transition-colors duration-150 w-full"
+                >
+                  Q&A
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}
