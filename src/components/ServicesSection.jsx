@@ -1,69 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bot, Waypoints, Wifi, Forklift, Factory, BarChart3, ClipboardCheck } from 'lucide-react';
+import { Bot, Waypoints, Forklift, ClipboardCheck, Factory, BarChart3, Wifi } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
-const services = [
-  {
-    icon: Bot,
-    title: 'Robotic Process Automation',
-    description: 'Deploy intelligent robots and automated systems that handle repetitive tasks with precision and speed.',
-    color: '#10b981',
-    bg: 'rgba(16,185,129,0.1)',
-  },
-  {
-    icon: Waypoints,
-    title: 'Assembly Automation',
-    description: 'Streamline your production with flexible and efficient assembly automation solutions.',
-    color: '#0ea5e9',
-    bg: 'rgba(14,165,233,0.1)',
-  },
-    {
-    icon: Forklift,
-    title: 'Material handling',
-    description: 'Intelligent material handling solutions that improve flow, safety, and operational efficiency.',
-    color: '#8b5cf6',
-    bg: 'rgba(139,92,246,0.1)',
-  },
-    {
-    icon: ClipboardCheck,
-    title: 'Quality Control',
-    description: 'Advanced inspection and quality control systems to ensure consistency and excellence.',
-    color: '#f59e0b',
-    bg: 'rgba(245,158,11,0.1)',
-  },
-  {
-    icon: Factory,
-    title: 'Smart Factory Solutions',
-    description: 'Transform traditional manufacturing into fully connected, self-optimising production environments.',
-    color: '#8b5cf6',
-    bg: 'rgba(139,92,246,0.1)',
-  },
-  {
-    icon: BarChart3,
-    title: 'Predictive Analytics',
-    description: 'Anticipate failures before they happen using AI-driven insights from your machine data.',
-    color: '#f59e0b',
-    bg: 'rgba(245,158,11,0.1)',
-  },
-    {
-    icon: Wifi,
-    title: 'IoT Integration',
-    description: 'Connect your entire factory floor with smart sensors and real-time data pipelines for full visibility.',
-    color: '#0ea5e9',
-    bg: 'rgba(14,165,233,0.1)',
-  }
+const icons = [Bot, Waypoints, Forklift, ClipboardCheck, Factory, BarChart3, Wifi];
+const colors = [
+  { color: '#10b981', bg: 'rgba(16,185,129,0.1)' },
+  { color: '#0ea5e9', bg: 'rgba(14,165,233,0.1)' },
+  { color: '#8b5cf6', bg: 'rgba(139,92,246,0.1)' },
+  { color: '#f59e0b', bg: 'rgba(245,158,11,0.1)' },
+  { color: '#8b5cf6', bg: 'rgba(139,92,246,0.1)' },
+  { color: '#f59e0b', bg: 'rgba(245,158,11,0.1)' },
+  { color: '#0ea5e9', bg: 'rgba(14,165,233,0.1)' },
 ];
 
 const ServicesSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section
       id="services"
-      className="py-24"
-      style={{ background: '#0a1628' }}
+      className="py-24 bg-slate-950 relative"
     >
       <div className="container mx-auto px-6">
 
-        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -79,41 +39,31 @@ const ServicesSection = () => {
               color: '#10b981'
             }}
           >
-            WHAT WE DO
+            {t.services.badge}
           </span>
-          <h2
-            className="text-4xl md:text-5xl font-black mb-4"
-            style={{ color: '#f0f4ff' }}
-          >
-            End-to-End Automation
+          <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ color: '#f0f4ff' }}>
+            {t.services.title}
           </h2>
-          <p
-            className="text-lg max-w-2xl mx-auto"
-            style={{ color: '#94a3b8' }}
-          >
-            From robotics to analytics — we deliver complete industrial automation
-            solutions built on proven Siemens technology.
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#94a3b8' }}>
+            {t.services.subtitle}
           </p>
         </motion.div>
 
-        {/* Services grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.slice(0,4).map((service, index) => {
-            const Icon = service.icon;
+          {t.services.items.slice(0, 4).map((service, index) => {
+            const Icon = icons[index];
+            const { color, bg } = colors[index];
             return (
               <motion.div
-                key={service.title}
+                key={index}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-6 rounded-xl transition-all duration-300"
-                style={{
-                  background: '#1e293b',
-                  border: '1px solid rgba(16,185,129,0.12)',
-                }}
+                style={{ background: '#1e293b', border: '1px solid rgba(16,185,129,0.12)' }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = service.color;
+                  e.currentTarget.style.borderColor = color;
                   e.currentTarget.style.transform = 'translateY(-4px)';
                 }}
                 onMouseLeave={e => {
@@ -121,22 +71,13 @@ const ServicesSection = () => {
                   e.currentTarget.style.transform = 'translateY(0)';
                 }}
               >
-                <div
-                  className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-                  style={{ background: service.bg }}
-                >
-                  <Icon className="w-6 h-6" style={{ color: service.color }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ background: bg }}>
+                  <Icon className="w-6 h-6" style={{ color }} />
                 </div>
-                <h3
-                  className="text-base font-bold mb-3"
-                  style={{ color: '#f0f4ff' }}
-                >
+                <h3 className="text-base font-bold mb-3" style={{ color: '#f0f4ff' }}>
                   {service.title}
                 </h3>
-                <p
-                  className="text-sm leading-relaxed"
-                  style={{ color: '#94a3b8' }}
-                >
+                <p className="text-sm leading-relaxed" style={{ color: '#94a3b8' }}>
                   {service.description}
                 </p>
               </motion.div>

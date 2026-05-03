@@ -10,6 +10,7 @@ import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import ConsentBanner, { getCookieConsent } from '@/components/ConsentBanner';
 import { Toaster } from '@/components/ui/toaster';
+import { useLanguage } from '@/context/LanguageContext';
 
 const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
 
@@ -39,6 +40,7 @@ const loadTawkTo = () => {
 };
 
 const HomePage = () => {
+  const { t } = useLanguage();
 
   useEffect(() => {
     if (getCookieConsent() === 'accepted') {
@@ -69,13 +71,8 @@ const HomePage = () => {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        
         <FeaturesBar />
-        <section
-          id="contact"
-          className="py-24"
-          style={{ background: '#0a1628' }}
-        >
+        <section id="contact" className="py-24" style={{ background: '#0a1628' }}>
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <span
@@ -86,25 +83,18 @@ const HomePage = () => {
                   color: '#10b981'
                 }}
               >
-                GET IN TOUCH
+                {t.contactSection.badge}
               </span>
-              <h2
-                className="text-4xl md:text-5xl font-black mb-4"
-                style={{ color: '#f0f4ff' }}
-              >
-                Start Your Automation Journey
+              <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ color: '#f0f4ff' }}>
+                {t.contactSection.title}
               </h2>
-              <p
-                className="text-lg max-w-xl mx-auto"
-                style={{ color: '#94a3b8' }}
-              >
-                Ready to transform your operations? Let's talk about your automation needs.
+              <p className="text-lg max-w-xl mx-auto" style={{ color: '#94a3b8' }}>
+                {t.contactSection.subtitle}
               </p>
             </div>
             <ContactForm />
           </div>
         </section>
-       
         <Footer />
       </div>
 
