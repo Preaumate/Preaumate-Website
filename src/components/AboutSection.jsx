@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Cpu, Activity, Zap, Shield, ArrowRight } from 'lucide-react';
+import { Cpu, Activity, Zap, Leaf, Shield, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
-const icons = [Cpu, Activity, Activity, Zap, Shield];
+const icons = [Cpu, Activity, Shield, Leaf, Shield];
 const colors = [
   { color: '#10b981', bg: 'rgba(16,185,129,0.1)' },
   { color: '#0ea5e9', bg: 'rgba(14,165,233,0.1)' },
-  { color: '#0ea5e9', bg: 'rgba(14,165,233,0.1)' },
   { color: '#f59e0b', bg: 'rgba(245,158,11,0.1)' },
+  { color: '#10b981', bg: 'rgba(16,185,129,0.1)' },
   { color: '#8b5cf6', bg: 'rgba(139,92,246,0.1)' },
 ];
 const statNumbers = ['200+', '98%', '40%', '15+'];
@@ -80,7 +80,7 @@ const AboutSection = () => {
 
         {/* Feature cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {t.about.features.map((feature, index) => {
+          {t.about.features.slice(0, 4).map((feature, index) => {
             const Icon = icons[index] || Cpu;
             const { color, bg } = colors[index] || colors[0];
             return (
@@ -117,7 +117,7 @@ const AboutSection = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {t.about.stats.map((label, index) => (
+          {t.about.stats.slice(0, 0).map((label, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -139,6 +139,7 @@ const AboutSection = () => {
 
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-slate-950 to-slate-800" />
+
     </section>
   );
 };

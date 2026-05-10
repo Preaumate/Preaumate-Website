@@ -4,6 +4,8 @@ import { LanguageProvider } from '@/context/LanguageContext';
 import ScrollToTop from '@/components/ScrollToTop';
 import HomePage from '@/pages/HomePage';
 import AboutPage from '@/pages/AboutPage';
+import ServicePage from '@/pages/ServicePage';
+import SolutionPage from '@/pages/SolutionPage';
 import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage';
 import TermsPage from '@/pages/TermsPage';
 import BlogPage from '@/pages/BlogPage';
@@ -19,6 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/services/:slug" element={<ServicePage />} />
+        <Route path="/solutions/:slug" element={<SolutionPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/blog" element={<BlogPage />} />

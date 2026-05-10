@@ -9,6 +9,7 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/context/LanguageContext';
+import SolutionsSection from '@/components/SolutionsSection';
 
 const serviceIcons = [Cpu, Wrench, Wifi, Shield, Brain, Headphones, BarChart3];
 const serviceColors = [
@@ -107,6 +108,9 @@ const AboutPage = () => {
           <Paragraph>{a.whoWeArePara3}</Paragraph>
           <Paragraph>{a.whoWeArePara4}</Paragraph>
         </Section>
+
+        {/* Solutions — add this */}
+        <SolutionsSection />
 
         {/* What We Do */}
         <Section badge={a.whatWeDoBadge} title={a.whatWeDoTitle}>

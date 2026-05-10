@@ -50,7 +50,7 @@ const capabilities = [
 
 const CapabilitiesBar = () => {
   return (
-    <section className="bg-navy-800 border-t border-emerald-500/20 py-10 px-6">
+    <section className="bg-slate-800 relative border-t border-emerald-500/20 py-10 px-6">
       <div className="container mx-auto">
 
         {/* Section label */}
@@ -87,6 +87,7 @@ const CapabilitiesBar = () => {
           })}
         </div>
       </div>
+            <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-slate-950 to-slate-800" />
     </section>
   );
 };

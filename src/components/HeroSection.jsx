@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import AnimatedLogo from "@/components/AnimatedLogo";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext";
+import factoryEvolution from "@/assets/factory-evolution2.jpg";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -18,6 +19,9 @@ const HeroSection = () => {
     }
   };
 
+  // backgroundImage: "url(https://www.genspark.ai/api/files/s/d6yFRBGa?cache_control=3600)",
+  // backgroundImage: "url(https://images.unsplash.com/photo-1582533632670-55d43ff95331)"
+
   return (
     <section
       id="hero"
@@ -27,7 +31,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{
-          backgroundImage: "url(https://images.unsplash.com/photo-1582533632670-55d43ff95331)",
+          backgroundImage: `url(${factoryEvolution})`,
           backgroundBlendMode: "overlay",
         }}
       />

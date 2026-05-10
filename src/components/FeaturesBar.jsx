@@ -25,8 +25,8 @@ const features = [
 const FeaturesBar = () => {
   return (
     <section
-      className="py-16"
-      style={{ background: '#020818' }}
+      className="py-24 bg-slate-800 relative"
+      //style={{ background: '#020818' }}
     >
       <div className="container mx-auto px-6">
 
@@ -97,6 +97,8 @@ const FeaturesBar = () => {
           })}
         </div>
       </div>
+      {/*<div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-slate-950 to-slate-800" />*/}
+
     </section>
   );
 };

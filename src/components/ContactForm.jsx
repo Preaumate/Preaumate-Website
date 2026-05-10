@@ -25,7 +25,7 @@ const ContactForm = () => {
     if (!formData.companyName.trim()) newErrors.companyName = f.errors.companyRequired;
     if (!formData.email.trim()) newErrors.email = f.errors.emailRequired;
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) newErrors.email = f.errors.emailInvalid;
-    if (!formData.phone.trim()) newErrors.phone = f.errors.phoneRequired;
+    // if (!formData.phone.trim()) newErrors.phone = f.errors.phoneRequired;
     if (!formData.serviceInterest) newErrors.serviceInterest = f.errors.serviceRequired;
     if (!formData.message.trim()) newErrors.message = f.errors.messageRequired;
     setErrors(newErrors);
@@ -105,7 +105,8 @@ const ContactForm = () => {
           {errors.email && <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>{errors.email}</p>}
         </div>
         <div>
-          <label style={labelStyle}>{f.phone} <span style={{ color: '#ef4444' }}>*</span></label>
+          {/* <label style={labelStyle}>{f.phone} <span style={{ color: '#ef4444' }}>*</span></label> */}
+          <label style={labelStyle}>{f.phone} </label>
           <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder={f.phonePlaceholder} style={inputStyle('phone')} />
           {errors.phone && <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>{errors.phone}</p>}
         </div>
