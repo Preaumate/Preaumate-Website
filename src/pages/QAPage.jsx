@@ -1,19 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
-import { motion, AnimatePresence } from 'framer-motion';
-import { PortableText } from '@portabletext/react';
-import { ChevronDown, Send } from 'lucide-react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { client, writeClient } from '@/lib/sanity';
-import { useToast } from '@/components/ui/use-toast';
-import { Toaster } from '@/components/ui/toaster';
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import { motion, AnimatePresence } from "framer-motion";
+import { PortableText } from "@portabletext/react";
+import { ChevronDown, Send } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { client, writeClient } from "@/lib/sanity";
+import { useToast } from "@/components/ui/use-toast";
+import { Toaster } from "@/components/ui/toaster";
+import { seo } from "@/data/seo";
 
 const QAPage = () => {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [openId, setOpenId] = useState(null);
-  const [formData, setFormData] = useState({ name: '', question: '', category: '' });
+  const [formData, setFormData] = useState({
+    name: "",
+    question: "",
+    category: "",
+  });
   const [submitting, setSubmitting] = useState(false);
   const { toast } = useToast();
 
@@ -28,8 +33,9 @@ const QAPage = () => {
       category
     }`;
 
-    client.fetch(query)
-      .then(data => {
+    client
+      .fetch(query)
+      .then((data) => {
         setQuestions(data);
         setLoading(false);
       })
@@ -46,11 +52,11 @@ const QAPage = () => {
     // You'll see it in your dashboard and can answer + publish it
     try {
       await writeClient.create({
-        _type: 'qaQuestion',
+        _type: "qaQuestion",
         question: formData.question,
-        askedBy: formData.name || 'Anonymous',
+        askedBy: formData.name || "Anonymous",
         askedAt: new Date().toISOString(),
-        category: formData.category || 'general',
+        category: formData.category || "general",
         isPublished: false,
       });
 
@@ -60,7 +66,7 @@ const QAPage = () => {
         duration: 5000,
       });
 
-      setFormData({ name: '', question: '', category: '' });
+      setFormData({ name: "", question: "", category: "" });
     } catch (err) {
       toast({
         title: "Something went wrong",
@@ -80,7 +86,9 @@ const QAPage = () => {
       ),
     },
     marks: {
-      strong: ({ children }) => <strong className="font-bold">{children}</strong>,
+      strong: ({ children }) => (
+        <strong className="font-bold">{children}</strong>
+      ),
       em: ({ children }) => <em className="italic">{children}</em>,
     },
   };
@@ -88,8 +96,10 @@ const QAPage = () => {
   return (
     <>
       <Helmet>
-        <title>Q&A — Preaumate</title>
-        <meta name="description" content="Ask questions about industrial automation and get answers from the Preaumate team." />
+        <title>{seo.qa.title}</title>
+        <meta name="description" content={seo.qa.description} />
+        <meta property="og:title" content={seo.qa.title} />
+        <meta property="og:description" content={seo.qa.description} />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
@@ -112,13 +122,13 @@ const QAPage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-300 max-w-2xl mx-auto"
             >
-              Got a question about industrial automation? Ask us — we publish answers for everyone to benefit from.
+              Got a question about industrial automation? Ask us — we publish
+              answers for everyone to benefit from.
             </motion.p>
           </div>
         </div>
 
         <main className="container mx-auto px-6 py-16 max-w-4xl">
-
           {/* Submit a Question Form */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -126,9 +136,12 @@ const QAPage = () => {
             transition={{ duration: 0.6 }}
             className="bg-white rounded-2xl shadow-md p-8 mb-16"
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Ask a Question</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Ask a Question
+            </h2>
             <p className="text-gray-500 mb-6 text-sm">
-              We'll answer your question and publish it here so others can benefit too.
+              We'll answer your question and publish it here so others can
+              benefit too.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -140,7 +153,9 @@ const QAPage = () => {
                   <input
                     type="text"
                     value={formData.name}
-                    onChange={e => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                    onChange={(e) =>
+                      setFormData((prev) => ({ ...prev, name: e.target.value }))
+                    }
                     placeholder="Anonymous"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                   />
@@ -151,14 +166,23 @@ const QAPage = () => {
                   </label>
                   <select
                     value={formData.category}
-                    onChange={e => setFormData(prev => ({ ...prev, category: e.target.value }))}
+                    onChange={(e) =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        category: e.target.value,
+                      }))
+                    }
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white"
                   >
                     <option value="">Select a category...</option>
-                    <option value="robotic-automation">Robotic Automation</option>
+                    <option value="robotic-automation">
+                      Robotic Automation
+                    </option>
                     <option value="iot-integration">IoT Integration</option>
                     <option value="smart-factory">Smart Factory</option>
-                    <option value="predictive-analytics">Predictive Analytics</option>
+                    <option value="predictive-analytics">
+                      Predictive Analytics
+                    </option>
                     <option value="general">General</option>
                   </select>
                 </div>
@@ -170,7 +194,12 @@ const QAPage = () => {
                 </label>
                 <textarea
                   value={formData.question}
-                  onChange={e => setFormData(prev => ({ ...prev, question: e.target.value }))}
+                  onChange={(e) =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      question: e.target.value,
+                    }))
+                  }
                   rows={4}
                   required
                   placeholder="What would you like to know about industrial automation?"
@@ -183,7 +212,7 @@ const QAPage = () => {
                 disabled={submitting}
                 className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 flex items-center gap-2 disabled:opacity-70"
               >
-                {submitting ? 'Submitting...' : 'Submit Question'}
+                {submitting ? "Submitting..." : "Submit Question"}
                 <Send className="w-4 h-4" />
               </button>
             </form>
@@ -203,7 +232,9 @@ const QAPage = () => {
 
             {!loading && questions.length === 0 && (
               <div className="text-center py-12 bg-white rounded-2xl shadow-sm">
-                <p className="text-gray-500">No answered questions yet — be the first to ask!</p>
+                <p className="text-gray-500">
+                  No answered questions yet — be the first to ask!
+                </p>
               </div>
             )}
 
@@ -219,23 +250,27 @@ const QAPage = () => {
                   >
                     {/* Question header — clickable to expand */}
                     <button
-                      onClick={() => setOpenId(openId === item._id ? null : item._id)}
+                      onClick={() =>
+                        setOpenId(openId === item._id ? null : item._id)
+                      }
                       className="w-full text-left px-6 py-5 flex items-start justify-between gap-4 hover:bg-gray-50 transition-colors"
                     >
                       <div className="flex-1">
                         {item.category && (
                           <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-2 py-0.5 rounded-full mb-2 capitalize">
-                            {item.category.replace('-', ' ')}
+                            {item.category.replace("-", " ")}
                           </span>
                         )}
-                        <p className="font-semibold text-gray-900">{item.question}</p>
+                        <p className="font-semibold text-gray-900">
+                          {item.question}
+                        </p>
                         <p className="text-gray-400 text-xs mt-1">
-                          Asked by {item.askedBy || 'Anonymous'}
+                          Asked by {item.askedBy || "Anonymous"}
                         </p>
                       </div>
                       <ChevronDown
                         className={`w-5 h-5 text-gray-400 flex-shrink-0 mt-1 transition-transform duration-300 ${
-                          openId === item._id ? 'rotate-180' : ''
+                          openId === item._id ? "rotate-180" : ""
                         }`}
                       />
                     </button>
@@ -245,7 +280,7 @@ const QAPage = () => {
                       {openId === item._id && (
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
+                          animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
                           className="overflow-hidden"

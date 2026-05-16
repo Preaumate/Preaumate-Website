@@ -12,7 +12,10 @@ const colors = [
   { color: '#10b981', bg: 'rgba(16,185,129,0.1)' },
   { color: '#8b5cf6', bg: 'rgba(139,92,246,0.1)' },
 ];
-const statNumbers = ['200+', '98%', '40%', '15+'];
+
+// 200+ Projects delivered, 98% Client satisfaction, 15+ Years of experience, 24/7  Support availability
+// 30 Years of combined experience, 5 Major Programming platforms, 6+ Industries served, 2 continents based
+const statNumbers = ['30', '5', '6+', '2'];
 
 const AboutSection = () => {
   const { t } = useLanguage();

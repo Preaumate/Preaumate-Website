@@ -13,9 +13,7 @@ const Header = () => {
   const navigate = useNavigate();
   const { language, changeLanguage, t } = useLanguage();
   const langRef = useRef(null);
-
-  const currentLang =
-    languages.find((l) => l.code === language) || languages[0];
+  const currentLang = languages.find(l => l.code === language) || languages[0];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,30 +24,25 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [menuOpen]);
 
-  // Close lang dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (langRef.current && !langRef.current.contains(e.target)) {
         setLangOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   const scrollToSection = (sectionId) => {
     setMenuOpen(false);
-    if (window.location.pathname === "/" || window.location.pathname === "") {
+    if (window.location.pathname === '/' || window.location.pathname === '') {
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
           const offset = 80;
-          const elementPosition =
-            element.getBoundingClientRect().top + window.pageYOffset;
-          window.scrollTo({
-            top: elementPosition - offset,
-            behavior: "smooth",
-          });
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: elementPosition - offset, behavior: "smooth" });
         }
       }, 300);
     } else {
@@ -76,6 +69,7 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
+
           {/* Logo */}
           <div className="flex items-center">
             <AnimatedLogo isCompact={true} />
@@ -90,7 +84,7 @@ const Header = () => {
               {t.nav.home}
             </button>
             <button
-              onClick={() => navigate("/about")}
+              onClick={() => navigate('/about')}
               className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium text-sm"
             >
               {t.nav.about}
@@ -101,18 +95,25 @@ const Header = () => {
             >
               {t.nav.services}
             </button>
+
+            {/* ── BLOG & Q&A NAV LINKS ─────────────────────────────────────
+                Disabled until there is content in these sections.
+                To re-enable: uncomment the two buttons below.
+            ─────────────────────────────────────────────────────────────── */}
+            {/* DISABLED — no content yet:
             <button
-              onClick={() => navigate("/blog")}
+              onClick={() => navigate('/blog')}
               className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium text-sm"
             >
               {t.nav.blog}
             </button>
             <button
-              onClick={() => navigate("/qa")}
+              onClick={() => navigate('/qa')}
               className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium text-sm"
             >
               {t.nav.qa}
             </button>
+            */}
 
             {/* Language Dropdown */}
             <div className="relative" ref={langRef}>
@@ -122,11 +123,8 @@ const Header = () => {
               >
                 <span>{currentLang.flag}</span>
                 <span>{currentLang.code.toUpperCase()}</span>
-                <ChevronDown
-                  className={`w-3 h-3 transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`}
-                />
+                <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${langOpen ? 'rotate-180' : ''}`} />
               </button>
-
               <AnimatePresence>
                 {langOpen && (
                   <motion.div
@@ -135,38 +133,23 @@ const Header = () => {
                     exit={{ opacity: 0, y: -8, scale: 0.95 }}
                     transition={{ duration: 0.15 }}
                     className="absolute right-0 top-full mt-2 w-44 rounded-xl shadow-2xl overflow-hidden z-50"
-                    style={{
-                      background: "#0f172a",
-                      border: "1px solid rgba(16,185,129,0.2)",
-                    }}
+                    style={{ background: '#0f172a', border: '1px solid rgba(16,185,129,0.2)' }}
                   >
-                    {languages.map((lang) => (
+                    {languages.map(lang => (
                       <button
                         key={lang.code}
                         onClick={() => handleLangSelect(lang.code)}
                         className="w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-all duration-150 text-left"
                         style={{
-                          background:
-                            language === lang.code
-                              ? "rgba(16,185,129,0.12)"
-                              : "transparent",
-                          color: language === lang.code ? "#10b981" : "#94a3b8",
+                          background: language === lang.code ? 'rgba(16,185,129,0.12)' : 'transparent',
+                          color: language === lang.code ? '#10b981' : '#94a3b8',
                         }}
-                        onMouseEnter={(e) => {
-                          if (language !== lang.code)
-                            e.currentTarget.style.background =
-                              "rgba(16,185,129,0.06)";
-                        }}
-                        onMouseLeave={(e) => {
-                          if (language !== lang.code)
-                            e.currentTarget.style.background = "transparent";
-                        }}
+                        onMouseEnter={e => { if (language !== lang.code) e.currentTarget.style.background = 'rgba(16,185,129,0.06)'; }}
+                        onMouseLeave={e => { if (language !== lang.code) e.currentTarget.style.background = 'transparent'; }}
                       >
                         <span className="text-base">{lang.flag}</span>
                         <span className="font-medium">{lang.label}</span>
-                        {language === lang.code && (
-                          <span className="ml-auto text-xs">✓</span>
-                        )}
+                        {language === lang.code && <span className="ml-auto text-xs">✓</span>}
                       </button>
                     ))}
                   </motion.div>
@@ -174,7 +157,6 @@ const Header = () => {
               </AnimatePresence>
             </div>
 
-            {/* Contact CTA */}
             <button
               onClick={() => scrollToSection("contact")}
               className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white px-5 py-2 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl text-sm"
@@ -185,16 +167,13 @@ const Header = () => {
 
           {/* Mobile — Language + Hamburger */}
           <div className="md:hidden flex items-center gap-3">
-            {/* Mobile language selector */}
             <div className="relative" ref={langRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
                 className="flex items-center gap-1 text-gray-300 text-sm px-2 py-1 rounded-lg border border-slate-700"
               >
                 <span>{currentLang.flag}</span>
-                <ChevronDown
-                  className={`w-3 h-3 transition-transform ${langOpen ? "rotate-180" : ""}`}
-                />
+                <ChevronDown className={`w-3 h-3 transition-transform ${langOpen ? 'rotate-180' : ''}`} />
               </button>
               <AnimatePresence>
                 {langOpen && (
@@ -204,29 +183,21 @@ const Header = () => {
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.15 }}
                     className="absolute right-0 top-full mt-2 w-44 rounded-xl shadow-2xl overflow-hidden z-50"
-                    style={{
-                      background: "#0f172a",
-                      border: "1px solid rgba(16,185,129,0.2)",
-                    }}
+                    style={{ background: '#0f172a', border: '1px solid rgba(16,185,129,0.2)' }}
                   >
-                    {languages.map((lang) => (
+                    {languages.map(lang => (
                       <button
                         key={lang.code}
                         onClick={() => handleLangSelect(lang.code)}
                         className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-left"
                         style={{
-                          background:
-                            language === lang.code
-                              ? "rgba(16,185,129,0.12)"
-                              : "transparent",
-                          color: language === lang.code ? "#10b981" : "#94a3b8",
+                          background: language === lang.code ? 'rgba(16,185,129,0.12)' : 'transparent',
+                          color: language === lang.code ? '#10b981' : '#94a3b8',
                         }}
                       >
                         <span>{lang.flag}</span>
                         <span>{lang.label}</span>
-                        {language === lang.code && (
-                          <span className="ml-auto text-xs">✓</span>
-                        )}
+                        {language === lang.code && <span className="ml-auto text-xs">✓</span>}
                       </button>
                     ))}
                   </motion.div>
@@ -234,39 +205,18 @@ const Header = () => {
               </AnimatePresence>
             </div>
 
-            {/* Hamburger */}
             <button
               className="text-gray-300 hover:text-emerald-400 transition-colors"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
               {menuOpen ? (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
             </button>
@@ -291,10 +241,7 @@ const Header = () => {
                   {t.nav.home}
                 </button>
                 <button
-                  onClick={() => {
-                    navigate("/about");
-                    setMenuOpen(false);
-                  }}
+                  onClick={() => { navigate('/about'); setMenuOpen(false); }}
                   className="text-gray-300 font-medium text-left py-4 px-2 border-b border-slate-800 active:text-emerald-400 active:bg-slate-800 transition-colors duration-150 w-full"
                 >
                   {t.nav.about}
@@ -305,24 +252,25 @@ const Header = () => {
                 >
                   {t.nav.services}
                 </button>
+
+                {/* ── BLOG & Q&A MOBILE LINKS ──────────────────────────────────
+                    Disabled until there is content. Uncomment to re-enable.
+                ─────────────────────────────────────────────────────────────── */}
+                {/* DISABLED — no content yet:
                 <button
-                  onClick={() => {
-                    navigate("/blog");
-                    setMenuOpen(false);
-                  }}
+                  onClick={() => { navigate('/blog'); setMenuOpen(false); }}
                   className="text-gray-300 font-medium text-left py-4 px-2 border-b border-slate-800 active:text-emerald-400 active:bg-slate-800 transition-colors duration-150 w-full"
                 >
                   {t.nav.blog}
                 </button>
                 <button
-                  onClick={() => {
-                    navigate("/qa");
-                    setMenuOpen(false);
-                  }}
+                  onClick={() => { navigate('/qa'); setMenuOpen(false); }}
                   className="text-gray-300 font-medium text-left py-4 px-2 border-b border-slate-800 active:text-emerald-400 active:bg-slate-800 transition-colors duration-150 w-full"
                 >
                   {t.nav.qa}
                 </button>
+                */}
+
                 <button
                   onClick={() => scrollToSection("contact")}
                   className="mt-4 bg-gradient-to-r from-emerald-500 to-teal-500 active:from-emerald-600 active:to-teal-600 text-white px-6 py-4 rounded-lg font-medium text-left w-full"

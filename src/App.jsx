@@ -11,6 +11,7 @@ import TermsPage from '@/pages/TermsPage';
 import BlogPage from '@/pages/BlogPage';
 import BlogPostPage from '@/pages/BlogPostPage';
 import QAPage from '@/pages/QAPage';
+import NotFoundPage from '@/pages/NotFoundPage';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/qa" element={<QAPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
     </LanguageProvider>

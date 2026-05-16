@@ -8,6 +8,7 @@
 //   - Add/remove offerings in the 'offerings' array
 //   - The page layout updates automatically
 // ============================================================
+import { images } from '@/data/images';
 
 export const servicesData = {
 
@@ -24,12 +25,12 @@ export const servicesData = {
     // Add or remove images freely — the layout adapts automatically
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80',
+        url: images.services.robotics.main,
         alt: 'Industrial robot arm on factory floor',
         caption: 'Precision robotic systems on the production line',
       },
       {
-        url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+        url: images.services.robotics.secondary,
         alt: 'Robot programming and control systems',
         caption: 'Advanced robot programming across all major brands',
       },
@@ -188,12 +189,12 @@ export const servicesData = {
 
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80',
+        url: images.services.assembly.main,
         alt: 'Automated assembly line',
         caption: 'Flexible assembly automation for high-mix production',
       },
       {
-        url: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80',
+        url: images.services.assembly.secondary,
         alt: 'Assembly control systems',
         caption: 'Integrated control and monitoring for assembly processes',
       },
@@ -330,12 +331,12 @@ export const servicesData = {
 
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80',
+        url: images.services.materialHandling.main,
         alt: 'Automated warehouse and logistics',
         caption: 'Intelligent material flow systems for modern warehousing',
       },
       {
-        url: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
+        url: images.services.materialHandling.secondary,
         alt: 'Conveyor and material handling systems',
         caption: 'Automated conveyor and sorting systems',
       },
@@ -472,12 +473,12 @@ export const servicesData = {
 
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=80',
+        url: images.services.qualityControl.main,
         alt: 'Quality inspection and measurement',
         caption: 'Precision inspection systems for zero-defect manufacturing',
       },
       {
-        url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+        url: images.services.qualityControl.secondary,
         alt: 'Machine vision quality control',
         caption: 'Machine vision systems for automated defect detection',
       },

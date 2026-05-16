@@ -7,6 +7,7 @@
 //   - Add/remove items in the 'deliverables' array
 //   - The page layout updates automatically
 // ============================================================
+import { images } from '@/data/images';
 
 export const solutionsData = {
 
@@ -21,12 +22,12 @@ export const solutionsData = {
 
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80',
+        url: images.solutions.plcProgramming.main,
         alt: 'PLC programming and industrial control systems',
         caption: 'Structured PLC programming across Siemens, Rockwell and CoDeSys platforms',
       },
       {
-        url: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80',
+        url: images.solutions.plcProgramming.secondary,
         alt: 'Control panel and automation hardware',
         caption: 'Integration of control systems with existing production infrastructure',
       },
@@ -191,12 +192,12 @@ export const solutionsData = {
 
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80',
+        url: images.solutions.hmiScada.main,
         alt: 'Modern HMI screen on industrial machine',
         caption: 'Intuitive operator interfaces designed for real production environments',
       },
       {
-        url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+        url: images.solutions.hmiScada.secondary,
         alt: 'SCADA dashboard showing plant overview',
         caption: 'SCADA systems with real-time plant visibility and historical data',
       },

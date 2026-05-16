@@ -1,12 +1,13 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Link, useParams, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, ArrowLeft, CheckCircle } from 'lucide-react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { useLanguage } from '@/context/LanguageContext';
-import { servicesData, serviceCTA } from '@/data/services';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { Link, useParams, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ArrowRight, ArrowLeft, CheckCircle } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { useLanguage } from "@/context/LanguageContext";
+import { servicesData, serviceCTA } from "@/data/services";
+import { seo } from "@/data/seo";
 
 const ServicePage = () => {
   const { slug } = useParams();
@@ -18,7 +19,7 @@ const ServicePage = () => {
 
   // If slug doesn't exist, redirect to home
   if (!service) {
-    navigate('/');
+    navigate("/");
     return null;
   }
 
@@ -26,21 +27,34 @@ const ServicePage = () => {
   const content = service[language] || service.en;
   const cta = serviceCTA[language] || serviceCTA.en;
 
+  const pageSeo = seo.services[slug] || {
+    title: `${content.title} — Preaumate`,
+    description: content.tagline,
+  };
+
   return (
     <>
-      <Helmet>
+      {/*  <Helmet>
         <title>{content.title} — Preaumate</title>
         <meta name="description" content={content.tagline} />
+      </Helmet> */}
+
+      <Helmet>
+        <title>{pageSeo.title}</title>
+        <meta name="description" content={pageSeo.description} />
+        <meta property="og:title" content={pageSeo.title} />
+        <meta property="og:description" content={pageSeo.description} />
       </Helmet>
 
-      <div className="min-h-screen" style={{ background: '#0f172a' }}>
+      <div className="min-h-screen" style={{ background: "#0f172a" }}>
         <Header />
 
         {/* ── HERO ─────────────────────────────────────────── */}
         <div
           className="pt-32 pb-20 relative overflow-hidden"
           style={{
-            background: 'linear-gradient(135deg, #020818 0%, #0f172a 50%, #0f2040 100%)'
+            background:
+              "linear-gradient(135deg, #020818 0%, #0f172a 50%, #0f2040 100%)",
           }}
         >
           {/* Grid background */}
@@ -49,7 +63,7 @@ const ServicePage = () => {
             style={{
               backgroundImage: `linear-gradient(rgba(16,185,129,0.8) 1px, transparent 1px),
                                linear-gradient(90deg, rgba(16,185,129,0.8) 1px, transparent 1px)`,
-              backgroundSize: '60px 60px'
+              backgroundSize: "60px 60px",
             }}
           />
 
@@ -59,8 +73,8 @@ const ServicePage = () => {
               className="absolute inset-0 opacity-10"
               style={{
                 backgroundImage: `url(${service.images[0].url})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
           )}
@@ -75,9 +89,9 @@ const ServicePage = () => {
               <button
                 onClick={() => navigate(-1)}
                 className="inline-flex items-center gap-2 text-sm font-medium mb-8 transition-colors duration-200"
-                style={{ color: '#64748b' }}
-                onMouseEnter={e => e.currentTarget.style.color = '#10b981'}
-                onMouseLeave={e => e.currentTarget.style.color = '#64748b'}
+                style={{ color: "#64748b" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#10b981")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#64748b")}
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back
@@ -89,7 +103,7 @@ const ServicePage = () => {
                 style={{
                   background: service.bg,
                   border: `1px solid ${service.color}40`,
-                  color: service.color
+                  color: service.color,
                 }}
               >
                 PREAUMATE SERVICES
@@ -98,7 +112,7 @@ const ServicePage = () => {
               {/* Title */}
               <h1
                 className="text-5xl md:text-6xl font-black mb-6 leading-tight"
-                style={{ color: '#f0f4ff' }}
+                style={{ color: "#f0f4ff" }}
               >
                 {content.title}
               </h1>
@@ -116,7 +130,10 @@ const ServicePage = () => {
 
         {/* ── HERO IMAGE ───────────────────────────────────── */}
         {service.images[0] && (
-          <div className="w-full overflow-hidden" style={{ maxHeight: '480px' }}>
+          <div
+            className="w-full overflow-hidden"
+            style={{ maxHeight: "480px" }}
+          >
             <motion.img
               initial={{ opacity: 0, scale: 1.05 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -124,15 +141,15 @@ const ServicePage = () => {
               src={service.images[0].url}
               alt={service.images[0].alt}
               className="w-full object-cover"
-              style={{ maxHeight: '480px' }}
+              style={{ maxHeight: "480px" }}
             />
             {service.images[0].caption && (
               <p
                 className="text-center text-sm py-3 px-6"
                 style={{
-                  background: '#1e293b',
-                  color: '#64748b',
-                  borderBottom: '1px solid rgba(16,185,129,0.1)'
+                  background: "#1e293b",
+                  color: "#64748b",
+                  borderBottom: "1px solid rgba(16,185,129,0.1)",
                 }}
               >
                 {service.images[0].caption}
@@ -142,7 +159,7 @@ const ServicePage = () => {
         )}
 
         {/* ── INTRO TEXT ───────────────────────────────────── */}
-        <section className="py-20" style={{ background: '#0f172a' }}>
+        <section className="py-20" style={{ background: "#0f172a" }}>
           <div className="container mx-auto px-6 max-w-4xl">
             <div className="space-y-6">
               {content.intro.map((paragraph, i) => (
@@ -153,7 +170,7 @@ const ServicePage = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="text-lg leading-relaxed"
-                  style={{ color: '#94a3b8' }}
+                  style={{ color: "#94a3b8" }}
                 >
                   {paragraph}
                 </motion.p>
@@ -164,7 +181,7 @@ const ServicePage = () => {
 
         {/* ── SECOND IMAGE (if available) ──────────────────── */}
         {service.images[1] && (
-          <section className="py-4" style={{ background: '#1e293b' }}>
+          <section className="py-4" style={{ background: "#1e293b" }}>
             <div className="container mx-auto px-6 max-w-4xl">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -178,12 +195,12 @@ const ServicePage = () => {
                   src={service.images[1].url}
                   alt={service.images[1].alt}
                   className="w-full object-cover"
-                  style={{ maxHeight: '360px' }}
+                  style={{ maxHeight: "360px" }}
                 />
                 {service.images[1].caption && (
                   <p
                     className="text-sm py-3 px-5"
-                    style={{ background: '#0f172a', color: '#64748b' }}
+                    style={{ background: "#0f172a", color: "#64748b" }}
                   >
                     {service.images[1].caption}
                   </p>
@@ -194,9 +211,8 @@ const ServicePage = () => {
         )}
 
         {/* ── OFFERINGS ────────────────────────────────────── */}
-        <section className="py-20" style={{ background: '#1e293b' }}>
+        <section className="py-20" style={{ background: "#1e293b" }}>
           <div className="container mx-auto px-6 max-w-4xl">
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -209,14 +225,14 @@ const ServicePage = () => {
                 style={{
                   background: service.bg,
                   border: `1px solid ${service.color}40`,
-                  color: service.color
+                  color: service.color,
                 }}
               >
                 {content.offeringsTitle.toUpperCase()}
               </span>
               <h2
                 className="text-3xl md:text-4xl font-black"
-                style={{ color: '#f0f4ff' }}
+                style={{ color: "#f0f4ff" }}
               >
                 {content.offeringsTitle}
               </h2>
@@ -232,16 +248,16 @@ const ServicePage = () => {
                   transition={{ duration: 0.4, delay: i * 0.07 }}
                   className="p-6 rounded-xl transition-all duration-300"
                   style={{
-                    background: '#0f172a',
-                    border: '1px solid rgba(16,185,129,0.12)',
+                    background: "#0f172a",
+                    border: "1px solid rgba(16,185,129,0.12)",
                   }}
-                  onMouseEnter={e => {
+                  onMouseEnter={(e) => {
                     e.currentTarget.style.borderColor = service.color;
-                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.transform = "translateY(-2px)";
                   }}
-                  onMouseLeave={e => {
-                    e.currentTarget.style.borderColor = 'rgba(16,185,129,0.12)';
-                    e.currentTarget.style.transform = 'translateY(0)';
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "rgba(16,185,129,0.12)";
+                    e.currentTarget.style.transform = "translateY(0)";
                   }}
                 >
                   <div className="flex items-start gap-3">
@@ -252,13 +268,13 @@ const ServicePage = () => {
                     <div>
                       <h3
                         className="font-bold text-base mb-2"
-                        style={{ color: '#f0f4ff' }}
+                        style={{ color: "#f0f4ff" }}
                       >
                         {item.title}
                       </h3>
                       <p
                         className="text-sm leading-relaxed"
-                        style={{ color: '#94a3b8' }}
+                        style={{ color: "#94a3b8" }}
                       >
                         {item.description}
                       </p>
@@ -267,15 +283,11 @@ const ServicePage = () => {
                 </motion.div>
               ))}
             </div>
-
           </div>
         </section>
 
         {/* ── CTA ──────────────────────────────────────────── */}
-        <section
-          className="py-20"
-          style={{ background: '#020818' }}
-        >
+        <section className="py-20" style={{ background: "#020818" }}>
           <div className="container mx-auto px-6 max-w-3xl text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -285,25 +297,28 @@ const ServicePage = () => {
             >
               <h2
                 className="text-4xl font-black mb-4"
-                style={{ color: '#f0f4ff' }}
+                style={{ color: "#f0f4ff" }}
               >
                 {cta.title}
               </h2>
-              <p
-                className="text-lg mb-8"
-                style={{ color: '#94a3b8' }}
-              >
+              <p className="text-lg mb-8" style={{ color: "#94a3b8" }}>
                 {cta.subtitle}
               </p>
               <Link
                 to="/#contact"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-lg font-bold text-white transition-all duration-300"
                 style={{
-                  background: 'linear-gradient(135deg, #10b981, #059669)',
-                  boxShadow: '0 0 30px rgba(16,185,129,0.3)'
+                  background: "linear-gradient(135deg, #10b981, #059669)",
+                  boxShadow: "0 0 30px rgba(16,185,129,0.3)",
                 }}
-                onMouseEnter={e => e.currentTarget.style.boxShadow = '0 0 40px rgba(16,185,129,0.5)'}
-                onMouseLeave={e => e.currentTarget.style.boxShadow = '0 0 30px rgba(16,185,129,0.3)'}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.boxShadow =
+                    "0 0 40px rgba(16,185,129,0.5)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.boxShadow =
+                    "0 0 30px rgba(16,185,129,0.3)")
+                }
               >
                 {cta.button}
                 <ArrowRight className="w-5 h-5" />

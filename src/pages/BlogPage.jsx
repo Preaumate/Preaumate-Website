@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { client, urlFor } from '@/lib/sanity';
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { client, urlFor } from "@/lib/sanity";
+import { seo } from "@/data/seo";
 
 const BlogPage = () => {
   const [posts, setPosts] = useState([]);
@@ -24,30 +25,33 @@ const BlogPage = () => {
       category
     }`;
 
-    client.fetch(query)
-      .then(data => {
+    client
+      .fetch(query)
+      .then((data) => {
         setPosts(data);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setError(err.message);
         setLoading(false);
       });
   }, []);
 
   const formatDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
+    return new Date(dateString).toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
     });
   };
 
   return (
     <>
       <Helmet>
-        <title>Blog — Preaumate</title>
-        <meta name="description" content="Insights, case studies and updates from Preaumate on industrial automation and Industry 4.0." />
+        <title>{seo.blog.title}</title>
+        <meta name="description" content={seo.blog.description} />
+        <meta property="og:title" content={seo.blog.title} />
+        <meta property="og:description" content={seo.blog.description} />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
@@ -70,14 +74,14 @@ const BlogPage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-300 max-w-2xl mx-auto"
             >
-              Insights, case studies and updates on industrial automation and Industry 4.0
+              Insights, case studies and updates on industrial automation and
+              Industry 4.0
             </motion.p>
           </div>
         </div>
 
         {/* Blog Posts */}
         <main className="container mx-auto px-6 py-16">
-
           {/* Loading state */}
           {loading && (
             <div className="text-center py-20">
@@ -89,14 +93,18 @@ const BlogPage = () => {
           {/* Error state */}
           {error && (
             <div className="text-center py-20">
-              <p className="text-red-500">Failed to load posts. Please try again later.</p>
+              <p className="text-red-500">
+                Failed to load posts. Please try again later.
+              </p>
             </div>
           )}
 
           {/* Empty state */}
           {!loading && !error && posts.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-gray-500">No posts published yet. Check back soon!</p>
+              <p className="text-gray-500">
+                No posts published yet. Check back soon!
+              </p>
             </div>
           )}
 
@@ -115,7 +123,10 @@ const BlogPage = () => {
                   {post.mainImage && (
                     <div className="h-48 overflow-hidden">
                       <img
-                        src={urlFor(post.mainImage).width(600).height(400).url()}
+                        src={urlFor(post.mainImage)
+                          .width(600)
+                          .height(400)
+                          .url()}
                         alt={post.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -125,7 +136,9 @@ const BlogPage = () => {
                   {/* No image placeholder */}
                   {!post.mainImage && (
                     <div className="h-48 bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center">
-                      <span className="text-white text-4xl font-bold opacity-30">P</span>
+                      <span className="text-white text-4xl font-bold opacity-30">
+                        P
+                      </span>
                     </div>
                   )}
 
@@ -134,7 +147,7 @@ const BlogPage = () => {
                     {/* Category badge */}
                     {post.category && (
                       <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3 capitalize">
-                        {post.category.replace('-', ' ')}
+                        {post.category.replace("-", " ")}
                       </span>
                     )}
 

@@ -2,7 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext';
 
-const numbers = ['200+', '98%', '15+', '24/7'];
+// 200+ Projects delivered, 98% Client satisfaction, 15+ Years of experience, 24/7  Support availability
+// 30 Years of combined experience, 5 Major Programming platforms, 6+ Industries served, 2 continents based
+const numbers = ['30+', '5', '6+', '2']; 
 
 const StatsBar = () => {
   const { t } = useLanguage();

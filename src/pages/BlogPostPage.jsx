@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
-import { Link, useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { PortableText } from '@portabletext/react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { client, urlFor } from '@/lib/sanity';
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import { Link, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { PortableText } from "@portabletext/react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { client, urlFor } from "@/lib/sanity";
+import { seo } from '@/data/seo';
 
 const BlogPostPage = () => {
   const { slug } = useParams();
@@ -28,22 +29,23 @@ const BlogPostPage = () => {
       excerpt
     }`;
 
-    client.fetch(query, { slug })
-      .then(data => {
+    client
+      .fetch(query, { slug })
+      .then((data) => {
         setPost(data);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setError(err.message);
         setLoading(false);
       });
   }, [slug]);
 
   const formatDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
+    return new Date(dateString).toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
     });
   };
 
@@ -51,10 +53,14 @@ const BlogPostPage = () => {
   const portableTextComponents = {
     block: {
       h2: ({ children }) => (
-        <h2 className="text-3xl font-bold text-gray-900 mt-10 mb-4">{children}</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mt-10 mb-4">
+          {children}
+        </h2>
       ),
       h3: ({ children }) => (
-        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-3">{children}</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-3">
+          {children}
+        </h3>
       ),
       normal: ({ children }) => (
         <p className="text-gray-700 leading-relaxed mb-6">{children}</p>
@@ -67,17 +73,28 @@ const BlogPostPage = () => {
     },
     list: {
       bullet: ({ children }) => (
-        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">{children}</ul>
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+          {children}
+        </ul>
       ),
       number: ({ children }) => (
-        <ol className="list-decimal pl-6 mb-6 space-y-2 text-gray-700">{children}</ol>
+        <ol className="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
+          {children}
+        </ol>
       ),
     },
     marks: {
-      strong: ({ children }) => <strong className="font-bold text-gray-900">{children}</strong>,
+      strong: ({ children }) => (
+        <strong className="font-bold text-gray-900">{children}</strong>
+      ),
       em: ({ children }) => <em className="italic">{children}</em>,
       link: ({ value, children }) => (
-        <a href={value.href} className="text-emerald-600 hover:underline" target="_blank" rel="noopener noreferrer">
+        <a
+          href={value.href}
+          className="text-emerald-600 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {children}
         </a>
       ),
@@ -86,9 +103,33 @@ const BlogPostPage = () => {
 
   return (
     <>
-      <Helmet>
+      {/*}  <Helmet>
         <title>{post ? `${post.title} — Preaumate Blog` : 'Loading...'}</title>
         <meta name="description" content={post?.excerpt || ''} />
+      </Helmet> */}
+
+      <Helmet>
+        <title>
+          {post ? `${post.title} — Preaumate Blog` : "Preaumate Blog"}
+        </title>
+        <meta
+          name="description"
+          content={post?.excerpt || seo.blog.description}
+        />
+        <meta
+          property="og:title"
+          content={post ? `${post.title} — Preaumate Blog` : seo.blog.title}
+        />
+        <meta
+          property="og:description"
+          content={post?.excerpt || seo.blog.description}
+        />
+        {post?.mainImage && (
+          <meta
+            property="og:image"
+            content={urlFor(post.mainImage).width(1200).height(630).url()}
+          />
+        )}
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
@@ -103,7 +144,9 @@ const BlogPostPage = () => {
         {error && (
           <div className="text-center py-40">
             <p className="text-red-500">Failed to load post.</p>
-            <Link to="/blog" className="text-emerald-600 mt-4 inline-block">← Back to Blog</Link>
+            <Link to="/blog" className="text-emerald-600 mt-4 inline-block">
+              ← Back to Blog
+            </Link>
           </div>
         )}
 
@@ -128,16 +171,18 @@ const BlogPostPage = () => {
 
             {/* Post Content */}
             <div className="container mx-auto px-6 py-12 max-w-3xl">
-
               {/* Back link */}
-              <Link to="/blog" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium mb-8 inline-block">
+              <Link
+                to="/blog"
+                className="text-emerald-600 hover:text-emerald-700 text-sm font-medium mb-8 inline-block"
+              >
                 ← Back to Blog
               </Link>
 
               {/* Category */}
               {post.category && (
                 <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 capitalize">
-                  {post.category.replace('-', ' ')}
+                  {post.category.replace("-", " ")}
                 </span>
               )}
 
@@ -161,7 +206,6 @@ const BlogPostPage = () => {
                   components={portableTextComponents}
                 />
               </div>
-
             </div>
           </motion.article>
         )}
