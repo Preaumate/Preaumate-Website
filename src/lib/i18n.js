@@ -62,11 +62,19 @@ export const translations = {
             "Prevent costly downtime by predicting equipment failures before they happen using machine learning models.",
         },
       ],
+      /* Old stats version commented out.
       stats: [
         "Projects Delivered",
         "Client Satisfaction",
         "Average Energy Saved",
         "Years Experience",
+      ], */
+
+      stats: [
+        "Years Combined Experience", // 20+
+        "Industries Served", // 6+
+        "Major PLC Platforms", // 3
+        "Continents", // 2
       ],
     },
     services: {
@@ -337,122 +345,152 @@ export const translations = {
         "This is not three separate services. It is one integrated approach — built for the generation of industrial automation where the control layer and the intelligence layer are the same system.",
     },
     howWeWork: {
-  badge: 'HOW WE WORK',
-  title: 'What Working With Us Looks Like',
-  subtitle: 'We keep it simple, direct and transparent — no account managers, no handoffs. You deal with the engineers doing the work.',
-  steps: [
-    {
-      number: '01',
-      title: 'We Talk',
-      description: 'You tell us about your challenge. We ask the questions that matter. No sales pitch — just an honest conversation about whether we are the right fit for your project.',
+      badge: "HOW WE WORK",
+      title: "What Working With Us Looks Like",
+      subtitle:
+        "We keep it simple, direct and transparent — no account managers, no handoffs. You deal with the engineers doing the work.",
+      steps: [
+        {
+          number: "01",
+          title: "We Talk",
+          description:
+            "You tell us about your challenge. We ask the questions that matter. No sales pitch — just an honest conversation about whether we are the right fit for your project.",
+        },
+        {
+          number: "02",
+          title: "We Plan",
+          description:
+            "We define the scope, the approach and the timeline together. You get a clear picture of what we will deliver, how long it will take, and what it will cost — before any work begins.",
+        },
+        {
+          number: "03",
+          title: "We Build",
+          description:
+            "We do the work. You have direct access to the engineers building your system throughout — not a project manager relaying messages. Issues are resolved quickly because decisions are made by the people who understand the problem.",
+        },
+        {
+          number: "04",
+          title: "We Support",
+          description:
+            "We do not disappear after handover. We document thoroughly, train your team properly, and stay available for questions and support. Remote-first by design means we can respond fast regardless of where you are.",
+        },
+      ],
     },
-    {
-      number: '02',
-      title: 'We Plan',
-      description: 'We define the scope, the approach and the timeline together. You get a clear picture of what we will deliver, how long it will take, and what it will cost — before any work begins.',
-    },
-    {
-      number: '03',
-      title: 'We Build',
-      description: 'We do the work. You have direct access to the engineers building your system throughout — not a project manager relaying messages. Issues are resolved quickly because decisions are made by the people who understand the problem.',
-    },
-    {
-      number: '04',
-      title: 'We Support',
-      description: 'We do not disappear after handover. We document thoroughly, train your team properly, and stay available for questions and support. Remote-first by design means we can respond fast regardless of where you are.',
-    },
-  ],
-},
 
-whyPreaumate: {
-  badge: 'WHY US',
-  title: 'The Honest Case for Working With a Small Team',
-  intro: 'We are a new company. We know that is the first objection. Here is our honest answer to it.',
-  cards: [
-    {
-      title: 'You get the senior engineers — on every job',
-      description: 'With a large integrator, your project might be scoped by a senior engineer and delivered by a junior one. With us, the people you speak to are the people doing the work. Every time.',
+    whyPreaumate: {
+      badge: "WHY US",
+      title: "The Honest Case for Working With a Small Team",
+      intro:
+        "We are a new company. We know that is the first objection. Here is our honest answer to it.",
+      cards: [
+        {
+          title: "You get the senior engineers — on every job",
+          description:
+            "With a large integrator, your project might be scoped by a senior engineer and delivered by a junior one. With us, the people you speak to are the people doing the work. Every time.",
+        },
+        {
+          title: "Thirty years of experience is not a small number",
+          description:
+            "Preaumate is new. The expertise behind it is not. Our team has delivered automation projects across multiple industries, platforms and countries. We bring that experience to your project from day one.",
+        },
+        {
+          title: "We move faster because we are smaller",
+          description:
+            "No internal approval chains. No scheduling conflicts between departments. When something needs resolving, we resolve it. The speed of a small team is a genuine operational advantage.",
+        },
+        {
+          title: "Our business depends on your project going well",
+          description:
+            "A large company can absorb a project that did not go well. We cannot. That asymmetry works in your favour — every project we take on gets our full attention because our reputation depends on it.",
+        },
+      ],
     },
-    {
-      title: 'Thirty years of experience is not a small number',
-      description: 'Preaumate is new. The expertise behind it is not. Our team has delivered automation projects across multiple industries, platforms and countries. We bring that experience to your project from day one.',
-    },
-    {
-      title: 'We move faster because we are smaller',
-      description: 'No internal approval chains. No scheduling conflicts between departments. When something needs resolving, we resolve it. The speed of a small team is a genuine operational advantage.',
-    },
-    {
-      title: 'Our business depends on your project going well',
-      description: 'A large company can absorb a project that did not go well. We cannot. That asymmetry works in your favour — every project we take on gets our full attention because our reputation depends on it.',
-    },
-  ],
-},
 
-pricing: {
-  signal: 'We work on a project and day-rate basis. Contact us for a quote — we respond within one business day.',
-},
+    pricing: {
+      signal:
+        "We work on a project and day-rate basis. Contact us for a quote — we respond within one business day.",
+    },
 
-endorsements: {
-  badge: 'WHAT COLLEAGUES SAY',
-  title: 'Trusted by Engineers Who Know the Work',
-  subtitle: 'Preaumate is a new company. The people behind it are not. Here is what those who have worked alongside us have to say.',
-  cta: 'Want to discuss your project?',
-  ctaButton: 'Get in Touch',
-  // ── IMPORTANT ─────────────────────────────────────────────────────────────
-  // Replace these placeholder quotes with real ones from former colleagues,
-  // managers or clients. Ask them directly — a one-sentence genuine quote is
-  // more valuable than a paragraph of marketing copy.
-  // Remove the 'company' field or replace with 'Former employer' if preferred.
-  // ─────────────────────────────────────────────────────────────────────────
-  quotes: [
-    {
-      text: 'One of the most technically capable automation engineers I have worked with. Structured code, clear thinking, and the kind of problem-solving ability that shows up when things get complicated on site.',
-      author: 'Senior Project Engineer',
-      company: 'Former employer — name withheld on request',
-      initials: 'SP',
+    endorsements: {
+      badge: "WHAT COLLEAGUES SAY",
+      title: "Trusted by Engineers Who Know the Work",
+      subtitle:
+        "Preaumate is a new company. The people behind it are not. Here is what those who have worked alongside us have to say.",
+      cta: "Want to discuss your project?",
+      ctaButton: "Get in Touch",
+      // ── IMPORTANT ─────────────────────────────────────────────────────────────
+      // Replace these placeholder quotes with real ones from former colleagues,
+      // managers or clients. Ask them directly — a one-sentence genuine quote is
+      // more valuable than a paragraph of marketing copy.
+      // Remove the 'company' field or replace with 'Former employer' if preferred.
+      // ─────────────────────────────────────────────────────────────────────────
+      quotes: [
+        {
+          text: "One of the most technically capable automation engineers I have worked with. Structured code, clear thinking, and the kind of problem-solving ability that shows up when things get complicated on site.",
+          author: "Senior Project Engineer",
+          company: "Former employer — name withheld on request",
+          initials: "SP",
+        },
+        {
+          text: "What sets this team apart is that they actually understand both the control layer and the data layer. That combination is rare in the industry and makes a real difference on complex integration projects.",
+          author: "Automation Manager",
+          company: "Industrial manufacturer — Netherlands",
+          initials: "AM",
+        },
+        {
+          text: "Reliable, fast to respond, and genuinely invested in getting the result right. The documentation and handover were the best I have seen on a project of this kind.",
+          author: "Plant Operations Manager",
+          company: "Food & Beverage production facility",
+          initials: "PO",
+        },
+      ],
     },
-    {
-      text: 'What sets this team apart is that they actually understand both the control layer and the data layer. That combination is rare in the industry and makes a real difference on complex integration projects.',
-      author: 'Automation Manager',
-      company: 'Industrial manufacturer — Netherlands',
-      initials: 'AM',
-    },
-    {
-      text: 'Reliable, fast to respond, and genuinely invested in getting the result right. The documentation and handover were the best I have seen on a project of this kind.',
-      author: 'Plant Operations Manager',
-      company: 'Food & Beverage production facility',
-      initials: 'PO',
-    },
-  ],
-},
 
-serviceArea: {
-  badge: 'WHERE WE OPERATE',
-  title: 'Global Reach. Personal Engagement.',
-  subtitle: 'Industrial automation work often requires physical presence. Here is how we work across borders.',
-  intro: 'We are based in the Netherlands and Mexico — two locations that together cover European and American time zones without delay. We work onshore, offshore and remotely, and we travel globally for on-site commissioning, FAT witnessing and site support.',
-  cards: [
-    {
-      region: 'Europe',
-      flag: '🇪🇺',
-      description: 'Our Netherlands base covers Western Europe. We work on-site across the EU and UK, and are set up to respond quickly to projects across the region.',
-      highlights: ['Netherlands — primary base', 'On-site across EU and UK', 'Offshore — North Sea and beyond'],
+    serviceArea: {
+      badge: "WHERE WE OPERATE",
+      title: "Global Reach. Personal Engagement.",
+      subtitle:
+        "Industrial automation work often requires physical presence. Here is how we work across borders.",
+      intro:
+        "We are based in the Netherlands and Mexico — two locations that together cover European and American time zones without delay. We work onshore, offshore and remotely, and we travel globally for on-site commissioning, FAT witnessing and site support.",
+      cards: [
+        {
+          region: "Europe",
+          flag: "🇪🇺",
+          description:
+            "Our Netherlands base covers Western Europe. We work on-site across the EU and UK, and are set up to respond quickly to projects across the region.",
+          highlights: [
+            "Netherlands — primary base",
+            "On-site across EU and UK",
+            "Offshore — North Sea and beyond",
+          ],
+        },
+        {
+          region: "Americas",
+          flag: "🌎",
+          description:
+            "Our Mexico base covers North and Latin America. From offshore platforms in the Gulf of Mexico to production facilities across the continent.",
+          highlights: [
+            "Mexico — primary base",
+            "North and Latin America",
+            "Gulf of Mexico offshore",
+          ],
+        },
+        {
+          region: "Remote & Global",
+          flag: "🌐",
+          description:
+            "Many automation tasks — PLC programming, HMI development, SCADA work, data platform development — can be delivered fully remotely. We have secure remote access infrastructure and communicate across time zones reliably.",
+          highlights: [
+            "Secure remote access",
+            "Full remote delivery for software work",
+            "Worldwide travel for on-site phases",
+          ],
+        },
+      ],
+      travelNote:
+        "Travel costs and logistics are discussed transparently as part of every project scope. We do not hide them in the rate.",
     },
-    {
-      region: 'Americas',
-      flag: '🌎',
-      description: 'Our Mexico base covers North and Latin America. From offshore platforms in the Gulf of Mexico to production facilities across the continent.',
-      highlights: ['Mexico — primary base', 'North and Latin America', 'Gulf of Mexico offshore'],
-    },
-    {
-      region: 'Remote & Global',
-      flag: '🌐',
-      description: 'Many automation tasks — PLC programming, HMI development, SCADA work, data platform development — can be delivered fully remotely. We have secure remote access infrastructure and communicate across time zones reliably.',
-      highlights: ['Secure remote access', 'Full remote delivery for software work', 'Worldwide travel for on-site phases'],
-    },
-  ],
-  travelNote: 'Travel costs and logistics are discussed transparently as part of every project scope. We do not hide them in the rate.',
-},
   },
 
   // ─── DUTCH ───────────────────────────────────────────────────────
@@ -509,11 +547,18 @@ serviceArea: {
             "Voorkom kostbare stilstand door apparatuurstoringen te voorspellen voordat ze optreden met machine learning modellen.",
         },
       ],
-      stats: [
+      /* stats: [
         "Geleverde Projecten",
         "Klanttevredenheid",
         "Gem. Energiebesparing",
         "Jaar Ervaring",
+      ], */
+
+      stats: [
+        "Jaar Gecombineerde Ervaring",
+        "Sectoren Bediend",
+        "Grote PLC Platforms",
+        "Continenten",
       ],
     },
     services: {
@@ -785,88 +830,146 @@ serviceArea: {
         "Dit zijn geen drie afzonderlijke diensten. Het is één geïntegreerde aanpak — gebouwd voor de generatie industriële automatisering waarbij de besturingslaag en de intelligentielaag hetzelfde systeem zijn.",
     },
     howWeWork: {
-  badge: 'HOE WIJ WERKEN',
-  title: 'Hoe het Is om Met Ons te Werken',
-  subtitle: 'Wij houden het eenvoudig, direct en transparant — geen accountmanagers, geen overdrachten. U werkt rechtstreeks met de ingenieurs die het werk doen.',
-  steps: [
-    { number: '01', title: 'Wij Praten', description: 'U vertelt ons over uw uitdaging. Wij stellen de vragen die er toe doen. Geen verkooppraatje — gewoon een eerlijk gesprek over of wij de juiste match zijn voor uw project.' },
-    { number: '02', title: 'Wij Plannen', description: 'Wij definiëren samen de scope, de aanpak en de tijdlijn. U krijgt een duidelijk beeld van wat wij zullen leveren, hoe lang het duurt en wat het kost — voordat het werk begint.' },
-    { number: '03', title: 'Wij Bouwen', description: 'Wij doen het werk. U heeft gedurende het hele project directe toegang tot de ingenieurs die uw systeem bouwen. Problemen worden snel opgelost omdat beslissingen worden genomen door de mensen die het probleem begrijpen.' },
-    { number: '04', title: 'Wij Ondersteunen', description: 'Wij verdwijnen niet na de overdracht. Wij documenteren grondig, trainen uw team goed en blijven beschikbaar voor vragen en ondersteuning.' },
-  ],
-},
+      badge: "HOE WIJ WERKEN",
+      title: "Hoe het Is om Met Ons te Werken",
+      subtitle:
+        "Wij houden het eenvoudig, direct en transparant — geen accountmanagers, geen overdrachten. U werkt rechtstreeks met de ingenieurs die het werk doen.",
+      steps: [
+        {
+          number: "01",
+          title: "Wij Praten",
+          description:
+            "U vertelt ons over uw uitdaging. Wij stellen de vragen die er toe doen. Geen verkooppraatje — gewoon een eerlijk gesprek over of wij de juiste match zijn voor uw project.",
+        },
+        {
+          number: "02",
+          title: "Wij Plannen",
+          description:
+            "Wij definiëren samen de scope, de aanpak en de tijdlijn. U krijgt een duidelijk beeld van wat wij zullen leveren, hoe lang het duurt en wat het kost — voordat het werk begint.",
+        },
+        {
+          number: "03",
+          title: "Wij Bouwen",
+          description:
+            "Wij doen het werk. U heeft gedurende het hele project directe toegang tot de ingenieurs die uw systeem bouwen. Problemen worden snel opgelost omdat beslissingen worden genomen door de mensen die het probleem begrijpen.",
+        },
+        {
+          number: "04",
+          title: "Wij Ondersteunen",
+          description:
+            "Wij verdwijnen niet na de overdracht. Wij documenteren grondig, trainen uw team goed en blijven beschikbaar voor vragen en ondersteuning.",
+        },
+      ],
+    },
 
-whyPreaumate: {
-  badge: 'WAAROM WIJ',
-  title: 'Het Eerlijke Argument voor Samenwerken met een Klein Team',
-  intro: 'Wij zijn een nieuw bedrijf. We weten dat dat het eerste bezwaar is. Hier is ons eerlijke antwoord daarop.',
-  cards: [
-    { title: 'U krijgt de senior ingenieurs — bij elk project', description: 'Bij een grote integrator kan uw project worden opgezet door een senior ingenieur en worden uitgevoerd door een junior. Bij ons zijn de mensen met wie u spreekt de mensen die het werk doen. Altijd.' },
-    { title: 'Twintig jaar ervaring is geen klein getal', description: 'Preaumate is nieuw. De expertise erachter niet. Ons team heeft automatiseringsprojecten geleverd in meerdere sectoren, op meerdere platforms en in meerdere landen.' },
-    { title: 'Wij bewegen sneller omdat wij kleiner zijn', description: 'Geen interne goedkeuringsketens. Geen planningsconflicten tussen afdelingen. Wanneer iets opgelost moet worden, lossen wij het op.' },
-    { title: 'Ons bedrijf hangt af van het succes van uw project', description: 'Een groot bedrijf kan een project dat niet goed ging absorberen. Wij kunnen dat niet. Die asymmetrie werkt in uw voordeel.' },
-  ],
-},
+    whyPreaumate: {
+      badge: "WAAROM WIJ",
+      title: "Het Eerlijke Argument voor Samenwerken met een Klein Team",
+      intro:
+        "Wij zijn een nieuw bedrijf. We weten dat dat het eerste bezwaar is. Hier is ons eerlijke antwoord daarop.",
+      cards: [
+        {
+          title: "U krijgt de senior ingenieurs — bij elk project",
+          description:
+            "Bij een grote integrator kan uw project worden opgezet door een senior ingenieur en worden uitgevoerd door een junior. Bij ons zijn de mensen met wie u spreekt de mensen die het werk doen. Altijd.",
+        },
+        {
+          title: "Twintig jaar ervaring is geen klein getal",
+          description:
+            "Preaumate is nieuw. De expertise erachter niet. Ons team heeft automatiseringsprojecten geleverd in meerdere sectoren, op meerdere platforms en in meerdere landen.",
+        },
+        {
+          title: "Wij bewegen sneller omdat wij kleiner zijn",
+          description:
+            "Geen interne goedkeuringsketens. Geen planningsconflicten tussen afdelingen. Wanneer iets opgelost moet worden, lossen wij het op.",
+        },
+        {
+          title: "Ons bedrijf hangt af van het succes van uw project",
+          description:
+            "Een groot bedrijf kan een project dat niet goed ging absorberen. Wij kunnen dat niet. Die asymmetrie werkt in uw voordeel.",
+        },
+      ],
+    },
 
-pricing: {
-  signal: 'Wij werken op project- en dagtarief basis. Neem contact op voor een offerte — wij reageren binnen één werkdag.',
-},
+    pricing: {
+      signal:
+        "Wij werken op project- en dagtarief basis. Neem contact op voor een offerte — wij reageren binnen één werkdag.",
+    },
 
-endorsements: {
-  badge: 'WAT COLLEGA\'S ZEGGEN',
-  title: 'Vertrouwd door Ingenieurs die het Werk Kennen',
-  subtitle: 'Preaumate is een nieuw bedrijf. De mensen erachter zijn dat niet. Dit is wat degenen die naast ons hebben gewerkt te zeggen hebben.',
-  cta: 'Wilt u uw project bespreken?',
-  ctaButton: 'Neem Contact Op',
-  quotes: [
-    {
-      text: 'Een van de technisch meest bekwame automatiseringsingenieurs waarmee ik heb gewerkt. Gestructureerde code, helder denken en het soort probleemoplossend vermogen dat zichtbaar wordt wanneer het op locatie ingewikkeld wordt.',
-      author: 'Senior Projectingenieur',
-      company: 'Vorige werkgever — naam op verzoek niet vermeld',
-      initials: 'SP',
+    endorsements: {
+      badge: "WAT COLLEGA'S ZEGGEN",
+      title: "Vertrouwd door Ingenieurs die het Werk Kennen",
+      subtitle:
+        "Preaumate is een nieuw bedrijf. De mensen erachter zijn dat niet. Dit is wat degenen die naast ons hebben gewerkt te zeggen hebben.",
+      cta: "Wilt u uw project bespreken?",
+      ctaButton: "Neem Contact Op",
+      quotes: [
+        {
+          text: "Een van de technisch meest bekwame automatiseringsingenieurs waarmee ik heb gewerkt. Gestructureerde code, helder denken en het soort probleemoplossend vermogen dat zichtbaar wordt wanneer het op locatie ingewikkeld wordt.",
+          author: "Senior Projectingenieur",
+          company: "Vorige werkgever — naam op verzoek niet vermeld",
+          initials: "SP",
+        },
+        {
+          text: "Wat dit team onderscheidt is dat ze zowel de besturingslaag als de datalaag echt begrijpen. Die combinatie is zeldzaam in de industrie en maakt een echt verschil bij complexe integratieprojecten.",
+          author: "Automatiseringsmanager",
+          company: "Industriële fabrikant — Nederland",
+          initials: "AM",
+        },
+        {
+          text: "Betrouwbaar, snel in reageren en oprecht geïnvesteerd in het goed laten verlopen. De documentatie en overdracht waren de beste die ik heb gezien bij een project van dit soort.",
+          author: "Plant Operations Manager",
+          company: "Voedings- en drankenfaciliteit",
+          initials: "PO",
+        },
+      ],
     },
-    {
-      text: 'Wat dit team onderscheidt is dat ze zowel de besturingslaag als de datalaag echt begrijpen. Die combinatie is zeldzaam in de industrie en maakt een echt verschil bij complexe integratieprojecten.',
-      author: 'Automatiseringsmanager',
-      company: 'Industriële fabrikant — Nederland',
-      initials: 'AM',
-    },
-    {
-      text: 'Betrouwbaar, snel in reageren en oprecht geïnvesteerd in het goed laten verlopen. De documentatie en overdracht waren de beste die ik heb gezien bij een project van dit soort.',
-      author: 'Plant Operations Manager',
-      company: 'Voedings- en drankenfaciliteit',
-      initials: 'PO',
-    },
-  ],
-},
 
-serviceArea: {
-  badge: 'WAAR WIJ ACTIEF ZIJN',
-  title: 'Wereldwijd Bereik. Persoonlijke Betrokkenheid.',
-  subtitle: 'Industriële automatisering vereist vaak fysieke aanwezigheid. Zo werken wij over grenzen heen.',
-  intro: 'Wij zijn gevestigd in Nederland en Mexico — twee locaties die samen Europese en Amerikaanse tijdzones zonder vertraging bestrijken. Wij werken onshore, offshore en op afstand, en reizen wereldwijd voor inbedrijfstelling op locatie, FAT-begeleiding en locatieondersteuning.',
-  cards: [
-    {
-      region: 'Europa',
-      flag: '🇪🇺',
-      description: 'Onze Nederlandse basis bestrijkt West-Europa. Wij werken op locatie in de hele EU en het VK, en kunnen snel reageren op projecten in de regio.',
-      highlights: ['Nederland — primaire basis', 'Op locatie in EU en VK', 'Offshore — Noordzee en verder'],
+    serviceArea: {
+      badge: "WAAR WIJ ACTIEF ZIJN",
+      title: "Wereldwijd Bereik. Persoonlijke Betrokkenheid.",
+      subtitle:
+        "Industriële automatisering vereist vaak fysieke aanwezigheid. Zo werken wij over grenzen heen.",
+      intro:
+        "Wij zijn gevestigd in Nederland en Mexico — twee locaties die samen Europese en Amerikaanse tijdzones zonder vertraging bestrijken. Wij werken onshore, offshore en op afstand, en reizen wereldwijd voor inbedrijfstelling op locatie, FAT-begeleiding en locatieondersteuning.",
+      cards: [
+        {
+          region: "Europa",
+          flag: "🇪🇺",
+          description:
+            "Onze Nederlandse basis bestrijkt West-Europa. Wij werken op locatie in de hele EU en het VK, en kunnen snel reageren op projecten in de regio.",
+          highlights: [
+            "Nederland — primaire basis",
+            "Op locatie in EU en VK",
+            "Offshore — Noordzee en verder",
+          ],
+        },
+        {
+          region: "Amerika",
+          flag: "🌎",
+          description:
+            "Onze Mexicaanse basis bestrijkt Noord- en Latijns-Amerika. Van offshore platforms in de Golf van Mexico tot productiefaciliteiten op het continent.",
+          highlights: [
+            "Mexico — primaire basis",
+            "Noord- en Latijns-Amerika",
+            "Offshore Golf van Mexico",
+          ],
+        },
+        {
+          region: "Remote & Wereldwijd",
+          flag: "🌐",
+          description:
+            "Veel automatiseringstaken — PLC-programmering, HMI-ontwikkeling, SCADA-werk, dataplatformontwikkeling — kunnen volledig op afstand worden uitgevoerd.",
+          highlights: [
+            "Veilige toegang op afstand",
+            "Volledige remote levering voor softwarewerk",
+            "Wereldwijd reizen voor fasen op locatie",
+          ],
+        },
+      ],
+      travelNote:
+        "Reiskosten en logistiek worden transparant besproken als onderdeel van elke projectscope. Wij verbergen ze niet in het tarief.",
     },
-    {
-      region: 'Amerika',
-      flag: '🌎',
-      description: 'Onze Mexicaanse basis bestrijkt Noord- en Latijns-Amerika. Van offshore platforms in de Golf van Mexico tot productiefaciliteiten op het continent.',
-      highlights: ['Mexico — primaire basis', 'Noord- en Latijns-Amerika', 'Offshore Golf van Mexico'],
-    },
-    {
-      region: 'Remote & Wereldwijd',
-      flag: '🌐',
-      description: 'Veel automatiseringstaken — PLC-programmering, HMI-ontwikkeling, SCADA-werk, dataplatformontwikkeling — kunnen volledig op afstand worden uitgevoerd.',
-      highlights: ['Veilige toegang op afstand', 'Volledige remote levering voor softwarewerk', 'Wereldwijd reizen voor fasen op locatie'],
-    },
-  ],
-  travelNote: 'Reiskosten en logistiek worden transparant besproken als onderdeel van elke projectscope. Wij verbergen ze niet in het tarief.',
-},
   },
 
   // ─── SPANISH ─────────────────────────────────────────────────────
@@ -923,11 +1026,17 @@ serviceArea: {
             "Prevenga costosas paradas prediciendo fallos de equipos antes de que ocurran mediante modelos de aprendizaje automático.",
         },
       ],
-      stats: [
+      /*  stats: [
         "Proyectos Entregados",
         "Satisfacción del Cliente",
         "Ahorro Energético Promedio",
         "Años de Experiencia",
+      ], */
+      stats: [
+        "Años de Experiencia Combinada",
+        "Industrias Atendidas",
+        "Principales Plataformas PLC",
+        "Continentes",
       ],
     },
     services: {
@@ -1205,88 +1314,146 @@ serviceArea: {
         "No son tres servicios separados. Es un enfoque integrado — construido para la generación de automatización industrial donde la capa de control y la capa de inteligencia son el mismo sistema.",
     },
     howWeWork: {
-  badge: 'CÓMO TRABAJAMOS',
-  title: 'Cómo Es Trabajar Con Nosotros',
-  subtitle: 'Lo mantenemos simple, directo y transparente — sin gerentes de cuenta, sin transferencias. Trata directamente con los ingenieros que hacen el trabajo.',
-  steps: [
-    { number: '01', title: 'Hablamos', description: 'Nos cuenta su desafío. Hacemos las preguntas que importan. Sin discurso de ventas — solo una conversación honesta sobre si somos la combinación correcta para su proyecto.' },
-    { number: '02', title: 'Planificamos', description: 'Definimos juntos el alcance, el enfoque y el cronograma. Obtiene una imagen clara de lo que entregaremos, cuánto tiempo tomará y qué costará — antes de que comience cualquier trabajo.' },
-    { number: '03', title: 'Construimos', description: 'Hacemos el trabajo. Tiene acceso directo a los ingenieros que construyen su sistema durante todo el proceso. Los problemas se resuelven rápidamente porque las decisiones las toman las personas que entienden el problema.' },
-    { number: '04', title: 'Apoyamos', description: 'No desaparecemos después de la entrega. Documentamos exhaustivamente, capacitamos a su equipo correctamente y permanecemos disponibles para preguntas y soporte.' },
-  ],
-},
+      badge: "CÓMO TRABAJAMOS",
+      title: "Cómo Es Trabajar Con Nosotros",
+      subtitle:
+        "Lo mantenemos simple, directo y transparente — sin gerentes de cuenta, sin transferencias. Trata directamente con los ingenieros que hacen el trabajo.",
+      steps: [
+        {
+          number: "01",
+          title: "Hablamos",
+          description:
+            "Nos cuenta su desafío. Hacemos las preguntas que importan. Sin discurso de ventas — solo una conversación honesta sobre si somos la combinación correcta para su proyecto.",
+        },
+        {
+          number: "02",
+          title: "Planificamos",
+          description:
+            "Definimos juntos el alcance, el enfoque y el cronograma. Obtiene una imagen clara de lo que entregaremos, cuánto tiempo tomará y qué costará — antes de que comience cualquier trabajo.",
+        },
+        {
+          number: "03",
+          title: "Construimos",
+          description:
+            "Hacemos el trabajo. Tiene acceso directo a los ingenieros que construyen su sistema durante todo el proceso. Los problemas se resuelven rápidamente porque las decisiones las toman las personas que entienden el problema.",
+        },
+        {
+          number: "04",
+          title: "Apoyamos",
+          description:
+            "No desaparecemos después de la entrega. Documentamos exhaustivamente, capacitamos a su equipo correctamente y permanecemos disponibles para preguntas y soporte.",
+        },
+      ],
+    },
 
-whyPreaumate: {
-  badge: 'POR QUÉ NOSOTROS',
-  title: 'El Argumento Honesto para Trabajar con un Equipo Pequeño',
-  intro: 'Somos una empresa nueva. Sabemos que esa es la primera objeción. Aquí está nuestra respuesta honesta.',
-  cards: [
-    { title: 'Obtiene los ingenieros senior — en cada trabajo', description: 'Con un integrador grande, su proyecto puede ser diseñado por un ingeniero senior y entregado por uno junior. Con nosotros, las personas con las que habla son las personas que hacen el trabajo. Siempre.' },
-    { title: 'Veinte años de experiencia no es un número pequeño', description: 'Preaumate es nueva. La experiencia detrás de ella no. Nuestro equipo ha entregado proyectos de automatización en múltiples industrias, plataformas y países.' },
-    { title: 'Nos movemos más rápido porque somos más pequeños', description: 'Sin cadenas de aprobación internas. Sin conflictos de programación entre departamentos. Cuando algo necesita resolverse, lo resolvemos.' },
-    { title: 'Nuestro negocio depende de que su proyecto salga bien', description: 'Una empresa grande puede absorber un proyecto que no salió bien. Nosotros no. Esa asimetría trabaja a su favor.' },
-  ],
-},
+    whyPreaumate: {
+      badge: "POR QUÉ NOSOTROS",
+      title: "El Argumento Honesto para Trabajar con un Equipo Pequeño",
+      intro:
+        "Somos una empresa nueva. Sabemos que esa es la primera objeción. Aquí está nuestra respuesta honesta.",
+      cards: [
+        {
+          title: "Obtiene los ingenieros senior — en cada trabajo",
+          description:
+            "Con un integrador grande, su proyecto puede ser diseñado por un ingeniero senior y entregado por uno junior. Con nosotros, las personas con las que habla son las personas que hacen el trabajo. Siempre.",
+        },
+        {
+          title: "Veinte años de experiencia no es un número pequeño",
+          description:
+            "Preaumate es nueva. La experiencia detrás de ella no. Nuestro equipo ha entregado proyectos de automatización en múltiples industrias, plataformas y países.",
+        },
+        {
+          title: "Nos movemos más rápido porque somos más pequeños",
+          description:
+            "Sin cadenas de aprobación internas. Sin conflictos de programación entre departamentos. Cuando algo necesita resolverse, lo resolvemos.",
+        },
+        {
+          title: "Nuestro negocio depende de que su proyecto salga bien",
+          description:
+            "Una empresa grande puede absorber un proyecto que no salió bien. Nosotros no. Esa asimetría trabaja a su favor.",
+        },
+      ],
+    },
 
-pricing: {
-  signal: 'Trabajamos en base a proyectos y tarifa diaria. Contáctenos para un presupuesto — respondemos en un día hábil.',
-},
+    pricing: {
+      signal:
+        "Trabajamos en base a proyectos y tarifa diaria. Contáctenos para un presupuesto — respondemos en un día hábil.",
+    },
 
-endorsements: {
-  badge: 'LO QUE DICEN LOS COLEGAS',
-  title: 'Confiado por Ingenieros que Conocen el Trabajo',
-  subtitle: 'Preaumate es una empresa nueva. Las personas detrás de ella no lo son. Esto es lo que tienen que decir quienes han trabajado junto a nosotros.',
-  cta: '¿Quiere discutir su proyecto?',
-  ctaButton: 'Ponerse en Contacto',
-  quotes: [
-    {
-      text: 'Uno de los ingenieros de automatización más capaces técnicamente con los que he trabajado. Código estructurado, pensamiento claro y el tipo de capacidad de resolución de problemas que se nota cuando las cosas se complican en el sitio.',
-      author: 'Ingeniero de Proyectos Senior',
-      company: 'Empleador anterior — nombre retenido a petición',
-      initials: 'SP',
+    endorsements: {
+      badge: "LO QUE DICEN LOS COLEGAS",
+      title: "Confiado por Ingenieros que Conocen el Trabajo",
+      subtitle:
+        "Preaumate es una empresa nueva. Las personas detrás de ella no lo son. Esto es lo que tienen que decir quienes han trabajado junto a nosotros.",
+      cta: "¿Quiere discutir su proyecto?",
+      ctaButton: "Ponerse en Contacto",
+      quotes: [
+        {
+          text: "Uno de los ingenieros de automatización más capaces técnicamente con los que he trabajado. Código estructurado, pensamiento claro y el tipo de capacidad de resolución de problemas que se nota cuando las cosas se complican en el sitio.",
+          author: "Ingeniero de Proyectos Senior",
+          company: "Empleador anterior — nombre retenido a petición",
+          initials: "SP",
+        },
+        {
+          text: "Lo que distingue a este equipo es que realmente entienden tanto la capa de control como la capa de datos. Esa combinación es rara en la industria y marca una diferencia real en proyectos de integración complejos.",
+          author: "Gerente de Automatización",
+          company: "Fabricante industrial — Países Bajos",
+          initials: "AM",
+        },
+        {
+          text: "Confiable, rápido en responder y genuinamente comprometido con obtener el resultado correcto. La documentación y la entrega fueron las mejores que he visto en un proyecto de este tipo.",
+          author: "Gerente de Operaciones de Planta",
+          company: "Instalación de producción de alimentos y bebidas",
+          initials: "PO",
+        },
+      ],
     },
-    {
-      text: 'Lo que distingue a este equipo es que realmente entienden tanto la capa de control como la capa de datos. Esa combinación es rara en la industria y marca una diferencia real en proyectos de integración complejos.',
-      author: 'Gerente de Automatización',
-      company: 'Fabricante industrial — Países Bajos',
-      initials: 'AM',
-    },
-    {
-      text: 'Confiable, rápido en responder y genuinamente comprometido con obtener el resultado correcto. La documentación y la entrega fueron las mejores que he visto en un proyecto de este tipo.',
-      author: 'Gerente de Operaciones de Planta',
-      company: 'Instalación de producción de alimentos y bebidas',
-      initials: 'PO',
-    },
-  ],
-},
 
-serviceArea: {
-  badge: 'DÓNDE OPERAMOS',
-  title: 'Alcance Global. Compromiso Personal.',
-  subtitle: 'El trabajo de automatización industrial a menudo requiere presencia física. Así es como trabajamos a través de fronteras.',
-  intro: 'Estamos ubicados en los Países Bajos y México — dos ubicaciones que juntas cubren las zonas horarias europeas y americanas sin demora. Trabajamos onshore, offshore y de forma remota, y viajamos globalmente para la puesta en marcha en sitio, la supervisión de FAT y el soporte en sitio.',
-  cards: [
-    {
-      region: 'Europa',
-      flag: '🇪🇺',
-      description: 'Nuestra base en los Países Bajos cubre Europa Occidental. Trabajamos en sitio en toda la UE y el Reino Unido.',
-      highlights: ['Países Bajos — base principal', 'En sitio en toda la UE y UK', 'Offshore — Mar del Norte y más allá'],
+    serviceArea: {
+      badge: "DÓNDE OPERAMOS",
+      title: "Alcance Global. Compromiso Personal.",
+      subtitle:
+        "El trabajo de automatización industrial a menudo requiere presencia física. Así es como trabajamos a través de fronteras.",
+      intro:
+        "Estamos ubicados en los Países Bajos y México — dos ubicaciones que juntas cubren las zonas horarias europeas y americanas sin demora. Trabajamos onshore, offshore y de forma remota, y viajamos globalmente para la puesta en marcha en sitio, la supervisión de FAT y el soporte en sitio.",
+      cards: [
+        {
+          region: "Europa",
+          flag: "🇪🇺",
+          description:
+            "Nuestra base en los Países Bajos cubre Europa Occidental. Trabajamos en sitio en toda la UE y el Reino Unido.",
+          highlights: [
+            "Países Bajos — base principal",
+            "En sitio en toda la UE y UK",
+            "Offshore — Mar del Norte y más allá",
+          ],
+        },
+        {
+          region: "América",
+          flag: "🌎",
+          description:
+            "Nuestra base en México cubre Norte y Latinoamérica. Desde plataformas offshore en el Golfo de México hasta instalaciones de producción en todo el continente.",
+          highlights: [
+            "México — base principal",
+            "Norte y Latinoamérica",
+            "Offshore Golfo de México",
+          ],
+        },
+        {
+          region: "Remoto y Global",
+          flag: "🌐",
+          description:
+            "Muchas tareas de automatización pueden entregarse completamente de forma remota. Tenemos infraestructura de acceso remoto seguro y nos comunicamos en todas las zonas horarias de manera confiable.",
+          highlights: [
+            "Acceso remoto seguro",
+            "Entrega remota completa para trabajo de software",
+            "Viajes mundiales para fases en sitio",
+          ],
+        },
+      ],
+      travelNote:
+        "Los costos de viaje y la logística se discuten de forma transparente como parte de cada alcance de proyecto. No los ocultamos en la tarifa.",
     },
-    {
-      region: 'América',
-      flag: '🌎',
-      description: 'Nuestra base en México cubre Norte y Latinoamérica. Desde plataformas offshore en el Golfo de México hasta instalaciones de producción en todo el continente.',
-      highlights: ['México — base principal', 'Norte y Latinoamérica', 'Offshore Golfo de México'],
-    },
-    {
-      region: 'Remoto y Global',
-      flag: '🌐',
-      description: 'Muchas tareas de automatización pueden entregarse completamente de forma remota. Tenemos infraestructura de acceso remoto seguro y nos comunicamos en todas las zonas horarias de manera confiable.',
-      highlights: ['Acceso remoto seguro', 'Entrega remota completa para trabajo de software', 'Viajes mundiales para fases en sitio'],
-    },
-  ],
-  travelNote: 'Los costos de viaje y la logística se discuten de forma transparente como parte de cada alcance de proyecto. No los ocultamos en la tarifa.',
-},
   },
 
   // ─── GERMAN ──────────────────────────────────────────────────────
@@ -1343,11 +1510,17 @@ serviceArea: {
             "Vermeiden Sie kostspielige Ausfallzeiten, indem Sie Geräteausfälle mit Machine-Learning-Modellen vorhersagen.",
         },
       ],
-      stats: [
+      /*  stats: [
         "Abgeschlossene Projekte",
         "Kundenzufriedenheit",
         "Durchschn. Energieeinsparung",
         "Jahre Erfahrung",
+      ], */
+      stats: [
+        "Jahre Kombinierte Erfahrung",
+        "Bediente Branchen",
+        "Große SPS-Plattformen",
+        "Kontinente",
       ],
     },
     services: {
@@ -1620,88 +1793,147 @@ serviceArea: {
         "Das sind keine drei getrennten Leistungen. Es ist ein integrierter Ansatz — gebaut für die Generation industrieller Automatisierung, bei der Steuerungs- und Intelligenzschicht dasselbe System sind.",
     },
     howWeWork: {
-  badge: 'WIE WIR ARBEITEN',
-  title: 'Wie Es Ist, Mit Uns zu Arbeiten',
-  subtitle: 'Wir halten es einfach, direkt und transparent — keine Account Manager, keine Übergaben. Sie arbeiten direkt mit den Ingenieuren, die die Arbeit leisten.',
-  steps: [
-    { number: '01', title: 'Wir Sprechen', description: 'Sie schildern uns Ihre Herausforderung. Wir stellen die Fragen, die wichtig sind. Kein Verkaufsgespräch — nur ein ehrliches Gespräch darüber, ob wir die richtige Wahl für Ihr Projekt sind.' },
-    { number: '02', title: 'Wir Planen', description: 'Wir definieren gemeinsam den Umfang, den Ansatz und den Zeitplan. Sie erhalten ein klares Bild davon, was wir liefern werden, wie lange es dauern wird und was es kosten wird.' },
-    { number: '03', title: 'Wir Bauen', description: 'Wir leisten die Arbeit. Sie haben während des gesamten Projekts direkten Zugang zu den Ingenieuren, die Ihr System entwickeln. Probleme werden schnell gelöst.' },
-    { number: '04', title: 'Wir Unterstützen', description: 'Wir verschwinden nicht nach der Übergabe. Wir dokumentieren gründlich, schulen Ihr Team ordentlich und bleiben für Fragen und Support verfügbar.' },
-  ],
-},
+      badge: "WIE WIR ARBEITEN",
+      title: "Wie Es Ist, Mit Uns zu Arbeiten",
+      subtitle:
+        "Wir halten es einfach, direkt und transparent — keine Account Manager, keine Übergaben. Sie arbeiten direkt mit den Ingenieuren, die die Arbeit leisten.",
+      steps: [
+        {
+          number: "01",
+          title: "Wir Sprechen",
+          description:
+            "Sie schildern uns Ihre Herausforderung. Wir stellen die Fragen, die wichtig sind. Kein Verkaufsgespräch — nur ein ehrliches Gespräch darüber, ob wir die richtige Wahl für Ihr Projekt sind.",
+        },
+        {
+          number: "02",
+          title: "Wir Planen",
+          description:
+            "Wir definieren gemeinsam den Umfang, den Ansatz und den Zeitplan. Sie erhalten ein klares Bild davon, was wir liefern werden, wie lange es dauern wird und was es kosten wird.",
+        },
+        {
+          number: "03",
+          title: "Wir Bauen",
+          description:
+            "Wir leisten die Arbeit. Sie haben während des gesamten Projekts direkten Zugang zu den Ingenieuren, die Ihr System entwickeln. Probleme werden schnell gelöst.",
+        },
+        {
+          number: "04",
+          title: "Wir Unterstützen",
+          description:
+            "Wir verschwinden nicht nach der Übergabe. Wir dokumentieren gründlich, schulen Ihr Team ordentlich und bleiben für Fragen und Support verfügbar.",
+        },
+      ],
+    },
 
-whyPreaumate: {
-  badge: 'WARUM WIR',
-  title: 'Das Ehrliche Argument für die Zusammenarbeit mit einem Kleinen Team',
-  intro: 'Wir sind ein neues Unternehmen. Wir wissen, dass das der erste Einwand ist. Hier ist unsere ehrliche Antwort darauf.',
-  cards: [
-    { title: 'Sie bekommen die Senior-Ingenieure — bei jedem Projekt', description: 'Bei einem großen Integrator kann Ihr Projekt von einem Senior-Ingenieur konzipiert und von einem Junior-Ingenieur umgesetzt werden. Bei uns sind die Menschen, mit denen Sie sprechen, die Menschen, die die Arbeit leisten. Immer.' },
-    { title: 'Zwanzig Jahre Erfahrung ist keine kleine Zahl', description: 'Preaumate ist neu. Die Expertise dahinter nicht. Unser Team hat Automatisierungsprojekte in mehreren Branchen, auf mehreren Plattformen und in mehreren Ländern geliefert.' },
-    { title: 'Wir bewegen uns schneller, weil wir kleiner sind', description: 'Keine internen Genehmigungsketten. Keine Terminierungskonflikte zwischen Abteilungen. Wenn etwas gelöst werden muss, lösen wir es.' },
-    { title: 'Unser Unternehmen hängt davon ab, dass Ihr Projekt gut läuft', description: 'Ein großes Unternehmen kann ein Projekt, das nicht gut lief, absorbieren. Wir können das nicht. Diese Asymmetrie arbeitet zu Ihren Gunsten.' },
-  ],
-},
+    whyPreaumate: {
+      badge: "WARUM WIR",
+      title:
+        "Das Ehrliche Argument für die Zusammenarbeit mit einem Kleinen Team",
+      intro:
+        "Wir sind ein neues Unternehmen. Wir wissen, dass das der erste Einwand ist. Hier ist unsere ehrliche Antwort darauf.",
+      cards: [
+        {
+          title: "Sie bekommen die Senior-Ingenieure — bei jedem Projekt",
+          description:
+            "Bei einem großen Integrator kann Ihr Projekt von einem Senior-Ingenieur konzipiert und von einem Junior-Ingenieur umgesetzt werden. Bei uns sind die Menschen, mit denen Sie sprechen, die Menschen, die die Arbeit leisten. Immer.",
+        },
+        {
+          title: "Zwanzig Jahre Erfahrung ist keine kleine Zahl",
+          description:
+            "Preaumate ist neu. Die Expertise dahinter nicht. Unser Team hat Automatisierungsprojekte in mehreren Branchen, auf mehreren Plattformen und in mehreren Ländern geliefert.",
+        },
+        {
+          title: "Wir bewegen uns schneller, weil wir kleiner sind",
+          description:
+            "Keine internen Genehmigungsketten. Keine Terminierungskonflikte zwischen Abteilungen. Wenn etwas gelöst werden muss, lösen wir es.",
+        },
+        {
+          title: "Unser Unternehmen hängt davon ab, dass Ihr Projekt gut läuft",
+          description:
+            "Ein großes Unternehmen kann ein Projekt, das nicht gut lief, absorbieren. Wir können das nicht. Diese Asymmetrie arbeitet zu Ihren Gunsten.",
+        },
+      ],
+    },
 
-pricing: {
-  signal: 'Wir arbeiten auf Projekt- und Tagessatzbasis. Kontaktieren Sie uns für ein Angebot — wir antworten innerhalb eines Werktages.',
-},
+    pricing: {
+      signal:
+        "Wir arbeiten auf Projekt- und Tagessatzbasis. Kontaktieren Sie uns für ein Angebot — wir antworten innerhalb eines Werktages.",
+    },
 
-endorsements: {
-  badge: 'WAS KOLLEGEN SAGEN',
-  title: 'Vertraut von Ingenieuren, die die Arbeit kennen',
-  subtitle: 'Preaumate ist ein neues Unternehmen. Die Menschen dahinter sind es nicht. Das sagen diejenigen, die neben uns gearbeitet haben.',
-  cta: 'Möchten Sie Ihr Projekt besprechen?',
-  ctaButton: 'Kontakt aufnehmen',
-  quotes: [
-    {
-      text: 'Einer der technisch fähigsten Automatisierungsingenieure, mit denen ich gearbeitet habe. Strukturierter Code, klares Denken und die Art von Problemlösungsfähigkeit, die sich zeigt, wenn es auf der Baustelle kompliziert wird.',
-      author: 'Senior Projektingenieur',
-      company: 'Früherer Arbeitgeber — Name auf Wunsch nicht genannt',
-      initials: 'SP',
+    endorsements: {
+      badge: "WAS KOLLEGEN SAGEN",
+      title: "Vertraut von Ingenieuren, die die Arbeit kennen",
+      subtitle:
+        "Preaumate ist ein neues Unternehmen. Die Menschen dahinter sind es nicht. Das sagen diejenigen, die neben uns gearbeitet haben.",
+      cta: "Möchten Sie Ihr Projekt besprechen?",
+      ctaButton: "Kontakt aufnehmen",
+      quotes: [
+        {
+          text: "Einer der technisch fähigsten Automatisierungsingenieure, mit denen ich gearbeitet habe. Strukturierter Code, klares Denken und die Art von Problemlösungsfähigkeit, die sich zeigt, wenn es auf der Baustelle kompliziert wird.",
+          author: "Senior Projektingenieur",
+          company: "Früherer Arbeitgeber — Name auf Wunsch nicht genannt",
+          initials: "SP",
+        },
+        {
+          text: "Was dieses Team auszeichnet, ist, dass sie sowohl die Steuerungsschicht als auch die Datenschicht wirklich verstehen. Diese Kombination ist selten in der Branche und macht bei komplexen Integrationsprojekten einen echten Unterschied.",
+          author: "Automatisierungsmanager",
+          company: "Industriehersteller — Niederlande",
+          initials: "AM",
+        },
+        {
+          text: "Zuverlässig, schnell in der Reaktion und wirklich investiert, das richtige Ergebnis zu erzielen. Die Dokumentation und Übergabe waren die besten, die ich bei einem Projekt dieser Art gesehen habe.",
+          author: "Werksleiter Operations",
+          company: "Lebensmittel- und Getränkeproduktionsanlage",
+          initials: "PO",
+        },
+      ],
     },
-    {
-      text: 'Was dieses Team auszeichnet, ist, dass sie sowohl die Steuerungsschicht als auch die Datenschicht wirklich verstehen. Diese Kombination ist selten in der Branche und macht bei komplexen Integrationsprojekten einen echten Unterschied.',
-      author: 'Automatisierungsmanager',
-      company: 'Industriehersteller — Niederlande',
-      initials: 'AM',
-    },
-    {
-      text: 'Zuverlässig, schnell in der Reaktion und wirklich investiert, das richtige Ergebnis zu erzielen. Die Dokumentation und Übergabe waren die besten, die ich bei einem Projekt dieser Art gesehen habe.',
-      author: 'Werksleiter Operations',
-      company: 'Lebensmittel- und Getränkeproduktionsanlage',
-      initials: 'PO',
-    },
-  ],
-},
 
-serviceArea: {
-  badge: 'WO WIR TÄTIG SIND',
-  title: 'Globale Reichweite. Persönliches Engagement.',
-  subtitle: 'Industrielle Automatisierungsarbeit erfordert oft physische Präsenz. So arbeiten wir über Grenzen hinweg.',
-  intro: 'Wir haben Standorte in den Niederlanden und Mexiko — zwei Standorte, die zusammen europäische und amerikanische Zeitzonen ohne Verzögerung abdecken. Wir arbeiten onshore, offshore und remote, und reisen weltweit für Vor-Ort-Inbetriebnahmen, FAT-Begleitung und Standortunterstützung.',
-  cards: [
-    {
-      region: 'Europa',
-      flag: '🇪🇺',
-      description: 'Unser Standort in den Niederlanden deckt Westeuropa ab. Wir arbeiten vor Ort in der gesamten EU und Großbritannien.',
-      highlights: ['Niederlande — Hauptstandort', 'Vor Ort in EU und UK', 'Offshore — Nordsee und darüber hinaus'],
+    serviceArea: {
+      badge: "WO WIR TÄTIG SIND",
+      title: "Globale Reichweite. Persönliches Engagement.",
+      subtitle:
+        "Industrielle Automatisierungsarbeit erfordert oft physische Präsenz. So arbeiten wir über Grenzen hinweg.",
+      intro:
+        "Wir haben Standorte in den Niederlanden und Mexiko — zwei Standorte, die zusammen europäische und amerikanische Zeitzonen ohne Verzögerung abdecken. Wir arbeiten onshore, offshore und remote, und reisen weltweit für Vor-Ort-Inbetriebnahmen, FAT-Begleitung und Standortunterstützung.",
+      cards: [
+        {
+          region: "Europa",
+          flag: "🇪🇺",
+          description:
+            "Unser Standort in den Niederlanden deckt Westeuropa ab. Wir arbeiten vor Ort in der gesamten EU und Großbritannien.",
+          highlights: [
+            "Niederlande — Hauptstandort",
+            "Vor Ort in EU und UK",
+            "Offshore — Nordsee und darüber hinaus",
+          ],
+        },
+        {
+          region: "Amerika",
+          flag: "🌎",
+          description:
+            "Unser Standort in Mexiko deckt Nord- und Lateinamerika ab. Von Offshore-Plattformen im Golf von Mexiko bis zu Produktionsanlagen auf dem Kontinent.",
+          highlights: [
+            "Mexiko — Hauptstandort",
+            "Nord- und Lateinamerika",
+            "Offshore Golf von Mexiko",
+          ],
+        },
+        {
+          region: "Remote & Global",
+          flag: "🌐",
+          description:
+            "Viele Automatisierungsaufgaben können vollständig remote erbracht werden. Wir verfügen über sichere Fernzugriffsinfrastruktur und kommunizieren zuverlässig über alle Zeitzonen.",
+          highlights: [
+            "Sicherer Fernzugriff",
+            "Vollständige Remote-Lieferung für Software-Arbeit",
+            "Weltweite Reisen für Vor-Ort-Phasen",
+          ],
+        },
+      ],
+      travelNote:
+        "Reisekosten und Logistik werden transparent als Teil jedes Projektumfangs besprochen. Wir verstecken sie nicht im Stundensatz.",
     },
-    {
-      region: 'Amerika',
-      flag: '🌎',
-      description: 'Unser Standort in Mexiko deckt Nord- und Lateinamerika ab. Von Offshore-Plattformen im Golf von Mexiko bis zu Produktionsanlagen auf dem Kontinent.',
-      highlights: ['Mexiko — Hauptstandort', 'Nord- und Lateinamerika', 'Offshore Golf von Mexiko'],
-    },
-    {
-      region: 'Remote & Global',
-      flag: '🌐',
-      description: 'Viele Automatisierungsaufgaben können vollständig remote erbracht werden. Wir verfügen über sichere Fernzugriffsinfrastruktur und kommunizieren zuverlässig über alle Zeitzonen.',
-      highlights: ['Sicherer Fernzugriff', 'Vollständige Remote-Lieferung für Software-Arbeit', 'Weltweite Reisen für Vor-Ort-Phasen'],
-    },
-  ],
-  travelNote: 'Reisekosten und Logistik werden transparent als Teil jedes Projektumfangs besprochen. Wir verstecken sie nicht im Stundensatz.',
-},
   },
 
   // ─── FRENCH ──────────────────────────────────────────────────────
@@ -1758,11 +1990,17 @@ serviceArea: {
             "Évitez les temps d'arrêt coûteux en prédisant les pannes d'équipement avant qu'elles ne surviennent.",
         },
       ],
-      stats: [
+      /*  stats: [
         "Projets Livrés",
         "Satisfaction Client",
         "Économie d'Énergie Moyenne",
         "Années d'Expérience",
+      ], */
+      stats: [
+        "Années d'Expérience Combinée",
+        "Secteurs Desservis",
+        "Grandes Plateformes API",
+        "Continents",
       ],
     },
     services: {
@@ -2039,89 +2277,147 @@ serviceArea: {
       closing:
         "Ce ne sont pas trois services séparés. C'est une approche intégrée — construite pour la génération d'automatisation industrielle où la couche de contrôle et la couche d'intelligence sont le même système.",
     },
-  howWeWork: {
-  badge: 'COMMENT NOUS TRAVAILLONS',
-  title: 'Ce que C\'est de Travailler Avec Nous',
-  subtitle: 'Nous gardons les choses simples, directes et transparentes — pas de chefs de compte, pas de transferts. Vous traitez directement avec les ingénieurs qui font le travail.',
-  steps: [
-    { number: '01', title: 'Nous Parlons', description: 'Vous nous parlez de votre défi. Nous posons les questions qui comptent. Pas de discours de vente — juste une conversation honnête sur notre adéquation à votre projet.' },
-    { number: '02', title: 'Nous Planifions', description: 'Nous définissons ensemble le périmètre, l\'approche et le calendrier. Vous obtenez une image claire de ce que nous livrerons, combien de temps cela prendra et ce que cela coûtera.' },
-    { number: '03', title: 'Nous Construisons', description: 'Nous faisons le travail. Vous avez un accès direct aux ingénieurs qui construisent votre système tout au long du projet. Les problèmes sont résolus rapidement.' },
-    { number: '04', title: 'Nous Supportons', description: 'Nous ne disparaissons pas après la livraison. Nous documentons soigneusement, formons correctement votre équipe et restons disponibles pour les questions et le support.' },
-  ],
-},
+    howWeWork: {
+      badge: "COMMENT NOUS TRAVAILLONS",
+      title: "Ce que C'est de Travailler Avec Nous",
+      subtitle:
+        "Nous gardons les choses simples, directes et transparentes — pas de chefs de compte, pas de transferts. Vous traitez directement avec les ingénieurs qui font le travail.",
+      steps: [
+        {
+          number: "01",
+          title: "Nous Parlons",
+          description:
+            "Vous nous parlez de votre défi. Nous posons les questions qui comptent. Pas de discours de vente — juste une conversation honnête sur notre adéquation à votre projet.",
+        },
+        {
+          number: "02",
+          title: "Nous Planifions",
+          description:
+            "Nous définissons ensemble le périmètre, l'approche et le calendrier. Vous obtenez une image claire de ce que nous livrerons, combien de temps cela prendra et ce que cela coûtera.",
+        },
+        {
+          number: "03",
+          title: "Nous Construisons",
+          description:
+            "Nous faisons le travail. Vous avez un accès direct aux ingénieurs qui construisent votre système tout au long du projet. Les problèmes sont résolus rapidement.",
+        },
+        {
+          number: "04",
+          title: "Nous Supportons",
+          description:
+            "Nous ne disparaissons pas après la livraison. Nous documentons soigneusement, formons correctement votre équipe et restons disponibles pour les questions et le support.",
+        },
+      ],
+    },
 
-whyPreaumate: {
-  badge: 'POURQUOI NOUS',
-  title: 'L\'Argument Honnête pour Travailler avec une Petite Équipe',
-  intro: 'Nous sommes une nouvelle entreprise. Nous savons que c\'est la première objection. Voici notre réponse honnête.',
-  cards: [
-    { title: 'Vous obtenez les ingénieurs seniors — sur chaque mission', description: 'Avec un grand intégrateur, votre projet peut être conçu par un ingénieur senior et livré par un junior. Chez nous, les personnes avec qui vous parlez sont les personnes qui font le travail. Toujours.' },
-    { title: 'Vingt ans d\'expérience n\'est pas un petit nombre', description: 'Preaumate est nouvelle. L\'expertise derrière elle ne l\'est pas. Notre équipe a livré des projets d\'automatisation dans plusieurs industries, sur plusieurs plateformes et dans plusieurs pays.' },
-    { title: 'Nous bougeons plus vite parce que nous sommes plus petits', description: 'Pas de chaînes d\'approbation internes. Pas de conflits de planification entre départements. Quand quelque chose doit être résolu, nous le résolvons.' },
-    { title: 'Notre entreprise dépend du succès de votre projet', description: 'Une grande entreprise peut absorber un projet qui ne s\'est pas bien passé. Nous ne le pouvons pas. Cette asymétrie joue en votre faveur.' },
-  ],
-},
+    whyPreaumate: {
+      badge: "POURQUOI NOUS",
+      title: "L'Argument Honnête pour Travailler avec une Petite Équipe",
+      intro:
+        "Nous sommes une nouvelle entreprise. Nous savons que c'est la première objection. Voici notre réponse honnête.",
+      cards: [
+        {
+          title: "Vous obtenez les ingénieurs seniors — sur chaque mission",
+          description:
+            "Avec un grand intégrateur, votre projet peut être conçu par un ingénieur senior et livré par un junior. Chez nous, les personnes avec qui vous parlez sont les personnes qui font le travail. Toujours.",
+        },
+        {
+          title: "Vingt ans d'expérience n'est pas un petit nombre",
+          description:
+            "Preaumate est nouvelle. L'expertise derrière elle ne l'est pas. Notre équipe a livré des projets d'automatisation dans plusieurs industries, sur plusieurs plateformes et dans plusieurs pays.",
+        },
+        {
+          title: "Nous bougeons plus vite parce que nous sommes plus petits",
+          description:
+            "Pas de chaînes d'approbation internes. Pas de conflits de planification entre départements. Quand quelque chose doit être résolu, nous le résolvons.",
+        },
+        {
+          title: "Notre entreprise dépend du succès de votre projet",
+          description:
+            "Une grande entreprise peut absorber un projet qui ne s'est pas bien passé. Nous ne le pouvons pas. Cette asymétrie joue en votre faveur.",
+        },
+      ],
+    },
 
-pricing: {
-  signal: 'Nous travaillons sur la base de projets et de tarifs journaliers. Contactez-nous pour un devis — nous répondons dans un jour ouvrable.',
-},
-  
-endorsements: {
-  badge: 'CE QUE DISENT LES COLLÈGUES',
-  title: 'Approuvé par des Ingénieurs qui Connaissent le Travail',
-  subtitle: 'Preaumate est une nouvelle entreprise. Les personnes derrière elle ne le sont pas. Voici ce qu\'ont à dire ceux qui ont travaillé à nos côtés.',
-  cta: 'Vous souhaitez discuter de votre projet ?',
-  ctaButton: 'Prendre Contact',
-  quotes: [
-    {
-      text: 'L\'un des ingénieurs en automatisation les plus capables techniquement avec qui j\'ai travaillé. Code structuré, pensée claire et le type de capacité de résolution de problèmes qui se manifeste quand les choses se compliquent sur site.',
-      author: 'Ingénieur Projet Senior',
-      company: 'Ancien employeur — nom retenu à la demande',
-      initials: 'SP',
+    pricing: {
+      signal:
+        "Nous travaillons sur la base de projets et de tarifs journaliers. Contactez-nous pour un devis — nous répondons dans un jour ouvrable.",
     },
-    {
-      text: 'Ce qui distingue cette équipe, c\'est qu\'elle comprend vraiment à la fois la couche de contrôle et la couche de données. Cette combinaison est rare dans l\'industrie et fait une vraie différence sur les projets d\'intégration complexes.',
-      author: 'Responsable Automatisation',
-      company: 'Fabricant industriel — Pays-Bas',
-      initials: 'AM',
-    },
-    {
-      text: 'Fiable, réactif et vraiment investi pour obtenir le bon résultat. La documentation et la remise étaient les meilleures que j\'aie vues sur un projet de ce type.',
-      author: 'Responsable des Opérations d\'Usine',
-      company: 'Installation de production agroalimentaire',
-      initials: 'PO',
-    },
-  ],
-},
 
-serviceArea: {
-  badge: 'OÙ NOUS OPÉRONS',
-  title: 'Portée Mondiale. Engagement Personnel.',
-  subtitle: 'Le travail d\'automatisation industrielle nécessite souvent une présence physique. Voici comment nous travaillons au-delà des frontières.',
-  intro: 'Nous sommes basés aux Pays-Bas et au Mexique — deux emplacements qui couvrent ensemble les fuseaux horaires européens et américains sans délai. Nous travaillons onshore, offshore et à distance, et nous voyageons mondialement pour la mise en service sur site, l\'assistance FAT et le support sur site.',
-  cards: [
-    {
-      region: 'Europe',
-      flag: '🇪🇺',
-      description: 'Notre base aux Pays-Bas couvre l\'Europe occidentale. Nous travaillons sur site dans toute l\'UE et au Royaume-Uni.',
-      highlights: ['Pays-Bas — base principale', 'Sur site dans toute l\'UE et UK', 'Offshore — Mer du Nord et au-delà'],
+    endorsements: {
+      badge: "CE QUE DISENT LES COLLÈGUES",
+      title: "Approuvé par des Ingénieurs qui Connaissent le Travail",
+      subtitle:
+        "Preaumate est une nouvelle entreprise. Les personnes derrière elle ne le sont pas. Voici ce qu'ont à dire ceux qui ont travaillé à nos côtés.",
+      cta: "Vous souhaitez discuter de votre projet ?",
+      ctaButton: "Prendre Contact",
+      quotes: [
+        {
+          text: "L'un des ingénieurs en automatisation les plus capables techniquement avec qui j'ai travaillé. Code structuré, pensée claire et le type de capacité de résolution de problèmes qui se manifeste quand les choses se compliquent sur site.",
+          author: "Ingénieur Projet Senior",
+          company: "Ancien employeur — nom retenu à la demande",
+          initials: "SP",
+        },
+        {
+          text: "Ce qui distingue cette équipe, c'est qu'elle comprend vraiment à la fois la couche de contrôle et la couche de données. Cette combinaison est rare dans l'industrie et fait une vraie différence sur les projets d'intégration complexes.",
+          author: "Responsable Automatisation",
+          company: "Fabricant industriel — Pays-Bas",
+          initials: "AM",
+        },
+        {
+          text: "Fiable, réactif et vraiment investi pour obtenir le bon résultat. La documentation et la remise étaient les meilleures que j'aie vues sur un projet de ce type.",
+          author: "Responsable des Opérations d'Usine",
+          company: "Installation de production agroalimentaire",
+          initials: "PO",
+        },
+      ],
     },
-    {
-      region: 'Amériques',
-      flag: '🌎',
-      description: 'Notre base au Mexique couvre l\'Amérique du Nord et l\'Amérique latine. Des plateformes offshore du Golfe du Mexique aux installations de production sur le continent.',
-      highlights: ['Mexique — base principale', 'Amérique du Nord et Latine', 'Offshore Golfe du Mexique'],
+
+    serviceArea: {
+      badge: "OÙ NOUS OPÉRONS",
+      title: "Portée Mondiale. Engagement Personnel.",
+      subtitle:
+        "Le travail d'automatisation industrielle nécessite souvent une présence physique. Voici comment nous travaillons au-delà des frontières.",
+      intro:
+        "Nous sommes basés aux Pays-Bas et au Mexique — deux emplacements qui couvrent ensemble les fuseaux horaires européens et américains sans délai. Nous travaillons onshore, offshore et à distance, et nous voyageons mondialement pour la mise en service sur site, l'assistance FAT et le support sur site.",
+      cards: [
+        {
+          region: "Europe",
+          flag: "🇪🇺",
+          description:
+            "Notre base aux Pays-Bas couvre l'Europe occidentale. Nous travaillons sur site dans toute l'UE et au Royaume-Uni.",
+          highlights: [
+            "Pays-Bas — base principale",
+            "Sur site dans toute l'UE et UK",
+            "Offshore — Mer du Nord et au-delà",
+          ],
+        },
+        {
+          region: "Amériques",
+          flag: "🌎",
+          description:
+            "Notre base au Mexique couvre l'Amérique du Nord et l'Amérique latine. Des plateformes offshore du Golfe du Mexique aux installations de production sur le continent.",
+          highlights: [
+            "Mexique — base principale",
+            "Amérique du Nord et Latine",
+            "Offshore Golfe du Mexique",
+          ],
+        },
+        {
+          region: "À Distance & Mondial",
+          flag: "🌐",
+          description:
+            "De nombreuses tâches d'automatisation peuvent être livrées entièrement à distance. Nous disposons d'une infrastructure d'accès à distance sécurisée et communiquons de manière fiable sur tous les fuseaux horaires.",
+          highlights: [
+            "Accès à distance sécurisé",
+            "Livraison entièrement à distance pour le travail logiciel",
+            "Voyages mondiaux pour les phases sur site",
+          ],
+        },
+      ],
+      travelNote:
+        "Les frais de déplacement et la logistique sont discutés de manière transparente dans le cadre de chaque périmètre de projet. Nous ne les cachons pas dans le tarif.",
     },
-    {
-      region: 'À Distance & Mondial',
-      flag: '🌐',
-      description: 'De nombreuses tâches d\'automatisation peuvent être livrées entièrement à distance. Nous disposons d\'une infrastructure d\'accès à distance sécurisée et communiquons de manière fiable sur tous les fuseaux horaires.',
-      highlights: ['Accès à distance sécurisé', 'Livraison entièrement à distance pour le travail logiciel', 'Voyages mondiaux pour les phases sur site'],
-    },
-  ],
-  travelNote: 'Les frais de déplacement et la logistique sont discutés de manière transparente dans le cadre de chaque périmètre de projet. Nous ne les cachons pas dans le tarif.',
-},
   },
 
   // ─── PORTUGUESE ──────────────────────────────────────────────────
@@ -2178,11 +2474,17 @@ serviceArea: {
             "Evite paradas custosas prevendo falhas de equipamentos antes que ocorram usando modelos de aprendizado de máquina.",
         },
       ],
-      stats: [
+      /*  stats: [
         "Projetos Entregues",
         "Satisfação do Cliente",
         "Economia de Energia Média",
         "Anos de Experiência",
+      ], */
+      stats: [
+        "Anos de Experiência Combinada",
+        "Setores Atendidos",
+        "Principais Plataformas CLP",
+        "Continentes",
       ],
     },
     services: {
@@ -2459,87 +2761,145 @@ serviceArea: {
         "Não são três serviços separados. É uma abordagem integrada — construída para a geração de automação industrial onde a camada de controle e a camada de inteligência são o mesmo sistema.",
     },
     howWeWork: {
-  badge: 'COMO TRABALHAMOS',
-  title: 'Como É Trabalhar Conosco',
-  subtitle: 'Mantemos tudo simples, direto e transparente — sem gerentes de conta, sem transferências. Você lida diretamente com os engenheiros que fazem o trabalho.',
-  steps: [
-    { number: '01', title: 'Conversamos', description: 'Você nos conta sobre seu desafio. Fazemos as perguntas que importam. Sem discurso de vendas — apenas uma conversa honesta sobre se somos a escolha certa para seu projeto.' },
-    { number: '02', title: 'Planejamos', description: 'Definimos juntos o escopo, a abordagem e o cronograma. Você obtém uma imagem clara do que entregaremos, quanto tempo levará e quanto custará.' },
-    { number: '03', title: 'Construímos', description: 'Fazemos o trabalho. Você tem acesso direto aos engenheiros que constroem seu sistema durante todo o projeto. Problemas são resolvidos rapidamente.' },
-    { number: '04', title: 'Apoiamos', description: 'Não desaparecemos após a entrega. Documentamos detalhadamente, treinamos sua equipe adequadamente e permanecemos disponíveis para perguntas e suporte.' },
-  ],
-},
+      badge: "COMO TRABALHAMOS",
+      title: "Como É Trabalhar Conosco",
+      subtitle:
+        "Mantemos tudo simples, direto e transparente — sem gerentes de conta, sem transferências. Você lida diretamente com os engenheiros que fazem o trabalho.",
+      steps: [
+        {
+          number: "01",
+          title: "Conversamos",
+          description:
+            "Você nos conta sobre seu desafio. Fazemos as perguntas que importam. Sem discurso de vendas — apenas uma conversa honesta sobre se somos a escolha certa para seu projeto.",
+        },
+        {
+          number: "02",
+          title: "Planejamos",
+          description:
+            "Definimos juntos o escopo, a abordagem e o cronograma. Você obtém uma imagem clara do que entregaremos, quanto tempo levará e quanto custará.",
+        },
+        {
+          number: "03",
+          title: "Construímos",
+          description:
+            "Fazemos o trabalho. Você tem acesso direto aos engenheiros que constroem seu sistema durante todo o projeto. Problemas são resolvidos rapidamente.",
+        },
+        {
+          number: "04",
+          title: "Apoiamos",
+          description:
+            "Não desaparecemos após a entrega. Documentamos detalhadamente, treinamos sua equipe adequadamente e permanecemos disponíveis para perguntas e suporte.",
+        },
+      ],
+    },
 
-whyPreaumate: {
-  badge: 'POR QUE NÓS',
-  title: 'O Argumento Honesto para Trabalhar com uma Equipe Pequena',
-  intro: 'Somos uma empresa nova. Sabemos que essa é a primeira objeção. Aqui está nossa resposta honesta.',
-  cards: [
-    { title: 'Você obtém os engenheiros seniores — em cada trabalho', description: 'Com um integrador grande, seu projeto pode ser concebido por um engenheiro sênior e entregue por um júnior. Conosco, as pessoas com quem você fala são as pessoas que fazem o trabalho. Sempre.' },
-    { title: 'Vinte anos de experiência não é um número pequeno', description: 'Preaumate é nova. A expertise por trás dela não é. Nossa equipe entregou projetos de automação em múltiplas indústrias, plataformas e países.' },
-    { title: 'Nos movemos mais rápido porque somos menores', description: 'Sem cadeias de aprovação internas. Sem conflitos de agendamento entre departamentos. Quando algo precisa ser resolvido, resolvemos.' },
-    { title: 'Nosso negócio depende do sucesso do seu projeto', description: 'Uma empresa grande pode absorver um projeto que não correu bem. Nós não podemos. Essa assimetria trabalha a seu favor.' },
-  ],
-},
+    whyPreaumate: {
+      badge: "POR QUE NÓS",
+      title: "O Argumento Honesto para Trabalhar com uma Equipe Pequena",
+      intro:
+        "Somos uma empresa nova. Sabemos que essa é a primeira objeção. Aqui está nossa resposta honesta.",
+      cards: [
+        {
+          title: "Você obtém os engenheiros seniores — em cada trabalho",
+          description:
+            "Com um integrador grande, seu projeto pode ser concebido por um engenheiro sênior e entregue por um júnior. Conosco, as pessoas com quem você fala são as pessoas que fazem o trabalho. Sempre.",
+        },
+        {
+          title: "Vinte anos de experiência não é um número pequeno",
+          description:
+            "Preaumate é nova. A expertise por trás dela não é. Nossa equipe entregou projetos de automação em múltiplas indústrias, plataformas e países.",
+        },
+        {
+          title: "Nos movemos mais rápido porque somos menores",
+          description:
+            "Sem cadeias de aprovação internas. Sem conflitos de agendamento entre departamentos. Quando algo precisa ser resolvido, resolvemos.",
+        },
+        {
+          title: "Nosso negócio depende do sucesso do seu projeto",
+          description:
+            "Uma empresa grande pode absorver um projeto que não correu bem. Nós não podemos. Essa assimetria trabalha a seu favor.",
+        },
+      ],
+    },
 
-pricing: {
-  signal: 'Trabalhamos com base em projetos e diária. Entre em contato para um orçamento — respondemos em um dia útil.',
-},
+    pricing: {
+      signal:
+        "Trabalhamos com base em projetos e diária. Entre em contato para um orçamento — respondemos em um dia útil.",
+    },
 
-endorsements: {
-  badge: 'O QUE DIZEM OS COLEGAS',
-  title: 'Aprovado por Engenheiros que Conhecem o Trabalho',
-  subtitle: 'Preaumate é uma empresa nova. As pessoas por trás dela não são. Aqui está o que têm a dizer aqueles que trabalharam ao nosso lado.',
-  cta: 'Quer discutir seu projeto?',
-  ctaButton: 'Entre em Contato',
-  quotes: [
-    {
-      text: 'Um dos engenheiros de automação tecnicamente mais capazes com quem trabalhei. Código estruturado, pensamento claro e o tipo de capacidade de resolução de problemas que aparece quando as coisas ficam complicadas no local.',
-      author: 'Engenheiro de Projetos Sênior',
-      company: 'Empregador anterior — nome retido a pedido',
-      initials: 'SP',
+    endorsements: {
+      badge: "O QUE DIZEM OS COLEGAS",
+      title: "Aprovado por Engenheiros que Conhecem o Trabalho",
+      subtitle:
+        "Preaumate é uma empresa nova. As pessoas por trás dela não são. Aqui está o que têm a dizer aqueles que trabalharam ao nosso lado.",
+      cta: "Quer discutir seu projeto?",
+      ctaButton: "Entre em Contato",
+      quotes: [
+        {
+          text: "Um dos engenheiros de automação tecnicamente mais capazes com quem trabalhei. Código estruturado, pensamento claro e o tipo de capacidade de resolução de problemas que aparece quando as coisas ficam complicadas no local.",
+          author: "Engenheiro de Projetos Sênior",
+          company: "Empregador anterior — nome retido a pedido",
+          initials: "SP",
+        },
+        {
+          text: "O que distingue esta equipe é que eles realmente entendem tanto a camada de controle quanto a camada de dados. Essa combinação é rara na indústria e faz uma diferença real em projetos de integração complexos.",
+          author: "Gerente de Automação",
+          company: "Fabricante industrial — Países Baixos",
+          initials: "AM",
+        },
+        {
+          text: "Confiável, rápido em responder e genuinamente comprometido em obter o resultado certo. A documentação e a entrega foram as melhores que vi em um projeto desse tipo.",
+          author: "Gerente de Operações de Planta",
+          company: "Instalação de produção de alimentos e bebidas",
+          initials: "PO",
+        },
+      ],
     },
-    {
-      text: 'O que distingue esta equipe é que eles realmente entendem tanto a camada de controle quanto a camada de dados. Essa combinação é rara na indústria e faz uma diferença real em projetos de integração complexos.',
-      author: 'Gerente de Automação',
-      company: 'Fabricante industrial — Países Baixos',
-      initials: 'AM',
-    },
-    {
-      text: 'Confiável, rápido em responder e genuinamente comprometido em obter o resultado certo. A documentação e a entrega foram as melhores que vi em um projeto desse tipo.',
-      author: 'Gerente de Operações de Planta',
-      company: 'Instalação de produção de alimentos e bebidas',
-      initials: 'PO',
-    },
-  ],
-},
 
-serviceArea: {
-  badge: 'ONDE OPERAMOS',
-  title: 'Alcance Global. Comprometimento Pessoal.',
-  subtitle: 'O trabalho de automação industrial frequentemente requer presença física. Veja como trabalhamos além das fronteiras.',
-  intro: 'Estamos sediados nos Países Baixos e no México — duas localizações que juntas cobrem os fusos horários europeus e americanos sem demora. Trabalhamos onshore, offshore e remotamente, e viajamos globalmente para comissionamento no local, supervisão de FAT e suporte no local.',
-  cards: [
-    {
-      region: 'Europa',
-      flag: '🇪🇺',
-      description: 'Nossa base nos Países Baixos cobre a Europa Ocidental. Trabalhamos no local em toda a UE e no Reino Unido.',
-      highlights: ['Países Baixos — base principal', 'No local em toda a UE e UK', 'Offshore — Mar do Norte e além'],
+    serviceArea: {
+      badge: "ONDE OPERAMOS",
+      title: "Alcance Global. Comprometimento Pessoal.",
+      subtitle:
+        "O trabalho de automação industrial frequentemente requer presença física. Veja como trabalhamos além das fronteiras.",
+      intro:
+        "Estamos sediados nos Países Baixos e no México — duas localizações que juntas cobrem os fusos horários europeus e americanos sem demora. Trabalhamos onshore, offshore e remotamente, e viajamos globalmente para comissionamento no local, supervisão de FAT e suporte no local.",
+      cards: [
+        {
+          region: "Europa",
+          flag: "🇪🇺",
+          description:
+            "Nossa base nos Países Baixos cobre a Europa Ocidental. Trabalhamos no local em toda a UE e no Reino Unido.",
+          highlights: [
+            "Países Baixos — base principal",
+            "No local em toda a UE e UK",
+            "Offshore — Mar do Norte e além",
+          ],
+        },
+        {
+          region: "Américas",
+          flag: "🌎",
+          description:
+            "Nossa base no México cobre a América do Norte e a América Latina. De plataformas offshore no Golfo do México a instalações de produção em todo o continente.",
+          highlights: [
+            "México — base principal",
+            "América do Norte e Latina",
+            "Offshore Golfo do México",
+          ],
+        },
+        {
+          region: "Remoto e Global",
+          flag: "🌐",
+          description:
+            "Muitas tarefas de automação podem ser entregues totalmente de forma remota. Temos infraestrutura de acesso remoto seguro e nos comunicamos de forma confiável em todos os fusos horários.",
+          highlights: [
+            "Acesso remoto seguro",
+            "Entrega remota completa para trabalho de software",
+            "Viagens mundiais para fases no local",
+          ],
+        },
+      ],
+      travelNote:
+        "Custos de viagem e logística são discutidos de forma transparente como parte de cada escopo de projeto. Não os escondemos na taxa.",
     },
-    {
-      region: 'Américas',
-      flag: '🌎',
-      description: 'Nossa base no México cobre a América do Norte e a América Latina. De plataformas offshore no Golfo do México a instalações de produção em todo o continente.',
-      highlights: ['México — base principal', 'América do Norte e Latina', 'Offshore Golfo do México'],
-    },
-    {
-      region: 'Remoto e Global',
-      flag: '🌐',
-      description: 'Muitas tarefas de automação podem ser entregues totalmente de forma remota. Temos infraestrutura de acesso remoto seguro e nos comunicamos de forma confiável em todos os fusos horários.',
-      highlights: ['Acesso remoto seguro', 'Entrega remota completa para trabalho de software', 'Viagens mundiais para fases no local'],
-    },
-  ],
-  travelNote: 'Custos de viagem e logística são discutidos de forma transparente como parte de cada escopo de projeto. Não os escondemos na taxa.',
-},
   },
 };
