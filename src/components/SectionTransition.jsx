@@ -17,17 +17,19 @@ import React from "react";
  *   from  – hex colour of the section ABOVE  (required)
  *   to    – hex colour of the section BELOW  (required)
  *   height – gradient height in px, default 64
+ *   height – gradient height in px, default 200
  */
-const SectionTransition = ({ from, to, height = 64 }) => (
+const SectionTransition = ({ from, to, height = 200 }) => (
   <div
     aria-hidden="true"
     style={{
+        display: "block",
       height: `${height}px`,
       background: `linear-gradient(to bottom, ${from}, ${to})`,
       /* Pull the div 1 px into each neighbour so there is never
          a visible gap or hard line regardless of sub-pixel rendering. */
-      marginTop:  "-1px",
-      marginBottom: "-1px",
+      //marginTop:  "-1px",
+      //marginBottom: "-1px",
       pointerEvents: "none",
     }}
   />

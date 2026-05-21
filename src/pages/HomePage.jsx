@@ -22,16 +22,7 @@ import ConsentBanner, { getCookieConsent } from "@/components/ConsentBanner";
 import { Toaster } from "@/components/ui/toaster";
 import { useLanguage } from "@/context/LanguageContext";
 import { seo } from "@/data/seo";
-
-// ─── Two alternating background colours ──────────────────────────────────────
-// DARK  – very deep navy,  used on odd-numbered content sections
-// LIGHT – medium dark slate, used on even-numbered content sections
-const DARK  = "#020818";
-const LIGHT = "#1e293b";
-// The hero uses its own gradient so the first transition goes from slate-900
-// (the hero's bottom fade colour) into the first content section.
-const HERO_BOTTOM = "#0f172a";
-// ─────────────────────────────────────────────────────────────────────────────
+import { brand, DARK, LIGHT, HERO_BOTTOM } from "@/styles/brand";
 
 const GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // ← replace with your real GA ID
 
@@ -79,6 +70,8 @@ const HomePage = () => {
       loadTawkTo();
     }
   };
+
+  const badgeStyle = brand.badgeStyle("green");
 
   return (
     <>
@@ -156,23 +149,19 @@ const HomePage = () => {
             <div className="text-center mb-12">
               <span
                 className="inline-block text-xs font-bold tracking-widest mb-4 px-4 py-1.5 rounded-full"
-                style={{
-                  background: "rgba(16,185,129,0.1)",
-                  border: "1px solid rgba(16,185,129,0.25)",
-                  color: "#10b981",
-                }}
+                style={badgeStyle}
               >
                 {t.contactSection.badge}
               </span>
               <h2
-                className="text-4xl md:text-5xl font-black mb-4"
-                style={{ color: "#f0f4ff" }}
+                className={brand.type.sectionTitle + " mb-4"}
+                style={{ color: brand.colors.text.primary }}
               >
                 {t.contactSection.title}
               </h2>
               <p
                 className="text-lg max-w-xl mx-auto"
-                style={{ color: "#94a3b8" }}
+                style={{ color: brand.colors.text.secondary }}
               >
                 {t.contactSection.subtitle}
               </p>
