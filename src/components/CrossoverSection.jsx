@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { Cpu, Database, Brain } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
+const DARK  = "#020818";
+const LIGHT = "#1e293b";
+
 const pillars = [
   {
     icon: Cpu,
@@ -40,7 +43,7 @@ const CrossoverSection = () => {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ background: '#020818' }}
+      style={{ background: LIGHT }}
     >
       {/* Subtle background grid */}
       <div

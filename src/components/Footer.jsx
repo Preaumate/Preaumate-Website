@@ -18,7 +18,7 @@ const LINKEDIN_FOUNDER_2_URL = 'https://www.linkedin.com/in/partnername';   // �
 // Remove whichever fields don't apply to your situation.
 // ─────────────────────────────────────────────────────────────────────────────
 const BUSINESS_DETAILS = {
-  name: 'Preaumate B.V.',          // ← your registered legal name
+  name: 'Preaumate Automation',   // ← your registered legal name
   kvk: 'KvK: 00000000',           // ← your Chamber of Commerce number
   vat: 'BTW: NL000000000B01',     // ← your VAT number
   city: 'Netherlands / Mexico',    // ← your location
@@ -293,6 +293,7 @@ const Footer = () => {
         >
           <p>© {currentYear} {BUSINESS_DETAILS.name} {f.rights}</p>
           <div className="flex items-center gap-6">
+          {/* Privacy Policy and Terms links — always visible, even if blog/qa are not yet live 
             <Link
               to="/privacy-policy"
               style={{ color: '#8899bb' }}
@@ -300,8 +301,10 @@ const Footer = () => {
               onMouseLeave={e => e.currentTarget.style.color = '#8899bb'}
             >
               {f.privacyPolicy}
-            </Link>
+            </Link> */}
+
             <span style={{ color: 'rgba(16,185,129,0.3)' }}>·</span>
+            {/* Privacy Policy and Terms links — always visible, even if blog/qa are not yet live
             <Link
               to="/terms"
               style={{ color: '#8899bb' }}
@@ -309,7 +312,7 @@ const Footer = () => {
               onMouseLeave={e => e.currentTarget.style.color = '#8899bb'}
             >
               {f.terms}
-            </Link>
+            </Link> */}
           </div>
         </div>
 

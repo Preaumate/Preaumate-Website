@@ -5,6 +5,9 @@ import { useLanguage } from '@/context/LanguageContext';
 
 const stepIcons = [MessageCircle, ClipboardList, Wrench, HeadphonesIcon];
 const stepColors = ['#10b981', '#0ea5e9', '#8b5cf6', '#f59e0b'];
+const DARK  = "#020818";
+const LIGHT = "#1e293b";
+const MEDIUM = "#0f172a";
 
 const HowWeWorkSection = () => {
   const { t } = useLanguage();
@@ -13,7 +16,7 @@ const HowWeWorkSection = () => {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ background: '#0f172a' }}
+      style={{ background: DARK }}
     >
       <div className="container mx-auto px-6">
 

@@ -16,6 +16,10 @@ const cardBorders = [
   'rgba(139,92,246,0.2)',
 ];
 
+const DARK  = "#020818";
+const LIGHT = "#1e293b";
+const MEDIUM = "#0f172a";
+
 const ServiceAreaSection = () => {
   const { t } = useLanguage();
   const s = t.serviceArea;
@@ -23,7 +27,7 @@ const ServiceAreaSection = () => {
   return (
     <section
       className="py-24"
-      style={{ background: '#1e293b' }}
+      style={{ background: DARK }}
     >
       <div className="container mx-auto px-6">
 

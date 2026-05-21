@@ -22,11 +22,29 @@ const features = [
   { icon: Rocket,     title: 'Built for',      subtitle: 'the Future' },
 ];
 
+const DARK  = "#020818";
+const LIGHT = "#1e293b";
+const MEDIUM = "#0f172a";
+
+// ─── 5. FeaturesBar.jsx ──────────────────────────────────────────────────────
+// The section tag currently uses a Tailwind class instead of inline style:
+//
+// FIND:    className="py-24 bg-slate-800 relative"
+// REPLACE: className="py-24 relative"
+//          AND add:  style={{ background: '#020818' }}
+//
+// So the opening section tag should look like:
+//   <section
+//     className="py-24 relative"
+//     style={{ background: '#020818' }}
+//   >
+// ─────────────────────────────────────────────────────────────────────────────
+
 const FeaturesBar = () => {
   return (
     <section
-      className="py-24 bg-slate-800 relative"
-      //style={{ background: '#020818' }}
+      className="py-24 relative"
+      style={{ background: DARK }}
     >
       <div className="container mx-auto px-6">
 

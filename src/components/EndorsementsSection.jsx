@@ -11,6 +11,10 @@ import { useLanguage } from '@/context/LanguageContext';
 // Even one genuine quote is more valuable than three polished placeholders.
 // ──────────────────────────────────────────────────────────────────────────
 
+const DARK  = "#020818";
+const LIGHT = "#1e293b";
+const MEDIUM = "#0f172a";
+
 const EndorsementsSection = () => {
   const { t } = useLanguage();
   const e = t.endorsements;
@@ -18,7 +22,7 @@ const EndorsementsSection = () => {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ background: '#020818' }}
+      style={{ background: LIGHT }}
     >
       {/* Subtle grid background */}
       <div
