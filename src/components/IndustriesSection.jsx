@@ -36,6 +36,10 @@ const cardAccents = [
   { color: "#8b5cf6", bg: "rgba(139,92,246,0.08)" },
 ];
 
+const DARK  = "#020818";
+const LIGHT = "#1e293b";
+const MEDIUM = "#0f172a";
+
 const IndustriesSection = () => {
   const { t } = useLanguage();
   const ind = t.industries;
@@ -46,7 +50,7 @@ const IndustriesSection = () => {
     <section
       id="industries"
       className="py-24 relative overflow-hidden"
-      style={{ background: "#020818" }}
+      style={{ background: DARK }}
     >
       {/* Subtle background grid */}
       <div

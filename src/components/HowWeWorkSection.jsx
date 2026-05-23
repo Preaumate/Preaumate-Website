@@ -9,6 +9,7 @@ const DARK  = "#020818";
 const LIGHT = "#1e293b";
 const MEDIUM = "#0f172a";
 
+
 const HowWeWorkSection = () => {
   const { t } = useLanguage();
   const h = t.howWeWork;

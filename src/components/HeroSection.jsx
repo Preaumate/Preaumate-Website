@@ -11,20 +11,12 @@ const HeroSection = () => {
 
   const scrollToContact = () => {
     const el = document.getElementById("contact");
-    if (el)
-      window.scrollTo({
-        top: el.getBoundingClientRect().top + window.pageYOffset - 80,
-        behavior: "smooth",
-      });
+    if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 80, behavior: "smooth" });
   };
 
   const scrollToServices = () => {
     const el = document.getElementById("services");
-    if (el)
-      window.scrollTo({
-        top: el.getBoundingClientRect().top + window.pageYOffset - 80,
-        behavior: "smooth",
-      });
+    if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 80, behavior: "smooth" });
   };
 
   // Fallback trust badges if i18n key not yet added
@@ -46,10 +38,7 @@ const HeroSection = () => {
       {/* Factory image – subtle overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{
-          backgroundImage: `url(${factoryEvolution})`,
-          backgroundBlendMode: "overlay",
-        }}
+        style={{ backgroundImage: `url(${factoryEvolution})`, backgroundBlendMode: "overlay" }}
       />
 
       {/* Calm tech grid — replaces the 20 spinning boxes */}
@@ -66,49 +55,26 @@ const HeroSection = () => {
 
       {/* Corner bracket accents — industrial aesthetic */}
       <div className="absolute top-12 left-12 w-10 h-10 opacity-30 pointer-events-none">
-        <div
-          className="absolute top-0 left-0 w-full h-px"
-          style={{ background: "#10b981" }}
-        />
-        <div
-          className="absolute top-0 left-0 h-full w-px"
-          style={{ background: "#10b981" }}
-        />
+        <div className="absolute top-0 left-0 w-full h-px" style={{ background: "#10b981" }} />
+        <div className="absolute top-0 left-0 h-full w-px" style={{ background: "#10b981" }} />
       </div>
       <div className="absolute top-12 right-12 w-10 h-10 opacity-30 pointer-events-none">
-        <div
-          className="absolute top-0 right-0 w-full h-px"
-          style={{ background: "#10b981" }}
-        />
-        <div
-          className="absolute top-0 right-0 h-full w-px"
-          style={{ background: "#10b981" }}
-        />
+        <div className="absolute top-0 right-0 w-full h-px" style={{ background: "#10b981" }} />
+        <div className="absolute top-0 right-0 h-full w-px" style={{ background: "#10b981" }} />
       </div>
       <div className="absolute bottom-20 left-12 w-10 h-10 opacity-20 pointer-events-none">
-        <div
-          className="absolute bottom-0 left-0 w-full h-px"
-          style={{ background: "#10b981" }}
-        />
-        <div
-          className="absolute bottom-0 left-0 h-full w-px"
-          style={{ background: "#10b981" }}
-        />
+        <div className="absolute bottom-0 left-0 w-full h-px" style={{ background: "#10b981" }} />
+        <div className="absolute bottom-0 left-0 h-full w-px" style={{ background: "#10b981" }} />
       </div>
       <div className="absolute bottom-20 right-12 w-10 h-10 opacity-20 pointer-events-none">
-        <div
-          className="absolute bottom-0 right-0 w-full h-px"
-          style={{ background: "#10b981" }}
-        />
-        <div
-          className="absolute bottom-0 right-0 h-full w-px"
-          style={{ background: "#10b981" }}
-        />
+        <div className="absolute bottom-0 right-0 w-full h-px" style={{ background: "#10b981" }} />
+        <div className="absolute bottom-0 right-0 h-full w-px" style={{ background: "#10b981" }} />
       </div>
 
       {/* Main content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
+
           {/* Logo */}
           <div className="flex justify-center mb-10">
             <AnimatedLogo isCompact={false} />
@@ -121,16 +87,9 @@ const HeroSection = () => {
             transition={{ delay: 3.5, duration: 0.8 }}
             className="text-4xl md:text-6xl font-bold text-white leading-tight"
           >
-            {t.hero.title1}
+            {t.hero.title}
           </motion.h1>
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 3.5, duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold text-white leading-tight"
-          >
-            {t.hero.title2}
-          </motion.h1>
+
           {/* Sub-headline */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -189,11 +148,12 @@ const HeroSection = () => {
               </span>
             ))}
           </motion.div>
+
         </div>
       </div>
 
       {/* Bottom fade into next section */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-900 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none" style={{ background: "linear-gradient(to bottom, transparent, #020818)" }} />
     </section>
   );
 };

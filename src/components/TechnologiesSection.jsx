@@ -20,7 +20,8 @@ const TechnologiesSection = () => {
     <section
       id="technologies"
       className="py-24"
-      style={{ background: "#1e293b" }}
+      style={{ background: "#020818" }}
+      
     >
       <div className="container mx-auto px-6">
 

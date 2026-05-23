@@ -34,7 +34,7 @@
 const sections = {
   dark:       "#020818",   // odd sections  (Trust, Problems, Technologies, ProjectProof, HowWeWork, ServiceArea, FeaturesBar)
   light:      "#1e293b",   // even sections (Crossover, Services, Industries, Founders, WhyPreaumate, Endorsements, Contact)
-  heroBottom: "#0f172a",   // colour the Hero gradient fades to at its bottom edge
+  heroBottom: "#020818",   // colour the Hero gradient fades to at its bottom edge
   card: {
     onDark:  "#0f172a",    // card surface on dark sections
     onLight: "#0f172a",    // card surface on light sections (same — sits midway between the two)
@@ -280,8 +280,7 @@ export const brand = {
   serviceColors,
 };
 
-// Named exports for convenience
-// (so you can do:  import { DARK, LIGHT } from ...)
+// Named exports for convenience (so you can do:  import { DARK, LIGHT } from ...)
 export const DARK  = sections.dark;
 export const LIGHT = sections.light;
 export const HERO_BOTTOM = sections.heroBottom;

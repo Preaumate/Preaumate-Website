@@ -49,6 +49,9 @@ const cardConfig = [
     learnMore: { href: "/services/industrial-ai", enabled: false },
   },
 ];
+const DARK  = "#020818";
+const LIGHT = "#1e293b";
+const MEDIUM = "#0f172a";
 
 const ServicesSection = () => {
   const { t } = useLanguage();
@@ -58,7 +61,7 @@ const ServicesSection = () => {
     <section
       id="services"
       className="py-24 relative"
-      style={{ background: "#0f172a" }}
+      style={{ background: LIGHT }}
     >
       <div className="container mx-auto px-6">
 
@@ -113,7 +116,7 @@ const ServicesSection = () => {
                   isClickable ? "cursor-pointer" : "cursor-default"
                 }`}
                 style={{
-                  background: "#1e293b",
+                  background: "#0f172a",
                   border: `1px solid ${border}`,
                 }}
                 onMouseEnter={(e) => {

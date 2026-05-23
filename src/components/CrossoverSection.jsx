@@ -45,7 +45,7 @@ const CrossoverSection = () => {
       className="py-24 relative overflow-hidden"
       style={{ background: LIGHT }}
     >
-      {/* Subtle background grid */}
+      {/* Subtle background grid 
       <div
         className="absolute inset-0 opacity-3"
         style={{
@@ -53,7 +53,7 @@ const CrossoverSection = () => {
                            linear-gradient(90deg, rgba(16,185,129,0.08) 1px, transparent 1px)`,
           backgroundSize: '80px 80px',
         }}
-      />
+      /> */}
 
       {/* Ambient glow blobs */}
       <div

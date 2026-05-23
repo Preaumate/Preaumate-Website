@@ -33,7 +33,7 @@ const ProjectProofSection = () => {
     <section
       id="projects"
       className="py-24 relative"
-      style={{ background: "#0f172a" }}
+      style={{ background: "#020818" }}
     >
       <div className="container mx-auto px-6">
 

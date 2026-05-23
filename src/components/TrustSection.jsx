@@ -21,7 +21,7 @@ const TrustSection = () => {
     <section
       id="trust"
       className="py-24"
-      style={{ background: "#0f172a" }}
+      style={{ background: "#020818" }}
     >
       <div className="container mx-auto px-6">
 
@@ -70,7 +70,7 @@ const TrustSection = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-6 rounded-xl"
                 style={{
-                  background: "#1e293b",
+                  background: "#0f172a",
                   border: `1px solid ${border}`,
                 }}
               >

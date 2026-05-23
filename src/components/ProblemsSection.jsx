@@ -30,7 +30,7 @@ const ProblemsSection = () => {
     <section
       id="problems"
       className="py-24 relative overflow-hidden"
-      style={{ background: "#0a1628" }}
+      style={{ background: "#020818" }}
     >
       {/* Very subtle ambient glow */}
       <div

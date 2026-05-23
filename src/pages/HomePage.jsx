@@ -89,8 +89,6 @@ const HomePage = () => {
 
         {/* ── 1. HERO — own gradient, fades to HERO_BOTTOM at its bottom ── */}
         <HeroSection />
-        <SectionTransition from={HERO_BOTTOM} to={DARK} />
-
         {/* ── 2. TRUST  (DARK) ─────────────────────────────────────────── */}
         <TrustSection />
         <SectionTransition from={DARK} to={LIGHT} />
