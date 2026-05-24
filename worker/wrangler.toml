@@ -1,0 +1,27 @@
+# =============================================================================
+# wrangler.toml  —  Cloudflare Worker configuration
+# worker/wrangler.toml
+# =============================================================================
+# This file sits in the worker/ folder of your repo.
+#
+# In the Cloudflare dashboard Worker build settings, change to:
+#   Build command:   (leave EMPTY — the Worker needs no build step)
+#   Deploy command:  npx wrangler deploy --config worker/wrangler.toml
+#   Root directory:  /
+# =============================================================================
+
+name               = "preaumatecontactform"
+main               = "worker/contact-worker.js"
+compatibility_date = "2025-05-01"
+
+# Plain variable (visible, not sensitive)
+[vars]
+ALLOWED_ORIGIN = "https://preaumate.nl"
+
+# Secrets are set via the Cloudflare dashboard — never put values here.
+# Go to: Worker Settings > Variables and Secrets > change each one to Secret type.
+# Secrets needed:
+#   TURNSTILE_SECRET_KEY
+#   EMAILJS_SERVICE_ID
+#   EMAILJS_TEMPLATE_ID
+#   EMAILJS_PUBLIC_KEY
