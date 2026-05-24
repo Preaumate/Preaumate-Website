@@ -17,7 +17,7 @@ import { useLanguage } from '@/context/LanguageContext';
 //   VITE_WORKER_URL=http://localhost:8787
 // ─────────────────────────────────────────────────────────────────────────────
 const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY || '1x00000000000000000000AA';
-const WORKER_URL         = import.meta.env.VITE_WORKER_URL         || 'http://localhost:8787';
+const WORKER_URL         = import.meta.env.VITE_WORKER_URL         || 'http://preaumatecontactform.reaunald.workers.dev';
 
 const ContactForm = () => {
   const { toast }      = useToast();
