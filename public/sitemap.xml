@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml — Preaumate
+  Place this file in your /public folder.
+  It will be served at preaumate.nl/sitemap.xml
+
+  WHAT THIS DOES:
+  Hands Google a complete list of every page on your site.
+  Without this, Google has to find your pages by following links — slow and unreliable.
+  With this, Google knows about every page and can index them quickly.
+
+  HOW TO UPDATE:
+  Every time you add a new page (blog post, service page, etc.), add a <url> block here.
+  Update the <lastmod> date when you make significant changes to a page.
+
+  AFTER DEPLOYING:
+  Submit to Google Search Console at https://search.google.com/search-console
+  under Sitemaps → enter "sitemap.xml" → Submit.
+  You only need to do this once.
+-->
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ═══════════════════════════════════════════════════════
+       HOMEPAGE
+       Priority 1.0 = most important page on the site
+  ═══════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.preaumate.nl/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <!--
+      hreflang = tells Google which language version to show to which visitor.
+      Without this, a Dutch visitor might get served your Spanish version.
+      x-default = the fallback when no language matches
+    -->
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.preaumate.nl/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.preaumate.nl/?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://www.preaumate.nl/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://www.preaumate.nl/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.preaumate.nl/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.preaumate.nl/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.preaumate.nl/"/>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ABOUT PAGE
+  ═══════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.preaumate.nl/about</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.preaumate.nl/about?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.preaumate.nl/about?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://www.preaumate.nl/about?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://www.preaumate.nl/about?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.preaumate.nl/about?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.preaumate.nl/about?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.preaumate.nl/about"/>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SERVICE PAGES — new slugs
+       Priority 0.9 = very important (your money pages)
+  ═══════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.preaumate.nl/services/plc-programming</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.preaumate.nl/services/plc-programming?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.preaumate.nl/services/plc-programming?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://www.preaumate.nl/services/plc-programming?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://www.preaumate.nl/services/plc-programming?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.preaumate.nl/services/plc-programming?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.preaumate.nl/services/plc-programming?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.preaumate.nl/services/plc-programming"/>
+  </url>
+
+  <url>
+    <loc>https://www.preaumate.nl/services/scada-hmi</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.preaumate.nl/services/scada-hmi?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.preaumate.nl/services/scada-hmi?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://www.preaumate.nl/services/scada-hmi?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://www.preaumate.nl/services/scada-hmi?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.preaumate.nl/services/scada-hmi?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.preaumate.nl/services/scada-hmi?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.preaumate.nl/services/scada-hmi"/>
+  </url>
+
+  <url>
+    <loc>https://www.preaumate.nl/services/industrial-iot</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.preaumate.nl/services/industrial-iot?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.preaumate.nl/services/industrial-iot?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://www.preaumate.nl/services/industrial-iot?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://www.preaumate.nl/services/industrial-iot?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.preaumate.nl/services/industrial-iot?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.preaumate.nl/services/industrial-iot?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.preaumate.nl/services/industrial-iot"/>
+  </url>
+
+  <url>
+    <loc>https://www.preaumate.nl/services/robotics-integration</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.preaumate.nl/services/robotics-integration?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.preaumate.nl/services/robotics-integration?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://www.preaumate.nl/services/robotics-integration?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://www.preaumate.nl/services/robotics-integration?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.preaumate.nl/services/robotics-integration?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.preaumate.nl/services/robotics-integration?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.preaumate.nl/services/robotics-integration"/>
+  </url>
+
+  <url>
+    <loc>https://www.preaumate.nl/services/industrial-ai</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.preaumate.nl/services/industrial-ai?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.preaumate.nl/services/industrial-ai?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://www.preaumate.nl/services/industrial-ai?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://www.preaumate.nl/services/industrial-ai?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.preaumate.nl/services/industrial-ai?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.preaumate.nl/services/industrial-ai?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.preaumate.nl/services/industrial-ai"/>
+  </url>
+
+  <url>
+    <loc>https://www.preaumate.nl/services/legacy-modernization</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.preaumate.nl/services/legacy-modernization?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://www.preaumate.nl/services/legacy-modernization?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://www.preaumate.nl/services/legacy-modernization?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://www.preaumate.nl/services/legacy-modernization?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://www.preaumate.nl/services/legacy-modernization?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://www.preaumate.nl/services/legacy-modernization?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.preaumate.nl/services/legacy-modernization"/>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════
+       BLOG & Q&A
+  ═══════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.preaumate.nl/blog</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.preaumate.nl/qa</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════════════
+       LEGAL PAGES
+       Low priority — Google should index them but they are
+       not search landing pages.
+  ═══════════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.preaumate.nl/privacy-policy</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.preaumate.nl/terms</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

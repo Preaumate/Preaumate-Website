@@ -1,22 +1,13 @@
 # ============================================================
-# BUILD SETTINGS
-# Tells Netlify how to build your React app
+# netlify.toml  —  Preaumate deployment configuration
 # ============================================================
+
 [build]
   command = "npm run build"
-  # This is the command Netlify runs to compile your React code
-  # into plain HTML/CSS/JS that browsers can read
-
   publish = "dist"
-  # After building, Vite puts the finished files in a "dist" folder
-  # This tells Netlify that's where the deployable files are
 
 # ============================================================
-# ROUTING FIX
-# Without this, refreshing any page except the homepage
-# gives a 404 error on Netlify
-# React Router handles URLs in the browser, but Netlify
-# needs to be told to always serve index.html for any URL
+# ROUTING  —  serve index.html for all routes (React Router)
 # ============================================================
 [[redirects]]
   from = "/*"
@@ -24,25 +15,75 @@
   status = 200
 
 # ============================================================
-# SECURITY HEADERS
-# Same protection as the .htaccess file but in Netlify format
+# SECURITY HEADERS  (applied to every response)
 # ============================================================
 [[headers]]
   for = "/*"
   [headers.values]
 
-    # Prevents clickjacking — stops your site being embedded in iframes
+    # Prevent clickjacking (stops your site loading in iframes)
     X-Frame-Options = "DENY"
 
-    # Stops browsers misinterpreting file types
+    # Stop browsers guessing content types (XSS vector)
     X-Content-Type-Options = "nosniff"
 
-    # Controls information shared when clicking external links
+    # Control what info is sent when visitors click external links
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-    # Blocks scripts from accessing camera, microphone, location
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    # Block access to camera, mic, location, payment
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
 
-    # Whitelist of allowed content sources
-    # Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://api.emailjs.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self' https://fonts.gstatic.com; frame-src 'none'"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://api.emailjs.com https://www.google-analytics.com https://embed.tawk.to https://*.tawk.to; style-src 'self' 'unsafe-inline' https://*.tawk.to; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://www.google-analytics.com https://www.googletagmanager.com https://*.tawk.to; font-src 'self' https://fonts.gstatic.com https://*.tawk.to; frame-src https://tawk.to https://*.tawk.to; worker-src blob:;"
+    # HSTS — force HTTPS for 1 year, include subdomains
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # ── Content Security Policy ──────────────────────────────
+    # Controls exactly which external resources the page may load.
+    # Updated to include:
+    #   - Cloudflare Turnstile (challenges.cloudflare.com)
+    #   - Your Cloudflare Worker (*.workers.dev)
+    #   - Google Analytics
+    #   - Tawk.to live chat
+    # If you add new third-party scripts, add their domain here.
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://embed.tawk.to https://*.tawk.to https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://*.tawk.to https://fonts.googleapis.com; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://*.tawk.to https://challenges.cloudflare.com https://*.workers.dev https://api.emailjs.com; font-src 'self' https://fonts.gstatic.com https://*.tawk.to data:; frame-src https://tawk.to https://*.tawk.to https://challenges.cloudflare.com; worker-src blob:; manifest-src 'self';"
+
+# ============================================================
+# CACHE HEADERS  —  long-term caching for hashed assets
+# Vite adds a content hash to every JS/CSS/image filename,
+# so it is safe to cache them for 1 year.
+# ============================================================
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Fonts — also hash-named by Vite
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Service worker / manifest — should revalidate
+[[headers]]
+  for = "/manifest.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# robots.txt and sitemap — revalidate daily
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# ============================================================
+# ENVIRONMENT VARIABLES
+# Set these in the Netlify dashboard under Site > Environment variables.
+# Do NOT put actual values here — this file is committed to Git.
+# ============================================================
+# Variables needed:
+#   VITE_TURNSTILE_SITE_KEY   — from Cloudflare Turnstile dashboard
+#   VITE_WORKER_URL           — your Cloudflare Worker URL

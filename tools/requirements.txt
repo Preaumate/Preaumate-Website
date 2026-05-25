@@ -1,0 +1,26 @@
+# =============================================================================
+# Preaumate i18n Tools  —  Python requirements
+# =============================================================================
+#
+# HOW TO INSTALL
+# ──────────────
+# Open your terminal in the tools/ folder and run:
+#
+#   pip install -r requirements.txt
+#
+# That's it. You only need to do this once.
+#
+# WHAT EACH PACKAGE DOES
+# ───────────────────────
+# deep-translator   Connects to Google Translate so the script can
+#                   automatically translate text into all 5 languages.
+#                   Free. No account or API key needed.
+#
+# demjson3          A parser that can read JavaScript object files
+#                   (like i18n.js) into Python. Normal Python JSON
+#                   parsers only understand strict JSON; this one
+#                   handles the looser JavaScript format.
+# =============================================================================
+
+deep-translator>=1.11.4
+demjson3>=3.0.6

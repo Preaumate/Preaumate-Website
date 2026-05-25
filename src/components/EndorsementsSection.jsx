@@ -24,7 +24,7 @@ const EndorsementsSection = () => {
       className="py-24 relative overflow-hidden"
       style={{ background: LIGHT }}
     >
-      {/* Subtle grid background */}
+      {/* Subtle grid background
       <div
         className="absolute inset-0 opacity-3"
         style={{
@@ -32,7 +32,7 @@ const EndorsementsSection = () => {
                            linear-gradient(90deg, rgba(16,185,129,0.06) 1px, transparent 1px)`,
           backgroundSize: '80px 80px',
         }}
-      />
+      /> */}
 
       <div className="container mx-auto px-6 relative z-10">
 

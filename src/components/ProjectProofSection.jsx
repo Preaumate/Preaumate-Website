@@ -2,6 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, Cpu, Wifi, Bot } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { brand } from "@/styles/brand";
+
+const DARK  = brand.sections.dark;
+const LIGHT = brand.sections.light;
 
 // One icon per project card — order matches i18n projectProof.projects array
 const projectIcons = [Cpu, Wifi, Bot];
@@ -33,7 +37,7 @@ const ProjectProofSection = () => {
     <section
       id="projects"
       className="py-24 relative"
-      style={{ background: "#020818" }}
+      style={{ background: brand.sections.light }}
     >
       <div className="container mx-auto px-6">
 

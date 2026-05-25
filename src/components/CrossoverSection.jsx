@@ -43,7 +43,7 @@ const CrossoverSection = () => {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ background: LIGHT }}
+      style={{ background: DARK }}
     >
       {/* Subtle background grid 
       <div

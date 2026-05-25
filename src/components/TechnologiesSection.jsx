@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { brand } from "@/styles/brand";
 
 // Colors for each category column
 const categoryColors = [
@@ -20,7 +21,7 @@ const TechnologiesSection = () => {
     <section
       id="technologies"
       className="py-24"
-      style={{ background: "#020818" }}
+      style={{ background: brand.sections.light }}
       
     >
       <div className="container mx-auto px-6">

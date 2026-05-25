@@ -89,33 +89,40 @@ const HomePage = () => {
 
         {/* ── 1. HERO — own gradient, fades to HERO_BOTTOM at its bottom ── */}
         <HeroSection />
+        
         {/* ── 2. TRUST  (DARK) ─────────────────────────────────────────── */}
+        {/*
         <TrustSection />
-        <SectionTransition from={DARK} to={LIGHT} />
+        <SectionTransition from={DARK} to={LIGHT} /> */}
 
         {/* ── 3. CROSSOVER  (LIGHT) ────────────────────────────────────── */}
+        {/*
         <CrossoverSection />
-        <SectionTransition from={LIGHT} to={DARK} />
+        <SectionTransition from={LIGHT} to={DARK} /> */}
 
         {/* ── 4. PROBLEMS  (DARK) ──────────────────────────────────────── */}
+        {/*
         <ProblemsSection />
-        <SectionTransition from={DARK} to={LIGHT} />
+        <SectionTransition from={DARK} to={LIGHT} /> */}
 
         {/* ── 5. SERVICES  (LIGHT) ─────────────────────────────────────── */}
         <ServicesSection />
         <SectionTransition from={LIGHT} to={DARK} />
 
         {/* ── 6. TECHNOLOGIES  (DARK) ──────────────────────────────────── */}
+        {/*
         <TechnologiesSection />
-        <SectionTransition from={DARK} to={LIGHT} />
+        <SectionTransition from={DARK} to={LIGHT} /> */}
 
         {/* ── 7. INDUSTRIES  (LIGHT) ───────────────────────────────────── */}
+        {/*
         <IndustriesSection />
-        <SectionTransition from={LIGHT} to={DARK} />
+        <SectionTransition from={LIGHT} to={DARK} /> */}
 
         {/* ── 8. PROJECT PROOF  (DARK) ─────────────────────────────────── */}
+        {/*
         <ProjectProofSection />
-        <SectionTransition from={DARK} to={LIGHT} />
+        <SectionTransition from={DARK} to={LIGHT} /> */}
 
         {/* ── 9. FOUNDERS  (LIGHT) ─────────────────────────────────────── */}
         <FounderSection />
@@ -126,20 +133,23 @@ const HomePage = () => {
         <SectionTransition from={DARK} to={LIGHT} />
 
         {/* ── 11. WHY PREAUMATE  (LIGHT) ───────────────────────────────── */}
+        {/*
         <WhyPreaumateSection />
-        <SectionTransition from={LIGHT} to={DARK} />
+        <SectionTransition from={LIGHT} to={DARK} /> */}
 
         {/* ── 12. SERVICE AREA  (DARK) ─────────────────────────────────── */}
+        {/*
         <ServiceAreaSection />
-        <SectionTransition from={DARK} to={LIGHT} />
+        <SectionTransition from={DARK} to={LIGHT} /> */}
 
         {/* ── 13. ENDORSEMENTS  (LIGHT) ────────────────────────────────── */}
         <EndorsementsSection />
         <SectionTransition from={LIGHT} to={DARK} />
 
         {/* ── 14. FEATURES BAR  (DARK) ─────────────────────────────────── */}
+        {/*
         <FeaturesBar />
-        <SectionTransition from={DARK} to={LIGHT} />
+        <SectionTransition from={DARK} to={LIGHT} /> */}
 
         {/* ── 15. CONTACT  (LIGHT) ─────────────────────────────────────── */}
         <section id="contact" className="py-24" style={{ background: LIGHT }}>

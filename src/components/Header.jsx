@@ -80,7 +80,7 @@ const Header = () => {
   // ── TO RE-ENABLE BLOG / Q&A: uncomment those entries below ─────────────────
   const navItems = [
     { label: t.nav.home,     action: () => scrollToSection('hero') },
-    { label: t.nav.about,    action: () => scrollToSection('about') },     // ← now scrolls, consistent with Services
+    { label: t.nav.about,    action: () => { navigate('/about'); setMenuOpen(false); } },     // ← now scrolls, consistent with Services
     { label: t.nav.services, action: () => scrollToSection('services') },
     // { label: t.nav.blog,  action: () => { navigate('/blog'); setMenuOpen(false); } },   // DISABLED — enable when content exists
     // { label: t.nav.qa,    action: () => { navigate('/qa');   setMenuOpen(false); } },   // DISABLED — enable when content exists

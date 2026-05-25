@@ -15,9 +15,16 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useLanguage } from "@/context/LanguageContext";
 import SolutionsSection from "@/components/SolutionsSection";
+import CrossoverSection from "@/components/CrossoverSection";
+import TechnologiesSection from "@/components/TechnologiesSection";
+import ServiceAreaSection from "@/components/ServiceAreaSection";
+import ProjectProofSection from "@/components/ProjectProofSection";
+import SectionTransition from "@/components/SectionTransition";
+import SEOHead from "@/components/SEOHead";
+import { useLanguage } from "@/context/LanguageContext";
 import { seo } from "@/data/seo";
+import { brand } from "@/styles/brand";
 
 const serviceIcons = [Cpu, Wrench, Wifi, Shield, Brain, Headphones, BarChart3];
 const serviceColors = [
@@ -29,6 +36,23 @@ const serviceColors = [
   { color: "#10b981", bg: "rgba(16,185,129,0.1)" },
   { color: "#0ea5e9", bg: "rgba(14,165,233,0.1)" },
 ];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ABOUT PAGE
+//
+// This page holds all the depth that does NOT belong on the homepage.
+// Visitors who click "About" are already interested — they want the full story.
+//
+// Section order:
+//   1. Hero                  — who you are in one paragraph
+//   2. Our Story             — the human detail
+//   3. How We Think          — CrossoverSection (OT / IoT / AI pillars)
+//   4. Technologies          — platforms and tools
+//   5. Industries            — sectors we have worked in
+//   6. Example Projects      — proof of work (with placeholders until you fill in)
+//   7. Where We Work         — service area map
+//   8. CTA                   — send them to contact
+// ─────────────────────────────────────────────────────────────────────────────
 
 const AboutPage = () => {
   const { t } = useLanguage();
@@ -87,10 +111,10 @@ const AboutPage = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <div className="min-h-screen" style={{ background: "#0f172a" }}>
+      <div className="min-h-screen" style={{ background: brand.sections.dark }}>
         <Header />
 
-        {/* Hero */}
+        {/* ─ 1. Hero ───────────────────────────────────────────────────── */}
         <div
           className="pt-32 pb-20 relative overflow-hidden"
           style={{
@@ -98,6 +122,7 @@ const AboutPage = () => {
               "linear-gradient(135deg, #020818 0%, #0f172a 50%, #0f2040 100%)",
           }}
         >
+          {/* Subtle grid */}
           <div
             className="absolute inset-0 opacity-5"
             style={{
@@ -155,151 +180,134 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* Who We Are */}
-        <Section badge={a.whoWeAreBadge} title={a.whoWeAreTitle} dark>
-          <Paragraph>{a.whoWeArePara1}</Paragraph>
-          <Paragraph>{a.whoWeArePara2}</Paragraph>
-          <Paragraph>{a.whoWeArePara3}</Paragraph>
-          <Paragraph>{a.whoWeArePara4}</Paragraph>
-        </Section>
-
-        {/* Solutions — add this */}
-        <SolutionsSection />
-
-        {/* What We Do */}
-        <Section badge={a.whatWeDoBadge} title={a.whatWeDoTitle}>
-          <Paragraph>{a.whatWeDoIntro}</Paragraph>
-          <div className="mt-8 space-y-4">
-            {a.servicesList.map((svc, i) => {
-              const Icon = serviceIcons[i] || Cpu;
-              const { color, bg } = serviceColors[i] || serviceColors[0];
-              return (
+        {/* ── 2. OUR STORY ─────────────────────────────────────────────── */}
+        <section className="py-20" style={{ background: brand.sections.light }}>
+          <div className="container mx-auto px-6 max-w-3xl">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span
+                className="inline-block text-xs font-bold tracking-widest mb-4 px-4 py-1.5 rounded-full"
+                style={{
+                  background: "rgba(16,185,129,0.1)",
+                  border:     "1px solid rgba(16,185,129,0.25)",
+                  color:      "#10b981",
+                }}
+              >
+                {a.whoWeAreBadge}
+              </span>
+              <h2
+                className="text-3xl md:text-4xl font-black mb-8"
+                style={{ color: "#f0f4ff" }}
+              >
+                {a.whoWeAreTitle}
+              </h2>
+              {[a.whoWeArePara1, a.whoWeArePara2, a.whoWeArePara3, a.whoWeArePara4]
+                .filter(Boolean)
+                .map((para, i) => (
+                  <p
+                    key={i}
+                    className="text-lg leading-relaxed mb-5"
+                    style={{ color: "#94a3b8" }}
+                  >
+                    {para}
+                  </p>
+                ))}
+            </motion.div>
+          </div>
+        </section>
+        <SectionTransition from={brand.sections.light} to={brand.sections.dark} />
+ 
+        {/* ── 3. HOW WE THINK — the OT / IoT / AI convergence ─────────── */}
+        {/* CrossoverSection already has its own background (#020818 = DARK)  */}
+        <CrossoverSection />
+        <SectionTransition from={brand.sections.dark} to={brand.sections.light} />
+ 
+        {/* ── 4. TECHNOLOGIES & PLATFORMS ──────────────────────────────── */}
+        {/* TechnologiesSection background is DARK — override to LIGHT here  */}
+        <div style={{ background: brand.sections.light }}>
+          <TechnologiesSection />
+        </div>
+        <SectionTransition from={brand.sections.light} to={brand.sections.dark} />
+ 
+        {/* ── 5. INDUSTRIES ────────────────────────────────────────────── */}
+        <section className="py-20" style={{ background: brand.DARK }}>
+          <div className="container mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-14"
+            >
+              <span
+                className="inline-block text-xs font-bold tracking-widest mb-4 px-4 py-1.5 rounded-full"
+                style={{
+                  background: "rgba(16,185,129,0.08)",
+                  border:     "1px solid rgba(16,185,129,0.25)",
+                  color:      "#10b981",
+                }}
+              >
+                {a.industriesBadge}
+              </span>
+              <h2
+                className="text-4xl md:text-5xl font-black mb-4"
+                style={{ color: "#f0f4ff" }}
+              >
+                {a.industriesTitle}
+              </h2>
+              <p
+                className="text-lg max-w-2xl mx-auto"
+                style={{ color: "#94a3b8" }}
+              >
+                {a.industriesIntro}
+              </p>
+            </motion.div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              {a.industries?.map((item, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                  className="p-6 rounded-xl mb-4"
+                  transition={{ duration: 0.4, delay: i * 0.05 }}
+                  className="flex items-center gap-3 p-4 rounded-xl"
                   style={{
                     background: "#0f172a",
-                    border: "1px solid rgba(16,185,129,0.12)",
+                    border:     "1px solid rgba(16,185,129,0.12)",
                   }}
                 >
-                  <div className="flex items-start gap-4">
-                    <div
-                      className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 mt-1"
-                      style={{ background: bg }}
-                    >
-                      <Icon className="w-6 h-6" style={{ color }} />
-                    </div>
-                    <div>
-                      <h3
-                        className="text-lg font-bold mb-2"
-                        style={{ color: "#f0f4ff" }}
-                      >
-                        {svc.title}
-                      </h3>
-                      <p
-                        className="text-sm leading-relaxed"
-                        style={{ color: "#94a3b8" }}
-                      >
-                        {svc.description}
-                      </p>
-                    </div>
-                  </div>
+                  <span className="text-xl">{item.icon}</span>
+                  <span
+                    className="text-sm font-semibold"
+                    style={{ color: "#94a3b8" }}
+                  >
+                    {item.label}
+                  </span>
                 </motion.div>
-              );
-            })}
-          </div>
-        </Section>
-
-        {/* Industries */}
-        <Section badge={a.industriesBadge} title={a.industriesTitle} dark>
-          <Paragraph>{a.industriesIntro}</Paragraph>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-            {a.industries.map((item) => (
-              <motion.div
-                key={item.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4 }}
-                className="flex items-center gap-3 p-4 rounded-xl"
-                style={{
-                  background: "#1e293b",
-                  border: "1px solid rgba(16,185,129,0.12)",
-                }}
-              >
-                <span className="text-2xl">{item.icon}</span>
-                <span
-                  className="text-sm font-semibold"
-                  style={{ color: "#f0f4ff" }}
-                >
-                  {item.label}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-        </Section>
-
-        {/* Philosophy */}
-        <Section badge={a.philosophyBadge} title={a.philosophyTitle}>
-          <Paragraph>{a.philosophyPara1}</Paragraph>
-          <Paragraph>{a.philosophyPara2}</Paragraph>
-          <Paragraph>{a.philosophyPara3}</Paragraph>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-            <div
-              className="p-6 rounded-xl"
-              style={{
-                background: "#0f172a",
-                border: "1px solid rgba(16,185,129,0.2)",
-              }}
-            >
-              <h4
-                className="font-bold text-base mb-3"
-                style={{ color: "#10b981" }}
-              >
-                {a.classicalTitle}
-              </h4>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: "#94a3b8" }}
-              >
-                {a.classicalDesc}
-              </p>
-            </div>
-            <div
-              className="p-6 rounded-xl"
-              style={{
-                background: "#0f172a",
-                border: "1px solid rgba(16,185,129,0.2)",
-              }}
-            >
-              <h4
-                className="font-bold text-base mb-3"
-                style={{ color: "#10b981" }}
-              >
-                {a.modernTitle}
-              </h4>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: "#94a3b8" }}
-              >
-                {a.modernDesc}
-              </p>
+              ))}
             </div>
           </div>
-          <p
-            className="text-base leading-relaxed mt-8 font-medium"
-            style={{ color: "#f0f4ff" }}
-          >
-            {a.finalNote}
-          </p>
-        </Section>
-
-        {/* CTA */}
-        <section className="py-20" style={{ background: "#020818" }}>
+        </section>
+        <SectionTransition from={brand.sections.dark} to={brand.sections.light} />
+ 
+        {/* ── 6. EXAMPLE PROJECTS ──────────────────────────────────────── */}
+        {/* ProjectProofSection has its own background (#020818).
+            Override wrapper to LIGHT so transition works correctly.        */}
+        <div style={{ background: brand.LIGHT }}>
+          <ProjectProofSection />
+        </div>
+        <SectionTransition from={brand.sections.light} to={brand.sections.dark} />
+ 
+        {/* ── 7. WHERE WE WORK ─────────────────────────────────────────── */}
+        <ServiceAreaSection />
+        <SectionTransition from={brand.sections.dark} to={brand.sections.light} />
+ 
+        {/* ── 8. CTA ───────────────────────────────────────────────────── */}
+        <section className="py-24" style={{ background: brand.sections.light }}>
           <div className="container mx-auto px-6 max-w-3xl text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -308,29 +316,26 @@ const AboutPage = () => {
               transition={{ duration: 0.6 }}
             >
               <h2
-                className="text-4xl font-black mb-4"
+                className="text-4xl md:text-5xl font-black mb-4"
                 style={{ color: "#f0f4ff" }}
               >
                 {a.ctaTitle}
               </h2>
-              <p className="text-lg mb-8" style={{ color: "#94a3b8" }}>
+              <p
+                className="text-lg mb-8"
+                style={{ color: "#94a3b8" }}
+              >
                 {a.ctaSubtitle}
               </p>
               <Link
                 to="/#contact"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-lg font-bold text-white transition-all duration-300"
                 style={{
-                  background: "linear-gradient(135deg, #10b981, #059669)",
-                  boxShadow: "0 0 30px rgba(16,185,129,0.3)",
+                  background:  "linear-gradient(135deg, #10b981, #059669)",
+                  boxShadow:   "0 0 30px rgba(16,185,129,0.3)",
                 }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.boxShadow =
-                    "0 0 40px rgba(16,185,129,0.5)")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.boxShadow =
-                    "0 0 30px rgba(16,185,129,0.3)")
-                }
+                onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "0 0 40px rgba(16,185,129,0.5)")}
+                onMouseLeave={(e) => (e.currentTarget.style.boxShadow = "0 0 30px rgba(16,185,129,0.3)")}
               >
                 {a.ctaButton}
                 <ArrowRight className="w-5 h-5" />
@@ -338,11 +343,11 @@ const AboutPage = () => {
             </motion.div>
           </div>
         </section>
-
+ 
         <Footer />
       </div>
     </>
   );
 };
-
+ 
 export default AboutPage;
