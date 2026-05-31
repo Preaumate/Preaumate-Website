@@ -1,41 +1,42 @@
 // ============================================================
-// CENTRALISED IMAGE REGISTRY
+// src/data/images.js  —  Centralised Image Registry
 // ============================================================
 // All images used across the site are defined here.
+// Change a path once → updates everywhere automatically.
 //
-// HOW TO USE:
-//   import { images } from '@/data/images';
-//   <img src={images.hero.background} alt="..." />
-//
-// HOW TO UPDATE AN IMAGE:
-//   Change the URL or path here — updates everywhere automatically.
-//
-// IMAGE PATH OPTIONS:
-//   External URL:  'https://images.unsplash.com/photo-...'
-//   Local file:    '/images/my-photo.jpg'
-//                  (place file in /public/images/my-photo.jpg)
-//   Imported file: import heroImg from '@/assets/hero-bg.jpg'
-//                  (place file in /src/assets/hero-bg.jpg)
-//
-// RECOMMENDED: Use /public/images/ for photos you will update often.
-// It is the easiest — just drop a file in and reference by name.
+// HOW TO ADD YOUR OWN PHOTOS:
+//   1. Put the image file in /public/images/
+//   2. Update the path below from '' to '/images/your-file.jpg'
+//   3. Save — the site picks it up immediately
 // ============================================================
 
 export const images = {
 
+  // ── FOUNDERS ─────────────────────────────────────────────
+  // Used in FounderSection on the homepage and CurriculumPage.
+  // Recommended: square crop, 400×400px minimum, professional.
+  // Place files in /public/images/founders/
+  founders: {
+    theo: '/images/team/theo-profile.jpg', // ← set to '/images/founders/theo-rietveld.jpg'
+    coFounder: '',                         // ← set to '/images/founders/founder2.jpg'
+  },
+
+  // ── CURRICULUM PAGE ───────────────────────────────────────
+  // Professional photo shown on Theo's CV page.
+  // Can be the same as founders.theo or a different shot.
+  // Recommended: portrait orientation, 600×800px, neutral background.
+  curriculum: {
+    theo: '/Images/Team/theo-profile.jpg',                  // ← set to '/images/curriculum/theo-rietveld-cv.jpg'
+  },
+
   // ── HERO SECTION ─────────────────────────────────────────
   hero: {
-    // Full-screen background image behind the hero section
-    // Recommended: 1920×1080px minimum, factory/industrial theme
-    // Replace URL with '/images/hero-bg.jpg' once you have your own photo
     background: 'https://images.unsplash.com/photo-1582533632670-55d43ff95331?w=1920&q=80',
   },
 
   // ── ABOUT PAGE ───────────────────────────────────────────
   about: {
-    // Team photo — shown on the About page if you add one
-    // Recommended: 800×600px, natural working environment
-    // team: '/images/team-photo.jpg',  // ← uncomment when you have a photo
+    // team: '/images/team-photo.jpg',
   },
 
   // ── SERVICE PAGES ─────────────────────────────────────────
@@ -58,7 +59,7 @@ export const images = {
     },
   },
 
-  // ── SOLUTION PAGES ────────────────────────────────────────
+	// ── SOLUTION PAGES ────────────────────────────────────────
   solutions: {
     plcProgramming: {
       main:      'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80',
@@ -87,13 +88,9 @@ export const images = {
   },
 
   // ── OPEN GRAPH / SOCIAL SHARING ───────────────────────────
-  // This image appears when your site is shared on LinkedIn, WhatsApp etc.
-  // Recommended: exactly 1200×630px, with your logo and a clear background
-  // Place the file at /public/images/og-image.jpg
   og: {
-    default: '/images/og-image.jpg',  // ← create this file
+    default: '/images/og-image.jpg',
   },
-
   // ── FAVICON ──────────────────────────────────────────────
   // See Step 5 for favicon setup — managed via index.html not here
 };
