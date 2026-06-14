@@ -84,7 +84,7 @@ const HomePage = () => {
         <meta property="og:url"         content="https://www.preaumate.nl" />
       </Helmet>
 
-      <div className="min-h-screen" style={{ background: DARK }}>
+      <div className="min-h-screen" style={{ background: LIGHT }}>
         <Header />
 
         {/* ── 1. HERO — own gradient, fades to HERO_BOTTOM at its bottom ── */}
@@ -107,7 +107,7 @@ const HomePage = () => {
 
         {/* ── 5. SERVICES  (LIGHT) ─────────────────────────────────────── */}
         <ServicesSection />
-        <SectionTransition from={LIGHT} to={DARK} />
+        <SectionTransition from={DARK} to={LIGHT} />
 
         {/* ── 6. TECHNOLOGIES  (DARK) ──────────────────────────────────── */}
         {/*
@@ -124,13 +124,9 @@ const HomePage = () => {
         <ProjectProofSection />
         <SectionTransition from={DARK} to={LIGHT} /> */}
 
-        {/* ── 9. FOUNDERS  (LIGHT) ─────────────────────────────────────── */}
-        <FounderSection />
-        <SectionTransition from={LIGHT} to={DARK} />
-
         {/* ── 10. HOW WE WORK  (DARK) ──────────────────────────────────── */}
         <HowWeWorkSection />
-        <SectionTransition from={DARK} to={LIGHT} />
+        <SectionTransition from={LIGHT} to={DARK} />
 
         {/* ── 11. WHY PREAUMATE  (LIGHT) ───────────────────────────────── */}
         {/*
@@ -144,15 +140,19 @@ const HomePage = () => {
 
         {/* ── 13. ENDORSEMENTS  (LIGHT) ────────────────────────────────── */}
         <EndorsementsSection />
-        <SectionTransition from={LIGHT} to={DARK} />
+        <SectionTransition from={DARK} to={LIGHT} />
 
         {/* ── 14. FEATURES BAR  (DARK) ─────────────────────────────────── */}
         {/*
         <FeaturesBar />
         <SectionTransition from={DARK} to={LIGHT} /> */}
 
+        {/* ── 9. FOUNDERS (Meet the team) (LIGHT) ──────────────────────── */}
+        <FounderSection />
+        <SectionTransition from={LIGHT} to={DARK} />
+
         {/* ── 15. CONTACT  (LIGHT) ─────────────────────────────────────── */}
-        <section id="contact" className="py-24" style={{ background: LIGHT }}>
+        <section id="contact" className="py-24" style={{ background: DARK }}>
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <span

@@ -9,12 +9,15 @@ import { seo } from '@/data/seo';
 // Keep these in sync with PrivacyPolicyPage.jsx
 // ─────────────────────────────────────────────────────────────────────────────
 const COMPANY = {
-  legalName:   'Preaumate B.V.',                    // ← your registered legal name
-  kvk:         '00000000',                          // ← your KvK number
-  address:     'Your Street 1, City, Netherlands',  // ← your registered address
-  email:       'contact@preaumate.com',
-  website:     'www.preaumate.com',
-  lastUpdated: 'May 2026',
+  legalName: "Preaumate Automation", // ← your registered legal name
+  kvk: "99706679", // ← your KvK (Chamber of Commerce) number
+  vat: "NL005406796B26", // ← your VAT number
+  //address: "Your Street 1, City, Netherlands", // ← your registered address
+  email: "contact@preaumate.com", // ← your contact email
+  website: "www.preaumate.com", // ← your domain
+  //dpa: "Autoriteit Persoonsgegevens", // ← Dutch DPA — correct for NL
+  //dpaWebsite: "https://www.autoriteitpersoonsgegevens.nl",
+  lastUpdated: "May 2026", // ← update when you change this policy
 };
 
 const Section = ({ title, children }) => (

@@ -1,0 +1,15 @@
+# robots.txt — Preaumate
+# This file tells search engine crawlers (Google, Bing) which pages to index.
+# Place this file in your /public folder — it will be served at preaumate.nl/robots.txt
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Block access to any internal/build paths
+Disallow: /api/
+Disallow: /.netlify/
+Disallow: /admin/
+
+# Point crawlers directly to your sitemap
+Sitemap: https://www.preaumate.nl/sitemap.xml

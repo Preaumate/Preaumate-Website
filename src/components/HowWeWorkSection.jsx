@@ -17,7 +17,7 @@ const HowWeWorkSection = () => {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ background: DARK }}
+      style={{ background: LIGHT }}
     >
       <div className="container mx-auto px-6">
 

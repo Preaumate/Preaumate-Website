@@ -10,10 +10,10 @@ import { seo } from "@/data/seo";
 // These appear throughout the privacy policy.
 // ─────────────────────────────────────────────────────────────────────────────
 const COMPANY = {
-  legalName: "Preaumate B.V.", // ← your registered legal name
-  kvk: "00000000", // ← your KvK (Chamber of Commerce) number
-  vat: "NL000000000B01", // ← your VAT number
-  address: "Your Street 1, City, Netherlands", // ← your registered address
+  legalName: "Preaumate Automation", // ← your registered legal name
+  kvk: "99706679", // ← your KvK (Chamber of Commerce) number
+  vat: "NL005406796B26", // ← your VAT number
+  //address: "Your Street 1, City, Netherlands", // ← your registered address
   email: "contact@preaumate.com", // ← your contact email
   website: "www.preaumate.com", // ← your domain
   dpa: "Autoriteit Persoonsgegevens", // ← Dutch DPA — correct for NL
@@ -332,6 +332,7 @@ const PrivacyPolicyPage = () => {
                     link: "https://www.netlify.com/privacy/",
                     location: "USA (SCCs in place)",
                   },
+                  { name: "Hostinger", purpose: "Website & Email hosting.", link: "https://www.hostinger.com/privacy-policy", location: "USA (SCCs in place)" },
                 ].map((processor, i) => (
                   <div
                     key={i}

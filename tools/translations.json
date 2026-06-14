@@ -723,6 +723,136 @@
           "linkedin": "#"
         }
       ]
+    },
+    "curriculum": {
+      "pageTitle": "Theo Rietveld — CV | Preaumate",
+      "metaDescription": "Professional curriculum of Theo Rietveld, founder and industrial automation engineer at Preaumate. 20+ years of PLC, SCADA, IoT and robotics experience.",
+      "heroBadge": "CURRICULUM VITAE",
+      "heroSubtitle": "Founder & Industrial Automation Engineer at Preaumate",
+      "heroTagline": "20+ years of hands-on experience in PLC programming, SCADA development, system integration and international commissioning.",
+      "photoAlt": "Theo Rietveld — Founder of Preaumate",
+      "photoPlaceholder": "TR",
+      "currentBadge": "Current",
+      "presentLabel": "Present",
+      "downloadPdf": "Download PDF",
+      "contactCta": "Discuss Your Project",
+      "summaryBadge": "PROFESSIONAL SUMMARY",
+      "summaryTitle": "Engineering Expertise in Service of Your Production Goals",
+      "summaryText": "Theo Rietveld is an industrial automation engineer and founder of Preaumate with over 20 years of hands-on experience across PLC programming, SCADA development, system integration and international project commissioning. Having worked across maritime, offshore and food processing industries in Europe and internationally, he brings deep technical expertise and a proven track record of project delivery to every engagement. He communicates directly in Dutch, English, Spanish and German — enabling effective collaboration with clients and teams across Europe and Latin America.",
+      "experienceBadge": "PROFESSIONAL EXPERIENCE",
+      "earlierCareerBadge": "EARLIER CAREER",
+      "roles": {
+        "preaumate": {
+          "roleTitle": "Founder & Industrial Automation Engineer",
+          "description": "Founded Preaumate to provide practical industrial automation engineering directly to manufacturers across Europe and Latin America. Delivering PLC programming, SCADA development, industrial IoT integration, robotics and AI-driven automation — with factory-floor experience behind every solution.",
+          "highlights": [
+            "PLC programming for Siemens, Rockwell and CoDeSys platforms",
+            "SCADA and HMI development for production monitoring",
+            "Industrial IoT integration using OPC UA and MQTT",
+            "Robotics integration and commissioning",
+            "Industrial AI for anomaly detection and predictive maintenance",
+            "Remote engineering support across Europe and Latin America"
+          ]
+        },
+        "kiremko": {
+          "roleTitle": "Software Developer & Automation Engineer",
+          "description": "Project and machine design, engineering and management for industrial food processing automation. Development within a team of hardware and software engineers, from functional specification through commissioning, client handover and onsite training.",
+          "highlights": [
+            "Industrial food processing machine automation",
+            "Functional design specifications",
+            "Software development, testing and commissioning",
+            "Onsite training and client handover"
+          ]
+        },
+        "gooiland": {
+          "roleTitle": "Software Developer & Automation Engineer",
+          "description": "12 years specialising in maritime and offshore HVAC automation. Full project lifecycle from design through international commissioning, with hands-on experience on vessels and offshore installations worldwide. Strong focus on client relations and long-term service.",
+          "highlights": [
+            "Maritime and offshore HVAC control automation",
+            "International commissioning worldwide",
+            "Full software development and deployment lifecycle",
+            "Client relations, onsite training and service"
+          ]
+        },
+        "vandenPol": {
+          "roleTitle": "Software Developer & Commissioning Engineer",
+          "description": "Industrial food processing automation from project engineering through to commissioning. International project delivery, onsite training and ongoing service.",
+          "highlights": [
+            "Industrial food processing automation",
+            "International commissioning and project delivery",
+            "Functional design specifications",
+            "Onsite training and service"
+          ]
+        },
+        "elero": {
+          "roleTitle": "Technical Sales, Consulting & IT Management",
+          "description": "Project and automation engineering, sales, product consultancy, client training and IT management for a specialist in drives and home automation.",
+          "highlights": [
+            "Automation engineering and technical sales",
+            "Product consultancy and customer training",
+            "IT management"
+          ]
+        }
+      },
+      "skillsBadge": "CORE COMPETENCIES",
+      "skillsTitle": "What I Do Best",
+      "skills": [
+        "Project Management",
+        "Decision Making",
+        "Creative Design",
+        "Innovative Development",
+        "Complex Problem Solving",
+        "Commissioning",
+        "Client Relations",
+        "Consulting & Training",
+        "Technical Translation"
+      ],
+      "technicalBadge": "TECHNICAL EXPERTISE",
+      "technicalTitle": "Platforms & Tools",
+      "techPlc": "PLC Platforms",
+      "techScada": "SCADA & HMI",
+      "techSoftware": "Software & Programming",
+      "techProtocols": "Protocols & Other",
+      "educationBadge": "EDUCATION",
+      "degreeTitle": "Bachelor of Computer Data Science & Information Systems",
+      "certificationsBadge": "CERTIFICATIONS",
+      "certifications": {
+        "siemens": {
+          "title": "Certified Siemens Programmer",
+          "detail": "TIA Portal & Step 7"
+        },
+        "offshore": {
+          "title": "Offshore Safety Certificates",
+          "detail": "GWO Sea Survival, Working at Heights, Fire Awareness, First Aid, Manual Handling"
+        },
+        "bosiet": {
+          "title": "BOSIET / HUET — OPITO Certified",
+          "detail": "Helicopter Underwater Escape Training"
+        }
+      },
+      "languagesBadge": "LANGUAGES",
+      "spokenLanguages": {
+        "dutch": {
+          "language": "Dutch",
+          "level": "Native"
+        },
+        "english": {
+          "language": "English",
+          "level": "Proficient"
+        },
+        "spanish": {
+          "language": "Spanish",
+          "level": "Proficient"
+        },
+        "german": {
+          "language": "German",
+          "level": "Advanced"
+        }
+      },
+      "contactBadge": "LET'S WORK TOGETHER",
+      "contactTitle": "Ready to Discuss Your Project?",
+      "contactSubtitle": "If you would like to discuss how Preaumate can support your automation project, I am happy to connect directly.",
+      "contactButton": "Get in Touch"
     }
   },
   "nl": {
@@ -1449,6 +1579,136 @@
           "linkedin": "#"
         }
       ]
+    },
+    "curriculum": {
+      "pageTitle": "Theo Rietveld — CV | Preaumate",
+      "metaDescription": "Professioneel curriculum van Theo Rietveld, oprichter en industrieel automatiseringsingenieur bij Preaumate. 20+ jaar PLC, SCADA, IoT en robotica ervaring.",
+      "heroBadge": "CURRICULUM VITAE",
+      "heroSubtitle": "Oprichter & Industrieel Automatiseringsingenieur bij Preaumate",
+      "heroTagline": "20+ jaar praktijkervaring in PLC-programmering, SCADA-ontwikkeling, systeemintegratie en internationale inbedrijfstelling.",
+      "photoAlt": "Theo Rietveld — Oprichter van Preaumate",
+      "photoPlaceholder": "TR",
+      "currentBadge": "Huidig",
+      "presentLabel": "Heden",
+      "downloadPdf": "PDF Downloaden",
+      "contactCta": "Uw Project Bespreken",
+      "summaryBadge": "PROFESSIONELE SAMENVATTING",
+      "summaryTitle": "Engineering Expertise ten Dienste van Uw Productiedoelen",
+      "summaryText": "Theo Rietveld is een industrieel automatiseringsingenieur en oprichter van Preaumate met meer dan 20 jaar praktijkervaring in PLC-programmering, SCADA-ontwikkeling, systeemintegratie en internationale projectinbedrijfstelling. Met werkervaring in de maritieme, offshore en voedselverwerkingssectoren in Nederland en internationaal brengt hij diepgaande technische expertise en een bewezen staat van dienst mee. Hij communiceert direct in Nederlands, Engels, Spaans en Duits.",
+      "experienceBadge": "WERKERVARING",
+      "earlierCareerBadge": "EERDERE LOOPBAAN",
+      "roles": {
+        "preaumate": {
+          "roleTitle": "Oprichter & Industrieel Automatiseringsingenieur",
+          "description": "Preaumate opgericht om praktische industriële automatiseringstechnieken rechtstreeks aan fabrikanten in Europa en Latijns-Amerika te leveren. PLC-programmering, SCADA-ontwikkeling, industriële IoT-integratie, robotica en AI-gestuurde automatisering — met fabrieksvloer-ervaring achter elke oplossing.",
+          "highlights": [
+            "PLC-programmering voor Siemens, Rockwell en CoDeSys",
+            "SCADA en HMI-ontwikkeling voor productiemonitoring",
+            "Industriële IoT-integratie met OPC UA en MQTT",
+            "Robotica-integratie en inbedrijfstelling",
+            "Industriële AI voor anomaliedetectie en voorspellend onderhoud",
+            "Remote engineering ondersteuning in Europa en Latijns-Amerika"
+          ]
+        },
+        "kiremko": {
+          "roleTitle": "Software Developer & Automatiseringsingenieur",
+          "description": "Project- en machineontwerp, engineering en management voor industriële voedselverwerkingsautomatisering. Ontwikkeling binnen een team van hardware- en software-ingenieurs, van functionele specificatie tot inbedrijfstelling, klantoplevering en training op locatie.",
+          "highlights": [
+            "Industriële voedselverwerkingmachine-automatisering",
+            "Functionele ontwerpbeschrijvingen opstellen",
+            "Softwareontwikkeling, testen en inbedrijfstelling",
+            "Training op locatie en klantoplevering"
+          ]
+        },
+        "gooiland": {
+          "roleTitle": "Software Developer & Automatiseringsingenieur",
+          "description": "12 jaar specialisatie in maritieme en offshore HVAC-automatisering. Volledige projectlevenscyclus van ontwerp tot internationale inbedrijfstelling, met hands-on ervaring op schepen en offshore-installaties wereldwijd. Sterke focus op klantrelaties en langdurige service.",
+          "highlights": [
+            "Maritieme en offshore HVAC-besturingsautomatisering",
+            "Internationale inbedrijfstelling wereldwijd",
+            "Volledige softwareontwikkel- en implementatiecyclus",
+            "Klantrelaties, training op locatie en service"
+          ]
+        },
+        "vandenPol": {
+          "roleTitle": "Software Developer & Commissioning Engineer",
+          "description": "Industriële voedselverwerkingsautomatisering van projectengineering tot inbedrijfstelling. Internationale projectoplevering, training op locatie en doorlopende service.",
+          "highlights": [
+            "Industriële voedselverwerkingsautomatisering",
+            "Internationale inbedrijfstelling en projectoplevering",
+            "Functionele ontwerpbeschrijvingen",
+            "Training op locatie en service"
+          ]
+        },
+        "elero": {
+          "roleTitle": "Technische Verkoop, Advies & IT-beheer",
+          "description": "Project- en automatiseringstechniek, verkoop, productadvies, klanttraining en IT-beheer voor een specialist in aandrijvingen en domotica.",
+          "highlights": [
+            "Automatiseringstechniek en technische verkoop",
+            "Productadvies en klanttraining",
+            "IT-beheer"
+          ]
+        }
+      },
+      "skillsBadge": "KERNCOMPETENTIES",
+      "skillsTitle": "Waar Ik het Beste in Ben",
+      "skills": [
+        "Projectmanagement",
+        "Besluitvaardigheid",
+        "Creatief ontwerper",
+        "Innovatieve ontwikkelaar",
+        "Complexe probleemoplossing",
+        "Inbedrijfstelling",
+        "Klantgerichtheid",
+        "Advies & Training",
+        "Technische vertaling"
+      ],
+      "technicalBadge": "TECHNISCHE EXPERTISE",
+      "technicalTitle": "Platforms & Tools",
+      "techPlc": "PLC-platforms",
+      "techScada": "SCADA & HMI",
+      "techSoftware": "Software & Programmeren",
+      "techProtocols": "Protocollen & Overig",
+      "educationBadge": "OPLEIDING",
+      "degreeTitle": "Bachelor Computer Data Science & Informatiesystemen",
+      "certificationsBadge": "CERTIFICERINGEN",
+      "certifications": {
+        "siemens": {
+          "title": "Gecertificeerd Siemens Programmeur",
+          "detail": "TIA Portal & Step 7"
+        },
+        "offshore": {
+          "title": "Offshore Veiligheidscertificaten",
+          "detail": "GWO Zee Overleving, Werken op Hoogte, Brandveiligheid, EHBO, Handmatig Tillen"
+        },
+        "bosiet": {
+          "title": "BOSIET / HUET — OPITO Gecertificeerd",
+          "detail": "Helikopter Onderwater Ontsnappingstraining"
+        }
+      },
+      "languagesBadge": "TALEN",
+      "spokenLanguages": {
+        "dutch": {
+          "language": "Nederlands",
+          "level": "Moedertaal"
+        },
+        "english": {
+          "language": "Engels",
+          "level": "Vloeiend"
+        },
+        "spanish": {
+          "language": "Spaans",
+          "level": "Vloeiend"
+        },
+        "german": {
+          "language": "Duits",
+          "level": "Gevorderd"
+        }
+      },
+      "contactBadge": "LATEN WE SAMENWERKEN",
+      "contactTitle": "Uw Project Bespreken?",
+      "contactSubtitle": "Neem contact op als u wilt bespreken hoe Preaumate uw automatiseringsproject kan ondersteunen. Ik spreek direct af.",
+      "contactButton": "Neem Contact Op"
     }
   },
   "es": {
@@ -2175,6 +2435,136 @@
           "linkedin": "#"
         }
       ]
+    },
+    "curriculum": {
+      "pageTitle": "Theo Rietveld — CV | Preaumate",
+      "metaDescription": "Currículum profesional de Theo Rietveld, fundador e ingeniero de automatización industrial en Preaumate. Más de 20 años de experiencia en PLC, SCADA, IoT y robótica.",
+      "heroBadge": "CURRICULUM VITAE",
+      "heroSubtitle": "Fundador e Ingeniero de Automatización Industrial en Preaumate",
+      "heroTagline": "Más de 20 años de experiencia práctica en programación PLC, desarrollo SCADA, integración de sistemas y puesta en marcha internacional.",
+      "photoAlt": "Theo Rietveld — Fundador de Preaumate",
+      "photoPlaceholder": "TR",
+      "currentBadge": "Actual",
+      "presentLabel": "Presente",
+      "downloadPdf": "Descargar PDF",
+      "contactCta": "Hablar de su Proyecto",
+      "summaryBadge": "RESUMEN PROFESIONAL",
+      "summaryTitle": "Experiencia de Ingeniería al Servicio de sus Objetivos de Producción",
+      "summaryText": "Theo Rietveld es ingeniero de automatización industrial y fundador de Preaumate con más de 20 años de experiencia práctica en programación PLC, desarrollo SCADA, integración de sistemas y puesta en marcha internacional. Con experiencia en sectores marítimo, offshore y procesamiento de alimentos en Europa e internacionalmente, aporta profunda experiencia técnica y un historial probado de entrega de proyectos. Se comunica directamente en neerlandés, inglés, español y alemán.",
+      "experienceBadge": "EXPERIENCIA PROFESIONAL",
+      "earlierCareerBadge": "CARRERA ANTERIOR",
+      "roles": {
+        "preaumate": {
+          "roleTitle": "Fundador e Ingeniero de Automatización Industrial",
+          "description": "Fundó Preaumate para proporcionar ingeniería de automatización industrial práctica directamente a fabricantes en Europa y América Latina. Programación PLC, desarrollo SCADA, integración IoT industrial, robótica y automatización impulsada por IA.",
+          "highlights": [
+            "Programación PLC para Siemens, Rockwell y CoDeSys",
+            "Desarrollo SCADA e IHM para monitoreo de producción",
+            "Integración IoT industrial con OPC UA y MQTT",
+            "Integración y puesta en marcha de robótica",
+            "IA industrial para detección de anomalías y mantenimiento predictivo",
+            "Soporte de ingeniería remota en Europa y América Latina"
+          ]
+        },
+        "kiremko": {
+          "roleTitle": "Desarrollador de Software e Ingeniero de Automatización",
+          "description": "Diseño, ingeniería y gestión de proyectos y máquinas para automatización de procesamiento de alimentos industrial. Desarrollo dentro de un equipo de ingenieros de hardware y software, desde la especificación funcional hasta la puesta en marcha y entrega al cliente.",
+          "highlights": [
+            "Automatización de máquinas de procesamiento de alimentos",
+            "Especificaciones de diseño funcional",
+            "Desarrollo, prueba y puesta en marcha de software",
+            "Capacitación in situ y entrega al cliente"
+          ]
+        },
+        "gooiland": {
+          "roleTitle": "Desarrollador de Software e Ingeniero de Automatización",
+          "description": "12 años especializándose en automatización HVAC marítima y offshore. Ciclo completo de proyectos desde el diseño hasta la puesta en marcha internacional, con experiencia directa en embarcaciones e instalaciones offshore en todo el mundo.",
+          "highlights": [
+            "Automatización de control HVAC marítima y offshore",
+            "Puesta en marcha internacional en todo el mundo",
+            "Ciclo completo de desarrollo e implementación de software",
+            "Relaciones con clientes, capacitación in situ y servicio"
+          ]
+        },
+        "vandenPol": {
+          "roleTitle": "Desarrollador de Software e Ingeniero de Puesta en Marcha",
+          "description": "Automatización de procesamiento de alimentos industrial desde la ingeniería de proyectos hasta la puesta en marcha. Entrega internacional de proyectos, capacitación in situ y servicio continuo.",
+          "highlights": [
+            "Automatización de procesamiento de alimentos industrial",
+            "Puesta en marcha y entrega internacional de proyectos",
+            "Especificaciones de diseño funcional",
+            "Capacitación in situ y servicio"
+          ]
+        },
+        "elero": {
+          "roleTitle": "Ventas Técnicas, Consultoría y Gestión TI",
+          "description": "Ingeniería de proyectos y automatización, ventas, consultoría de productos, capacitación a clientes y gestión de TI para un especialista en accionamientos y automatización del hogar.",
+          "highlights": [
+            "Ingeniería de automatización y ventas técnicas",
+            "Consultoría de productos y capacitación a clientes",
+            "Gestión de TI"
+          ]
+        }
+      },
+      "skillsBadge": "COMPETENCIAS CLAVE",
+      "skillsTitle": "En qué Soy Mejor",
+      "skills": [
+        "Gestión de Proyectos",
+        "Toma de Decisiones",
+        "Diseño Creativo",
+        "Desarrollo Innovador",
+        "Resolución de Problemas Complejos",
+        "Puesta en Marcha",
+        "Relaciones con Clientes",
+        "Consultoría y Formación",
+        "Traducción Técnica"
+      ],
+      "technicalBadge": "EXPERIENCIA TÉCNICA",
+      "technicalTitle": "Plataformas y Herramientas",
+      "techPlc": "Plataformas PLC",
+      "techScada": "SCADA e IHM",
+      "techSoftware": "Software y Programación",
+      "techProtocols": "Protocolos y Otros",
+      "educationBadge": "EDUCACIÓN",
+      "degreeTitle": "Grado en Ciencias de Datos Informáticos y Sistemas de Información",
+      "certificationsBadge": "CERTIFICACIONES",
+      "certifications": {
+        "siemens": {
+          "title": "Programador Siemens Certificado",
+          "detail": "TIA Portal y Step 7"
+        },
+        "offshore": {
+          "title": "Certificados de Seguridad Offshore",
+          "detail": "GWO Supervivencia en el Mar, Trabajo en Alturas, Concienciación sobre Incendios, Primeros Auxilios, Manipulación Manual"
+        },
+        "bosiet": {
+          "title": "BOSIET / HUET — Certificado OPITO",
+          "detail": "Entrenamiento de Escape Submarino en Helicóptero"
+        }
+      },
+      "languagesBadge": "IDIOMAS",
+      "spokenLanguages": {
+        "dutch": {
+          "language": "Neerlandés",
+          "level": "Nativo"
+        },
+        "english": {
+          "language": "Inglés",
+          "level": "Avanzado"
+        },
+        "spanish": {
+          "language": "Español",
+          "level": "Avanzado"
+        },
+        "german": {
+          "language": "Alemán",
+          "level": "Avanzado"
+        }
+      },
+      "contactBadge": "TRABAJEMOS JUNTOS",
+      "contactTitle": "¿Listo para Hablar de su Proyecto?",
+      "contactSubtitle": "Si desea hablar sobre cómo Preaumate puede apoyar su proyecto de automatización, con gusto me conecto directamente.",
+      "contactButton": "Ponerse en Contacto"
     }
   },
   "de": {
@@ -2901,6 +3291,136 @@
           "linkedin": "#"
         }
       ]
+    },
+    "curriculum": {
+      "pageTitle": "Theo Rietveld — Lebenslauf | Preaumate",
+      "metaDescription": "Professioneller Lebenslauf von Theo Rietveld, Gründer und Automatisierungsingenieur bei Preaumate. 20+ Jahre SPS-, SCADA-, IoT- und Robotikerfahrung.",
+      "heroBadge": "LEBENSLAUF",
+      "heroSubtitle": "Gründer & Industrieller Automatisierungsingenieur bei Preaumate",
+      "heroTagline": "Über 20 Jahre praktische Erfahrung in SPS-Programmierung, SCADA-Entwicklung, Systemintegration und internationaler Inbetriebnahme.",
+      "photoAlt": "Theo Rietveld — Gründer von Preaumate",
+      "photoPlaceholder": "TR",
+      "currentBadge": "Aktuell",
+      "presentLabel": "Heute",
+      "downloadPdf": "PDF Herunterladen",
+      "contactCta": "Ihr Projekt Besprechen",
+      "summaryBadge": "BERUFLICHES PROFIL",
+      "summaryTitle": "Ingenieurfachkenntnisse im Dienst Ihrer Produktionsziele",
+      "summaryText": "Theo Rietveld ist Automatisierungsingenieur und Gründer von Preaumate mit über 20 Jahren praktischer Erfahrung in SPS-Programmierung, SCADA-Entwicklung, Systemintegration und internationaler Projektinbetriebnahme. Mit Erfahrung in der maritimen Industrie, im Offshore-Bereich und in der Lebensmittelverarbeitung bringt er tiefgreifendes technisches Fachwissen mit. Er kommuniziert direkt auf Niederländisch, Englisch, Spanisch und Deutsch.",
+      "experienceBadge": "BERUFSERFAHRUNG",
+      "earlierCareerBadge": "FRÜHERE LAUFBAHN",
+      "roles": {
+        "preaumate": {
+          "roleTitle": "Gründer & Industrieller Automatisierungsingenieur",
+          "description": "Preaumate gegründet, um praktische industrielle Automatisierungstechnik direkt an Hersteller in Europa und Lateinamerika zu liefern. SPS-Programmierung, SCADA-Entwicklung, industrielle IoT-Integration, Robotik und KI-gesteuerte Automatisierung.",
+          "highlights": [
+            "SPS-Programmierung für Siemens, Rockwell und CoDeSys",
+            "SCADA und HMI-Entwicklung für die Produktionsüberwachung",
+            "Industrielle IoT-Integration mit OPC UA und MQTT",
+            "Robotik-Integration und Inbetriebnahme",
+            "Industrielle KI für Anomalieerkennung und vorausschauende Wartung",
+            "Remote-Engineering-Support in Europa und Lateinamerika"
+          ]
+        },
+        "kiremko": {
+          "roleTitle": "Softwareentwickler & Automatisierungsingenieur",
+          "description": "Projekt- und Maschinendesign, Engineering und Management für industrielle Lebensmittelverarbeitungsautomatisierung. Entwicklung im Team mit Hardware- und Softwareingenieuren, von der Funktionsspezifikation bis zur Inbetriebnahme und Übergabe.",
+          "highlights": [
+            "Automatisierung von Lebensmittelverarbeitungsmaschinen",
+            "Funktionale Designspezifikationen",
+            "Softwareentwicklung, Test und Inbetriebnahme",
+            "Schulung vor Ort und Kundenübergabe"
+          ]
+        },
+        "gooiland": {
+          "roleTitle": "Softwareentwickler & Automatisierungsingenieur",
+          "description": "12 Jahre Spezialisierung auf maritime und Offshore-HVAC-Automatisierung. Vollständiger Projektlebenszyklus von der Planung bis zur internationalen Inbetriebnahme, mit praktischer Erfahrung auf Schiffen und Offshore-Anlagen weltweit.",
+          "highlights": [
+            "Maritime und Offshore-HVAC-Steuerungsautomatisierung",
+            "Internationale Inbetriebnahme weltweit",
+            "Vollständiger Softwareentwicklungs- und Bereitstellungszyklus",
+            "Kundenbeziehungen, Schulung vor Ort und Service"
+          ]
+        },
+        "vandenPol": {
+          "roleTitle": "Softwareentwickler & Inbetriebnahmeingenieur",
+          "description": "Industrielle Lebensmittelverarbeitungsautomatisierung vom Projekt-Engineering bis zur Inbetriebnahme. Internationale Projektabwicklung, Schulung vor Ort und laufender Service.",
+          "highlights": [
+            "Industrielle Lebensmittelverarbeitungsautomatisierung",
+            "Internationale Inbetriebnahme und Projektabwicklung",
+            "Funktionale Designspezifikationen",
+            "Schulung vor Ort und Service"
+          ]
+        },
+        "elero": {
+          "roleTitle": "Technischer Vertrieb, Beratung & IT-Management",
+          "description": "Projekt- und Automatisierungstechnik, Vertrieb, Produktberatung, Kundenschulung und IT-Management für einen Spezialisten für Antriebe und Hausautomation.",
+          "highlights": [
+            "Automatisierungstechnik und technischer Vertrieb",
+            "Produktberatung und Kundenschulung",
+            "IT-Management"
+          ]
+        }
+      },
+      "skillsBadge": "KERNKOMPETENZEN",
+      "skillsTitle": "Meine Stärken",
+      "skills": [
+        "Projektmanagement",
+        "Entscheidungsfähigkeit",
+        "Kreatives Design",
+        "Innovative Entwicklung",
+        "Komplexe Problemlösung",
+        "Inbetriebnahme",
+        "Kundenorientierung",
+        "Beratung & Schulung",
+        "Technische Übersetzung"
+      ],
+      "technicalBadge": "TECHNISCHE KOMPETENZ",
+      "technicalTitle": "Plattformen & Werkzeuge",
+      "techPlc": "SPS-Plattformen",
+      "techScada": "SCADA & HMI",
+      "techSoftware": "Software & Programmierung",
+      "techProtocols": "Protokolle & Sonstiges",
+      "educationBadge": "AUSBILDUNG",
+      "degreeTitle": "Bachelor Computer Data Science & Informationssysteme",
+      "certificationsBadge": "ZERTIFIZIERUNGEN",
+      "certifications": {
+        "siemens": {
+          "title": "Zertifizierter Siemens-Programmierer",
+          "detail": "TIA Portal & Step 7"
+        },
+        "offshore": {
+          "title": "Offshore-Sicherheitszertifikate",
+          "detail": "GWO Seenot-Überleben, Arbeiten in der Höhe, Brandschutz, Erste Hilfe, Manuelle Handhabung"
+        },
+        "bosiet": {
+          "title": "BOSIET / HUET — OPITO-Zertifiziert",
+          "detail": "Hubschrauber-Unterwasser-Fluchttraining"
+        }
+      },
+      "languagesBadge": "SPRACHEN",
+      "spokenLanguages": {
+        "dutch": {
+          "language": "Niederländisch",
+          "level": "Muttersprache"
+        },
+        "english": {
+          "language": "Englisch",
+          "level": "Fließend"
+        },
+        "spanish": {
+          "language": "Spanisch",
+          "level": "Fließend"
+        },
+        "german": {
+          "language": "Deutsch",
+          "level": "Fortgeschritten"
+        }
+      },
+      "contactBadge": "ZUSAMMENARBEITEN",
+      "contactTitle": "Ihr Projekt Besprechen?",
+      "contactSubtitle": "Wenn Sie besprechen möchten, wie Preaumate Ihr Automatisierungsprojekt unterstützen kann, spreche ich gerne direkt mit Ihnen.",
+      "contactButton": "Kontakt Aufnehmen"
     }
   },
   "fr": {
@@ -3627,6 +4147,136 @@
           "linkedin": "#"
         }
       ]
+    },
+    "curriculum": {
+      "pageTitle": "Theo Rietveld — CV | Preaumate",
+      "metaDescription": "Curriculum professionnel de Theo Rietveld, fondateur et ingénieur en automatisation industrielle chez Preaumate. Plus de 20 ans d'expérience en API, SCADA, IoT et robotique.",
+      "heroBadge": "CURRICULUM VITAE",
+      "heroSubtitle": "Fondateur et Ingénieur en Automatisation Industrielle chez Preaumate",
+      "heroTagline": "Plus de 20 ans d'expérience pratique en programmation API, développement SCADA, intégration de systèmes et mise en service internationale.",
+      "photoAlt": "Theo Rietveld — Fondateur de Preaumate",
+      "photoPlaceholder": "TR",
+      "currentBadge": "Actuel",
+      "presentLabel": "Présent",
+      "downloadPdf": "Télécharger le PDF",
+      "contactCta": "Discuter de votre Projet",
+      "summaryBadge": "RÉSUMÉ PROFESSIONNEL",
+      "summaryTitle": "Expertise en Ingénierie au Service de vos Objectifs de Production",
+      "summaryText": "Theo Rietveld est ingénieur en automatisation industrielle et fondateur de Preaumate avec plus de 20 ans d'expérience pratique en programmation API, développement SCADA, intégration de systèmes et mise en service internationale de projets. Ayant travaillé dans les secteurs maritime, offshore et de la transformation alimentaire en Europe et à l'international, il apporte une expertise technique approfondie et un bilan éprouvé. Il communique directement en néerlandais, anglais, espagnol et allemand.",
+      "experienceBadge": "EXPÉRIENCE PROFESSIONNELLE",
+      "earlierCareerBadge": "CARRIÈRE ANTÉRIEURE",
+      "roles": {
+        "preaumate": {
+          "roleTitle": "Fondateur et Ingénieur en Automatisation Industrielle",
+          "description": "Fondé Preaumate pour fournir une ingénierie en automatisation industrielle pratique directement aux fabricants en Europe et en Amérique latine. Programmation API, développement SCADA, intégration IoT industriel, robotique et automatisation pilotée par IA.",
+          "highlights": [
+            "Programmation API pour Siemens, Rockwell et CoDeSys",
+            "Développement SCADA et IHM pour la surveillance de la production",
+            "Intégration IoT industriel avec OPC UA et MQTT",
+            "Intégration et mise en service de robotique",
+            "IA industrielle pour la détection d'anomalies et la maintenance prédictive",
+            "Support d'ingénierie à distance en Europe et en Amérique latine"
+          ]
+        },
+        "kiremko": {
+          "roleTitle": "Développeur Logiciel et Ingénieur en Automatisation",
+          "description": "Conception, ingénierie et gestion de projets et de machines pour l'automatisation industrielle de la transformation alimentaire. Développement au sein d'une équipe d'ingénieurs matériel et logiciel, de la spécification fonctionnelle à la mise en service et à la remise au client.",
+          "highlights": [
+            "Automatisation de machines de transformation alimentaire industrielle",
+            "Spécifications de conception fonctionnelle",
+            "Développement, test et mise en service de logiciels",
+            "Formation sur site et remise au client"
+          ]
+        },
+        "gooiland": {
+          "roleTitle": "Développeur Logiciel et Ingénieur en Automatisation",
+          "description": "12 ans de spécialisation en automatisation HVAC maritime et offshore. Cycle de vie complet du projet, de la conception à la mise en service internationale, avec une expérience directe sur des navires et des installations offshore dans le monde entier.",
+          "highlights": [
+            "Automatisation du contrôle HVAC maritime et offshore",
+            "Mise en service internationale dans le monde entier",
+            "Cycle complet de développement et déploiement de logiciels",
+            "Relations clients, formation sur site et service"
+          ]
+        },
+        "vandenPol": {
+          "roleTitle": "Développeur Logiciel et Ingénieur de Mise en Service",
+          "description": "Automatisation industrielle de la transformation alimentaire, de l'ingénierie de projet à la mise en service. Livraison internationale de projets, formation sur site et service continu.",
+          "highlights": [
+            "Automatisation industrielle de la transformation alimentaire",
+            "Mise en service et livraison internationale de projets",
+            "Spécifications de conception fonctionnelle",
+            "Formation sur site et service"
+          ]
+        },
+        "elero": {
+          "roleTitle": "Ventes Techniques, Conseil et Gestion IT",
+          "description": "Ingénierie de projets et d'automatisation, ventes, conseil produit, formation clients et gestion IT pour un spécialiste des entraînements et de la domotique.",
+          "highlights": [
+            "Ingénierie d'automatisation et ventes techniques",
+            "Conseil produit et formation clients",
+            "Gestion IT"
+          ]
+        }
+      },
+      "skillsBadge": "COMPÉTENCES CLÉS",
+      "skillsTitle": "Mes Points Forts",
+      "skills": [
+        "Gestion de Projets",
+        "Prise de Décision",
+        "Conception Créative",
+        "Développement Innovant",
+        "Résolution de Problèmes Complexes",
+        "Mise en Service",
+        "Relations Clients",
+        "Conseil et Formation",
+        "Traduction Technique"
+      ],
+      "technicalBadge": "EXPERTISE TECHNIQUE",
+      "technicalTitle": "Plateformes et Outils",
+      "techPlc": "Plateformes API",
+      "techScada": "SCADA et IHM",
+      "techSoftware": "Logiciels et Programmation",
+      "techProtocols": "Protocoles et Autres",
+      "educationBadge": "FORMATION",
+      "degreeTitle": "Licence en Science des Données Informatiques et Systèmes d'Information",
+      "certificationsBadge": "CERTIFICATIONS",
+      "certifications": {
+        "siemens": {
+          "title": "Programmeur Siemens Certifié",
+          "detail": "TIA Portal et Step 7"
+        },
+        "offshore": {
+          "title": "Certificats de Sécurité Offshore",
+          "detail": "GWO Survie en Mer, Travail en Hauteur, Sensibilisation Incendie, Premiers Secours, Manutention Manuelle"
+        },
+        "bosiet": {
+          "title": "BOSIET / HUET — Certifié OPITO",
+          "detail": "Formation à l'Évacuation Sous-Marine par Hélicoptère"
+        }
+      },
+      "languagesBadge": "LANGUES",
+      "spokenLanguages": {
+        "dutch": {
+          "language": "Néerlandais",
+          "level": "Langue maternelle"
+        },
+        "english": {
+          "language": "Anglais",
+          "level": "Courant"
+        },
+        "spanish": {
+          "language": "Espagnol",
+          "level": "Courant"
+        },
+        "german": {
+          "language": "Allemand",
+          "level": "Avancé"
+        }
+      },
+      "contactBadge": "TRAVAILLONS ENSEMBLE",
+      "contactTitle": "Prêt à Discuter de votre Projet ?",
+      "contactSubtitle": "Si vous souhaitez discuter de la manière dont Preaumate peut soutenir votre projet d'automatisation, je suis disponible pour un échange direct.",
+      "contactButton": "Prendre Contact"
     }
   },
   "pt": {
@@ -4053,9 +4703,6 @@
         }
       ]
     },
-    "pricing": {
-      "signal": "Trabalhamos com base em projetos e diária. Entre em contato para um orçamento — respondemos em um dia útil."
-    },
     "endorsements": {
       "badge": "O QUE DIZEM OS COLEGAS",
       "title": "Aprovado por Engenheiros que Conhecem o Trabalho",
@@ -4353,6 +5000,139 @@
           "linkedin": "#"
         }
       ]
+    },
+    "curriculum": {
+      "pageTitle": "Theo Rietveld – CV | Pré-aumato",
+      "metaDescription": "Currículo profissional de Theo Rietveld, fundador e engenheiro de automação industrial na Preaumate. Mais de 20 anos de experiência em CLP, SCADA, IoT e robótica.",
+      "heroBadge": "CURRICULUM VITAE",
+      "heroSubtitle": "Fundador e Engenheiro de Automação Industrial na Preaumate",
+      "heroTagline": "Mais de 20 anos de experiência prática em programação CLP, desenvolvimento SCADA, integração de sistemas e comissionamento internacional.",
+      "photoAlt": "Theo Rietveld — Fundador da Preaumate",
+      "photoPlaceholder": "TR",
+      "currentBadge": "Atual",
+      "presentLabel": "Presente",
+      "downloadPdf": "Baixar PDF",
+      "contactCta": "Discutir seu Projeto",
+      "summaryBadge": "RESUMO PROFISSIONAL",
+      "summaryTitle": "Experiência em Engenharia a Serviço dos seus Objetivos de Produção",
+      "summaryText": "Theo Rietveld é engenheiro de automação industrial e fundador da Preaumate com mais de 20 anos de experiência prática em programação CLP, desenvolvimento SCADA, integração de sistemas e comissionamento internacional de projetos. Com experiência nos setores marítimo, offshore e de processamento de alimentos na Europa e internacionalmente, traz profunda expertise técnica e um histórico comprovado de entrega de projetos. Ele se comunica diretamente em holandês, inglês, espanhol e alemão.",
+      "experienceBadge": "EXPERIÊNCIA PROFISSIONAL",
+      "earlierCareerBadge": "CARREIRA ANTERIOR",
+      "roles": {
+        "preaumate": {
+          "roleTitle": "Fundador e Engenheiro de Automação Industrial",
+          "description": "Fundou a Preaumate para fornecer engenharia de automação industrial prática diretamente a fabricantes na Europa e América Latina. Programação CLP, desenvolvimento SCADA, integração IoT industrial, robótica e automação orientada por IA.",
+          "highlights": [
+            "Programação CLP para Siemens, Rockwell e CoDeSys",
+            "Desenvolvimento SCADA e IHM para monitoramento de produção",
+            "Integração IoT industrial com OPC UA e MQTT",
+            "Integração e comissionamento de robótica",
+            "IA industrial para detecção de anomalias e manutenção preditiva",
+            "Suporte de engenharia remota na Europa e América Latina"
+          ]
+        },
+        "kiremko": {
+          "roleTitle": "Desenvolvedor de Software e Engenheiro de Automação",
+          "description": "Design, engenharia e gestão de projetos e máquinas para automação industrial de processamento de alimentos. Desenvolvimento dentro de uma equipe de engenheiros de hardware e software, da especificação funcional ao comissionamento e entrega ao cliente.",
+          "highlights": [
+            "Automação de máquinas de processamento de alimentos industrial",
+            "Especificações de design funcional",
+            "Desenvolvimento, teste e comissionamento de software",
+            "Treinamento no local e entrega ao cliente"
+          ]
+        },
+        "gooiland": {
+          "roleTitle": "Desenvolvedor de Software e Engenheiro de Automação",
+          "description": "12 anos especializando-se em automação HVAC marítima e offshore. Ciclo de vida completo do projeto, do design ao comissionamento internacional, com experiência prática em embarcações e instalações offshore em todo o mundo.",
+          "highlights": [
+            "Automação de controle HVAC marítima e offshore",
+            "Comissionamento internacional em todo o mundo",
+            "Ciclo completo de desenvolvimento e implantação de software",
+            "Relações com clientes, treinamento no local e serviço"
+          ]
+        },
+        "vandenPol": {
+          "roleTitle": "Desenvolvedor de Software e Engenheiro de Comissionamento",
+          "description": "Automação industrial de processamento de alimentos, da engenharia de projetos ao comissionamento. Entrega internacional de projetos, treinamento no local e serviço contínuo.",
+          "highlights": [
+            "Automação industrial de processamento de alimentos",
+            "Comissionamento e entrega internacional de projetos",
+            "Especificações de design funcional",
+            "Treinamento no local e serviço"
+          ]
+        },
+        "elero": {
+          "roleTitle": "Vendas Técnicas, Consultoria e Gestão de TI",
+          "description": "Engenharia de projetos e automação, vendas, consultoria de produtos, treinamento de clientes e gestão de TI para um especialista em acionamentos e automação residencial.",
+          "highlights": [
+            "Engenharia de automação e vendas técnicas",
+            "Consultoria de produtos e treinamento de clientes",
+            "Gestão de TI"
+          ]
+        }
+      },
+      "skillsBadge": "COMPETÊNCIAS PRINCIPAIS",
+      "skillsTitle": "Meus Pontos Fortes",
+      "skills": [
+        "Gestão de Projetos",
+        "Tomada de Decisão",
+        "Design Criativo",
+        "Desenvolvimento Inovador",
+        "Resolução de Problemas Complexos",
+        "Comissionamento",
+        "Relações com Clientes",
+        "Consultoria e Treinamento",
+        "Tradução Técnica"
+      ],
+      "technicalBadge": "EXPERTISE TÉCNICA",
+      "technicalTitle": "Plataformas e Ferramentas",
+      "techPlc": "Plataformas CLP",
+      "techScada": "SCADA e IHM",
+      "techSoftware": "Software e Programação",
+      "techProtocols": "Protocolos e Outros",
+      "educationBadge": "FORMAÇÃO",
+      "degreeTitle": "Bacharelado em Ciência de Dados Computacional e Sistemas de Informação",
+      "certificationsBadge": "CERTIFICAÇÕES",
+      "certifications": {
+        "siemens": {
+          "title": "Programador Siemens Certificado",
+          "detail": "TIA Portal e Step 7"
+        },
+        "offshore": {
+          "title": "Certificados de Segurança Offshore",
+          "detail": "GWO Sobrevivência no Mar, Trabalho em Altura, Conscientização sobre Incêndios, Primeiros Socorros, Manuseio Manual"
+        },
+        "bosiet": {
+          "title": "BOSIET / HUET — Certificado OPITO",
+          "detail": "Treinamento de Fuga Subaquática de Helicóptero"
+        }
+      },
+      "languagesBadge": "IDIOMAS",
+      "spokenLanguages": {
+        "dutch": {
+          "language": "Holandês",
+          "level": "Nativo"
+        },
+        "english": {
+          "language": "Inglês",
+          "level": "Proficiente"
+        },
+        "spanish": {
+          "language": "Espanhol",
+          "level": "Proficiente"
+        },
+        "german": {
+          "language": "Alemão",
+          "level": "Avançado"
+        }
+      },
+      "contactBadge": "VAMOS TRABALHAR JUNTOS",
+      "contactTitle": "Pronto para Discutir seu Projeto?",
+      "contactSubtitle": "Se quiser discutir como a Preaumate pode apoiar seu projeto de automação, fico feliz em conversar diretamente.",
+      "contactButton": "Entrar em Contato"
+    },
+    "pricing": {
+      "signal": "Trabalhamos com base em projeto e diária. Contate-nos para um orçamento – respondemos em um dia útil."
     }
   }
 }

@@ -22,7 +22,7 @@ const EndorsementsSection = () => {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ background: LIGHT }}
+      style={{ background: DARK }}
     >
       {/* Subtle grid background
       <div

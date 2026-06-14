@@ -17,7 +17,7 @@ export const images = {
   // Recommended: square crop, 400×400px minimum, professional.
   // Place files in /public/images/founders/
   founders: {
-    theo: '/images/team/theo-profile.jpg', // ← set to '/images/founders/theo-rietveld.jpg'
+    theo: '', //'/images/team/theo-profile.jpg', // ← set to '/images/founders/theo-rietveld.jpg'
     coFounder: '',                         // ← set to '/images/founders/founder2.jpg'
   },
 
@@ -26,7 +26,7 @@ export const images = {
   // Can be the same as founders.theo or a different shot.
   // Recommended: portrait orientation, 600×800px, neutral background.
   curriculum: {
-    theo: '/Images/Team/theo-profile.jpg',                  // ← set to '/images/curriculum/theo-rietveld-cv.jpg'
+    theo: '', //'/Images/Team/theo-profile.jpg',                  // ← set to '/images/curriculum/theo-rietveld-cv.jpg'
   },
 
   // ── HERO SECTION ─────────────────────────────────────────
