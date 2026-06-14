@@ -6,26 +6,28 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { useLanguage } from '@/context/LanguageContext';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Environment variables (set in your .env file — see SECURITY_SETUP.md)
-//
-// VITE_TURNSTILE_SITE_KEY   Your Cloudflare Turnstile site key
-// VITE_WORKER_URL           Your Cloudflare Worker URL
-//
-// During development, Cloudflare provides a test site key that always passes:
-//   VITE_TURNSTILE_SITE_KEY=1x00000000000000000000AA
-//   VITE_WORKER_URL=http://localhost:8787
-// ─────────────────────────────────────────────────────────────────────────────
 const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY || '1x00000000000000000000AA';
-const WORKER_URL         = import.meta.env.VITE_WORKER_URL         || 'http://preaumatecontactform.reaunald.workers.dev';
+const WORKER_URL         = import.meta.env.VITE_WORKER_URL         || 'http://localhost:8787';
 
-const ContactForm = () => {
+// ─────────────────────────────────────────────────────────────────────────────
+// ContactForm
+//
+// NEW PROP: qualifierSummary (string, optional)
+//   A human-readable text block produced by the LeadQualifier wizard,
+//   summarising the visitor's answers (business size, platforms used,
+//   challenges, etc). If present, it is sent to the Worker as
+//   "projectContext" and included in the email.
+//
+//   If the visitor skipped the questionnaire, this is an empty string
+//   and the field is simply omitted from the submission — everything
+//   else works exactly as before.
+// ─────────────────────────────────────────────────────────────────────────────
+const ContactForm = ({ qualifierSummary = '' }) => {
   const { toast }      = useToast();
   const { t }          = useLanguage();
   const f              = t.form;
   const turnstileRef   = useRef(null);
 
-  // ── State ────────────────────────────────────────────────────────────────
   const [isSubmitting, setIsSubmitting]     = useState(false);
   const [turnstileToken, setTurnstileToken] = useState(null);
   const [formData, setFormData]             = useState({
@@ -33,7 +35,6 @@ const ContactForm = () => {
   });
   const [errors, setErrors] = useState({});
 
-  // ── Validation ───────────────────────────────────────────────────────────
   const validateForm = () => {
     const e = {};
     if (!formData.companyName.trim())  e.companyName     = f.errors.companyRequired;
@@ -46,7 +47,6 @@ const ContactForm = () => {
     return Object.keys(e).length === 0;
   };
 
-  // ── Submit ───────────────────────────────────────────────────────────────
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -60,7 +60,6 @@ const ContactForm = () => {
       return;
     }
 
-    // Guard: Turnstile must have completed before we can submit
     if (!turnstileToken) {
       toast({
         title:       'Verification required',
@@ -74,17 +73,20 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Send to Cloudflare Worker (no EmailJS credentials in the browser)
       const response = await fetch(WORKER_URL, {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          turnstileToken,                        // verified server-side
+          turnstileToken,
           companyName:     formData.companyName,
           email:           formData.email,
           phone:           formData.phone,
           serviceInterest: formData.serviceInterest,
           message:         formData.message,
+          // ── NEW: pre-contact questionnaire summary ──────────────────────
+          // Empty string if the visitor skipped — the Worker treats an
+          // empty/missing projectContext as "not provided".
+          projectContext:  qualifierSummary,
           timestamp:       new Date().toLocaleString(),
         }),
       });
@@ -97,7 +99,6 @@ const ContactForm = () => {
           description: f.errors.successDesc,
           duration:    5000,
         });
-        // Reset form and Turnstile widget
         setFormData({ companyName: '', email: '', phone: '', serviceInterest: '', message: '' });
         setErrors({});
         setTurnstileToken(null);
@@ -114,7 +115,6 @@ const ContactForm = () => {
         variant:     'destructive',
         duration:    5000,
       });
-      // Reset Turnstile so the visitor can try again
       setTurnstileToken(null);
       turnstileRef.current?.reset();
     } finally {
@@ -122,14 +122,12 @@ const ContactForm = () => {
     }
   };
 
-  // ── Input change handler ─────────────────────────────────────────────────
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }));
   };
 
-  // ── Styles ───────────────────────────────────────────────────────────────
   const inputStyle = (fieldName) => ({
     background:   '#0f172a',
     border:       `1px solid ${errors[fieldName] ? '#ef4444' : 'rgba(16,185,129,0.2)'}`,
@@ -149,10 +147,8 @@ const ContactForm = () => {
     color:        '#94a3b8',
   };
 
-  // The submit button is disabled until Turnstile has issued a token
   const submitDisabled = isSubmitting || !turnstileToken;
 
-  // ── Render ───────────────────────────────────────────────────────────────
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -171,7 +167,6 @@ const ContactForm = () => {
 
       <form onSubmit={handleSubmit} className="space-y-5">
 
-        {/* Company name */}
         <div>
           <label style={labelStyle}>
             {f.companyName} <span style={{ color: '#ef4444' }}>*</span>
@@ -182,13 +177,10 @@ const ContactForm = () => {
             placeholder={f.companyPlaceholder} style={inputStyle('companyName')}
           />
           {errors.companyName && (
-            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
-              {errors.companyName}
-            </p>
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>{errors.companyName}</p>
           )}
         </div>
 
-        {/* Email */}
         <div>
           <label style={labelStyle}>
             {f.email} <span style={{ color: '#ef4444' }}>*</span>
@@ -199,13 +191,10 @@ const ContactForm = () => {
             placeholder={f.emailPlaceholder} style={inputStyle('email')}
           />
           {errors.email && (
-            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
-              {errors.email}
-            </p>
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>{errors.email}</p>
           )}
         </div>
 
-        {/* Phone (optional) */}
         <div>
           <label style={labelStyle}>{f.phone}</label>
           <input
@@ -215,7 +204,6 @@ const ContactForm = () => {
           />
         </div>
 
-        {/* Service interest */}
         <div>
           <label style={labelStyle}>
             {f.serviceInterest} <span style={{ color: '#ef4444' }}>*</span>
@@ -229,13 +217,10 @@ const ContactForm = () => {
             {f.services.map(s => <option key={s} value={s}>{s}</option>)}
           </select>
           {errors.serviceInterest && (
-            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
-              {errors.serviceInterest}
-            </p>
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>{errors.serviceInterest}</p>
           )}
         </div>
 
-        {/* Message */}
         <div>
           <label style={labelStyle}>
             {f.message} <span style={{ color: '#ef4444' }}>*</span>
@@ -247,19 +232,24 @@ const ContactForm = () => {
             style={{ ...inputStyle('message'), resize: 'none' }}
           />
           {errors.message && (
-            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>
-              {errors.message}
-            </p>
+            <p style={{ color: '#ef4444', fontSize: '12px', marginTop: '4px' }}>{errors.message}</p>
           )}
         </div>
 
-        {/* ── Cloudflare Turnstile ────────────────────────────────────────
-            This replaces the old CAPTCHA / no-protection approach.
-            The widget appears as a small badge. In most cases it is invisible
-            and auto-completes; it only challenges suspicious traffic.
-            The token it produces is verified server-side in the Worker —
-            never in the browser.
-        ─────────────────────────────────────────────────────────────────── */}
+        {/* ── NEW: show a small preview of the captured context ──────────── */}
+        {qualifierSummary && (
+          <details
+            className="rounded-lg px-4 py-3 text-xs"
+            style={{ background: '#0f172a', border: '1px solid rgba(16,185,129,0.15)', color: '#64748b' }}
+          >
+            <summary className="cursor-pointer font-semibold" style={{ color: '#10b981' }}>
+              {f.qualifierPreviewLabel || 'Your questionnaire answers (included with this message)'}
+            </summary>
+            <pre className="whitespace-pre-wrap mt-2 leading-relaxed">{qualifierSummary}</pre>
+          </details>
+        )}
+
+        {/* Cloudflare Turnstile */}
         <div className="flex items-center justify-between flex-wrap gap-3">
           <Turnstile
             ref={turnstileRef}
@@ -269,8 +259,6 @@ const ContactForm = () => {
             onError={()   => setTurnstileToken(null)}
             onExpire={()  => setTurnstileToken(null)}
           />
-
-          {/* Small trust badge shown next to the widget */}
           {turnstileToken && (
             <div className="flex items-center gap-1.5" style={{ color: '#10b981' }}>
               <ShieldCheck className="w-4 h-4" />
@@ -279,7 +267,6 @@ const ContactForm = () => {
           )}
         </div>
 
-        {/* Submit button — disabled until Turnstile token is present */}
         <Button
           type="submit"
           disabled={submitDisabled}

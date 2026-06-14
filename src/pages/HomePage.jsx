@@ -16,6 +16,7 @@ import ServiceAreaSection from "@/components/ServiceAreaSection";
 import EndorsementsSection from "@/components/EndorsementsSection";
 import FeaturesBar from "@/components/FeaturesBar";
 import ContactForm from "@/components/ContactForm";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SectionTransition from "@/components/SectionTransition";
 import ConsentBanner, { getCookieConsent } from "@/components/ConsentBanner";
@@ -34,14 +35,16 @@ const loadGoogleAnalytics = () => {
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
   document.head.appendChild(script);
   window.dataLayer = window.dataLayer || [];
-  function gtag() { window.dataLayer.push(arguments); }
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
   window.gtag = gtag;
   gtag("js", new Date());
   gtag("config", GA_MEASUREMENT_ID, { anonymize_ip: true });
 };
 
 const TAWKTO_PROPERTY_ID = "69d715a8a5ae3e1c3b561962";
-const TAWKTO_WIDGET_ID   = "1jlo2p6mb";
+const TAWKTO_WIDGET_ID = "1jlo2p6mb";
 
 const loadTawkTo = () => {
   if (document.getElementById("tawkto-script")) return;
@@ -78,10 +81,10 @@ const HomePage = () => {
       <Helmet>
         <title>{seo.home.title}</title>
         <meta name="description" content={seo.home.description} />
-        <meta property="og:title"       content={seo.home.title} />
+        <meta property="og:title" content={seo.home.title} />
         <meta property="og:description" content={seo.home.description} />
-        <meta property="og:type"        content="website" />
-        <meta property="og:url"         content="https://www.preaumate.nl" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.preaumate.nl" />
       </Helmet>
 
       <div className="min-h-screen" style={{ background: LIGHT }}>
@@ -89,7 +92,7 @@ const HomePage = () => {
 
         {/* ── 1. HERO — own gradient, fades to HERO_BOTTOM at its bottom ── */}
         <HeroSection />
-        
+
         {/* ── 2. TRUST  (DARK) ─────────────────────────────────────────── */}
         {/*
         <TrustSection />
@@ -152,6 +155,7 @@ const HomePage = () => {
         <SectionTransition from={LIGHT} to={DARK} />
 
         {/* ── 15. CONTACT  (LIGHT) ─────────────────────────────────────── */}
+        {/*  
         <section id="contact" className="py-24" style={{ background: DARK }}>
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
@@ -175,6 +179,36 @@ const HomePage = () => {
               </p>
             </div>
             <ContactForm />
+          </div>
+        </section>
+      */}
+        <section id="contact" className="py-24" style={{ background: DARK }}>
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <span
+                className="inline-block text-xs font-bold tracking-widest mb-4 px-4 py-1.5 rounded-full"
+                style={{
+                  background: "rgba(16,185,129,0.1)",
+                  border: "1px solid rgba(16,185,129,0.25)",
+                  color: "#10b981",
+                }}
+              >
+                {t.contactSection.badge}
+              </span>
+              <h2
+                className="text-4xl md:text-5xl font-black mb-4"
+                style={{ color: "#f0f4ff" }}
+              >
+                {t.contactSection.title}
+              </h2>
+              <p
+                className="text-lg max-w-xl mx-auto"
+                style={{ color: "#94a3b8" }}
+              >
+                {t.contactSection.subtitle}
+              </p>
+            </div>
+            <ContactSection />
           </div>
         </section>
 

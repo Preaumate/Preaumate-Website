@@ -763,11 +763,11 @@ export const translations = {
           "highlights": [
             "PLC programming for Siemens, Rockwell and CoDeSys platforms",
             "SCADA and HMI development for production monitoring",
-            "Industrial IoT and system integration", //using OPC UA and MQTT",
+            "Industrial IoT and system integration",
             "Robotics integration and commissioning",
             "Industrial AI for anomaly detection and predictive maintenance",
-            "Worldwide on-site commissioning and support", // across Europe, the Americas and offshore installations",
-            "Remote engineering support", // across Europe and the Americas"
+            "Worldwide on-site commissioning and support",
+            "Remote engineering support",
             "Consulting on automation architecture and modernization strategies"
           ]
         },
@@ -870,128 +870,191 @@ export const translations = {
       "contactTitle": "Ready to Discuss Your Project?",
       "contactSubtitle": "If you would like to discuss how Preaumate can support your automation project, I am happy to connect directly.",
       "contactButton": "Get in Touch"
+    },
+    "qualifier": {
+      "wizardui": "Wizard UI labels",
+      "stepLabel": "Question {current} of {total}",
+      "skipButton": "Skip questionnaire",
+      "backButton": "Back",
+      "nextButton": "Next",
+      "finishButton": "Finish",
+      "skipNote": "We appreciate you filling this in, but feel free to skip straight to the contact form at any time.",
+      "summaryHeading": "Pre-contact questionnaire",
+      "editAnswersButton": "Edit my answers",
+      "contextCapturedNote": "Thanks — we've noted your answers. They'll be included with your message.",
+      "qualifierPreviewLabel": "Your questionnaire answers (included with this message)",
+      "q1_label": "Do you currently use data feedback in your production process?",
+      "q1_description": "From no data tracking at all, to a fully integrated feedback loop.",
+      "q1_scale_0": "Not at all",
+      "q1_scale_low": "Some manual tracking",
+      "q1_scale_high": "Partially automated",
+      "q1_scale_10": "Fully integrated",
+      "q2_label": "What is your business size?",
+      "q2_opt_freelance": "Freelance / self-employed",
+      "q2_opt_small": "Small (2–20 employees)",
+      "q2_opt_medium": "Medium (21–50 employees)",
+      "q2_opt_large": "Large (51–200 employees)",
+      "q2_opt_enterprise": "Enterprise (200+ employees)",
+      "q3_label": "How large is your production process?",
+      "q3_opt_single": "A single machine or cell",
+      "q3_opt_line": "One production line",
+      "q3_opt_multi": "Multiple production lines",
+      "q3_opt_sites": "Multiple sites or facilities",
+      "q4_label": "What is your type of production?",
+      "q4_opt_food": "Food & Beverage",
+      "q4_opt_packaging": "Packaging",
+      "q4_opt_automotive": "Automotive",
+      "q4_opt_maritime": "Maritime / Offshore / HVAC",
+      "q4_opt_manufacturing": "General Manufacturing",
+      "q4_opt_logistics": "Logistics & Warehousing",
+      "q4_opt_other": "Other",
+      "q5_label": "Which platforms or brands do you currently use?",
+      "q5_description": "Select all that apply — this helps us prepare before we talk.",
+      "q5_opt_other": "Other",
+      "q5_opt_unknown": "Not sure / don't know",
+      "q6_label": "What would you like to use AI / data feedback for?",
+      "q6_description": "Optional — a sentence or two is enough.",
+      "q6_placeholder": "e.g. predicting maintenance needs, reducing waste, improving quality control...",
+      "q7_label": "Do you have in-house engineering capability?",
+      "q7_opt_yes": "Yes, a dedicated team",
+      "q7_opt_partial": "Some — but limited capacity",
+      "q7_opt_no": "No in-house engineering",
+      "q8_label": "What challenges are you currently facing in your production process?",
+      "q8_description": "Optional — tell us in your own words.",
+      "q8_placeholder": "e.g. unplanned downtime, manual data collection, outdated PLC systems...",
+      "q9_label": "How much are you considering investing in this improvement?",
+      "q9_opt_exploring": "Just exploring options for now",
+      "q9_opt_under10k": "Under €10,000",
+      "q9_opt_10to50k": "€10,000 – €50,000",
+      "q9_opt_50to150k": "€50,000 – €150,000",
+      "q9_opt_over150k": "€150,000+",
+      "q10_label": "What is your timeline for this project?",
+      "q10_opt_asap": "As soon as possible",
+      "q10_opt_1to3": "1–3 months",
+      "q10_opt_3to6": "3–6 months",
+      "q10_opt_exploring": "Just exploring, no fixed timeline"
     }
   },
   "nl": {
     "nav": {
-      "home": "Home",
-      "about": "Over ons",
+      "home": "Thuis",
+      "about": "Over",
       "services": "Diensten",
-      "blog": "Blog",
-      "qa": "V&A",
+      "blog": "Bloggen",
+      "qa": "Vraag en antwoord",
       "contact": "Contact"
     },
     "hero": {
-      "title1": "Industriële Automatisering",
-      "title2": "Van Fabrieksvloer tot Datalaag",
-      "subtitle": "Preaumate helpt fabrikanten industriële systemen te moderniseren via PLC-programmering, robotica, SCADA, industriële IoT en AI-gestuurde automatisering. Gebouwd door ingenieurs met echte fabrieksvloer ervaring in Europa en Latijns-Amerika.",
-      "cta": "Praat met een Ingenieur",
-      "cta2": "Bekijk Onze Diensten",
+      "title1": "Experts op het gebied van industriële automatisering",
+      "title2": "Van fabrieksvloer tot datalaag",
+      "subtitle": "Preaumate helpt fabrikanten industriële systemen te moderniseren door middel van PLC-programmering, robotica, SCADA, industriële IoT en AI-gestuurde automatisering. Gebouwd door ingenieurs met echte ervaring op de fabrieksvloer in Europa en Latijns-Amerika.",
+      "cta": "Neem contact op met een ingenieur",
+      "cta2": "Bekijk onze diensten",
       "trustBadges": [
-        "30+ jaar gecombineerde ervaring",
-        "Europa & Latijns-Amerika",
-        "PLC · SCADA · Robotica · IoT",
+        "40+ jaar gecombineerde ervaring",
+        "Europa en Amerika",
+        "PLC · SCADA · Robotica · IoT · AI",
         "Siemens · Rockwell · CoDeSys"
       ]
     },
     "about": {
-      "badge": "OVER PREAUMATE",
-      "title1": "Gebouwd door Ingenieurs.",
+      "badge": "OVER PREAUMAAT",
+      "title1": "Gebouwd door ingenieurs.",
       "title2": "Gedreven door Passie.",
-      "para1": "Preaumate is een industrieel automatiseringsbedrijf opgericht door ingenieurs, met een echte passie voor de industrie. Ons team brengt meer dan 20 jaar gecombineerde ervaring mee op het gebied van Siemens, Rockwell en CoDeSys platforms — en we voelen ons even thuis op een fabrieksvloer als in een serverruimte.",
-      "para2": "Wij hebben gewerkt in robotproductie, voedings- en drankenindustrie, waterbehandeling, HVAC, logistiek en offshore installaties. Gevestigd in Nederland en Mexico, opereren wij wereldwijd — onshore, offshore en op afstand — met snelle responstijden in alle tijdzones.",
-      "para3": "Wij kennen de klassieke industriële automatiseringswereld goed. Wij begrijpen ook de transformatie die gaande is. Onze rol is klanten door beide te navigeren — of dat nu betekent een bewezen hardware-oplossing leveren, of hen helpen de eerste stappen naar modernisering te zetten.",
+      "para1": "Preaumate is een industrieel automatiseringsadviesbureau gebouwd door ingenieurs, met een oprechte passie voor de industrie. Ons team brengt meer dan 30 jaar gecombineerde ervaring met zich mee op de platforms van Siemens, Rockwell en CoDeSys – en we voelen ons net zo op ons gemak op de fabrieksvloer als in een serverruimte.",
+      "para2": "We hebben gewerkt in de robotproductie, voeding en drank, waterbehandeling, HVAC, logistiek en offshore-installaties. We zijn gevestigd in Nederland en Mexico en opereren wereldwijd – onshore, offshore en op afstand – met snelle reactietijden in alle tijdzones.",
+      "para3": "Wij kennen de klassieke industriële automatiseringswereld goed. Wij begrijpen ook de transformatie die gaande is. Het is onze rol om klanten te helpen bij het navigeren door beide – of dat nu betekent dat we een beproefde, op hardware gebaseerde oplossing moeten leveren, of dat we hen moeten helpen de eerste stappen richting modernisering te zetten.",
       "readMore": "Lees ons volledige verhaal",
       "features": [
         {
-          "title": "AI-gestuurde Automatisering",
-          "description": "Benut geavanceerde kunstmatige intelligentie om complexe industriële processen te automatiseren met ongekende nauwkeurigheid."
+          "title": "AI-aangedreven automatisering",
+          "description": "Maak gebruik van de allernieuwste kunstmatige intelligentie om complexe industriële processen met ongekende nauwkeurigheid te automatiseren."
         },
         {
-          "title": "Real-time Monitoring",
-          "description": "Monitor elk aspect van uw productielijn in real-time met geavanceerde IoT-sensornetwerken en dashboards."
+          "title": "Realtime monitoring",
+          "description": "Bewaak elk aspect van uw productielijn in realtime met geavanceerde IoT-sensornetwerken en dashboards."
         },
         {
-          "title": "Data, IoT & Cloud",
-          "description": "Real-time gegevensacquisitie, IoT-connectiviteit, cloud- en edge-verwerking — uw machinedata laten werken voor u."
+          "title": "Data, IoT en cloud",
+          "description": "Realtime data-acquisitie, IoT-connectiviteit, cloud- en edge-verwerking – zodat uw machinegegevens voor u werken."
         },
         {
           "title": "Energieoptimalisatie",
-          "description": "Verminder het energieverbruik met maximaal 40% door intelligente lastbalancering en voorspellend vermogensbeheer."
+          "description": "Verminder het energieverbruik tot 40% door middel van intelligente load-balancing en voorspellend energiebeheer."
         },
         {
-          "title": "Voorspellend Onderhoud",
-          "description": "Voorkom kostbare stilstand door apparatuurstoringen te voorspellen voordat ze optreden met machine learning modellen."
+          "title": "Voorspellend onderhoud",
+          "description": "Voorkom kostbare downtime door apparatuurstoringen te voorspellen voordat deze zich voordoen met behulp van machine learning-modellen."
         }
       ],
       "stats": [
-        "Jaar Gecombineerde Ervaring",
-        "Sectoren Bediend",
-        "Grote PLC Platforms",
+        "Jaren gecombineerde ervaring",
+        "Industrieën bediend",
+        "Grote PLC-platforms",
         "Continenten"
       ]
     },
     "services": {
-      "badge": "WAT WE DOEN",
-      "title": "Industriële Automatiseringsdiensten",
-      "subtitle": "Van PLC-programmering tot industriële IoT en AI — praktische engineeringsoplossingen voor fabrikanten.",
+      "badge": "WAT WIJ DOEN",
+      "title": "Industriële automatiseringsdiensten",
+      "subtitle": "Van PLC-programmering tot industriële IoT en AI: praktische technische oplossingen voor fabrikanten.",
       "items": [
         {
           "title": "PLC-programmering",
-          "description": "Wij ontwikkelen, migreren en troubleshooten PLC-systemen voor industriële productieomgevingen. Ondersteunde platforms: Siemens, Rockwell en CoDeSys.",
+          "description": "Wij ontwikkelen, migreren en repareren PLC-systemen voor industriële productieomgevingen. Ondersteunde platforms zijn onder meer op Siemens, Rockwell en CoDeSys gebaseerde controllers.",
           "bullets": [
-            "PLC-migraties en upgrades",
-            "Machine inbedrijfstelling",
+            "PLC-migraties en -upgrades",
+            "Inbedrijfstelling van machines",
             "Procesoptimalisatie",
-            "Remote diagnostiek",
-            "Storingsanalyse"
+            "Diagnose op afstand",
+            "Ondersteuning voor probleemoplossing"
           ],
           "learnMore": "Meer informatie"
         },
         {
-          "title": "SCADA & HMI Ontwikkeling",
-          "description": "Wij bouwen operatorinterfaces en SCADA-systemen die de zichtbaarheid, diagnostiek en productiemonitoring verbeteren.",
+          "title": "SCADA- en HMI-ontwikkeling",
+          "description": "We bouwen operatorinterfaces en SCADA-systemen die de zichtbaarheid, diagnostiek en productiemonitoring op de fabrieksvloer verbeteren.",
           "bullets": [
             "Productiedashboards",
-            "Alarmbeheer",
-            "Historian integratie",
-            "Remote monitoring",
-            "Operator workflow optimalisatie"
+            "Alarmafhandeling",
+            "Historische integratie",
+            "Bewaking op afstand",
+            "Optimalisatie van de workflow van de operator"
           ],
           "learnMore": "Meer informatie"
         },
         {
-          "title": "Industriële IoT",
-          "description": "Wij verbinden machines, PLC's en industriële apparatuur met moderne datasystemen via veilige industriële communicatieprotocollen.",
+          "title": "Industrieel IoT",
+          "description": "Wij verbinden machines, PLC's en industriële apparatuur met moderne datasystemen met behulp van veilige industriële communicatieprotocollen.",
           "bullets": [
-            "OPC UA integratie",
-            "MQTT infrastructuur",
-            "Machinedata verzameling",
-            "Cloud en edge connectiviteit",
-            "Industriële gateway configuratie"
+            "OPC UA integration",
+            "MQTT infrastructure",
+            "Verzameling van machinegegevens",
+            "Cloud- en edge-connectiviteit",
+            "Industriële gateway-opstelling"
           ],
           "learnMore": "Meer informatie"
         },
         {
-          "title": "Robotica Integratie",
-          "description": "Wij integreren robotsystemen in productieomgevingen met focus op betrouwbaarheid, veiligheid en onderhoudbaarheid op lange termijn.",
+          "title": "Robotica-integratie",
+          "description": "Wij integreren robotsystemen in productieomgevingen met de nadruk op betrouwbaarheid, veiligheid en onderhoudbaarheid op de lange termijn.",
           "bullets": [
-            "Robotcel inbedrijfstelling",
+            "Inbedrijfstelling van robotcellen",
             "Bewegingsoptimalisatie",
-            "Veiligheidssysteem integratie",
+            "Integratie van veiligheidssystemen",
             "Processynchronisatie",
-            "Productieondersteuning"
+            "Ondersteuning van productie"
           ],
           "learnMore": "Meer informatie"
         },
         {
           "title": "Industriële AI",
-          "description": "Wij helpen fabrikanten praktische AI-kansen te identificeren en te implementeren op basis van productiedata en machineanalyses.",
+          "description": "Wij helpen fabrikanten praktische AI-mogelijkheden te identificeren en te implementeren met behulp van productiegegevens, machinediagnostiek en operationele inzichten.",
           "bullets": [
-            "Anomaliedetectie",
+            "Detectie van afwijkingen",
             "Voorspellend onderhoud",
             "Productieanalyses",
-            "AI pilotprojecten",
+            "AI-proefprojecten",
             "Operationele rapportage"
           ],
           "learnMore": "Meer informatie"
@@ -999,37 +1062,37 @@ export const translations = {
       ]
     },
     "statsBar": [
-      "Geleverde Projecten",
+      "Projecten opgeleverd",
       "Klanttevredenheid",
-      "Jaar Ervaring",
-      "Support op Afstand"
+      "Jaren ervaring",
+      "Ondersteuning op afstand"
     ],
     "featuresBar": {
       "badge": "MOGELIJKHEDEN",
       "items": [
         {
-          "title": "Support op Afstand",
+          "title": "Ondersteuning op afstand",
           "subtitle": "24/7"
         },
         {
-          "title": "Neem Contact Op",
+          "title": "Neem contact met ons op",
           "subtitle": "contact@preaumate.com"
         },
         {
-          "title": "AI-gestuurd",
+          "title": "AI-aangedreven",
           "subtitle": "Beslissingen"
         },
         {
-          "title": "Voorspellende",
+          "title": "Voorspellend",
           "subtitle": "Analyses"
         },
         {
-          "title": "Slimme Fabriek",
+          "title": "Slimme fabriek",
           "subtitle": "Oplossingen"
         },
         {
           "title": "Cyberbeveiliging",
-          "subtitle": "Gereed"
+          "subtitle": "Klaar"
         },
         {
           "title": "IoT",
@@ -1037,40 +1100,40 @@ export const translations = {
         },
         {
           "title": "Gebouwd voor",
-          "subtitle": "de Toekomst"
+          "subtitle": "de toekomst"
         }
       ]
     },
     "contactSection": {
-      "badge": "CONTACT",
-      "title": "Klaar om Uw Productie-uitdagingen Op te Lossen?",
-      "subtitle": "Praat rechtstreeks met een ingenieur over uw operationele problemen. Geen verkoopgesprekken — gewoon een technisch gesprek."
+      "badge": "NEEM CONTACT OP",
+      "title": "Klaar om uw productie-uitdagingen op te lossen?",
+      "subtitle": "Praat rechtstreeks met een ingenieur over uw operationele problemen. Geen verkoopscripts – alleen een technisch gesprek."
     },
     "form": {
-      "title": "Neem Contact Op",
+      "title": "Neem contact op",
       "subtitle": "Klaar om uw industriële activiteiten te transformeren? Laten we uw behoeften bespreken.",
       "companyName": "Bedrijfsnaam",
       "companyPlaceholder": "Voer uw bedrijfsnaam in",
-      "email": "E-mailadres",
-      "emailPlaceholder": "uw.email@bedrijf.com",
-      "phone": "Telefoonnummer",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@company.com",
+      "phone": "Phone Number",
       "phonePlaceholder": "+31 (0) 000 000 000",
-      "serviceInterest": "Interesse in Dienst",
+      "serviceInterest": "Dienstbelang",
       "servicePlaceholder": "Selecteer een dienst...",
       "message": "Bericht",
       "messagePlaceholder": "Vertel ons over uw automatiseringsbehoeften...",
-      "send": "Bericht Verzenden",
+      "send": "Bericht verzenden",
       "sending": "Verzenden...",
       "services": [
-        "Robotprocesautomatisering",
+        "Robotachtige procesautomatisering",
         "IoT-integratie",
-        "Slimme Fabriekssystemen",
-        "Voorspellende Analyses",
-        "Algemeen Advies"
+        "Slimme fabrieksoplossingen",
+        "Voorspellende analyses",
+        "Algemeen overleg"
       ],
       "errors": {
         "companyRequired": "Bedrijfsnaam is vereist",
-        "emailRequired": "E-mailadres is vereist",
+        "emailRequired": "E-mail is vereist",
         "emailInvalid": "Ongeldig e-mailformaat",
         "phoneRequired": "Telefoonnummer is vereist",
         "serviceRequired": "Selecteer een dienst",
@@ -1078,351 +1141,351 @@ export const translations = {
         "validationTitle": "Formuliervalidatiefout",
         "validationDesc": "Vul alle verplichte velden correct in.",
         "errorTitle": "Er is iets misgegaan",
-        "errorDesc": "Uw bericht kon niet worden verzonden. Probeer het opnieuw of neem rechtstreeks contact op.",
-        "successTitle": "Bericht Succesvol Verzonden! 🎉",
-        "successDesc": "Bedankt! Wij nemen binnenkort contact met u op om uw automatiseringsbehoeften te bespreken."
+        "errorDesc": "Uw bericht kon niet worden verzonden. Probeer het opnieuw of neem direct contact met ons op.",
+        "successTitle": "Bericht succesvol verzonden!",
+        "successDesc": "Bedankt! We nemen snel contact met u op om uw automatiseringsbehoeften te bespreken."
       }
     },
     "footer": {
       "tagline": "INDUSTRIËLE AUTOMATISERING",
-      "description": "Praktische industriële automatiserings­engineering — fabriekssystemen, machinedata en productie-intelligentie verbonden.",
+      "description": "Praktische industriële automatiseringstechniek – het verbinden van fabriekssystemen, machinegegevens en productie-intelligentie.",
       "navHeading": "NAVIGATIE",
-      "resourcesHeading": "INFORMATIE",
+      "resourcesHeading": "BRONNEN",
       "contactHeading": "CONTACT",
       "navLinks": [
-        "Home",
-        "Over ons",
+        "Thuis",
+        "Over",
         "Diensten",
         "Contact"
       ],
       "resourceLinks": [
-        "Blog",
-        "V&A",
+        "Bloggen",
+        "Vraag en antwoord",
         "Privacybeleid",
-        "Algemene Voorwaarden"
+        "Algemene voorwaarden"
       ],
       "rights": "Alle rechten voorbehouden.",
       "privacyPolicy": "Privacybeleid",
-      "terms": "Algemene Voorwaarden"
+      "terms": "Algemene voorwaarden"
     },
     "consent": {
       "title": "🍪 Wij gebruiken cookies",
-      "text": "Wij gebruiken essentiële cookies om onze site te laten werken. Met uw toestemming gebruiken wij ook analytische cookies om te begrijpen hoe u onze site gebruikt en uw ervaring te verbeteren. Uw gegevens worden verwerkt in overeenstemming met ons",
+      "text": "We gebruiken essentiële cookies om onze site te laten werken. Met uw toestemming gebruiken we ook analytische cookies om te begrijpen hoe u onze site gebruikt en om uw ervaring te verbeteren. Uw gegevens worden verwerkt in overeenstemming met onze",
       "privacyPolicy": "Privacybeleid",
-      "and": "en",
+      "and": "En",
       "cookiePolicy": "Cookiebeleid",
-      "reject": "Niet-essentieel Weigeren",
-      "accept": "Alles Accepteren"
+      "reject": "Niet-essentieel afwijzen",
+      "accept": "Accepteer alles"
     },
     "aboutPage": {
-      "heroBadge": "OVER PREAUMATE",
-      "heroTitle1": "Gebouwd door Ingenieurs.",
+      "heroBadge": "OVER PREAUMAAT",
+      "heroTitle1": "Gebouwd door ingenieurs.",
       "heroTitle2": "Gedreven door Passie.",
-      "heroSubtitle": "Preaumate is een industrieel automatiseringsbedrijf met meer dan 20 jaar gecombineerde ervaring, wereldwijd actief vanuit Nederland en Mexico.",
+      "heroSubtitle": "Preaumate is een industrieel automatiseringsadviesbureau met meer dan 30 jaar gecombineerde ervaring, wereldwijd opererend vanuit Nederland en Mexico.",
       "locations": [
         "Nederland",
         "Mexico",
-        "Wereldwijde Activiteiten"
+        "Mondiale operaties"
       ],
-      "whoWeAreBadge": "WIE WE ZIJN",
-      "whoWeAreTitle": "Ons Verhaal",
-      "whoWeArePara1": "Preaumate is een industrieel automatiseringsbedrijf opgericht door ingenieurs, met een enthousiaste en echte passie voor de industrie. Wij zijn een jong bedrijf — maar geen nieuw team. Samen brengen wij meer dan 20 jaar praktische automatiseringserfvaring mee naar elk project.",
-      "whoWeArePara2": "Ons team is gevestigd in Nederland en Mexico — een geografische spreiding die niet toevallig is, maar by design. Wij werken wereldwijd, reageren snel en zijn er op ingericht om klanten onshore, offshore en op afstand te ondersteunen over tijdzones heen.",
-      "whoWeArePara3": "Wij zijn Preaumate begonnen omdat wij geloven dat het beste automatiseringswerk gebeurt wanneer de mensen die het doen dicht bij het probleem staan, persoonlijk geïnvesteerd zijn in het resultaat en niet worden vertraagd door bedrijfslagen.",
-      "whoWeArePara4": "Wij kennen de klassieke industriële automatiseringswereld goed — want wij komen er zelf uit. En wij begrijpen de transformatie die gaande is. Onze rol is klanten door beide te navigeren.",
-      "whatWeDoBadge": "WAT WE DOEN",
-      "whatWeDoTitle": "Onze Diensten",
-      "whatWeDoIntro": "Wij zijn automatiseringsspecialisten die zich even thuis voelen in een serverruimte als op een fabrieksvloer. Wij gaan aan de slag waar het telt — hands-on, probleemoplossend en volledig toegewijd.",
+      "whoWeAreBadge": "WIE WIJ ZIJN",
+      "whoWeAreTitle": "Ons verhaal",
+      "whoWeArePara1": "Preaumate is een industrieel automatiseringsadviesbureau gebouwd door ingenieurs, met een enthousiaste en oprechte passie voor de industrie. We zijn een jong bedrijf, maar we zijn geen nieuw team. Samen brengen we meer dan 30 jaar praktische automatiseringservaring mee naar elk project dat we aannemen.",
+      "whoWeArePara2": "Ons team is gevestigd in Nederland en Mexico – een geografische spreiding die niet incidenteel is, maar inherent is aan het ontwerp. We werken wereldwijd, reageren snel en zijn erop ingesteld om klanten onshore, offshore en op afstand in verschillende tijdzones te ondersteunen. Of uw installatie zich nu op een productievloer in Europa, een platform op de Noordzee of een faciliteit aan de andere kant van de wereld bevindt: wij zijn er.",
+      "whoWeArePara3": "We zijn met Preaumate begonnen omdat we geloven dat het beste automatiseringswerk plaatsvindt als de mensen die het doen dicht bij het probleem staan, persoonlijk in de uitkomst hebben geïnvesteerd en niet worden afgeremd door bedrijfslagen. We combineren de bewezen betrouwbaarheid van traditionele industriële automatisering met het snel evoluerende technologielandschap – AI-integratie, IoT-connectiviteit, cloud- en edge computing, cybersecurity – om elk type automatiseringsproject efficiënter, meer verbonden en toekomstbestendiger te maken dan het anders zou zijn.",
+      "whoWeArePara4": "Wij kennen de klassieke industriële automatiseringswereld goed, omdat wij er vandaan komen. En we begrijpen de transformatie die gaande is. Het is onze rol om klanten te helpen bij het navigeren door beide.",
+      "whatWeDoBadge": "WAT WIJ DOEN",
+      "whatWeDoTitle": "Onze diensten",
+      "whatWeDoIntro": "Wij zijn automatiseringsspecialisten die zich net zo op hun gemak voelen in een serverruimte als op de fabrieksvloer. We raken betrokken waar het ertoe doet: praktisch, probleemoplossend en volledig toegewijd om dingen te laten werken. Onze kernfocus ligt op software, maar we zijn in de eerste plaats een service- en oplossingenteam. Als een probleem opgelost moet worden, lossen wij dat op.",
       "servicesList": [
         {
-          "title": "PLC Programmering",
-          "description": "Wij programmeren op de grote platforms — Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) en CoDeSys-gebaseerde controllers. Wij werken met traditionele hardware PLC-opstellingen en moderne software PLC-omgevingen, virtualisatie- en containerisatieplatforms. Wij programmeren ook Safety PLCs — functionele veiligheid op de juiste manier, volgens de geldende normen."
+          "title": "PLC-programmering",
+          "description": "We programmeren op de belangrijkste platforms: Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) en op CoDeSys gebaseerde controllers. Wij werken met zowel traditionele hardware-PLC-opstellingen als moderne software-PLC-omgevingen, virtualisatie- en containerisatieplatforms. We programmeren ook veiligheids-PLC's: functionele veiligheid wordt op de juiste manier uitgevoerd, volgens de normen die er toe doen. Als een klant een klassieke, beproefde hardwaregebaseerde opstelling nodig heeft, leveren wij die met vertrouwen. Als een opdrachtgever zich wil verdiepen in de modernisering, adviseren, adviseren en helpen wij bij de keuze wat echt het beste is voor zijn specifieke situatie."
         },
         {
-          "title": "HMI Ontwikkeling",
-          "description": "Wij ontwerpen en bouwen bedieningsinterfaces die intuïtief, duidelijk en gebouwd zijn voor de mensen die ze daadwerkelijk gebruiken. Goed HMI-ontwerp wordt consequent onderschat — wij nemen het serieus."
+          "title": "HMI-ontwikkeling",
+          "description": "Wij ontwerpen en bouwen operatorinterfaces die intuïtief, duidelijk en gebouwd zijn voor de mensen die ze daadwerkelijk gebruiken. Een goed HMI-ontwerp wordt voortdurend onderschat; wij nemen het serieus."
         },
         {
-          "title": "Dataverzameling, IoT, Cloud en Edge",
-          "description": "Wij verbinden machines, sensoren en systemen zodat data stroomt waar het naartoe moet — OPC-UA, MQTT, databaseconnectiviteit, MES en SCADA integratie. Wij implementeren zowel cloud-gebaseerde als edge dataverwerking architecturen."
+          "title": "Data-acquisitie, IoT, Cloud en Edge",
+          "description": "We verbinden machines, sensoren en systemen zodat gegevens stromen waar ze naartoe moeten: OPC-UA, MQTT, databaseconnectiviteit, MES en SCADA-integratie. We implementeren zowel cloudgebaseerde als edge-dataverwerkingsarchitecturen, afhankelijk van wat de applicatie vereist."
         },
         {
           "title": "Cyberbeveiliging",
-          "description": "Industriële cyberbeveiliging is niet langer optioneel. Naarmate automatiseringssystemen meer verbonden worden, groeit het aanvalsoppervlak. Wij ontwerpen architecturen met beveiliging vanaf het begin: netwerksegmentatie, veilige toegang op afstand, geharde configuraties."
+          "description": "Industriële cyberbeveiliging is niet langer optioneel. Naarmate automatiseringssystemen steeds meer met elkaar verbonden raken, groeit het aanvalsoppervlak en kunnen de gevolgen van een inbreuk in een industriële omgeving ernstig zijn. We ontwerpen en implementeren automatiseringsarchitecturen waarbij beveiliging vanaf het begin is ingebouwd: netwerksegmentatie, veilige toegang op afstand, geharde configuraties en naleving van relevante industriële beveiligingsnormen."
         },
         {
           "title": "AI-integratie",
-          "description": "Wij integreren AI-gestuurde mogelijkheden in automatiseringsprojecten — voorspellend onderhoud, anomaliedetectie, procesoptimalisatie. Niet als buzzwords, maar als praktische tools."
+          "description": "We integreren AI-gestuurde mogelijkheden in automatiseringsprojecten: voorspellend onderhoud, detectie van afwijkingen, procesoptimalisatie. Niet als modewoorden, maar als praktische tools die industriële systemen beter en slimmer laten presteren."
         },
         {
-          "title": "Remote Services",
-          "description": "Wij zijn gebouwd voor werk op afstand. Wij ondersteunen, lossen problemen op en wijzigen systemen vanuit elke plek ter wereld — veilig, betrouwbaar en met minimale verstoring."
+          "title": "Diensten op afstand",
+          "description": "Wij zijn gebouwd voor werken op afstand. Wij ondersteunen, lossen problemen op en passen systemen overal ter wereld aan – veilig, betrouwbaar en met minimale verstoring van uw activiteiten. Onze aanwezigheid in Europa en Amerika betekent dat we zonder vertraging een breed scala aan tijdzones bestrijken. Op afstand betekent niet afstandelijk: we zijn responsief, beschikbaar en betrokken."
         },
         {
-          "title": "Projectvoorbereiding en Management",
-          "description": "Wij ondersteunen klanten vanaf de vroegste fasen — functionele specificaties, softwarearchitectuur, scopebepaling — tot en met inbedrijfstelling en overdracht."
+          "title": "Projectvoorbereiding en -management",
+          "description": "Wij ondersteunen klanten vanaf de vroegste fasen – functionele specificaties, softwarearchitectuur, definitie van de scope – tot en met de inbedrijfstelling en overdracht. Een goede voorbereiding aan de voorkant voorkomt dure problemen aan de achterkant."
         }
       ],
       "industriesBadge": "ERVARING",
-      "industriesTitle": "Sectoren Waarin Wij Hebben Gewerkt",
-      "industriesIntro": "De ervaring van ons team strekt zich uit over een breed scala aan industriële omgevingen — aan land, offshore en over continenten.",
+      "industriesTitle": "Industrieën waarin we hebben gewerkt",
+      "industriesIntro": "De ervaring van ons team strekt zich uit over een breed scala aan industriële omgevingen – op het land, offshore en over continenten heen. Elk van deze industrieën heeft zijn eigen eisen, zijn eigen normen en zijn eigen manier van werken.",
       "industries": [
         {
-          "label": "Robotproductie",
+          "label": "Robotic Manufacturing",
           "icon": "🦾"
         },
         {
-          "label": "Voedings- en Drankenindustrie",
+          "label": "Food & Beverage Production",
           "icon": "🏭"
         },
         {
-          "label": "Waterbehandeling & Nutsvoorzieningen",
+          "label": "Water Treatment & Utilities",
           "icon": "💧"
         },
         {
-          "label": "HVAC & Gebouwautomatisering",
+          "label": "HVAC & Building Automation",
           "icon": "🌡️"
         },
         {
-          "label": "Opslag & Logistiek",
+          "label": "Warehousing & Logistics",
           "icon": "📦"
         },
         {
-          "label": "Offshore Installaties",
+          "label": "Offshore Installations",
           "icon": "⚓"
         }
       ],
       "philosophyBadge": "ONZE FILOSOFIE",
-      "philosophyTitle": "Klassieke Automatisering en de Nieuwe Industriële Realiteit",
-      "philosophyPara1": "Wij hebben groot respect voor de ingenieerstradities die de industriële automatiseringsindustrie hebben opgebouwd. De normen, de methodologieën, de hardwareplatforms — ze bestaan omdat ze werken.",
-      "philosophyPara2": "Maar de industrie verandert. Software PLC's, virtualisatie, containerisatie, edge computing, AI-gestuurde analyses, cloudconnectiviteit en industriële cyberbeveiliging zijn productieklaar en transformeren wat mogelijk is.",
-      "philosophyPara3": "Onze waarde voor klanten is dat wij beide werelden begrijpen. Wij kunnen een klassiek, betrouwbaar project leveren. En wij kunnen klanten die klaar zijn voor modernisering helpen begrijpen wat dat voor hen betekent.",
-      "classicalTitle": "Klassieke Automatisering",
-      "classicalDesc": "Bewezen hardwareplatforms, gevestigde normen, betrouwbare architecturen die al decennia lang de industrie aandrijven. Als dit is wat uw project nodig heeft — wij leveren het met volledig vertrouwen.",
-      "modernTitle": "Moderne Automatisering",
-      "modernDesc": "Software PLC's, cloudconnectiviteit, AI-gestuurde inzichten, edge computing, industriële cyberbeveiliging. Als u klaar bent voor modernisering — wij helpen u het juiste pad te kiezen.",
-      "finalNote": "Wij geloven niet dat elk project de nieuwste technologie nodig heeft. Wij geloven dat elk project de juiste technologie verdient.",
-      "ctaTitle": "Klaar om Samen te Werken?",
-      "ctaSubtitle": "Als u op zoek bent naar een partner die uw project als het eigen behandelt, zonder vertraging reageert en werk levert dat standhoudt — wij horen graag van u.",
-      "ctaButton": "Neem Contact Op"
+      "philosophyTitle": "Klassieke automatisering en de nieuwe industriële realiteit",
+      "philosophyPara1": "We hebben diep respect voor de technische tradities die de industriële automatiseringsindustrie hebben opgebouwd. De standaarden, de methodologieën, de hardwareplatforms: ze bestaan ​​omdat ze werken, en ze zullen blijven werken. Wij kennen die wereld goed en zijn volledig in staat om daarin te opereren.",
+      "philosophyPara2": "Maar de sector is aan het veranderen. Software-PLC's, virtualisatie, containerisatie, edge computing, AI-gestuurde analyses, cloudconnectiviteit en industriële cyberbeveiliging zijn niet langer experimenteel: ze zijn klaar voor productie en transformeren wat mogelijk is op het gebied van automatisering.",
+      "philosophyPara3": "Onze waarde voor klanten is dat we beide werelden begrijpen. Wij kunnen een klassiek, betrouwbaar automatiseringsproject opleveren dat voldoet aan de normen. En we kunnen klanten die klaar zijn om te moderniseren helpen begrijpen wat dat voor hen betekent: wat het kost, wat het oplevert en hoe ze dat kunnen bereiken zonder onnodige risico's.",
+      "classicalTitle": "Klassieke automatisering",
+      "classicalDesc": "Bewezen hardwareplatforms, gevestigde standaarden, betrouwbare architecturen die al tientallen jaren de industrie runnen. Als dit is wat uw project nodig heeft, leveren wij het met het volste vertrouwen en respect voor wat werkt.",
+      "modernTitle": "Moderne automatisering",
+      "modernDesc": "Software-PLC's, cloudconnectiviteit, AI-gestuurde inzichten, edge computing, industriële cybersecurity. Als u klaar bent om te moderniseren, helpen wij u bij het kiezen van het juiste pad, in het juiste tempo, voor uw specifieke behoeften.",
+      "finalNote": "Wij geloven niet dat elk project de nieuwste technologie nodig heeft. Wij geloven dat elk project de juiste technologie verdient – ​​en we hebben de ervaring en het perspectief om het verschil te maken.",
+      "ctaTitle": "Klaar om samen te werken?",
+      "ctaSubtitle": "Als u op zoek bent naar een partner die uw project als zijn eigen project behandelt, snel reageert en werk aflevert dat opvalt, dan gaan we graag met u in gesprek.",
+      "ctaButton": "Neem contact op"
     },
     "crossover": {
       "badge": "DE CONVERGENTIE",
-      "title": "Waar de Fabrieksvloer de Datalaag Ontmoet",
-      "subtitle": "De meeste automatiseringsingenieurs begrijpen besturingssystemen. De meeste data-ingenieurs begrijpen connectiviteit. Zeer weinigen begrijpen beide diepgaand — en nog minder weten hoe ze AI daar praktisch in kunnen brengen.",
-      "statement": "Wij bevinden ons op dat snijpunt. En wij denken dat het de belangrijkste positie is in industriële automatisering op dit moment.",
+      "title": "Waar de fabrieksvloer de datalaag ontmoet",
+      "subtitle": "De meeste automatiseringsingenieurs begrijpen besturingssystemen. De meeste data-ingenieurs begrijpen connectiviteit. Zeer weinigen begrijpen beide diepgaand – en nog minder weten hoe ze AI praktisch in dat plaatje kunnen brengen.",
+      "statement": "Wij zitten op dat kruispunt. En wij denken dat dit momenteel de belangrijkste plek is in de industriële automatisering.",
       "pillar1": {
-        "label": "Klassieke Besturing",
+        "label": "Classical Control",
         "heading": "De machine werkt betrouwbaar.",
-        "description": "Siemens, Rockwell, CoDeSys — gestructureerde PLC code geschreven om te blijven, veiligheidssystemen geprogrammeerd volgens de norm, HMI en SCADA gebouwd voor de operator die het daadwerkelijk gebruikt.",
+        "description": "Siemens, Rockwell, CoDeSys — structured PLC code written to last, Safety systems programmed to standard, HMI and SCADA built for the operator who actually uses it. The foundation everything else depends on.",
         "tags": [
-          "PLC Programmering",
+          "PLC-programmering",
           "Veiligheidssystemen",
-          "HMI / SCADA",
+          "HMI/SCADA",
           "Systeemintegratie"
         ]
       },
       "pillar2": {
-        "label": "Verbonden Data",
-        "heading": "De machine communiceert.",
-        "description": "OPC-UA en MQTT pipelines die data van de fabrieksvloer verplaatsen naar waar het naartoe moet. Edge computing dat lokaal verwerkt wanneer cloud geen optie is. Dashboards die operators laten zien wat er gebeurt.",
+        "label": "Connected Data",
+        "heading": "De automaat praat.",
+        "description": "OPC-UA- en MQTT-pijplijnen die gegevens van de fabrieksvloer verplaatsen naar de plaats waar deze naartoe moeten. Edge computing die lokaal verwerkt wanneer cloud geen optie is. Dashboards die operators laten zien wat er gebeurt – en historici die alles onthouden.",
         "tags": [
-          "OPC-UA / MQTT",
-          "Edge Computing",
-          "Cloud Connectiviteit",
-          "Data Pipelines"
+          "OPC-UA/MQTT",
+          "Edge-computers",
+          "Cloud-connectiviteit",
+          "Gegevenspijplijnen"
         ]
       },
       "pillar3": {
-        "label": "AI & Intelligentie",
-        "heading": "De machine denkt.",
-        "description": "Voorspellende onderhoudsmodellen die storingen signaleren voordat ze optreden. Anomaliedetectie die procesdrift in real-time opvangt. Computer vision voor kwaliteitsinspectie. AI API's geïntegreerd in industriële software als een echte operationele tool.",
+        "label": "AI & Intelligence",
+        "heading": "De automaat denkt.",
+        "description": "Modellen voor voorspellend onderhoud die storingen signaleren voordat ze zich voordoen. Anomaliedetectie die procesafwijkingen in realtime opvangt. Computervisie voor kwaliteitscontrole. AI API’s geïntegreerd in industriële software – niet als een functie, maar als een echt operationeel hulpmiddel.",
         "tags": [
-          "Voorspellend Onderhoud",
+          "Voorspellend onderhoud",
           "Anomaliedetectie",
-          "Computer Vision",
-          "AI API Integratie"
+          "Computervisie",
+          "AI API-integratie"
         ]
       },
-      "closing": "Dit zijn geen drie afzonderlijke diensten. Het is één geïntegreerde aanpak — gebouwd voor de generatie industriële automatisering waarbij de besturingslaag en de intelligentielaag hetzelfde systeem zijn."
+      "closing": "Dit zijn geen drie afzonderlijke diensten. Het is één geïntegreerde aanpak – gebouwd voor het genereren van industriële automatisering waarbij de controlelaag en de intelligentielaag hetzelfde systeem vormen."
     },
     "howWeWork": {
       "badge": "HOE WIJ WERKEN",
-      "title": "Hoe het Is om Met Ons te Werken",
-      "subtitle": "Wij houden het eenvoudig, direct en transparant — geen accountmanagers, geen overdrachten. U werkt rechtstreeks met de ingenieurs die het werk doen.",
+      "title": "Zo ziet werken bij ons eruit",
+      "subtitle": "We houden het simpel, direct en transparant: geen accountmanagers, geen overdrachten. Je hebt te maken met de engineers die het werk doen.",
       "steps": [
         {
           "number": "01",
-          "title": "Wij Praten",
-          "description": "U vertelt ons over uw uitdaging. Wij stellen de vragen die er toe doen. Geen verkooppraatje — gewoon een eerlijk gesprek over of wij de juiste match zijn voor uw project."
+          "title": "Wij praten",
+          "description": "U vertelt ons over uw uitdaging. Wij stellen de vragen die ertoe doen. Geen verkooppraatje, maar een eerlijk gesprek over de vraag of wij geschikt zijn voor uw project."
         },
         {
           "number": "02",
-          "title": "Wij Plannen",
-          "description": "Wij definiëren samen de scope, de aanpak en de tijdlijn. U krijgt een duidelijk beeld van wat wij zullen leveren, hoe lang het duurt en wat het kost — voordat het werk begint."
+          "title": "Wij plannen",
+          "description": "Samen bepalen we de reikwijdte, de aanpak en het tijdspad. U krijgt een duidelijk beeld van wat we gaan leveren, hoe lang het gaat duren en wat het gaat kosten – voordat er met de werkzaamheden wordt begonnen."
         },
         {
           "number": "03",
-          "title": "Wij Bouwen",
-          "description": "Wij doen het werk. U heeft gedurende het hele project directe toegang tot de ingenieurs die uw systeem bouwen. Problemen worden snel opgelost omdat beslissingen worden genomen door de mensen die het probleem begrijpen."
+          "title": "Wij bouwen",
+          "description": "Wij doen het werk. U heeft direct toegang tot de technici die uw systeem bouwen, en niet tot een projectmanager die berichten doorgeeft. Problemen worden snel opgelost omdat beslissingen worden genomen door mensen die het probleem begrijpen."
         },
         {
           "number": "04",
-          "title": "Wij Ondersteunen",
-          "description": "Wij verdwijnen niet na de overdracht. Wij documenteren grondig, trainen uw team goed en blijven beschikbaar voor vragen en ondersteuning."
+          "title": "Wij ondersteunen",
+          "description": "Wij verdwijnen niet na de overdracht. Wij documenteren grondig, leiden uw team goed op en blijven beschikbaar voor vragen en ondersteuning. Remote-first by design betekent dat we snel kunnen reageren, waar u ook bent."
         }
       ]
     },
     "whyPreaumate": {
-      "badge": "WAAROM WIJ",
-      "title": "Het Eerlijke Argument voor Samenwerken met een Klein Team",
-      "intro": "Wij zijn een nieuw bedrijf. We weten dat dat het eerste bezwaar is. Hier is ons eerlijke antwoord daarop.",
+      "badge": "WAAROM ONS",
+      "title": "Het eerlijke argument voor het werken met een klein team",
+      "intro": "Wij zijn een nieuw bedrijf. We weten dat dit het eerste bezwaar is. Hier is ons eerlijke antwoord daarop.",
       "cards": [
         {
-          "title": "U krijgt de senior ingenieurs — bij elk project",
-          "description": "Bij een grote integrator kan uw project worden opgezet door een senior ingenieur en worden uitgevoerd door een junior. Bij ons zijn de mensen met wie u spreekt de mensen die het werk doen. Altijd."
+          "title": "Je krijgt de senior engineers bij elke klus",
+          "description": "Bij een grote integrator kan uw project worden uitgevoerd door een senior engineer en worden opgeleverd door een junior. Bij ons zijn de mensen met wie u spreekt de mensen die het werk doen. Elke keer."
         },
         {
-          "title": "Twintig jaar ervaring is geen klein getal",
-          "description": "Preaumate is nieuw. De expertise erachter niet. Ons team heeft automatiseringsprojecten geleverd in meerdere sectoren, op meerdere platforms en in meerdere landen."
+          "title": "Dertig jaar ervaring is geen klein aantal",
+          "description": "Preaumaat is nieuw. De expertise erachter niet. Ons team heeft automatiseringsprojecten opgeleverd in meerdere sectoren, platforms en landen. Die ervaring brengen wij vanaf dag één mee naar uw project."
         },
         {
-          "title": "Wij bewegen sneller omdat wij kleiner zijn",
-          "description": "Geen interne goedkeuringsketens. Geen planningsconflicten tussen afdelingen. Wanneer iets opgelost moet worden, lossen wij het op."
+          "title": "We bewegen sneller omdat we kleiner zijn",
+          "description": "Geen interne goedkeuringsketens. Geen planningsconflicten tussen afdelingen. Als er iets opgelost moet worden, lossen wij dat op. De snelheid van een klein team is een echt operationeel voordeel."
         },
         {
-          "title": "Ons bedrijf hangt af van het succes van uw project",
-          "description": "Een groot bedrijf kan een project dat niet goed ging absorberen. Wij kunnen dat niet. Die asymmetrie werkt in uw voordeel."
+          "title": "Onze bedrijfsvoering is afhankelijk van de goede voortgang van uw project",
+          "description": "Een groot bedrijf kan een project dat niet goed is verlopen, op zich nemen. Dat kunnen wij niet. Die asymmetrie werkt in uw voordeel: elk project dat we aannemen krijgt onze volledige aandacht omdat onze reputatie ervan afhangt."
         }
       ]
     },
     "pricing": {
-      "signal": "Wij werken op project- en dagtarief basis. Neem contact op voor een offerte — wij reageren binnen één werkdag."
+      "signal": "Wij werken op project- en dagtariefbasis. Neem contact met ons op voor een offerte, wij reageren binnen één werkdag."
     },
     "endorsements": {
       "badge": "WAT COLLEGA'S ZEGGEN",
-      "title": "Vertrouwd door Ingenieurs die het Werk Kennen",
-      "subtitle": "Preaumate is een nieuw bedrijf. De mensen erachter zijn dat niet. Dit is wat degenen die naast ons hebben gewerkt te zeggen hebben.",
+      "title": "Vertrouwd door ingenieurs die het werk kennen",
+      "subtitle": "Preaumate is een nieuw bedrijf. De mensen erachter niet. Dit is wat degenen die met ons hebben samengewerkt te zeggen hebben.",
       "cta": "Wilt u uw project bespreken?",
-      "ctaButton": "Neem Contact Op",
+      "ctaButton": "Neem contact op",
       "quotes": [
         {
-          "text": "Een van de technisch meest bekwame automatiseringsingenieurs waarmee ik heb gewerkt. Gestructureerde code, helder denken en het soort probleemoplossend vermogen dat zichtbaar wordt wanneer het op locatie ingewikkeld wordt.",
-          "author": "Senior Projectingenieur",
-          "company": "Vorige werkgever — naam op verzoek niet vermeld",
+          "text": "Een van de technisch meest capabele automatiseringsingenieurs waarmee ik heb samengewerkt. Gestructureerde code, helder denken en het soort probleemoplossend vermogen dat naar voren komt als het ter plekke ingewikkeld wordt.",
+          "author": "Senior projectingenieur",
+          "company": "Voormalige werkgever — naam op verzoek verborgen",
           "initials": "SP"
         },
         {
-          "text": "Wat dit team onderscheidt is dat ze zowel de besturingslaag als de datalaag echt begrijpen. Die combinatie is zeldzaam in de industrie en maakt een echt verschil bij complexe integratieprojecten.",
+          "text": "Wat dit team onderscheidt, is dat ze zowel de controlelaag als de datalaag daadwerkelijk begrijpen. Die combinatie is zeldzaam in de branche en maakt echt een verschil bij complexe integratieprojecten.",
           "author": "Automatiseringsmanager",
           "company": "Industriële fabrikant — Nederland",
-          "initials": "AM"
+          "initials": "BEN"
         },
         {
-          "text": "Betrouwbaar, snel in reageren en oprecht geïnvesteerd in het goed laten verlopen. De documentatie en overdracht waren de beste die ik heb gezien bij een project van dit soort.",
-          "author": "Plant Operations Manager",
-          "company": "Voedings- en drankenfaciliteit",
+          "text": "Betrouwbaar, reageert snel en investeert oprecht in het behalen van het juiste resultaat. De documentatie en overdracht waren de beste die ik bij een dergelijk project heb gezien.",
+          "author": "Operationeel manager van de fabriek",
+          "company": "Productiefaciliteit voor voedsel en dranken",
           "initials": "PO"
         }
       ]
     },
     "serviceArea": {
       "badge": "WAAR WIJ ACTIEF ZIJN",
-      "title": "Wereldwijd Bereik. Persoonlijke Betrokkenheid.",
-      "subtitle": "Industriële automatisering vereist vaak fysieke aanwezigheid. Zo werken wij over grenzen heen.",
-      "intro": "Wij zijn gevestigd in Nederland en Mexico — twee locaties die samen Europese en Amerikaanse tijdzones zonder vertraging bestrijken. Wij werken onshore, offshore en op afstand, en reizen wereldwijd voor inbedrijfstelling op locatie, FAT-begeleiding en locatieondersteuning.",
+      "title": "Mondiaal bereik. Persoonlijke betrokkenheid.",
+      "subtitle": "Industriële automatiseringswerkzaamheden vereisen vaak fysieke aanwezigheid. Zo werken wij over de grenzen heen.",
+      "intro": "We zijn gevestigd in Nederland en Mexico – twee locaties die samen zonder vertraging de Europese en Amerikaanse tijdzones bestrijken. We werken onshore, offshore en op afstand, en we reizen de hele wereld over voor inbedrijfstelling op locatie, FAT-getuigenis en ondersteuning op locatie.",
       "cards": [
         {
           "region": "Europa",
           "flag": "🇪🇺",
-          "description": "Onze Nederlandse basis bestrijkt West-Europa. Wij werken op locatie in de hele EU en het VK, en kunnen snel reageren op projecten in de regio.",
+          "description": "Onze Nederlandse basis bestrijkt West-Europa. We werken op locatie in de hele EU en het VK en zijn erop ingesteld om snel te reageren op projecten in de hele regio.",
           "highlights": [
             "Nederland — primaire basis",
-            "Op locatie in EU en VK",
-            "Offshore — Noordzee en verder"
+            "Op locatie in de EU en het VK",
+            "Offshore – Noordzee en daarbuiten"
           ]
         },
         {
           "region": "Amerika",
           "flag": "🌎",
-          "description": "Onze Mexicaanse basis bestrijkt Noord- en Latijns-Amerika. Van offshore platforms in de Golf van Mexico tot productiefaciliteiten op het continent.",
+          "description": "Onze basis in Mexico bestrijkt Noord- en Latijns-Amerika. Van offshore-platforms in de Golf van Mexico tot productiefaciliteiten over het hele continent.",
           "highlights": [
-            "Mexico — primaire basis",
+            "Mexico – primaire basis",
             "Noord- en Latijns-Amerika",
-            "Offshore Golf van Mexico"
+            "Golf van Mexico voor de kust"
           ]
         },
         {
-          "region": "Remote & Wereldwijd",
+          "region": "Op afstand en wereldwijd",
           "flag": "🌐",
-          "description": "Veel automatiseringstaken — PLC-programmering, HMI-ontwikkeling, SCADA-werk, dataplatformontwikkeling — kunnen volledig op afstand worden uitgevoerd.",
+          "description": "Veel automatiseringstaken – PLC-programmering, HMI-ontwikkeling, SCADA-werk, dataplatformontwikkeling – kunnen volledig op afstand worden uitgevoerd. We beschikken over een beveiligde infrastructuur voor externe toegang en communiceren betrouwbaar tussen tijdzones.",
           "highlights": [
             "Veilige toegang op afstand",
-            "Volledige remote levering voor softwarewerk",
-            "Wereldwijd reizen voor fasen op locatie"
+            "Volledige levering op afstand voor softwarewerk",
+            "Wereldwijde reizen voor fases ter plaatse"
           ]
         }
       ],
-      "travelNote": "Reiskosten en logistiek worden transparant besproken als onderdeel van elke projectscope. Wij verbergen ze niet in het tarief."
+      "travelNote": "Reiskosten en logistiek worden transparant besproken als onderdeel van elke projectomvang. Wij verbergen ze niet in het tarief."
     },
     "trust": {
       "badge": "GEBOUWD DOOR INGENIEURS",
-      "title": "Echte Fabrieksvloer Ervaring",
-      "subtitle": "Preaumate is opgericht door automatiseringsingenieurs die jarenlang problemen direct op productievloeren hebben opgelost. Wij begrijpen de druk van stilstand, integratie-uitdagingen, verouderde apparatuur en productiereliabiliteit — omdat wij zelf in industriële omgevingen hebben gewerkt.",
+      "title": "Echte ervaring op de fabrieksvloer",
+      "subtitle": "Preaumate is opgericht door automatiseringsingenieurs die jarenlang problemen rechtstreeks op de productievloer hebben opgelost. We begrijpen de druk van downtime, integratie-uitdagingen, verouderde apparatuur en productiebetrouwbaarheid – omdat we zelf in industriële omgevingen hebben gewerkt.",
       "cards": [
         {
-          "title": "Fabrieksvloer Ervaring",
-          "description": "Praktijkgerichte industriële inbedrijfstelling, probleemoplossing en integratie-ervaring in meerdere productieomgevingen en sectoren."
+          "title": "Ervaring op de fabrieksvloer",
+          "description": "Real-world industriële inbedrijfstelling, probleemoplossing en integratie-ervaring in meerdere productieomgevingen en sectoren."
         },
         {
-          "title": "Grensoverschrijdende Engineering",
-          "description": "Engineering ondersteuning in Europa en Latijns-Amerika, met remote mogelijkheden die alle tijdzones bestrijken."
+          "title": "Grensoverschrijdende techniek",
+          "description": "Technische ondersteuning in heel Europa en Latijns-Amerika, met mogelijkheden op afstand die alle tijdzones bestrijken."
         },
         {
-          "title": "Gericht op Modernisering",
-          "description": "Het verbinden van verouderde industriële systemen met moderne data- en automatiseringsplatforms — stap voor stap, zonder onnodige complexiteit."
+          "title": "Modernisering gericht",
+          "description": "Verbinden van oudere industriële systemen met moderne data- en automatiseringsplatforms – stap voor stap, zonder onnodige complexiteit."
         },
         {
-          "title": "Praktische Implementatie",
-          "description": "Oplossingen ontworpen voor operationele betrouwbaarheid, onderhoudbaarheid en productiecontinuïteit. Geen theoretische kaders — werkende systemen."
+          "title": "Praktische implementatie",
+          "description": "Oplossingen ontworpen voor operationele betrouwbaarheid, onderhoudbaarheid en productiecontinuïteit. Geen theoretische raamwerken – werkende systemen."
         }
       ]
     },
     "problems": {
-      "badge": "PROBLEMEN DIE WE OPLOSSEN",
-      "title": "Industriële Uitdagingen Die Wij Aanpakken",
-      "subtitle": "Wij werken met fabrikanten die te maken hebben met echte operationele problemen — het soort dat productie vertraagt, stilstand veroorzaakt en systemen moeilijk beheersbaar maakt.",
+      "badge": "PROBLEMEN DIE WIJ OPLOSSEN",
+      "title": "Industriële uitdagingen die we aanpakken",
+      "subtitle": "We werken met fabrikanten die te maken hebben met echte operationele problemen – het soort problemen dat de productie vertraagt, downtime veroorzaakt en systemen moeilijk te beheren maakt.",
       "cards": [
         {
-          "title": "Verouderde PLC-systemen",
-          "description": "Migratie van verouderde PLC-systemen naar moderne platforms zonder productieschema's te verstoren of kritische proceskennis te verliezen."
+          "title": "Oudere PLC-systemen",
+          "description": "Migreren van verouderde PLC-systemen naar moderne platforms zonder de productieschema's te verstoren of kritische proceskennis te verliezen."
         },
         {
-          "title": "Ontbrekende Productievisibiliteit",
-          "description": "Machinedata verzamelen en visualiseren over de gehele fabrieksvloer voor betere operationele beslissingen en snellere diagnostiek."
+          "title": "Ontbrekende productiezichtbaarheid",
+          "description": "Het verzamelen en visualiseren van machinegegevens op de fabrieksvloer ter ondersteuning van betere operationele beslissingen en snellere diagnostiek."
         },
         {
-          "title": "Moeilijke Systeemintegraties",
-          "description": "PLC's, SCADA, MES, ERP en IoT-systemen verbinden tot een betrouwbare, uniforme data-architectuur die daadwerkelijk werkt in productie."
+          "title": "Moeilijke systeemintegraties",
+          "description": "Het verbinden van PLC's, SCADA, MES, ERP en IoT-systemen tot een betrouwbare, uniforme data-architectuur die daadwerkelijk werkt in de productie."
         },
         {
-          "title": "Robotica-implementatie",
-          "description": "Robotsystemen programmeren en integreren in productieomgevingen met focus op betrouwbaarheid, veiligheid en onderhoudbaarheid."
+          "title": "Implementatie van robotica",
+          "description": "Programmeren en integreren van robotsystemen in productieomgevingen met de nadruk op betrouwbaarheid, veiligheid en onderhoudbaarheid."
         },
         {
-          "title": "Uitval & Probleemoplossing",
-          "description": "Terugkerende automatiseringsfouten diagnosticeren, systeembetrouwbaarheid verbeteren en ongeplande stilstand verminderen."
+          "title": "Downtime en probleemoplossing",
+          "description": "Het diagnosticeren van terugkerende automatiseringsstoringen, het verbeteren van de systeembetrouwbaarheid en het verminderen van ongeplande stilstand binnen de productielijn."
         },
         {
           "title": "Industriële AI-adoptie",
-          "description": "AI toepassen waar het meetbare operationele waarde creëert — anomaliedetectie, voorspellend onderhoud en productieanalyses."
+          "description": "Het toepassen van AI waar het meetbare operationele waarde creëert: detectie van afwijkingen, voorspellend onderhoud en productieanalyses."
         }
       ]
     },
     "technologies": {
-      "badge": "PLATFORMS & TOOLS",
-      "title": "Technologieën Waarmee We Werken",
-      "subtitle": "Wij werken met de industriële platforms en tools die uw productieomgeving al gebruikt — geen vendor lock-in, geen onnodige vervangingen.",
+      "badge": "PLATFORMEN & HULPMIDDELEN",
+      "title": "Technologieën waarmee we werken",
+      "subtitle": "Wij werken met de industriële platforms en tools die uw productieomgeving al gebruikt: geen leverancierlock-in, geen onnodige vervangingen.",
       "categories": [
         {
           "title": "Automatisering",
@@ -1435,7 +1498,7 @@ export const translations = {
           ]
         },
         {
-          "title": "Industriële Communicatie",
+          "title": "Industriële communicatie",
           "items": [
             "OPC UA",
             "MQTT",
@@ -1445,31 +1508,31 @@ export const translations = {
           ]
         },
         {
-          "title": "Data & Software",
+          "title": "Gegevens en software",
           "items": [
             "Node-RED",
             "Python",
             "SQL",
-            "REST API's",
+            "REST APIs",
             "Edge Gateways"
           ]
         },
         {
           "title": "Infrastructuur",
           "items": [
-            "Industriële Netwerken",
-            "Remote Toegang",
+            "Industrieel netwerken",
+            "Toegang op afstand",
             "Virtualisatie",
-            "Cloud Integratie",
-            "Industriële PC's"
+            "Cloud-integratie",
+            "Industriële pc's"
           ]
         }
       ]
     },
     "industries": {
-      "badge": "SECTOREN",
-      "title": "Sectoren Die Wij Bedienen",
-      "subtitle": "Wij hebben praktijkervaring in een breed scala aan industriële sectoren — van voedingsproductielijnen tot machinebouwers.",
+      "badge": "INDUSTRIEËN",
+      "title": "Industrieën die wij ondersteunen",
+      "subtitle": "We hebben praktijkervaring in een breed scala van industriële sectoren – van voedselproductielijnen tot machinebouwers.",
       "items": [
         {
           "title": "Productie"
@@ -1478,39 +1541,39 @@ export const translations = {
           "title": "Verpakking"
         },
         {
-          "title": "Voeding & Dranken"
+          "title": "Eten en drinken"
         },
         {
-          "title": "Automotive"
+          "title": "Automobiel"
         },
         {
-          "title": "Opslag & Logistiek"
+          "title": "Magazijn & Logistiek"
         },
         {
-          "title": "Energie & Nutsvoorzieningen"
+          "title": "Energie en nutsvoorzieningen"
         },
         {
           "title": "Machinebouwers"
         },
         {
-          "title": "Industriële Infrastructuur"
+          "title": "Industriële infrastructuur"
         }
       ]
     },
     "projectProof": {
-      "badge": "VOORBEELDPROJECTEN",
-      "title": "Industriële Projecten",
-      "subtitle": "Een selectie van de soorten uitdagingen die wij hebben opgelost. Specifieke casestudies en referenties beschikbaar op verzoek.",
+      "badge": "VOORBEELD PROJECTEN",
+      "title": "Industriële projecten",
+      "subtitle": "Een selectie van de soorten uitdagingen die we hebben opgelost. Specifieke casestudies en referenties op aanvraag verkrijgbaar.",
       "resultsLabel": "Resultaten",
-      "note": "Klantgegevens worden op verzoek vertrouwelijk behandeld. Neem contact op om referenties te bespreken die relevant zijn voor uw sector.",
+      "note": "Klantgegevens worden op verzoek vertrouwelijk behandeld. Neem contact met ons op om referenties te bespreken die relevant zijn voor uw sector.",
       "projects": [
         {
-          "title": "PLC-migratie voor Verouderd Productiesysteem",
-          "summary": "[VOEG PROJECTBESCHRIJVING TOE — beschrijf de productieomgeving, het probleem dat de migratie aanleiding gaf, wat er is gedaan en welke systemen betrokken waren.]",
+          "title": "PLC-migratie voor verouderd productiesysteem",
+          "summary": "[ADD PROJECT SUMMARY — describe the production environment, the problem that triggered the migration, what was done and what systems were involved. Keep it factual and specific. Anonymize client name if needed.]",
           "results": [
-            "Minder ongeplande stilstand",
-            "Verbeterde remote diagnostiek",
-            "Modernere onderhoudbaarheid"
+            "Minder ongeplande downtime",
+            "Verbeterde diagnose op afstand",
+            "Gemoderniseerde onderhoudbaarheid"
           ],
           "tech": [
             "Siemens TIA Portal",
@@ -1519,25 +1582,25 @@ export const translations = {
           ]
         },
         {
-          "title": "Fabrieks Data Verzameling & Monitoringsysteem",
-          "summary": "[VOEG PROJECTBESCHRIJVING TOE — beschrijf de fabriek, de data-uitdaging en de integratiemethode.]",
+          "title": "Systeem voor verzameling en monitoring van fabrieksgegevens",
+          "summary": "[ADD PROJECT SUMMARY — describe the factory, the data challenge (e.g. no visibility into machine output), and what integration approach was used. Mention number of machines or lines if possible.]",
           "results": [
-            "Uniforme machinevisibiliteit",
-            "Gecentraliseerde productiemonitoring",
-            "Remote diagnostiek ingeschakeld"
+            "Uniforme zichtbaarheid van machines",
+            "Gecentraliseerde productiebewaking",
+            "Diagnose op afstand ingeschakeld"
           ],
           "tech": [
             "MQTT",
             "Node-RED",
             "SQL",
-            "Industriële IoT"
+            "Industrieel IoT"
           ]
         },
         {
-          "title": "Robotcel Integratie",
-          "summary": "[VOEG PROJECTBESCHRIJVING TOE — beschrijf de robotcel, de productiecontext en de integratiescope.]",
+          "title": "Robotische celintegratie",
+          "summary": "[ADD PROJECT SUMMARY — describe the robotic cell context, what production step it handles, integration scope with existing PLC/SCADA and any safety considerations.]",
           "results": [
-            "Hogere productiedoorvoer",
+            "Verhoogde productiedoorvoer",
             "Verbeterde herhaalbaarheid",
             "Minder handmatige handelingen"
           ],
@@ -1550,116 +1613,118 @@ export const translations = {
       ]
     },
     "founders": {
-      "badge": "ONS TEAM",
-      "title": "De Ingenieurs Achter Preaumate",
-      "subtitle": "Preaumate is opgericht door ingenieurs met praktijkervaring in industriële automatisering, systeemintegratie en fabrieksoperaties in Europa en Latijns-Amerika.",
+      "badge": "ONTMOET HET TEAM",
+      "title": "De ingenieurs achter Preaumate",
+      "subtitle": "Preaumate is opgericht door ingenieurs met praktijkervaring op het gebied van industriële automatisering, systeemintegratie en fabrieksactiviteiten in Europa en Latijns-Amerika.",
       "specializationsLabel": "Gespecialiseerd in",
-      "industriesLabel": "Werkervaring in",
+      "industriesLabel": "Overal gewerkt",
       "linkedinLabel": "Bekijk LinkedIn",
       "founders": [
         {
-          "name": "[UW VOLLEDIGE NAAM]",
+          "name": "[YOUR FULL NAME]",
           "role": "Automatiseringsingenieur",
           "location": "Nederland",
-          "years": "30+ jaar ervaring in industriële automatisering in meerdere productiesectoren.",
-          "bio": "[2–3 zinnen over uw achtergrond, de systemen waaraan u heeft gewerkt en uw aanpak.]",
+          "years": "Meer dan 30 jaar ervaring in industriële automatisering in meerdere productiesectoren.",
+          "bio": "[2–3 sentences about your background, what types of systems you have worked on, and what drives your approach to engineering.]",
           "photoUrl": "",
           "specializations": [
-            "[bv. Siemens PLC programmering]",
-            "[bv. SCADA & HMI]",
-            "[bv. Systeemintegratie]"
+            "[e.g. Siemens PLC programming]",
+            "[e.g. SCADA & HMI development]",
+            "[e.g. System integration]"
           ],
           "industries": [
-            "[bv. Voeding & Dranken]",
-            "[bv. Verpakking]",
-            "[bv. Waterbehandeling]"
+            "[e.g. Food & Beverage]",
+            "[e.g. Packaging]",
+            "[e.g. Water treatment]"
           ],
           "linkedin": "#"
         },
         {
-          "name": "[UW VOLLEDIGE NAAM]",
-          "role": "Automatiserings- & Integratie-ingenieur",
+          "name": "[YOUR FULL NAME]",
+          "role": "Automatisering & Integratie Ingenieur",
           "location": "Monterrey, Mexico",
           "years": "10+ jaar ervaring in industriële systemen en integratie.",
-          "bio": "[2–3 zinnen over uw achtergrond en technische focus.]",
+          "bio": "[2–3 sentences about your background, the types of automation work you have done, and what your engineering focus is.]",
           "photoUrl": "",
           "specializations": [
-            "[bv. Industriële IoT]",
-            "[bv. Rockwell / CoDeSys]",
-            "[bv. Machine inbedrijfstelling]"
+            "[e.g. Industrial IoT & connectivity]",
+            "[e.g. Rockwell / CoDeSys programming]",
+            "[e.g. Machine commissioning]"
           ],
           "industries": [
-            "[bv. Automotive]",
-            "[bv. Logistiek]",
-            "[bv. Productie]"
+            "[e.g. Automotive]",
+            "[e.g. Logistics]",
+            "[e.g. Manufacturing]"
           ],
           "linkedin": "#"
         }
       ]
     },
     "curriculum": {
-      "pageTitle": "Theo Rietveld — CV | Preaumate",
-      "metaDescription": "Professioneel curriculum van Theo Rietveld, oprichter en industrieel automatiseringsingenieur bij Preaumate. 30+ jaar PLC, SCADA, IoT en robotica ervaring.",
+      "pageTitle": "Theo Rietveld — CV | Voorwoord",
+      "metaDescription": "Beroepscurriculum van Theo Rietveld, oprichter en liefhebber van industriële automatisering bij Preaumate. Meer dan 30 jaar ervaring met PLC, SCADA, IoT en robotica.",
       "heroBadge": "CURRICULUM VITAE",
-      "heroSubtitle": "Oprichter & Industrieel Automatiseringsingenieur bij Preaumate",
-      "heroTagline": "30+ jaar praktijkervaring in PLC-programmering, SCADA-ontwikkeling, systeemintegratie en internationale inbedrijfstelling.",
-      "photoAlt": "Theo Rietveld — Oprichter van Preaumate",
-      "photoPlaceholder": "TR",
+      "heroSubtitle": "Oprichter en liefhebber van industriële automatisering bij Preaumate",
+      "heroTagline": "Meer dan 30 jaar praktische ervaring in PLC-programmering, SCADA-ontwikkeling, systeemintegratie en internationale inbedrijfstelling.",
+      "photoAlt": "Theo Rietveld – Oprichter van Preaumate",
+      "photoPlaceholder": "TJR",
       "currentBadge": "Huidig",
-      "presentLabel": "Heden",
-      "downloadPdf": "PDF Downloaden",
-      "contactCta": "Uw Project Bespreken",
+      "presentLabel": "Cadeau",
+      "downloadPdf": "PDF downloaden",
+      "contactCta": "Bespreek uw project",
       "summaryBadge": "PROFESSIONELE SAMENVATTING",
-      "summaryTitle": "Engineering Expertise ten Dienste van Uw Productiedoelen",
-      "summaryText": "Theo Rietveld is een industrieel automatiseringsingenieur en oprichter van Preaumate met meer dan 20 jaar praktijkervaring in PLC-programmering, SCADA-ontwikkeling, systeemintegratie en internationale projectinbedrijfstelling. Met werkervaring in de maritieme, offshore en voedselverwerkingssectoren in Nederland en internationaal brengt hij diepgaande technische expertise en een bewezen staat van dienst mee. Hij communiceert direct in Nederlands, Engels, Spaans en Duits.",
-      "experienceBadge": "WERKERVARING",
-      "earlierCareerBadge": "EERDERE LOOPBAAN",
+      "summaryTitle": "Technische expertise ten dienste van uw productiedoelstellingen",
+      "summaryText": "Theo Rietveld is een industriële automatiseringsingenieur en oprichter van Preaumate met meer dan 30 jaar praktijkervaring op het gebied van PLC-programmering, SCADA-ontwikkeling, systeemintegratie en internationale projectinbedrijfstelling. Hij heeft in de maritieme, offshore- en voedselverwerkende industrie in Europa en internationaal gewerkt en brengt bij elke opdracht diepgaande technische expertise en een bewezen staat van dienst op het gebied van projectlevering met zich mee. Hij communiceert rechtstreeks in het Nederlands, Engels, Spaans en Duits, waardoor een effectieve samenwerking met klanten en teams in heel Europa en Latijns-Amerika mogelijk wordt.",
+      "experienceBadge": "PROFESSIONELE ERVARING",
+      "earlierCareerBadge": "EERDERE CARRIÈRE",
       "roles": {
         "preaumate": {
-          "roleTitle": "Oprichter & Industrieel Automatiseringsingenieur",
-          "description": "Preaumate opgericht om praktische industriële automatiseringstechnieken rechtstreeks aan fabrikanten in Europa en Latijns-Amerika te leveren. PLC-programmering, SCADA-ontwikkeling, industriële IoT-integratie, robotica en AI-gestuurde automatisering — met fabrieksvloer-ervaring achter elke oplossing.",
+          "roleTitle": "Oprichter en ontwerper van industriële automatisering",
+          "description": "Preaumate opgericht om praktische industriële automatiseringstechniek rechtstreeks aan fabrikanten in Europa en Latijns-Amerika te leveren. Het leveren van PLC-programmering, SCADA-ontwikkeling, industriële IoT-integratie, robotica en AI-gestuurde automatisering – met ervaring op de fabrieksvloer achter elke oplossing.",
           "highlights": [
-            "PLC-programmering voor Siemens, Rockwell en CoDeSys",
-            "SCADA en HMI-ontwikkeling voor productiemonitoring",
-            "Industriële IoT-integratie met OPC UA en MQTT",
-            "Robotica-integratie en inbedrijfstelling",
-            "Industriële AI voor anomaliedetectie en voorspellend onderhoud",
-            "Remote engineering ondersteuning in Europa en Latijns-Amerika"
+            "PLC-programmering voor Siemens-, Rockwell- en CoDeSys-platforms",
+            "SCADA- en HMI-ontwikkeling voor productiemonitoring",
+            "Industriële IoT en systeemintegratie",
+            "Integratie en inbedrijfstelling van robotica",
+            "Industriële AI voor detectie van afwijkingen en voorspellend onderhoud",
+            "Wereldwijde inbedrijfstelling en ondersteuning op locatie",
+            "Technische ondersteuning op afstand",
+            "Advies over automatiseringsarchitectuur en moderniseringsstrategieën"
           ]
         },
         "kiremko": {
-          "roleTitle": "Software Developer & Automatiseringsingenieur",
-          "description": "Project- en machineontwerp, engineering en management voor industriële voedselverwerkingsautomatisering. Ontwikkeling binnen een team van hardware- en software-ingenieurs, van functionele specificatie tot inbedrijfstelling, klantoplevering en training op locatie.",
+          "roleTitle": "Softwareontwikkelaar en automatiseringsingenieur",
+          "description": "Project- en machineontwerp, engineering en management voor industriële automatisering van voedselverwerking. Ontwikkeling binnen een team van hardware- en software-ingenieurs, van functionele specificatie tot inbedrijfstelling, klantoverdracht en training op locatie.",
           "highlights": [
-            "Industriële voedselverwerkingmachine-automatisering",
-            "Functionele ontwerpbeschrijvingen opstellen",
+            "Automatisering van industriële voedselverwerkingsmachines",
+            "Functionele ontwerpspecificaties",
             "Softwareontwikkeling, testen en inbedrijfstelling",
-            "Training op locatie en klantoplevering"
+            "Training op locatie en overdracht aan de klant"
           ]
         },
         "gooiland": {
-          "roleTitle": "Software Developer & Automatiseringsingenieur",
-          "description": "12 jaar specialisatie in maritieme en offshore HVAC-automatisering. Volledige projectlevenscyclus van ontwerp tot internationale inbedrijfstelling, met hands-on ervaring op schepen en offshore-installaties wereldwijd. Sterke focus op klantrelaties en langdurige service.",
+          "roleTitle": "Softwareontwikkelaar en automatiseringsingenieur",
+          "description": "12 jaar gespecialiseerd in maritieme en offshore HVAC-automatisering. Volledige projectlevenscyclus, van ontwerp tot en met internationale inbedrijfstelling, met praktische ervaring op schepen en offshore-installaties over de hele wereld. Sterke focus op klantrelaties en dienstverlening op lange termijn.",
           "highlights": [
             "Maritieme en offshore HVAC-besturingsautomatisering",
             "Internationale inbedrijfstelling wereldwijd",
-            "Volledige softwareontwikkel- en implementatiecyclus",
-            "Klantrelaties, training op locatie en service"
+            "Volledige levenscyclus van softwareontwikkeling en -implementatie",
+            "Klantrelaties, training en service op locatie"
           ]
         },
         "vandenPol": {
-          "roleTitle": "Software Developer & Commissioning Engineer",
-          "description": "Industriële voedselverwerkingsautomatisering van projectengineering tot inbedrijfstelling. Internationale projectoplevering, training op locatie en doorlopende service.",
+          "roleTitle": "Softwareontwikkelaar en inbedrijfstellingsingenieur",
+          "description": "Industriële automatisering van de voedselverwerking, van projectengineering tot en met inbedrijfstelling. Internationale projectlevering, training op locatie en voortdurende service.",
           "highlights": [
-            "Industriële voedselverwerkingsautomatisering",
-            "Internationale inbedrijfstelling en projectoplevering",
-            "Functionele ontwerpbeschrijvingen",
-            "Training op locatie en service"
+            "Industriële automatisering van voedselverwerking",
+            "Internationale inbedrijfstelling en projectlevering",
+            "Functionele ontwerpspecificaties",
+            "Training en service op locatie"
           ]
         },
         "elero": {
-          "roleTitle": "Technische Verkoop, Advies & IT-beheer",
-          "description": "Project- en automatiseringstechniek, verkoop, productadvies, klanttraining en IT-beheer voor een specialist in aandrijvingen en domotica.",
+          "roleTitle": "Technische verkoopondersteuning, advies en IT",
+          "description": "Project- en automatiseringsengineering, verkoop, productadvies, klanttraining en IT-beheer voor een specialist in aandrijvingen en domotica.",
           "highlights": [
             "Automatiseringstechniek en technische verkoop",
             "Productadvies en klanttraining",
@@ -1668,203 +1733,266 @@ export const translations = {
         }
       },
       "skillsBadge": "KERNCOMPETENTIES",
-      "skillsTitle": "Waar Ik het Beste in Ben",
+      "skillsTitle": "Wat ik het beste doe",
       "skills": [
+        "Innovatieve ontwikkeling",
         "Projectmanagement",
-        "Besluitvaardigheid",
-        "Creatief ontwerper",
-        "Innovatieve ontwikkelaar",
+        "Klantrelaties",
+        "Advies & Opleiding",
         "Complexe probleemoplossing",
         "Inbedrijfstelling",
-        "Klantgerichtheid",
-        "Advies & Training",
+        "Besluitvorming",
+        "Creatief ontwerp",
         "Technische vertaling"
       ],
       "technicalBadge": "TECHNISCHE EXPERTISE",
-      "technicalTitle": "Platforms & Tools",
+      "technicalTitle": "Platformen en hulpmiddelen",
       "techPlc": "PLC-platforms",
-      "techScada": "SCADA & HMI",
-      "techSoftware": "Software & Programmeren",
-      "techProtocols": "Protocollen & Overig",
-      "educationBadge": "OPLEIDING",
-      "degreeTitle": "Bachelor Computer Data Science & Informatiesystemen",
-      "certificationsBadge": "CERTIFICERINGEN",
+      "techScada": "SCADA en HMI",
+      "techSoftware": "Software en programmering",
+      "techProtocols": "Protocollen en andere",
+      "educationBadge": "ONDERWIJS",
+      "degreeTitle": "Bachelor in computerdatawetenschappen en informatiesystemen",
+      "certificationsBadge": "CERTIFICERING",
       "certifications": {
         "siemens": {
           "title": "Gecertificeerd Siemens Programmeur",
-          "detail": "TIA Portal & Step 7"
+          "detail": "TIA Portal & Stap 7"
         },
         "offshore": {
-          "title": "Offshore Veiligheidscertificaten",
-          "detail": "GWO Zee Overleving, Werken op Hoogte, Brandveiligheid, EHBO, Handmatig Tillen"
+          "title": "Offshore veiligheidscertificaten",
+          "detail": "GWO Sea Survival, Werken op hoogte, Brandbewustzijn, EHBO, Handmatig hanteren"
         },
         "bosiet": {
-          "title": "BOSIET / HUET — OPITO Gecertificeerd",
-          "detail": "Helikopter Onderwater Ontsnappingstraining"
+          "title": "BOSIET / HUET — OPITO-gecertificeerd",
+          "detail": "Helikopter onderwater ontsnappingstraining"
         }
       },
       "languagesBadge": "TALEN",
       "spokenLanguages": {
         "dutch": {
           "language": "Nederlands",
-          "level": "Moedertaal"
+          "level": "Oorspronkelijk"
         },
         "english": {
           "language": "Engels",
-          "level": "Vloeiend"
+          "level": "Vaardig"
         },
         "spanish": {
           "language": "Spaans",
-          "level": "Vloeiend"
+          "level": "Vaardig"
         },
         "german": {
           "language": "Duits",
-          "level": "Gevorderd"
+          "level": "Geavanceerd"
         }
       },
-      "contactBadge": "LATEN WE SAMENWERKEN",
-      "contactTitle": "Uw Project Bespreken?",
-      "contactSubtitle": "Neem contact op als u wilt bespreken hoe Preaumate uw automatiseringsproject kan ondersteunen. Ik spreek direct af.",
-      "contactButton": "Neem Contact Op"
+      "contactBadge": "Laten we samenwerken",
+      "contactTitle": "Klaar om uw project te bespreken?",
+      "contactSubtitle": "Wilt u bespreken hoe Preaumate uw automatiseringsproject kan ondersteunen, dan kom ik graag direct in contact.",
+      "contactButton": "Neem contact op"
+    },
+    "qualifier": {
+      "wizardui": "UI-labels van de wizard",
+      "stepLabel": "Vraag {current} van {total}",
+      "skipButton": "Vragenlijst overslaan",
+      "backButton": "Rug",
+      "nextButton": "Volgende",
+      "finishButton": "Finish",
+      "skipNote": "We stellen het op prijs dat u dit invult, maar u kunt op elk gewenst moment direct naar het contactformulier gaan.",
+      "summaryHeading": "Vragenlijst vóór contact",
+      "editAnswersButton": "Bewerk mijn antwoorden",
+      "contextCapturedNote": "Bedankt. We hebben uw antwoorden genoteerd. Ze worden bij uw bericht gevoegd.",
+      "qualifierPreviewLabel": "Your questionnaire answers (included with this message)",
+      "q1_label": "Maakt u momenteel gebruik van datafeedback in uw productieproces?",
+      "q1_description": "Van helemaal geen datatracking tot een volledig geïntegreerde feedbackloop.",
+      "q1_scale_0": "Helemaal niet",
+      "q1_scale_low": "Sommige handmatige tracking",
+      "q1_scale_high": "Gedeeltelijk geautomatiseerd",
+      "q1_scale_10": "Volledig geïntegreerd",
+      "q2_label": "Wat is uw bedrijfsomvang?",
+      "q2_opt_freelance": "Freelance/zelfstandige",
+      "q2_opt_small": "Klein (2–20 medewerkers)",
+      "q2_opt_medium": "Middelgroot (21-50 werknemers)",
+      "q2_opt_large": "Groot (51-200 werknemers)",
+      "q2_opt_enterprise": "Onderneming (200+ werknemers)",
+      "q3_label": "Hoe groot is uw productieproces?",
+      "q3_opt_single": "Eén enkele machine of cel",
+      "q3_opt_line": "Eén productielijn",
+      "q3_opt_multi": "Meerdere productielijnen",
+      "q3_opt_sites": "Meerdere locaties of faciliteiten",
+      "q4_label": "Wat is uw type productie?",
+      "q4_opt_food": "Eten en drinken",
+      "q4_opt_packaging": "Verpakking",
+      "q4_opt_automotive": "Automobiel",
+      "q4_opt_maritime": "Maritiem / Offshore / HVAC",
+      "q4_opt_manufacturing": "Algemene productie",
+      "q4_opt_logistics": "Logistiek en opslag",
+      "q4_opt_other": "Ander",
+      "q5_label": "Welke platforms of merken gebruikt u momenteel?",
+      "q5_description": "Selecteer alles wat van toepassing is. Dit helpt ons bij de voorbereiding voordat we gaan praten.",
+      "q5_opt_other": "Ander",
+      "q5_opt_unknown": "Ik weet het niet zeker/weet het niet",
+      "q6_label": "Waar zou jij AI/datafeedback voor willen gebruiken?",
+      "q6_description": "Optioneel: een zin of twee is voldoende.",
+      "q6_placeholder": "bijv. het voorspellen van onderhoudsbehoeften, het verminderen van afval, het verbeteren van de kwaliteitscontrole...",
+      "q7_label": "Heeft u engineeringcapaciteiten in huis?",
+      "q7_opt_yes": "Ja, een toegewijd team",
+      "q7_opt_partial": "Sommige – maar beperkte capaciteit",
+      "q7_opt_no": "Geen eigen techniek",
+      "q8_label": "Met welke uitdagingen wordt u momenteel geconfronteerd in uw productieproces?",
+      "q8_description": "Optioneel: vertel het ons in uw eigen woorden.",
+      "q8_placeholder": "bijv. ongeplande stilstand, handmatige gegevensverzameling, verouderde PLC-systemen...",
+      "q9_label": "Hoeveel overweegt u te investeren in deze verbetering?",
+      "q9_opt_exploring": "Voorlopig alleen maar de opties verkennen",
+      "q9_opt_under10k": "Onder de € 10.000,-",
+      "q9_opt_10to50k": "€ 10.000 – € 50.000",
+      "q9_opt_50to150k": "€ 50.000 – € 150.000",
+      "q9_opt_over150k": "€ 150.000+",
+      "q10_label": "Wat is uw tijdlijn voor dit project?",
+      "q10_opt_asap": "Zo snel mogelijk",
+      "q10_opt_1to3": "1–3 maanden",
+      "q10_opt_3to6": "3–6 maanden",
+      "q10_opt_exploring": "Gewoon verkennen, geen vaste tijdlijn"
     }
   },
   "es": {
     "nav": {
-      "home": "Inicio",
-      "about": "Nosotros",
+      "home": "Hogar",
+      "about": "Acerca de",
       "services": "Servicios",
       "blog": "Blog",
-      "qa": "P&R",
+      "qa": "Preguntas y respuestas",
       "contact": "Contacto"
     },
     "hero": {
-      "title1": "Expertos en Automatización Industrial",
-      "title2": "Del Piso de Planta a la Capa de Datos",
-      "subtitle": "Preaumate ayuda a los fabricantes a modernizar sus sistemas industriales mediante programación PLC, robótica, SCADA, IoT industrial y automatización con IA. Desarrollado por ingenieros con experiencia real en plantas industriales en Europa y América Latina.",
-      "cta": "Habla con un Ingeniero",
-      "cta2": "Ver Nuestros Servicios",
+      "title1": "Expertos en automatización industrial",
+      "title2": "Desde el piso de la fábrica hasta la capa de datos",
+      "subtitle": "Preaumate ayuda a los fabricantes a modernizar los sistemas industriales mediante programación de PLC, robótica, SCADA, IoT industrial y automatización impulsada por IA. Construido por ingenieros con experiencia real en fábricas en Europa y América Latina.",
+      "cta": "Contacte a un ingeniero",
+      "cta2": "Ver nuestros servicios",
       "trustBadges": [
-        "30+ años de experiencia combinada",
-        "Europa y América Latina",
-        "PLC · SCADA · Robótica · IoT",
+        "Más de 40 años de experiencia combinada",
+        "Europa y las Américas",
+        "PLC · SCADA · Robótica · IoT · IA",
         "Siemens · Rockwell · CoDeSys"
       ]
     },
     "about": {
-      "badge": "SOBRE PREAUMATE",
-      "title1": "Construido por Ingenieros.",
-      "title2": "Impulsado por Pasión.",
-      "para1": "Preaumate es una consultora de automatización industrial creada por ingenieros, con una genuina pasión por la industria. Nuestro equipo aporta más de 20 años de experiencia combinada en plataformas Siemens, Rockwell y CoDeSys — y nos sentimos igual de cómodos en una planta de producción que en una sala de servidores.",
-      "para2": "Hemos trabajado en manufactura robótica, alimentos y bebidas, tratamiento de agua, HVAC, logística e instalaciones offshore. Con sede en los Países Bajos y México, operamos globalmente — onshore, offshore y de forma remota — con tiempos de respuesta rápidos en todas las zonas horarias.",
-      "para3": "Conocemos bien el mundo clásico de la automatización industrial. También entendemos la transformación que está en curso. Nuestro papel es ayudar a los clientes a navegar por ambos mundos.",
+      "badge": "ACERCA DEL PREAUMADO",
+      "title1": "Construido por ingenieros.",
+      "title2": "Impulsado por la Pasión.",
+      "para1": "Preaumate es una consultoría de automatización industrial creada por ingenieros con una pasión genuina por la industria. Nuestro equipo aporta más de 30 años de experiencia combinada en plataformas Siemens, Rockwell y CoDeSys, y nos sentimos tan cómodos en una fábrica como en una sala de servidores.",
+      "para2": "Hemos trabajado en fabricación robótica, alimentos y bebidas, tratamiento de agua, HVAC, logística e instalaciones costa afuera. Con sede en los Países Bajos y México, operamos a nivel mundial (en tierra, en el extranjero y de forma remota) con tiempos de respuesta rápidos en todas las zonas horarias.",
+      "para3": "Conocemos bien el mundo de la automatización industrial clásica. También entendemos la transformación que está en marcha. Nuestra función es ayudar a los clientes a navegar en ambos, ya sea que eso signifique ofrecer una solución basada en hardware probada o ayudarlos a dar los primeros pasos hacia la modernización.",
       "readMore": "Lea nuestra historia completa",
       "features": [
         {
-          "title": "Automatización con IA",
-          "description": "Aproveche la inteligencia artificial de vanguardia para automatizar procesos industriales complejos con precisión sin precedentes."
+          "title": "Automatización impulsada por IA",
+          "description": "Aproveche la inteligencia artificial de vanguardia para automatizar procesos industriales complejos con una precisión sin precedentes."
         },
         {
-          "title": "Monitoreo en Tiempo Real",
-          "description": "Monitoree cada aspecto de su línea de producción en tiempo real con redes avanzadas de sensores IoT y paneles de control."
+          "title": "Monitoreo en tiempo real",
+          "description": "Supervise cada aspecto de su línea de producción en tiempo real con paneles y redes de sensores de IoT avanzados."
         },
         {
-          "title": "Datos, IoT y Nube",
-          "description": "Adquisición de datos en tiempo real, conectividad IoT, procesamiento en nube y borde — haciendo que los datos de sus máquinas trabajen para usted."
+          "title": "Datos, IoT y nube",
+          "description": "Adquisición de datos en tiempo real, conectividad IoT, procesamiento en la nube y en el borde: hacer que los datos de su máquina trabajen para usted."
         },
         {
-          "title": "Optimización Energética",
-          "description": "Reduzca el consumo de energía hasta un 40% mediante el balanceo inteligente de carga y la gestión predictiva de energía."
+          "title": "Optimización energética",
+          "description": "Reduzca el consumo de energía hasta en un 40 % mediante el equilibrio de carga inteligente y la gestión predictiva de la energía."
         },
         {
-          "title": "Mantenimiento Predictivo",
-          "description": "Prevenga costosas paradas prediciendo fallos de equipos antes de que ocurran mediante modelos de aprendizaje automático."
+          "title": "Mantenimiento predictivo",
+          "description": "Evite costosos tiempos de inactividad prediciendo fallas en los equipos antes de que ocurran utilizando modelos de aprendizaje automático."
         }
       ],
       "stats": [
-        "Años de Experiencia Combinada",
-        "Industrias Atendidas",
-        "Principales Plataformas PLC",
+        "Años de experiencia combinada",
+        "Industrias atendidas",
+        "Principales plataformas PLC",
         "Continentes"
       ]
     },
     "services": {
-      "badge": "LO QUE HACEMOS",
-      "title": "Servicios de Automatización Industrial",
-      "subtitle": "Desde programación PLC hasta IoT industrial e IA — soluciones de ingeniería práctica para fabricantes.",
+      "badge": "QUE HACEMOS",
+      "title": "Servicios de automatización industrial",
+      "subtitle": "Desde programación de PLC hasta IoT e IA industriales: soluciones de ingeniería prácticas para fabricantes.",
       "items": [
         {
-          "title": "Programación PLC",
-          "description": "Desarrollamos, migramos y diagnosticamos sistemas PLC para entornos de producción industrial. Plataformas: Siemens, Rockwell y CoDeSys.",
+          "title": "Programación de PLC",
+          "description": "Desarrollamos, migramos y solucionamos problemas de sistemas PLC para entornos de producción industrial. Las plataformas compatibles incluyen controladores basados ​​en Siemens, Rockwell y CoDeSys.",
           "bullets": [
-            "Migraciones y actualizaciones PLC",
-            "Puesta en marcha de máquinas",
+            "Migraciones y actualizaciones de PLC",
+            "Puesta en marcha de la máquina",
             "Optimización de procesos",
             "Diagnóstico remoto",
-            "Soporte de resolución de problemas"
+            "Soporte para la resolución de problemas"
           ],
           "learnMore": "Más información"
         },
         {
-          "title": "Desarrollo SCADA & HMI",
-          "description": "Construimos interfaces de operador y sistemas SCADA que mejoran la visibilidad, el diagnóstico y el monitoreo de producción.",
+          "title": "Desarrollo SCADA y HMI",
+          "description": "Construimos interfaces de operador y sistemas SCADA que mejoran la visibilidad, el diagnóstico y el monitoreo de la producción en toda la fábrica.",
           "bullets": [
             "Paneles de producción",
-            "Gestión de alarmas",
-            "Integración con historian",
+            "Manejo de alarmas",
+            "Integración del historiador",
             "Monitoreo remoto",
-            "Optimización del flujo de trabajo"
+            "Optimización del flujo de trabajo del operador"
           ],
           "learnMore": "Más información"
         },
         {
-          "title": "IoT Industrial",
-          "description": "Conectamos máquinas, PLCs y equipos industriales a sistemas de datos modernos mediante protocolos de comunicación industrial seguros.",
+          "title": "IoT industrial",
+          "description": "Conectamos máquinas, PLC y equipos industriales a sistemas de datos modernos utilizando protocolos de comunicación industriales seguros.",
           "bullets": [
-            "Integración OPC UA",
-            "Infraestructura MQTT",
-            "Recolección de datos de máquinas",
+            "OPC UA integration",
+            "MQTT infrastructure",
+            "Recopilación de datos de la máquina",
             "Conectividad en la nube y en el borde",
-            "Configuración de gateways"
+            "Configuración de puerta de enlace industrial"
           ],
           "learnMore": "Más información"
         },
         {
-          "title": "Integración de Robótica",
-          "description": "Integramos sistemas robóticos en entornos de producción con enfoque en confiabilidad, seguridad y mantenibilidad.",
+          "title": "Integración de robótica",
+          "description": "Integramos sistemas robóticos en entornos de producción con un enfoque en la confiabilidad, la seguridad y la mantenibilidad a largo plazo.",
           "bullets": [
-            "Puesta en marcha de celdas robóticas",
+            "Puesta en marcha de células robóticas",
             "Optimización de movimiento",
-            "Integración de sistemas de seguridad",
+            "Integración del sistema de seguridad",
             "Sincronización de procesos",
             "Soporte de producción"
           ],
           "learnMore": "Más información"
         },
         {
-          "title": "IA Industrial",
-          "description": "Ayudamos a los fabricantes a identificar e implementar oportunidades prácticas de IA usando datos de producción y diagnósticos de máquinas.",
+          "title": "IA industrial",
+          "description": "Ayudamos a los fabricantes a identificar e implementar oportunidades prácticas de IA utilizando datos de producción, diagnósticos de máquinas e información operativa.",
           "bullets": [
             "Detección de anomalías",
             "Mantenimiento predictivo",
-            "Analítica de producción",
+            "Análisis de producción",
             "Proyectos piloto de IA",
-            "Informes operacionales"
+            "Informes operativos"
           ],
           "learnMore": "Más información"
         }
       ]
     },
     "statsBar": [
-      "Proyectos Entregados",
-      "Satisfacción del Cliente",
-      "Años de Experiencia",
-      "Soporte Remoto"
+      "Proyectos entregados",
+      "Satisfacción del cliente",
+      "Años de experiencia",
+      "Soporte remoto"
     ],
     "featuresBar": {
       "badge": "CAPACIDADES",
       "items": [
         {
-          "title": "Soporte Remoto",
+          "title": "Soporte remoto",
           "subtitle": "24/7"
         },
         {
@@ -1876,409 +2004,409 @@ export const translations = {
           "subtitle": "Decisiones"
         },
         {
-          "title": "Análisis",
-          "subtitle": "Predictivos"
+          "title": "Profético",
+          "subtitle": "Analítica"
         },
         {
-          "title": "Fábrica",
-          "subtitle": "Inteligente"
+          "title": "Fábrica inteligente",
+          "subtitle": "Soluciones"
         },
         {
           "title": "Ciberseguridad",
-          "subtitle": "Lista"
+          "subtitle": "Listo"
         },
         {
-          "title": "Integración",
-          "subtitle": "IoT"
+          "title": "IoT",
+          "subtitle": "Integración"
         },
         {
           "title": "Construido para",
-          "subtitle": "el Futuro"
+          "subtitle": "el futuro"
         }
       ]
     },
     "contactSection": {
-      "badge": "CONTÁCTANOS",
-      "title": "¿Listo para Resolver sus Desafíos de Producción?",
-      "subtitle": "Hable directamente con un ingeniero sobre sus problemas operativos. Sin scripts de ventas — solo una conversación técnica."
+      "badge": "PONTE EN CONTACTO",
+      "title": "¿Listo para resolver sus desafíos de producción?",
+      "subtitle": "Hable directamente con un ingeniero sobre sus problemas operativos. Sin guiones de ventas, solo una conversación técnica."
     },
     "form": {
-      "title": "Póngase en Contacto",
+      "title": "Ponte en contacto",
       "subtitle": "¿Listo para transformar sus operaciones industriales? Analicemos sus necesidades.",
-      "companyName": "Nombre de la Empresa",
-      "companyPlaceholder": "Ingrese el nombre de su empresa",
-      "email": "Correo Electrónico",
-      "emailPlaceholder": "su.correo@empresa.com",
-      "phone": "Número de Teléfono",
-      "phonePlaceholder": "+52 (0) 000 000 0000",
-      "serviceInterest": "Servicio de Interés",
+      "companyName": "nombre de empresa",
+      "companyPlaceholder": "Introduzca el nombre de su empresa",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@company.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+31 (0) 000 000 000",
+      "serviceInterest": "Interés del servicio",
       "servicePlaceholder": "Seleccione un servicio...",
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntenos sobre sus necesidades de automatización...",
-      "send": "Enviar Mensaje",
-      "sending": "Enviando...",
+      "send": "Enviar mensaje",
+      "sending": "Envío...",
       "services": [
-        "Automatización de Procesos Robóticos",
-        "Integración IoT",
-        "Soluciones de Fábrica Inteligente",
-        "Análisis Predictivos",
-        "Consultoría General"
+        "Automatización robótica de procesos",
+        "Integración de IoT",
+        "Soluciones de fábrica inteligentes",
+        "Análisis predictivo",
+        "Consulta General"
       ],
       "errors": {
-        "companyRequired": "El nombre de la empresa es requerido",
-        "emailRequired": "El correo electrónico es requerido",
-        "emailInvalid": "Formato de correo electrónico inválido",
-        "phoneRequired": "El número de teléfono es requerido",
+        "companyRequired": "El nombre de la empresa es obligatorio.",
+        "emailRequired": "Se requiere correo electrónico",
+        "emailInvalid": "Formato de correo electrónico no válido",
+        "phoneRequired": "Se requiere número de teléfono",
         "serviceRequired": "Por favor seleccione un servicio",
-        "messageRequired": "El mensaje es requerido",
-        "validationTitle": "Error de Validación del Formulario",
-        "validationDesc": "Por favor complete todos los campos requeridos correctamente.",
-        "errorTitle": "Algo salió mal",
-        "errorDesc": "Su mensaje no pudo enviarse. Inténtelo de nuevo o contáctenos directamente.",
-        "successTitle": "¡Mensaje Enviado Exitosamente! 🎉",
-        "successDesc": "¡Gracias! Nos pondremos en contacto pronto para analizar sus necesidades de automatización."
+        "messageRequired": "Se requiere mensaje",
+        "validationTitle": "Error de validación del formulario",
+        "validationDesc": "Por favor complete todos los campos obligatorios correctamente.",
+        "errorTitle": "algo salió mal",
+        "errorDesc": "Tu mensaje no pudo ser enviado. Inténtelo de nuevo o contáctenos directamente.",
+        "successTitle": "¡Mensaje enviado exitosamente!",
+        "successDesc": "¡Gracias! Nos comunicaremos con usted pronto para analizar sus necesidades de automatización."
       }
     },
     "footer": {
       "tagline": "AUTOMATIZACIÓN INDUSTRIAL",
-      "description": "Ingeniería práctica de automatización industrial — conectando sistemas de planta, datos de máquinas e inteligencia de producción.",
+      "description": "Ingeniería práctica de automatización industrial: conexión de sistemas de fábrica, datos de máquinas e inteligencia de producción.",
       "navHeading": "NAVEGACIÓN",
       "resourcesHeading": "RECURSOS",
       "contactHeading": "CONTACTO",
       "navLinks": [
-        "Inicio",
-        "Sobre nosotros",
+        "Hogar",
+        "Acerca de",
         "Servicios",
         "Contacto"
       ],
       "resourceLinks": [
         "Blog",
-        "Preguntas",
-        "Política de Privacidad",
-        "Términos y Condiciones"
+        "Preguntas y respuestas",
+        "política de privacidad",
+        "Términos y condiciones"
       ],
-      "rights": "Todos los derechos reservados.",
-      "privacyPolicy": "Política de Privacidad",
-      "terms": "Términos y Condiciones"
+      "rights": "Reservados todos los derechos.",
+      "privacyPolicy": "política de privacidad",
+      "terms": "Términos y condiciones"
     },
     "consent": {
       "title": "🍪 Usamos cookies",
-      "text": "Usamos cookies esenciales para que nuestro sitio funcione. Con su consentimiento, también usamos cookies analíticas para entender cómo usa nuestro sitio. Sus datos son procesados de acuerdo con nuestra",
-      "privacyPolicy": "Política de Privacidad",
+      "text": "Utilizamos cookies esenciales para que nuestro sitio funcione. Con su consentimiento, también utilizamos cookies analíticas para comprender cómo utiliza nuestro sitio y mejorar su experiencia. Sus datos se procesan de acuerdo con nuestra",
+      "privacyPolicy": "política de privacidad",
       "and": "y",
-      "cookiePolicy": "Política de Cookies",
-      "reject": "Rechazar No Esenciales",
-      "accept": "Aceptar Todo"
+      "cookiePolicy": "Política de cookies",
+      "reject": "Rechazar No Esencial",
+      "accept": "Aceptar todo"
     },
     "aboutPage": {
-      "heroBadge": "SOBRE PREAUMATE",
-      "heroTitle1": "Construido por Ingenieros.",
-      "heroTitle2": "Impulsado por Pasión.",
-      "heroSubtitle": "Preaumate es una consultora de automatización industrial con más de 20 años de experiencia combinada, operando globalmente desde los Países Bajos y México.",
+      "heroBadge": "ACERCA DEL PREAUMADO",
+      "heroTitle1": "Construido por ingenieros.",
+      "heroTitle2": "Impulsado por la Pasión.",
+      "heroSubtitle": "Preaumate es una consultoría de automatización industrial con más de 30 años de experiencia combinada, que opera globalmente desde los Países Bajos y México.",
       "locations": [
         "Países Bajos",
         "México",
-        "Operaciones Globales"
+        "Operaciones globales"
       ],
-      "whoWeAreBadge": "QUIÉNES SOMOS",
-      "whoWeAreTitle": "Nuestra Historia",
-      "whoWeArePara1": "Preaumate es una consultora de automatización industrial creada por ingenieros, con un entusiasmo y pasión genuinos por la industria. Somos una empresa joven — pero no un equipo nuevo. Entre nosotros aportamos más de 20 años de experiencia práctica en automatización.",
-      "whoWeArePara2": "Nuestro equipo está ubicado en los Países Bajos y México — una distribución geográfica que no es incidental, sino por diseño. Trabajamos globalmente, respondemos rápidamente y estamos configurados para apoyar a los clientes onshore, offshore y remotamente en todas las zonas horarias.",
-      "whoWeArePara3": "Fundamos Preaumate porque creemos que el mejor trabajo de automatización ocurre cuando las personas que lo hacen están cerca del problema, invierten personalmente en el resultado y no son frenadas por capas corporativas.",
-      "whoWeArePara4": "Conocemos bien el mundo clásico de la automatización industrial — porque venimos de él. Y entendemos la transformación que está en curso. Nuestro papel es ayudar a los clientes a navegar por ambos.",
-      "whatWeDoBadge": "LO QUE HACEMOS",
+      "whoWeAreBadge": "QUIENES SOMOS",
+      "whoWeAreTitle": "Nuestra historia",
+      "whoWeArePara1": "Preaumate es una consultoría de automatización industrial construida por ingenieros, con una pasión entusiasta y genuina por la industria. Somos una empresa joven, pero no somos un equipo nuevo. Entre nosotros aportamos más de 30 años de experiencia práctica en automatización a cada proyecto que emprendemos.",
+      "whoWeArePara2": "Nuestro equipo tiene su sede en los Países Bajos y México, una distribución geográfica que no es incidental, sino intencionada. Trabajamos globalmente, respondemos rápidamente y estamos preparados para brindar soporte a clientes en el país, en el extranjero y de forma remota en todas las zonas horarias. Ya sea que su instalación esté en una planta de producción en Europa, una plataforma en el Mar del Norte o una instalación en el otro lado del mundo, estamos allí.",
+      "whoWeArePara3": "Comenzamos Preaumate porque creemos que el mejor trabajo de automatización ocurre cuando las personas que lo realizan están cerca del problema, involucradas personalmente en el resultado y no frenadas por capas corporativas. Combinamos la confiabilidad comprobada de la automatización industrial tradicional con el panorama tecnológico en rápida evolución (integración de IA, conectividad de IoT, computación en la nube y en el borde, ciberseguridad) para hacer que cada tipo de proyecto de automatización sea más eficiente, más conectado y más preparado para el futuro de lo que sería de otra manera.",
+      "whoWeArePara4": "Conocemos bien el mundo clásico de la automatización industrial, porque venimos de él. Y entendemos la transformación que está en marcha. Nuestro papel es ayudar a los clientes a navegar por ambos.",
+      "whatWeDoBadge": "QUE HACEMOS",
       "whatWeDoTitle": "Nuestros Servicios",
-      "whatWeDoIntro": "Somos especialistas en automatización que nos sentimos tan cómodos en una sala de servidores como en el piso de una fábrica. Nos involucramos donde importa — manos a la obra, resolviendo problemas.",
+      "whatWeDoIntro": "Somos especialistas en automatización que nos sentimos tan cómodos en una sala de servidores como en una fábrica. Nos involucramos donde importa: de manera práctica, resolviendo problemas y totalmente comprometidos a hacer que las cosas funcionen. Nuestro enfoque principal es el software, pero primero somos un equipo de servicios y soluciones. Si un problema necesita solución, nosotros lo solucionamos.",
       "servicesList": [
         {
-          "title": "Programación PLC",
-          "description": "Programamos en las plataformas principales — Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) y controladores basados en CoDeSys. Trabajamos con configuraciones PLC de hardware tradicional así como entornos PLC de software moderno, plataformas de virtualización y contenerización. También programamos Safety PLCs."
+          "title": "Programación de PLC",
+          "description": "Programamos en las principales plataformas: Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) y controladores basados ​​en CoDeSys. Trabajamos con configuraciones de PLC de hardware tradicionales, así como con entornos de PLC de software modernos, plataformas de virtualización y contenedorización. También programamos PLC de seguridad: seguridad funcional realizada correctamente, según los estándares importantes. Si un cliente necesita una configuración clásica y probada basada en hardware, se la entregamos con confianza. Si un cliente quiere explorar la modernización, consultamos, asesoramos y ayudamos a elegir lo que es realmente mejor para su situación específica."
         },
         {
-          "title": "Desarrollo HMI",
-          "description": "Diseñamos y construimos interfaces de operador que son intuitivas, claras y construidas para las personas que realmente las usan. El buen diseño de HMI es consistentemente subestimado — nosotros lo tomamos en serio."
+          "title": "Desarrollo de HMI",
+          "description": "Diseñamos y creamos interfaces de operador que son intuitivas, claras y diseñadas para las personas que realmente las usan. El buen diseño de HMI se subestima constantemente; lo tomamos en serio."
         },
         {
-          "title": "Adquisición de Datos, IoT, Nube y Edge",
-          "description": "Conectamos máquinas, sensores y sistemas para que los datos fluyan donde necesitan ir — OPC-UA, MQTT, conectividad de bases de datos, integración MES y SCADA. Implementamos arquitecturas de procesamiento en nube y edge."
+          "title": "Adquisición de datos, IoT, nube y borde",
+          "description": "Conectamos máquinas, sensores y sistemas para que los datos fluyan hacia donde deben ir: OPC-UA, MQTT, conectividad de bases de datos, integración MES y SCADA. Implementamos arquitecturas de procesamiento de datos tanto basadas en la nube como en el borde, según lo que requiera la aplicación."
         },
         {
           "title": "Ciberseguridad",
-          "description": "La ciberseguridad industrial ya no es opcional. A medida que los sistemas de automatización se vuelven más conectados, la superficie de ataque crece. Diseñamos arquitecturas con seguridad integrada desde el inicio."
+          "description": "La ciberseguridad industrial ya no es opcional. A medida que los sistemas de automatización se vuelven más conectados, la superficie de ataque crece y las consecuencias de una infracción en un entorno industrial pueden ser graves. Diseñamos e implementamos arquitecturas de automatización con seguridad incorporada desde el principio: segmentación de red, acceso remoto seguro, configuraciones reforzadas y cumplimiento de estándares de seguridad industrial relevantes."
         },
         {
           "title": "Integración de IA",
-          "description": "Integramos capacidades impulsadas por IA en proyectos de automatización — mantenimiento predictivo, detección de anomalías, optimización de procesos."
+          "description": "Integramos capacidades impulsadas por IA en proyectos de automatización: mantenimiento predictivo, detección de anomalías y optimización de procesos. No como palabras de moda, sino como herramientas prácticas que hacen que los sistemas industriales funcionen mejor y de forma más inteligente."
         },
         {
-          "title": "Servicios Remotos",
-          "description": "Estamos construidos para el trabajo remoto. Soportamos, resolvemos problemas y modificamos sistemas desde cualquier lugar del mundo — de forma segura y con mínima interrupción."
+          "title": "Servicios remotos",
+          "description": "Estamos diseñados para el trabajo remoto. Brindamos soporte, solucionamos problemas y modificamos sistemas desde cualquier parte del mundo, de forma segura, confiable y con una interrupción mínima de sus operaciones. Nuestra presencia en Europa y América significa que cubrimos una amplia gama de zonas horarias sin demora. Remoto no significa distante: somos receptivos, disponibles y comprometidos."
         },
         {
-          "title": "Preparación y Gestión de Proyectos",
-          "description": "Apoyamos a los clientes desde las etapas más tempranas — especificaciones funcionales, arquitectura de software, definición de alcance — hasta la puesta en marcha y entrega."
+          "title": "Preparación y gestión de proyectos",
+          "description": "Apoyamos a los clientes desde las primeras etapas (especificaciones funcionales, arquitectura de software, definición del alcance) hasta la puesta en servicio y la entrega. Una buena preparación en la parte delantera evita costosos problemas en la parte trasera."
         }
       ],
       "industriesBadge": "EXPERIENCIA",
-      "industriesTitle": "Industrias en las que Hemos Trabajado",
-      "industriesIntro": "La experiencia de nuestro equipo abarca una amplia gama de entornos industriales — en tierra, offshore y en todos los continentes.",
+      "industriesTitle": "Industrias en las que hemos trabajado",
+      "industriesIntro": "La experiencia de nuestro equipo abarca una amplia gama de entornos industriales: en tierra, mar adentro y en todos los continentes. Cada una de estas industrias tiene sus propios requisitos, sus propios estándares y su propia forma de trabajar.",
       "industries": [
         {
-          "label": "Manufactura Robótica",
+          "label": "Robotic Manufacturing",
           "icon": "🦾"
         },
         {
-          "label": "Producción Alimentos y Bebidas",
+          "label": "Food & Beverage Production",
           "icon": "🏭"
         },
         {
-          "label": "Tratamiento de Agua y Utilities",
+          "label": "Water Treatment & Utilities",
           "icon": "💧"
         },
         {
-          "label": "HVAC y Automatización de Edificios",
+          "label": "HVAC & Building Automation",
           "icon": "🌡️"
         },
         {
-          "label": "Almacenamiento y Logística",
+          "label": "Warehousing & Logistics",
           "icon": "📦"
         },
         {
-          "label": "Instalaciones Offshore",
+          "label": "Offshore Installations",
           "icon": "⚓"
         }
       ],
       "philosophyBadge": "NUESTRA FILOSOFÍA",
-      "philosophyTitle": "Automatización Clásica y la Nueva Realidad Industrial",
-      "philosophyPara1": "Tenemos un profundo respeto por las tradiciones de ingeniería que construyeron la industria de automatización industrial. Los estándares, las metodologías, las plataformas de hardware — existen porque funcionan.",
-      "philosophyPara2": "Pero la industria está cambiando. Los PLC de software, la virtualización, la contenerización, el edge computing, los análisis impulsados por IA, la conectividad en la nube y la ciberseguridad industrial están listos para producción.",
-      "philosophyPara3": "Nuestro valor para los clientes es que entendemos ambos mundos. Podemos entregar un proyecto clásico, confiable y conforme a normas. Y podemos ayudar a los clientes que están listos para modernizarse.",
-      "classicalTitle": "Automatización Clásica",
-      "classicalDesc": "Plataformas de hardware probadas, estándares establecidos, arquitecturas confiables que han impulsado la industria durante décadas.",
-      "modernTitle": "Automatización Moderna",
-      "modernDesc": "PLC de software, conectividad en la nube, perspectivas impulsadas por IA, edge computing, ciberseguridad industrial.",
-      "finalNote": "No creemos que todo proyecto necesite la tecnología más nueva. Creemos que todo proyecto merece la tecnología correcta.",
-      "ctaTitle": "¿Listo para Trabajar Juntos?",
-      "ctaSubtitle": "Si busca un socio que trate su proyecto como propio, responda sin demora y entregue trabajo que se sostenga — nos gustaría hablar.",
-      "ctaButton": "Ponerse en Contacto"
+      "philosophyTitle": "Automatización clásica y la nueva realidad industrial",
+      "philosophyPara1": "Sentimos un profundo respeto por las tradiciones de ingeniería que construyeron la industria de la automatización industrial. Los estándares, las metodologías, las plataformas de hardware existen porque funcionan y seguirán funcionando. Conocemos bien ese mundo y somos plenamente capaces de operar en él.",
+      "philosophyPara2": "Pero la industria está cambiando. Los PLC de software, la virtualización, la contenerización, la informática de punta, el análisis basado en IA, la conectividad en la nube y la ciberseguridad industrial ya no son experimentales: están listos para la producción y están transformando lo que es posible en la automatización.",
+      "philosophyPara3": "Nuestro valor para los clientes es que entendemos ambos mundos. Podemos ofrecer un proyecto de automatización clásico, confiable y compatible con los estándares. Y podemos ayudar a los clientes que están listos para modernizarse a comprender lo que eso significa para ellos: cuánto cuesta, qué gana y cómo lograrlo sin riesgos innecesarios.",
+      "classicalTitle": "Automatización clásica",
+      "classicalDesc": "Plataformas de hardware probadas, estándares establecidos, arquitecturas confiables que han estado impulsando la industria durante décadas. Si esto es lo que su proyecto necesita, lo entregamos con total confianza y respeto por lo que funciona.",
+      "modernTitle": "Automatización moderna",
+      "modernDesc": "PLC de software, conectividad en la nube, conocimientos basados ​​en IA, informática de punta, ciberseguridad industrial. Si está listo para modernizarse, lo ayudamos a elegir el camino correcto, al ritmo correcto, para sus necesidades específicas.",
+      "finalNote": "No creemos que todos los proyectos necesiten la tecnología más nueva. Creemos que cada proyecto merece la tecnología adecuada y tenemos la experiencia y la perspectiva para notar la diferencia.",
+      "ctaTitle": "¿Listo para trabajar juntos?",
+      "ctaSubtitle": "Si está buscando un socio que trate su proyecto como propio, responda sin demora y entregue un trabajo que se mantenga firme, nos gustaría hablar.",
+      "ctaButton": "Ponte en contacto"
     },
     "crossover": {
       "badge": "LA CONVERGENCIA",
-      "title": "Donde el Piso de Fábrica Encuentra la Capa de Datos",
-      "subtitle": "La mayoría de los ingenieros de automatización entienden los sistemas de control. La mayoría de los ingenieros de datos entienden la conectividad. Muy pocos entienden ambos profundamente — y menos aún saben cómo integrar la IA de manera práctica.",
-      "statement": "Nosotros estamos en esa intersección. Y creemos que es el lugar más importante en la automatización industrial ahora mismo.",
+      "title": "Donde el piso de la fábrica se encuentra con la capa de datos",
+      "subtitle": "La mayoría de los ingenieros de automatización comprenden los sistemas de control. La mayoría de los ingenieros de datos entienden la conectividad. Muy pocos entienden ambas cosas profundamente, y menos aún saben cómo incorporar la IA a ese panorama de manera práctica.",
+      "statement": "Nos sentamos en esa intersección. Y creemos que es el lugar más importante en la automatización industrial en este momento.",
       "pillar1": {
-        "label": "Control Clásico",
-        "heading": "La máquina funciona de manera confiable.",
-        "description": "Siemens, Rockwell, CoDeSys — código PLC estructurado escrito para durar, sistemas de seguridad programados según norma, HMI y SCADA construidos para el operador que realmente los usa.",
+        "label": "Classical Control",
+        "heading": "La máquina funciona de forma fiable.",
+        "description": "Siemens, Rockwell, CoDeSys — structured PLC code written to last, Safety systems programmed to standard, HMI and SCADA built for the operator who actually uses it. The foundation everything else depends on.",
         "tags": [
-          "Programación PLC",
-          "Sistemas de Seguridad",
+          "Programación de PLC",
+          "Sistemas de seguridad",
           "HMI/SCADA",
-          "Integración de Sistemas"
+          "Integración del sistema"
         ]
       },
       "pillar2": {
-        "label": "Datos Conectados",
+        "label": "Connected Data",
         "heading": "La máquina habla.",
-        "description": "Pipelines OPC-UA y MQTT que mueven datos del piso de fábrica a donde necesitan ir. Edge computing que procesa localmente cuando la nube no es una opción. Dashboards que muestran a los operadores lo que está sucediendo.",
+        "description": "Canalizaciones OPC-UA y MQTT que trasladan datos desde la fábrica hasta donde deben ir. Computación perimetral que procesa localmente cuando la nube no es una opción. Paneles que muestran a los operadores lo que está sucediendo e historiadores que recuerdan todo.",
         "tags": [
           "OPC-UA/MQTT",
           "Computación de borde",
-          "Conectividad Cloud",
-          "Pipelines de Datos"
+          "Conectividad en la nube",
+          "Canalizaciones de datos"
         ]
       },
       "pillar3": {
-        "label": "IA e Inteligencia",
+        "label": "AI & Intelligence",
         "heading": "La máquina piensa.",
-        "description": "Modelos de mantenimiento predictivo que señalan fallos antes de que ocurran. Detección de anomalías que capta la deriva del proceso en tiempo real. Visión artificial para inspección de calidad. APIs de IA integradas en software industrial como herramienta operacional real.",
+        "description": "Modelos de mantenimiento predictivo que señalan fallas antes de que ocurran. Detección de anomalías que detecta la deriva del proceso en tiempo real. Visión por ordenador para inspección de calidad. API de IA integradas en software industrial, no como una característica, sino como una herramienta operativa genuina.",
         "tags": [
-          "Mantenimiento Predictivo",
-          "Detección de Anomalías",
-          "Visión Artificial",
-          "Integración API IA"
+          "Mantenimiento predictivo",
+          "Detección de anomalías",
+          "Visión por computadora",
+          "Integración de API de IA"
         ]
       },
-      "closing": "No son tres servicios separados. Es un enfoque integrado — construido para la generación de automatización industrial donde la capa de control y la capa de inteligencia son el mismo sistema."
+      "closing": "No se trata de tres servicios separados. Es un enfoque integrado, creado para la generación de automatización industrial donde la capa de control y la capa de inteligencia son el mismo sistema."
     },
     "howWeWork": {
       "badge": "CÓMO TRABAJAMOS",
-      "title": "Cómo Es Trabajar Con Nosotros",
-      "subtitle": "Lo mantenemos simple, directo y transparente — sin gerentes de cuenta, sin transferencias. Trata directamente con los ingenieros que hacen el trabajo.",
+      "title": "Cómo es trabajar con nosotros",
+      "subtitle": "Lo mantenemos simple, directo y transparente: sin administradores de cuentas ni traspasos. Tratas con los ingenieros que hacen el trabajo.",
       "steps": [
         {
           "number": "01",
           "title": "Hablamos",
-          "description": "Nos cuenta su desafío. Hacemos las preguntas que importan. Sin discurso de ventas — solo una conversación honesta sobre si somos la combinación correcta para su proyecto."
+          "description": "Cuéntanos tu desafío. Hacemos las preguntas que importan. Sin argumentos de venta, solo una conversación honesta sobre si somos la opción adecuada para su proyecto."
         },
         {
           "number": "02",
-          "title": "Planificamos",
-          "description": "Definimos juntos el alcance, el enfoque y el cronograma. Obtiene una imagen clara de lo que entregaremos, cuánto tiempo tomará y qué costará — antes de que comience cualquier trabajo."
+          "title": "Nosotros planificamos",
+          "description": "Definimos juntos el alcance, el enfoque y el cronograma. Obtendrá una idea clara de lo que entregaremos, cuánto tiempo llevará y cuánto costará, antes de comenzar cualquier trabajo."
         },
         {
           "number": "03",
-          "title": "Construimos",
-          "description": "Hacemos el trabajo. Tiene acceso directo a los ingenieros que construyen su sistema durante todo el proceso. Los problemas se resuelven rápidamente porque las decisiones las toman las personas que entienden el problema."
+          "title": "Nosotros construimos",
+          "description": "Nosotros hacemos el trabajo. Usted tiene acceso directo a los ingenieros que construyen su sistema en todo momento, no a un gerente de proyecto que transmite mensajes. Los problemas se resuelven rápidamente porque las decisiones las toman las personas que entienden el problema."
         },
         {
           "number": "04",
           "title": "Apoyamos",
-          "description": "No desaparecemos después de la entrega. Documentamos exhaustivamente, capacitamos a su equipo correctamente y permanecemos disponibles para preguntas y soporte."
+          "description": "No desaparecemos después de la entrega. Documentamos exhaustivamente, capacitamos a su equipo adecuadamente y permanecemos disponibles para preguntas y soporte. El diseño remoto primero significa que podemos responder rápidamente independientemente de dónde se encuentre."
         }
       ]
     },
     "whyPreaumate": {
       "badge": "POR QUÉ NOSOTROS",
-      "title": "El Argumento Honesto para Trabajar con un Equipo Pequeño",
-      "intro": "Somos una empresa nueva. Sabemos que esa es la primera objeción. Aquí está nuestra respuesta honesta.",
+      "title": "El caso honesto para trabajar con un equipo pequeño",
+      "intro": "Somos una nueva empresa. Sabemos que esa es la primera objeción. Aquí está nuestra respuesta honesta.",
       "cards": [
         {
-          "title": "Obtiene los ingenieros senior — en cada trabajo",
-          "description": "Con un integrador grande, su proyecto puede ser diseñado por un ingeniero senior y entregado por uno junior. Con nosotros, las personas con las que habla son las personas que hacen el trabajo. Siempre."
+          "title": "Obtendrá ingenieros senior en cada trabajo",
+          "description": "Con un integrador grande, su proyecto podría estar a cargo de un ingeniero senior y ejecutado por uno junior. Con nosotros, las personas con las que habla son las personas que hacen el trabajo. Cada vez."
         },
         {
-          "title": "Veinte años de experiencia no es un número pequeño",
-          "description": "Preaumate es nueva. La experiencia detrás de ella no. Nuestro equipo ha entregado proyectos de automatización en múltiples industrias, plataformas y países."
+          "title": "Treinta años de experiencia no es poco",
+          "description": "Preaumate es nuevo. La experiencia detrás de esto no lo es. Nuestro equipo ha realizado proyectos de automatización en múltiples industrias, plataformas y países. Aportamos esa experiencia a tu proyecto desde el primer día."
         },
         {
-          "title": "Nos movemos más rápido porque somos más pequeños",
-          "description": "Sin cadenas de aprobación internas. Sin conflictos de programación entre departamentos. Cuando algo necesita resolverse, lo resolvemos."
+          "title": "Nos movemos más rápido porque somos más pequeños.",
+          "description": "Sin cadenas de aprobación internas. Sin conflictos de programación entre departamentos. Cuando algo necesita resolverse, lo solucionamos. La velocidad de un equipo pequeño es una verdadera ventaja operativa."
         },
         {
           "title": "Nuestro negocio depende de que su proyecto salga bien",
-          "description": "Una empresa grande puede absorber un proyecto que no salió bien. Nosotros no. Esa asimetría trabaja a su favor."
+          "description": "Una gran empresa puede absorber un proyecto que no salió bien. No podemos. Esa asimetría juega a su favor: cada proyecto que emprendemos recibe toda nuestra atención porque nuestra reputación depende de ello."
         }
       ]
     },
     "pricing": {
-      "signal": "Trabajamos en base a proyectos y tarifa diaria. Contáctenos para un presupuesto — respondemos en un día hábil."
+      "signal": "Trabajamos por proyecto y por día. Contáctenos para una cotización: respondemos dentro de un día hábil."
     },
     "endorsements": {
       "badge": "LO QUE DICEN LOS COLEGAS",
-      "title": "Confiado por Ingenieros que Conocen el Trabajo",
-      "subtitle": "Preaumate es una empresa nueva. Las personas detrás de ella no lo son. Esto es lo que tienen que decir quienes han trabajado junto a nosotros.",
-      "cta": "¿Quiere discutir su proyecto?",
-      "ctaButton": "Ponerse en Contacto",
+      "title": "Con la confianza de ingenieros que conocen el trabajo",
+      "subtitle": "Preaumate es una nueva empresa. Las personas detrás de esto no lo son. Esto es lo que tienen que decir quienes han trabajado junto a nosotros.",
+      "cta": "¿Quieres hablar de tu proyecto?",
+      "ctaButton": "Ponte en contacto",
       "quotes": [
         {
-          "text": "Uno de los ingenieros de automatización más capaces técnicamente con los que he trabajado. Código estructurado, pensamiento claro y el tipo de capacidad de resolución de problemas que se nota cuando las cosas se complican en el sitio.",
-          "author": "Ingeniero de Proyectos Senior",
-          "company": "Empleador anterior — nombre retenido a petición",
+          "text": "Uno de los ingenieros de automatización con mayor capacidad técnica con los que he trabajado. Código estructurado, pensamiento claro y el tipo de capacidad de resolución de problemas que aparece cuando las cosas se complican en el sitio.",
+          "author": "Ingeniero Senior de Proyectos",
+          "company": "Antiguo empleador: nombre retenido a pedido",
           "initials": "SP"
         },
         {
-          "text": "Lo que distingue a este equipo es que realmente entienden tanto la capa de control como la capa de datos. Esa combinación es rara en la industria y marca una diferencia real en proyectos de integración complejos.",
+          "text": "Lo que distingue a este equipo es que realmente comprenden tanto la capa de control como la capa de datos. Esa combinación es poco común en la industria y marca una diferencia real en proyectos de integración complejos.",
           "author": "Gerente de Automatización",
           "company": "Fabricante industrial — Países Bajos",
           "initials": "SOY"
         },
         {
-          "text": "Confiable, rápido en responder y genuinamente comprometido con obtener el resultado correcto. La documentación y la entrega fueron las mejores que he visto en un proyecto de este tipo.",
+          "text": "Confiable, rápido para responder y genuinamente comprometido en obtener el resultado correcto. La documentación y la entrega fueron las mejores que he visto en un proyecto de este tipo.",
           "author": "Gerente de Operaciones de Planta",
-          "company": "Instalación de producción de alimentos y bebidas",
+          "company": "Planta de producción de alimentos y bebidas",
           "initials": "correos"
         }
       ]
     },
     "serviceArea": {
-      "badge": "DÓNDE OPERAMOS",
-      "title": "Alcance Global. Compromiso Personal.",
-      "subtitle": "El trabajo de automatización industrial a menudo requiere presencia física. Así es como trabajamos a través de fronteras.",
-      "intro": "Estamos ubicados en los Países Bajos y México — dos ubicaciones que juntas cubren las zonas horarias europeas y americanas sin demora. Trabajamos onshore, offshore y de forma remota, y viajamos globalmente para la puesta en marcha en sitio, la supervisión de FAT y el soporte en sitio.",
+      "badge": "DONDE OPERAMOS",
+      "title": "Alcance global. Compromiso personal.",
+      "subtitle": "Los trabajos de automatización industrial suelen requerir presencia física. Así es como trabajamos a través de las fronteras.",
+      "intro": "Nuestra sede está en los Países Bajos y México, dos ubicaciones que juntas cubren las zonas horarias europeas y americanas sin demora. Trabajamos en tierra, mar adentro y de forma remota, y viajamos por todo el mundo para la puesta en marcha in situ, la supervisión FAT y el soporte en el sitio.",
       "cards": [
         {
           "region": "Europa",
           "flag": "🇪🇺",
-          "description": "Nuestra base en los Países Bajos cubre Europa Occidental. Trabajamos en sitio en toda la UE y el Reino Unido.",
+          "description": "Nuestra base en los Países Bajos cubre Europa occidental. Trabajamos in situ en toda la UE y el Reino Unido, y estamos preparados para responder rápidamente a proyectos en toda la región.",
           "highlights": [
-            "Países Bajos — base principal",
-            "En sitio en toda la UE y UK",
-            "Offshore — Mar del Norte y más allá"
+            "Países Bajos: base primaria",
+            "In situ en toda la UE y el Reino Unido",
+            "Alta mar: Mar del Norte y más allá"
           ]
         },
         {
-          "region": "América",
+          "region": "Américas",
           "flag": "🌎",
-          "description": "Nuestra base en México cubre Norte y Latinoamérica. Desde plataformas offshore en el Golfo de México hasta instalaciones de producción en todo el continente.",
+          "description": "Nuestra base en México cubre América del Norte y América Latina. Desde plataformas marinas en el Golfo de México hasta instalaciones de producción en todo el continente.",
           "highlights": [
-            "México — base principal",
-            "Norte y Latinoamérica",
-            "Offshore Golfo de México"
+            "México: base primaria",
+            "América del Norte y América Latina",
+            "Costa afuera del Golfo de México"
           ]
         },
         {
-          "region": "Remoto y Global",
+          "region": "Remoto y global",
           "flag": "🌐",
-          "description": "Muchas tareas de automatización pueden entregarse completamente de forma remota. Tenemos infraestructura de acceso remoto seguro y nos comunicamos en todas las zonas horarias de manera confiable.",
+          "description": "Muchas tareas de automatización (programación de PLC, desarrollo de HMI, trabajo SCADA, desarrollo de plataformas de datos) se pueden realizar de forma totalmente remota. Contamos con una infraestructura de acceso remoto segura y nos comunicamos entre zonas horarias de manera confiable.",
           "highlights": [
             "Acceso remoto seguro",
-            "Entrega remota completa para trabajo de software",
-            "Viajes mundiales para fases en sitio"
+            "Entrega remota completa para el trabajo de software.",
+            "Viajes a todo el mundo para las fases presenciales"
           ]
         }
       ],
-      "travelNote": "Los costos de viaje y la logística se discuten de forma transparente como parte de cada alcance de proyecto. No los ocultamos en la tarifa."
+      "travelNote": "Los costos de viaje y la logística se discuten de manera transparente como parte del alcance de cada proyecto. No los escondemos en la tarifa."
     },
     "trust": {
       "badge": "CONSTRUIDO POR INGENIEROS",
-      "title": "Experiencia Real en Piso de Planta",
-      "subtitle": "Preaumate fue fundada por ingenieros de automatización que han pasado años resolviendo problemas directamente en plantas de producción. Entendemos la presión del tiempo de inactividad, los desafíos de integración, los equipos heredados y la confiabilidad de la producción.",
+      "title": "Experiencia real en el piso de fábrica",
+      "subtitle": "Preaumate fue fundada por ingenieros de automatización que han pasado años resolviendo problemas directamente en las plantas de producción. Entendemos la presión del tiempo de inactividad, los desafíos de integración, los equipos heredados y la confiabilidad de la producción, porque nosotros mismos hemos trabajado dentro de entornos industriales.",
       "cards": [
         {
-          "title": "Experiencia en Planta",
-          "description": "Experiencia real en puesta en marcha, resolución de problemas e integración en múltiples entornos de producción y sectores."
+          "title": "Experiencia en la fábrica",
+          "description": "Experiencia en puesta en servicio industrial, resolución de problemas e integración en el mundo real en múltiples entornos y sectores de producción."
         },
         {
-          "title": "Ingeniería Transfronteriza",
-          "description": "Soporte de ingeniería en Europa y América Latina, con capacidades remotas que cubren todas las zonas horarias."
+          "title": "Ingeniería transfronteriza",
+          "description": "Soporte de ingeniería en toda Europa y América Latina, con capacidades remotas que cubren todas las zonas horarias."
         },
         {
-          "title": "Enfocados en Modernización",
-          "description": "Conectando sistemas industriales heredados con plataformas modernas de datos y automatización — paso a paso, sin complejidad innecesaria."
+          "title": "Centrado en la modernización",
+          "description": "Conexión de sistemas industriales heredados con plataformas de automatización y datos modernas, paso a paso, sin complejidad innecesaria."
         },
         {
-          "title": "Implementación Práctica",
-          "description": "Soluciones diseñadas para la confiabilidad operacional, mantenibilidad y continuidad de producción. No marcos teóricos — sistemas que funcionan."
+          "title": "Implementación práctica",
+          "description": "Soluciones diseñadas para la confiabilidad operativa, la mantenibilidad y la continuidad de la producción. No marcos teóricos: sistemas de trabajo."
         }
       ]
     },
     "problems": {
-      "badge": "PROBLEMAS QUE RESOLVEMOS",
-      "title": "Desafíos Industriales que Abordamos",
-      "subtitle": "Trabajamos con fabricantes que enfrentan problemas operativos reales — del tipo que ralentiza la producción, causa tiempos de inactividad y dificulta la gestión.",
+      "badge": "PROBLEMAS QUE SOLUCIONAMOS",
+      "title": "Desafíos industriales que abordamos",
+      "subtitle": "Trabajamos con fabricantes que enfrentan problemas operativos reales, del tipo que ralentiza la producción, provoca tiempos de inactividad y dificulta la gestión de los sistemas.",
       "cards": [
         {
-          "title": "Sistemas PLC Heredados",
-          "description": "Migración de sistemas PLC obsoletos a plataformas modernas sin interrumpir los cronogramas de producción."
+          "title": "Sistemas PLC heredados",
+          "description": "Migrar sistemas PLC obsoletos a plataformas modernas sin interrumpir los programas de producción ni perder conocimientos de procesos críticos."
         },
         {
-          "title": "Falta de Visibilidad de Producción",
-          "description": "Recolección y visualización de datos de máquinas en todo el piso de planta para mejores decisiones operativas."
+          "title": "Falta visibilidad de producción",
+          "description": "Recopilación y visualización de datos de máquinas en toda la fábrica para respaldar mejores decisiones operativas y diagnósticos más rápidos."
         },
         {
-          "title": "Integraciones de Sistemas Difíciles",
-          "description": "Conexión de PLCs, SCADA, MES, ERP y sistemas IoT en una arquitectura de datos confiable y unificada."
+          "title": "Integraciones de sistemas difíciles",
+          "description": "Conexión de sistemas PLC, SCADA, MES, ERP e IoT en una arquitectura de datos unificada y confiable que realmente funciona en producción."
         },
         {
           "title": "Implementación de Robótica",
-          "description": "Programación e integración de sistemas robóticos en entornos de producción con enfoque en confiabilidad y seguridad."
+          "description": "Programar e integrar sistemas robóticos en entornos de producción con un enfoque en confiabilidad, seguridad y mantenibilidad."
         },
         {
-          "title": "Tiempos de Inactividad y Diagnóstico",
-          "description": "Diagnóstico de fallas recurrentes de automatización y mejora de la confiabilidad del sistema."
+          "title": "Tiempo de inactividad y solución de problemas",
+          "description": "Diagnosticar fallas recurrentes de automatización, mejorar la confiabilidad del sistema y reducir el tiempo de inactividad no planificado en toda la línea de producción."
         },
         {
-          "title": "Adopción de IA Industrial",
-          "description": "Aplicación de IA donde crea valor operativo medible — detección de anomalías, mantenimiento predictivo y analítica."
+          "title": "Adopción de IA industrial",
+          "description": "Aplicar IA donde crea valor operativo mensurable: detección de anomalías, mantenimiento predictivo y análisis de producción."
         }
       ]
     },
     "technologies": {
       "badge": "PLATAFORMAS Y HERRAMIENTAS",
-      "title": "Tecnologías con las que Trabajamos",
-      "subtitle": "Trabajamos con las plataformas e instrumentos industriales que su entorno de producción ya utiliza.",
+      "title": "Tecnologías con las que trabajamos",
+      "subtitle": "Trabajamos con las plataformas y herramientas industriales que su entorno de producción ya utiliza, sin dependencia de proveedores ni reemplazos innecesarios.",
       "categories": [
         {
           "title": "Automatización",
@@ -2301,52 +2429,52 @@ export const translations = {
           ]
         },
         {
-          "title": "Datos y Software",
+          "title": "Datos y software",
           "items": [
             "Node-RED",
             "Python",
             "SQL",
             "REST APIs",
-            "Gateways de borde"
+            "Edge Gateways"
           ]
         },
         {
           "title": "Infraestructura",
           "items": [
-            "Redes Industriales",
-            "Acceso Remoto",
+            "Redes industriales",
+            "Acceso remoto",
             "Virtualización",
-            "Integración en la Nube",
-            "PCs Industriales"
+            "Integración en la nube",
+            "PC industriales"
           ]
         }
       ]
     },
     "industries": {
       "badge": "INDUSTRIAS",
-      "title": "Industrias que Apoyamos",
-      "subtitle": "Tenemos experiencia práctica en una amplia gama de sectores industriales.",
+      "title": "Industrias que apoyamos",
+      "subtitle": "Tenemos experiencia práctica en una amplia gama de sectores industriales, desde líneas de producción de alimentos hasta fabricantes de maquinaria.",
       "items": [
         {
-          "title": "Manufactura"
+          "title": "Fabricación"
         },
         {
-          "title": "Empaque"
+          "title": "Embalaje"
         },
         {
-          "title": "Alimentos & Bebidas"
+          "title": "Alimentos y bebidas"
         },
         {
-          "title": "Automotriz"
+          "title": "Automotor"
         },
         {
-          "title": "Almacenamiento & Logística"
+          "title": "Almacenamiento y Logística"
         },
         {
-          "title": "Energía & Utilities"
+          "title": "Energía y servicios públicos"
         },
         {
-          "title": "Constructores de Máquinas"
+          "title": "Constructores de maquinaria"
         },
         {
           "title": "Infraestructura Industrial"
@@ -2356,17 +2484,17 @@ export const translations = {
     "projectProof": {
       "badge": "PROYECTOS DE EJEMPLO",
       "title": "Proyectos Industriales",
-      "subtitle": "Una selección de los tipos de desafíos que hemos resuelto. Estudios de caso específicos disponibles a solicitud.",
+      "subtitle": "Una selección de los tipos de retos que hemos resuelto. Estudios de casos específicos y referencias disponibles previa solicitud.",
       "resultsLabel": "Resultados",
-      "note": "Detalles del cliente mantenidos confidenciales. Contáctenos para discutir referencias relevantes para su sector.",
+      "note": "Los datos del cliente se mantienen confidenciales a petición. Contáctenos para discutir referencias relevantes para su sector.",
       "projects": [
         {
-          "title": "Migración PLC para Sistema de Producción Heredado",
-          "summary": "[AGREGAR RESUMEN DEL PROYECTO]",
+          "title": "Migración de PLC para sistema de producción heredado",
+          "summary": "[ADD PROJECT SUMMARY — describe the production environment, the problem that triggered the migration, what was done and what systems were involved. Keep it factual and specific. Anonymize client name if needed.]",
           "results": [
-            "Reducción de tiempo de inactividad",
+            "Reducción del tiempo de inactividad no planificado",
             "Diagnóstico remoto mejorado",
-            "Mayor facilidad de mantenimiento"
+            "Mantenibilidad modernizada"
           ],
           "tech": [
             "Siemens TIA Portal",
@@ -2375,78 +2503,78 @@ export const translations = {
           ]
         },
         {
-          "title": "Sistema de Recolección y Monitoreo de Datos de Planta",
-          "summary": "[AGREGAR RESUMEN DEL PROYECTO]",
+          "title": "Sistema de monitoreo y recopilación de datos de fábrica",
+          "summary": "[ADD PROJECT SUMMARY — describe the factory, the data challenge (e.g. no visibility into machine output), and what integration approach was used. Mention number of machines or lines if possible.]",
           "results": [
-            "Visibilidad unificada de máquinas",
-            "Monitoreo centralizado",
+            "Visibilidad unificada de la máquina",
+            "Monitoreo de producción centralizado",
             "Diagnóstico remoto habilitado"
           ],
           "tech": [
             "MQTT",
             "Node-RED",
             "SQL",
-            "IoT Industrial"
+            "IoT industrial"
           ]
         },
         {
-          "title": "Integración de Celda Robótica",
-          "summary": "[AGREGAR RESUMEN DEL PROYECTO]",
+          "title": "Integración de células robóticas",
+          "summary": "[ADD PROJECT SUMMARY — describe the robotic cell context, what production step it handles, integration scope with existing PLC/SCADA and any safety considerations.]",
           "results": [
-            "Mayor throughput",
-            "Mejor repetibilidad",
-            "Manejo manual reducido"
+            "Mayor rendimiento de producción",
+            "Repetibilidad mejorada",
+            "Manipulación manual reducida"
           ],
           "tech": [
             "Robótica",
             "SOCIEDAD ANÓNIMA",
-            "Sistemas de Seguridad"
+            "Sistemas de seguridad"
           ]
         }
       ]
     },
     "founders": {
-      "badge": "NUESTRO EQUIPO",
-      "title": "Los Ingenieros Detrás de Preaumate",
+      "badge": "CONOCE AL EQUIPO",
+      "title": "Los ingenieros detrás de Preaumate",
       "subtitle": "Preaumate fue fundada por ingenieros con experiencia práctica en automatización industrial, integración de sistemas y operaciones de fábrica en Europa y América Latina.",
       "specializationsLabel": "Especializado en",
-      "industriesLabel": "Experiencia en",
+      "industriesLabel": "trabajado a través",
       "linkedinLabel": "Ver LinkedIn",
       "founders": [
         {
-          "name": "[SU NOMBRE COMPLETO]",
-          "role": "Ingeniero de Automatización",
+          "name": "[YOUR FULL NAME]",
+          "role": "Ingeniero de automatización",
           "location": "Países Bajos",
-          "years": "30+ años de experiencia en automatización industrial.",
-          "bio": "[2–3 oraciones sobre su trayectoria y enfoque.]",
+          "years": "Más de 30 años de experiencia en automatización industrial en múltiples sectores de producción.",
+          "bio": "[2–3 sentences about your background, what types of systems you have worked on, and what drives your approach to engineering.]",
           "photoUrl": "",
           "specializations": [
-            "[ej. Programación PLC Siemens]",
-            "[ej. SCADA & HMI]",
-            "[ej. Integración]"
+            "[e.g. Siemens PLC programming]",
+            "[e.g. SCADA & HMI development]",
+            "[e.g. System integration]"
           ],
           "industries": [
-            "[ej. Alimentos]",
-            "[ej. Empaque]",
+            "[e.g. Food & Beverage]",
+            "[e.g. Packaging]",
             "[e.g. Water treatment]"
           ],
           "linkedin": "#"
         },
         {
-          "name": "[SU NOMBRE COMPLETO]",
+          "name": "[YOUR FULL NAME]",
           "role": "Ingeniero de Automatización e Integración",
           "location": "Monterrey, México",
-          "years": "10+ años de experiencia en sistemas industriales.",
-          "bio": "[2–3 oraciones sobre su trayectoria y enfoque.]",
+          "years": "Más de 10 años de experiencia en integración y sistemas industriales.",
+          "bio": "[2–3 sentences about your background, the types of automation work you have done, and what your engineering focus is.]",
           "photoUrl": "",
           "specializations": [
-            "[ej. IoT Industrial]",
-            "[ej. Rockwell/CoDeSys]",
-            "[ej. Puesta en marcha]"
+            "[e.g. Industrial IoT & connectivity]",
+            "[e.g. Rockwell / CoDeSys programming]",
+            "[e.g. Machine commissioning]"
           ],
           "industries": [
-            "[ej. Automotriz]",
-            "[ej. Logística]",
+            "[e.g. Automotive]",
+            "[e.g. Logistics]",
             "[e.g. Manufacturing]"
           ],
           "linkedin": "#"
@@ -2455,123 +2583,125 @@ export const translations = {
     },
     "curriculum": {
       "pageTitle": "Theo Rietveld — CV | Preaumate",
-      "metaDescription": "Currículum profesional de Theo Rietveld, fundador e ingeniero de automatización industrial en Preaumate. Más de 20 años de experiencia en PLC, SCADA, IoT y robótica.",
-      "heroBadge": "CURRICULUM VITAE",
-      "heroSubtitle": "Fundador e Ingeniero de Automatización Industrial en Preaumate",
-      "heroTagline": "Más de 20 años de experiencia práctica en programación PLC, desarrollo SCADA, integración de sistemas y puesta en marcha internacional.",
-      "photoAlt": "Theo Rietveld — Fundador de Preaumate",
-      "photoPlaceholder": "TR",
+      "metaDescription": "Currículum profesional de Theo Rietveld, fundador y entusiasta de la automatización industrial de Preaumate. Más de 30 años de experiencia en PLC, SCADA, IoT y robótica.",
+      "heroBadge": "CURRÍCULUM VITAE",
+      "heroSubtitle": "Fundador y entusiasta de la automatización industrial en Preaumate",
+      "heroTagline": "Más de 30 años de experiencia práctica en programación de PLC, desarrollo de SCADA, integración de sistemas y puesta en servicio internacional.",
+      "photoAlt": "Theo Rietveld - Fundador de Preaumate",
+      "photoPlaceholder": "TJR",
       "currentBadge": "Actual",
       "presentLabel": "Presente",
       "downloadPdf": "Descargar PDF",
-      "contactCta": "Hablar de su Proyecto",
+      "contactCta": "Discuta su proyecto",
       "summaryBadge": "RESUMEN PROFESIONAL",
-      "summaryTitle": "Experiencia de Ingeniería al Servicio de sus Objetivos de Producción",
-      "summaryText": "Theo Rietveld es ingeniero de automatización industrial y fundador de Preaumate con más de 20 años de experiencia práctica en programación PLC, desarrollo SCADA, integración de sistemas y puesta en marcha internacional. Con experiencia en sectores marítimo, offshore y procesamiento de alimentos en Europa e internacionalmente, aporta profunda experiencia técnica y un historial probado de entrega de proyectos. Se comunica directamente en neerlandés, inglés, español y alemán.",
+      "summaryTitle": "Experiencia en ingeniería al servicio de sus objetivos de producción",
+      "summaryText": "Theo Rietveld es ingeniero de automatización industrial y fundador de Preaumate con más de 30 años de experiencia práctica en programación de PLC, desarrollo de SCADA, integración de sistemas y puesta en marcha de proyectos internacionales. Habiendo trabajado en industrias marítimas, offshore y de procesamiento de alimentos en Europa e internacionalmente, aporta una profunda experiencia técnica y un historial comprobado de ejecución de proyectos en cada compromiso. Se comunica directamente en holandés, inglés, español y alemán, lo que permite una colaboración eficaz con clientes y equipos de toda Europa y América Latina.",
       "experienceBadge": "EXPERIENCIA PROFESIONAL",
       "earlierCareerBadge": "CARRERA ANTERIOR",
       "roles": {
         "preaumate": {
-          "roleTitle": "Fundador e Ingeniero de Automatización Industrial",
-          "description": "Fundó Preaumate para proporcionar ingeniería de automatización industrial práctica directamente a fabricantes en Europa y América Latina. Programación PLC, desarrollo SCADA, integración IoT industrial, robótica y automatización impulsada por IA.",
+          "roleTitle": "Fundador y Diseñador de Automatización Industrial",
+          "description": "Fundó Preaumate para proporcionar ingeniería práctica de automatización industrial directamente a fabricantes de Europa y América Latina. Ofrecemos programación de PLC, desarrollo de SCADA, integración de IoT industrial, robótica y automatización impulsada por IA, con experiencia en la fábrica detrás de cada solución.",
           "highlights": [
-            "Programación PLC para Siemens, Rockwell y CoDeSys",
-            "Desarrollo SCADA e IHM para monitoreo de producción",
-            "Integración IoT industrial con OPC UA y MQTT",
-            "Integración y puesta en marcha de robótica",
+            "Programación de PLC para plataformas Siemens, Rockwell y CoDeSys.",
+            "Desarrollo SCADA y HMI para monitoreo de producción.",
+            "IoT industrial e integración de sistemas",
+            "Integración y puesta en marcha de robótica.",
             "IA industrial para detección de anomalías y mantenimiento predictivo",
-            "Soporte de ingeniería remota en Europa y América Latina"
+            "Puesta en marcha y soporte in situ en todo el mundo",
+            "Soporte de ingeniería remota",
+            "Consultoría en arquitectura de automatización y estrategias de modernización."
           ]
         },
         "kiremko": {
-          "roleTitle": "Desarrollador de Software e Ingeniero de Automatización",
-          "description": "Diseño, ingeniería y gestión de proyectos y máquinas para automatización de procesamiento de alimentos industrial. Desarrollo dentro de un equipo de ingenieros de hardware y software, desde la especificación funcional hasta la puesta en marcha y entrega al cliente.",
+          "roleTitle": "Desarrollador de software e ingeniero de automatización",
+          "description": "Diseño, ingeniería y gestión de proyectos y máquinas para la automatización del procesamiento industrial de alimentos. Desarrollo dentro de un equipo de ingenieros de hardware y software, desde la especificación funcional hasta la puesta en marcha, entrega al cliente y capacitación in situ.",
           "highlights": [
-            "Automatización de máquinas de procesamiento de alimentos",
-            "Especificaciones de diseño funcional",
-            "Desarrollo, prueba y puesta en marcha de software",
-            "Capacitación in situ y entrega al cliente"
+            "Automatización de máquinas industriales de procesamiento de alimentos.",
+            "Especificaciones de diseño funcional.",
+            "Desarrollo, pruebas y puesta en marcha de software.",
+            "Capacitación in situ y entrega de clientes."
           ]
         },
         "gooiland": {
-          "roleTitle": "Desarrollador de Software e Ingeniero de Automatización",
-          "description": "12 años especializándose en automatización HVAC marítima y offshore. Ciclo completo de proyectos desde el diseño hasta la puesta en marcha internacional, con experiencia directa en embarcaciones e instalaciones offshore en todo el mundo.",
+          "roleTitle": "Desarrollador de software e ingeniero de automatización",
+          "description": "12 años especializados en automatización HVAC marítima y offshore. Ciclo de vida completo del proyecto, desde el diseño hasta la puesta en servicio internacional, con experiencia práctica en embarcaciones e instalaciones costa afuera en todo el mundo. Fuerte enfoque en las relaciones con el cliente y el servicio a largo plazo.",
           "highlights": [
-            "Automatización de control HVAC marítima y offshore",
-            "Puesta en marcha internacional en todo el mundo",
-            "Ciclo completo de desarrollo e implementación de software",
-            "Relaciones con clientes, capacitación in situ y servicio"
+            "Automatización del control de HVAC marítimo y offshore",
+            "Puesta en servicio internacional en todo el mundo",
+            "Ciclo de vida completo de desarrollo e implementación de software",
+            "Relaciones con el cliente, formación y servicio in situ."
           ]
         },
         "vandenPol": {
-          "roleTitle": "Desarrollador de Software e Ingeniero de Puesta en Marcha",
-          "description": "Automatización de procesamiento de alimentos industrial desde la ingeniería de proyectos hasta la puesta en marcha. Entrega internacional de proyectos, capacitación in situ y servicio continuo.",
+          "roleTitle": "Desarrollador de software e ingeniero de puesta en servicio",
+          "description": "Automatización del procesamiento industrial de alimentos desde la ingeniería del proyecto hasta la puesta en marcha. Entrega de proyectos internacionales, capacitación in situ y servicio continuo.",
           "highlights": [
-            "Automatización de procesamiento de alimentos industrial",
-            "Puesta en marcha y entrega internacional de proyectos",
-            "Especificaciones de diseño funcional",
-            "Capacitación in situ y servicio"
+            "Automatización del procesamiento industrial de alimentos.",
+            "Puesta en marcha internacional y entrega de proyectos.",
+            "Especificaciones de diseño funcional.",
+            "Capacitación y servicio en sitio"
           ]
         },
         "elero": {
-          "roleTitle": "Ventas Técnicas, Consultoría y Gestión TI",
-          "description": "Ingeniería de proyectos y automatización, ventas, consultoría de productos, capacitación a clientes y gestión de TI para un especialista en accionamientos y automatización del hogar.",
+          "roleTitle": "Soporte Técnico de Ventas, Consultoría y TI",
+          "description": "Ingeniería de proyectos y automatización, ventas, consultoría de producto, formación de clientes y gestión informática para un especialista en accionamientos y domótica.",
           "highlights": [
-            "Ingeniería de automatización y ventas técnicas",
-            "Consultoría de productos y capacitación a clientes",
-            "Gestión de TI"
+            "Ingeniería de automatización y ventas técnicas.",
+            "Asesoramiento de producto y formación de clientes.",
+            "gestión de TI"
           ]
         }
       },
-      "skillsBadge": "COMPETENCIAS CLAVE",
-      "skillsTitle": "En qué Soy Mejor",
+      "skillsBadge": "COMPETENCIAS BÁSICAS",
+      "skillsTitle": "Lo que hago mejor",
       "skills": [
-        "Gestión de Proyectos",
-        "Toma de Decisiones",
-        "Diseño Creativo",
-        "Desarrollo Innovador",
-        "Resolución de Problemas Complejos",
-        "Puesta en Marcha",
-        "Relaciones con Clientes",
-        "Consultoría y Formación",
+        "Desarrollo innovador",
+        "Gestión de proyectos",
+        "Relaciones con el cliente",
+        "Consultoría y formación",
+        "Resolución de problemas complejos",
+        "Puesta en servicio",
+        "Toma de decisiones",
+        "Diseño creativo",
         "Traducción Técnica"
       ],
       "technicalBadge": "EXPERIENCIA TÉCNICA",
-      "technicalTitle": "Plataformas y Herramientas",
+      "technicalTitle": "Plataformas y herramientas",
       "techPlc": "Plataformas PLC",
-      "techScada": "SCADA e IHM",
-      "techSoftware": "Software y Programación",
-      "techProtocols": "Protocolos y Otros",
+      "techScada": "SCADA Y HMI",
+      "techSoftware": "Software y programación",
+      "techProtocols": "Protocolos y otros",
       "educationBadge": "EDUCACIÓN",
-      "degreeTitle": "Grado en Ciencias de Datos Informáticos y Sistemas de Información",
+      "degreeTitle": "Licenciatura en ciencias de datos informáticos y sistemas de información",
       "certificationsBadge": "CERTIFICACIONES",
       "certifications": {
         "siemens": {
-          "title": "Programador Siemens Certificado",
-          "detail": "TIA Portal y Step 7"
+          "title": "Programador certificado Siemens",
+          "detail": "Portal TIA y paso 7"
         },
         "offshore": {
-          "title": "Certificados de Seguridad Offshore",
-          "detail": "GWO Supervivencia en el Mar, Trabajo en Alturas, Concienciación sobre Incendios, Primeros Auxilios, Manipulación Manual"
+          "title": "Certificados de seguridad costa afuera",
+          "detail": "GWO Supervivencia en el mar, Trabajos en alturas, Concienciación sobre incendios, Primeros auxilios, Manipulación manual"
         },
         "bosiet": {
           "title": "BOSIET / HUET — Certificado OPITO",
-          "detail": "Entrenamiento de Escape Submarino en Helicóptero"
+          "detail": "Entrenamiento de escape submarino en helicóptero"
         }
       },
       "languagesBadge": "IDIOMAS",
       "spokenLanguages": {
         "dutch": {
-          "language": "Neerlandés",
+          "language": "Holandés",
           "level": "Nativo"
         },
         "english": {
           "language": "Inglés",
-          "level": "Avanzado"
+          "level": "Competente"
         },
         "spanish": {
           "language": "Español",
-          "level": "Avanzado"
+          "level": "Competente"
         },
         "german": {
           "language": "Alemán",
@@ -2579,148 +2709,211 @@ export const translations = {
         }
       },
       "contactBadge": "TRABAJEMOS JUNTOS",
-      "contactTitle": "¿Listo para Hablar de su Proyecto?",
-      "contactSubtitle": "Si desea hablar sobre cómo Preaumate puede apoyar su proyecto de automatización, con gusto me conecto directamente.",
-      "contactButton": "Ponerse en Contacto"
+      "contactTitle": "¿Listo para discutir su proyecto?",
+      "contactSubtitle": "Si desea analizar cómo Preaumate puede respaldar su proyecto de automatización, estaré encantado de conectarme directamente.",
+      "contactButton": "Ponte en contacto"
+    },
+    "qualifier": {
+      "wizardui": "Etiquetas de la interfaz de usuario del asistente",
+      "stepLabel": "Pregunta {actual} de {total}",
+      "skipButton": "Saltar cuestionario",
+      "backButton": "Atrás",
+      "nextButton": "Próximo",
+      "finishButton": "Finalizar",
+      "skipNote": "Le agradecemos que complete esto, pero no dude en pasar directamente al formulario de contacto en cualquier momento.",
+      "summaryHeading": "Cuestionario previo al contacto",
+      "editAnswersButton": "Editar mis respuestas",
+      "contextCapturedNote": "Gracias. Hemos anotado sus respuestas. Se incluirán con su mensaje.",
+      "qualifierPreviewLabel": "Your questionnaire answers (included with this message)",
+      "q1_label": "¿Utiliza actualmente retroalimentación de datos en su proceso de producción?",
+      "q1_description": "Desde ningún seguimiento de datos hasta un circuito de retroalimentación totalmente integrado.",
+      "q1_scale_0": "De nada",
+      "q1_scale_low": "Algún seguimiento manual",
+      "q1_scale_high": "Parcialmente automatizado",
+      "q1_scale_10": "Totalmente integrado",
+      "q2_label": "¿Cuál es el tamaño de su negocio?",
+      "q2_opt_freelance": "Freelance/autónomo",
+      "q2_opt_small": "Pequeño (2 a 20 empleados)",
+      "q2_opt_medium": "Mediano (21 a 50 empleados)",
+      "q2_opt_large": "Grande (51 a 200 empleados)",
+      "q2_opt_enterprise": "Empresa (más de 200 empleados)",
+      "q3_label": "¿Qué tan grande es su proceso de producción?",
+      "q3_opt_single": "Una sola máquina o celda",
+      "q3_opt_line": "Una línea de producción",
+      "q3_opt_multi": "Múltiples líneas de producción",
+      "q3_opt_sites": "Múltiples sitios o instalaciones",
+      "q4_label": "¿Cuál es su tipo de producción?",
+      "q4_opt_food": "Alimentos y bebidas",
+      "q4_opt_packaging": "Embalaje",
+      "q4_opt_automotive": "Automotor",
+      "q4_opt_maritime": "Marítimo / Offshore / HVAC",
+      "q4_opt_manufacturing": "Manufactura General",
+      "q4_opt_logistics": "Logística y Almacenamiento",
+      "q4_opt_other": "Otro",
+      "q5_label": "¿Qué plataformas o marcas utilizas actualmente?",
+      "q5_description": "Seleccione todas las opciones que correspondan; esto nos ayuda a prepararnos antes de hablar.",
+      "q5_opt_other": "Otro",
+      "q5_opt_unknown": "No estoy seguro/no lo sé",
+      "q6_label": "¿Para qué le gustaría utilizar la IA/la retroalimentación de datos?",
+      "q6_description": "Opcional: una frase o dos son suficientes.",
+      "q6_placeholder": "p.ej. predecir las necesidades de mantenimiento, reducir los residuos, mejorar el control de calidad...",
+      "q7_label": "¿Tiene capacidad de ingeniería interna?",
+      "q7_opt_yes": "Sí, un equipo dedicado",
+      "q7_opt_partial": "Algunos, pero con capacidad limitada",
+      "q7_opt_no": "Sin ingeniería interna",
+      "q8_label": "¿A qué desafíos se enfrenta actualmente en su proceso de producción?",
+      "q8_description": "Opcional: cuéntanoslo con tus propias palabras.",
+      "q8_placeholder": "p.ej. tiempos de inactividad no planificados, recopilación manual de datos, sistemas PLC obsoletos...",
+      "q9_label": "¿Cuánto estás considerando invertir en esta mejora?",
+      "q9_opt_exploring": "Solo explorando opciones por ahora",
+      "q9_opt_under10k": "Menos de 10.000€",
+      "q9_opt_10to50k": "10.000€ – 50.000€",
+      "q9_opt_50to150k": "50.000€ – 150.000€",
+      "q9_opt_over150k": "150.000€+",
+      "q10_label": "¿Cuál es su cronograma para este proyecto?",
+      "q10_opt_asap": "Lo antes posible",
+      "q10_opt_1to3": "1 a 3 meses",
+      "q10_opt_3to6": "3 a 6 meses",
+      "q10_opt_exploring": "Sólo explorando, sin un cronograma fijo"
     }
   },
   "de": {
     "nav": {
-      "home": "Start",
-      "about": "Über uns",
-      "services": "Leistungen",
+      "home": "Heim",
+      "about": "Um",
+      "services": "Dienstleistungen",
       "blog": "Blog",
-      "qa": "F&A",
+      "qa": "Fragen und Antworten",
       "contact": "Kontakt"
     },
     "hero": {
-      "title1": "Industrielle Automatisierungsexperten",
-      "title2": "Von der Fabrikhalle bis zur Datenschicht",
-      "subtitle": "Preaumate hilft Herstellern, Industriesysteme zu modernisieren — durch SPS-Programmierung, Robotik, SCADA, Industrial IoT und KI-gesteuerte Automatisierung. Entwickelt von Ingenieuren mit echter Fabrikerfahrung in Europa und Lateinamerika.",
-      "cta": "Mit einem Ingenieur sprechen",
-      "cta2": "Unsere Leistungen ansehen",
+      "title1": "Experten für industrielle Automatisierung",
+      "title2": "Von der Fabrikhalle zur Datenschicht",
+      "subtitle": "Preaumate unterstützt Hersteller bei der Modernisierung industrieller Systeme durch SPS-Programmierung, Robotik, SCADA, industrielles IoT und KI-gesteuerte Automatisierung. Gebaut von Ingenieuren mit echter Fabrikerfahrung in Europa und Lateinamerika.",
+      "cta": "Kontaktieren Sie einen Ingenieur",
+      "cta2": "Sehen Sie sich unsere Dienstleistungen an",
       "trustBadges": [
-        "30+ Jahre kombinierte Erfahrung",
-        "Europa & Lateinamerika",
-        "SPS · SCADA · Robotik · IoT",
+        "Insgesamt über 40 Jahre Erfahrung",
+        "Europa und Amerika",
+        "SPS · SCADA · Robotik · IoT · KI",
         "Siemens · Rockwell · CoDeSys"
       ]
     },
     "about": {
       "badge": "ÜBER PREAUMATE",
       "title1": "Von Ingenieuren gebaut.",
-      "title2": "Von Leidenschaft angetrieben.",
-      "para1": "Preaumate ist eine Unternehmensberatung für industrielle Automatisierung, gegründet von Ingenieuren mit echter Leidenschaft für die Branche. Unser Team bringt über 20 Jahre kombinierte Erfahrung mit Siemens-, Rockwell- und CoDeSys-Plattformen mit — und wir fühlen uns auf dem Fabrikboden genauso wohl wie im Serverraum.",
-      "para2": "Wir haben in der Roboterfertigung, Lebensmittel- und Getränkeindustrie, Wasseraufbereitung, HLK, Logistik und Offshore-Anlagen gearbeitet. Mit Standorten in den Niederlanden und Mexiko operieren wir weltweit — onshore, offshore und remote — mit schnellen Reaktionszeiten über alle Zeitzonen.",
-      "para3": "Wir kennen die klassische Welt der industriellen Automatisierung gut. Wir verstehen auch die laufende Transformation. Unsere Rolle ist es, Kunden durch beide Welten zu navigieren.",
-      "readMore": "Lesen Sie unsere vollständige Geschichte",
+      "title2": "Angetrieben von Leidenschaft.",
+      "para1": "Preaumate ist ein Beratungsunternehmen für industrielle Automatisierung, das von Ingenieuren mit einer echten Leidenschaft für die Branche gegründet wurde. Unser Team verfügt über mehr als 30 Jahre Erfahrung auf den Plattformen Siemens, Rockwell und CoDeSys – und wir fühlen uns in einer Fabrikhalle genauso wohl wie in einem Serverraum.",
+      "para2": "Wir haben in den Bereichen Roboterfertigung, Lebensmittel und Getränke, Wasseraufbereitung, HVAC, Logistik und Offshore-Installationen gearbeitet. Mit Sitz in den Niederlanden und Mexiko sind wir weltweit tätig – Onshore, Offshore und Remote – mit schnellen Reaktionszeiten über Zeitzonen hinweg.",
+      "para3": "Wir kennen die klassische Welt der industriellen Automatisierung gut. Wir verstehen auch den Wandel, der im Gange ist. Unsere Aufgabe besteht darin, Kunden dabei zu helfen, beides zu bewältigen – sei es die Bereitstellung einer bewährten hardwarebasierten Lösung oder die Unterstützung bei den ersten Schritten zur Modernisierung.",
+      "readMore": "Lesen Sie unsere ganze Geschichte",
       "features": [
         {
-          "title": "KI-gesteuerte Automatisierung",
-          "description": "Nutzen Sie modernste künstliche Intelligenz, um komplexe Industrieprozesse mit beispielloser Präzision zu automatisieren."
+          "title": "KI-gestützte Automatisierung",
+          "description": "Nutzen Sie modernste künstliche Intelligenz, um komplexe Industrieprozesse mit beispielloser Genauigkeit zu automatisieren."
         },
         {
-          "title": "Echtzeit-Überwachung",
+          "title": "Echtzeitüberwachung",
           "description": "Überwachen Sie jeden Aspekt Ihrer Produktionslinie in Echtzeit mit fortschrittlichen IoT-Sensornetzwerken und Dashboards."
         },
         {
-          "title": "Daten, IoT & Cloud",
-          "description": "Echtzeit-Datenerfassung, IoT-Konnektivität, Cloud- und Edge-Verarbeitung — Ihre Maschinendaten für Sie arbeiten lassen."
+          "title": "Daten, IoT und Cloud",
+          "description": "Datenerfassung in Echtzeit, IoT-Konnektivität, Cloud- und Edge-Verarbeitung – damit Ihre Maschinendaten für Sie arbeiten."
         },
         {
           "title": "Energieoptimierung",
-          "description": "Reduzieren Sie den Energieverbrauch um bis zu 40% durch intelligenten Lastausgleich und prädiktives Energiemanagement."
+          "description": "Reduzieren Sie den Energieverbrauch um bis zu 40 % durch intelligenten Lastausgleich und vorausschauendes Energiemanagement."
         },
         {
-          "title": "Prädiktive Instandhaltung",
-          "description": "Vermeiden Sie kostspielige Ausfallzeiten, indem Sie Geräteausfälle mit Machine-Learning-Modellen vorhersagen."
+          "title": "Vorausschauende Wartung",
+          "description": "Vermeiden Sie kostspielige Ausfallzeiten, indem Sie Geräteausfälle mithilfe von Modellen für maschinelles Lernen vorhersagen, bevor sie auftreten."
         }
       ],
       "stats": [
-        "Jahre Kombinierte Erfahrung",
-        "Bediente Branchen",
-        "Große SPS-Plattformen",
+        "Jahre kombinierte Erfahrung",
+        "Branchen bedient",
+        "Wichtige SPS-Plattformen",
         "Kontinente"
       ]
     },
     "services": {
       "badge": "WAS WIR TUN",
-      "title": "Industrielle Automatisierungsleistungen",
-      "subtitle": "Von SPS-Programmierung bis Industrial IoT und KI — praktische Ingenieurlösungen für Hersteller.",
+      "title": "Industrielle Automatisierungsdienste",
+      "subtitle": "Von der SPS-Programmierung bis zum industriellen IoT und KI – praktische Engineering-Lösungen für Hersteller.",
       "items": [
         {
           "title": "SPS-Programmierung",
-          "description": "Wir entwickeln, migrieren und entstören SPS-Systeme für industrielle Produktionsumgebungen. Siemens, Rockwell und CoDeSys.",
+          "description": "Wir entwickeln, migrieren und beheben SPS-Systeme für industrielle Produktionsumgebungen. Zu den unterstützten Plattformen gehören Siemens-, Rockwell- und CoDeSys-basierte Controller.",
           "bullets": [
-            "SPS-Migrationen",
-            "Inbetriebnahme",
+            "SPS-Migrationen und -Upgrades",
+            "Maschineninbetriebnahme",
             "Prozessoptimierung",
             "Ferndiagnose",
-            "Fehleranalyse"
+            "Unterstützung bei der Fehlerbehebung"
           ],
-          "learnMore": "Mehr erfahren"
+          "learnMore": "Erfahren Sie mehr"
         },
         {
-          "title": "SCADA & HMI-Entwicklung",
-          "description": "Wir erstellen Bedieneroberflächen und SCADA-Systeme für verbesserte Transparenz und Produktionsüberwachung.",
+          "title": "SCADA- und HMI-Entwicklung",
+          "description": "Wir bauen Bedienerschnittstellen und SCADA-Systeme, die die Sichtbarkeit, Diagnose und Produktionsüberwachung in der gesamten Fabrikhalle verbessern.",
           "bullets": [
             "Produktions-Dashboards",
-            "Alarmmanagement",
-            "Historian-Integration",
+            "Alarmbearbeitung",
+            "Historikerintegration",
             "Fernüberwachung",
-            "Workflow-Optimierung"
+            "Optimierung des Bediener-Workflows"
           ],
-          "learnMore": "Mehr erfahren"
+          "learnMore": "Erfahren Sie mehr"
         },
         {
           "title": "Industrielles IoT",
-          "description": "Wir verbinden Maschinen, SPS und Industrieausrüstung mit modernen Datensystemen über sichere industrielle Kommunikationsprotokolle.",
+          "description": "Wir verbinden Maschinen, SPS und Industrieanlagen über sichere industrielle Kommunikationsprotokolle mit modernen Datensystemen.",
           "bullets": [
-            "OPC UA Integration",
-            "MQTT Infrastruktur",
+            "OPC UA integration",
+            "MQTT infrastructure",
             "Maschinendatenerfassung",
-            "Cloud & Edge Konnektivität",
-            "Gateway-Einrichtung"
+            "Cloud- und Edge-Konnektivität",
+            "Einrichtung eines industriellen Gateways"
           ],
-          "learnMore": "Mehr erfahren"
+          "learnMore": "Erfahren Sie mehr"
         },
         {
           "title": "Robotik-Integration",
-          "description": "Wir integrieren Robotiksysteme in Produktionsumgebungen mit Fokus auf Zuverlässigkeit, Sicherheit und Wartbarkeit.",
+          "description": "Wir integrieren Robotersysteme in Produktionsumgebungen mit Fokus auf Zuverlässigkeit, Sicherheit und langfristige Wartbarkeit.",
           "bullets": [
-            "Roboterzellen-Inbetriebnahme",
+            "Inbetriebnahme einer Roboterzelle",
             "Bewegungsoptimierung",
-            "Sicherheitssystem-Integration",
+            "Integration von Sicherheitssystemen",
             "Prozesssynchronisation",
             "Produktionsunterstützung"
           ],
-          "learnMore": "Mehr erfahren"
+          "learnMore": "Erfahren Sie mehr"
         },
         {
-          "title": "Industrial KI",
-          "description": "Wir helfen Herstellern, praktische KI-Chancen mithilfe von Produktionsdaten und Maschinendiagnosen zu identifizieren.",
+          "title": "Industrielle KI",
+          "description": "Wir unterstützen Hersteller bei der Identifizierung und Umsetzung praktischer KI-Möglichkeiten mithilfe von Produktionsdaten, Maschinendiagnosen und betrieblichen Erkenntnissen.",
           "bullets": [
             "Anomalieerkennung",
             "Vorausschauende Wartung",
-            "Produktionsanalyse",
+            "Produktionsanalytik",
             "KI-Pilotprojekte",
-            "Betriebsberichte"
+            "Operative Berichterstattung"
           ],
-          "learnMore": "Mehr erfahren"
+          "learnMore": "Erfahren Sie mehr"
         }
       ]
     },
     "statsBar": [
-      "Abgeschlossene Projekte",
+      "Gelieferte Projekte",
       "Kundenzufriedenheit",
       "Jahre Erfahrung",
-      "Remote-Support"
+      "Fernunterstützung"
     ],
     "featuresBar": {
-      "badge": "KOMPETENZEN",
+      "badge": "FÄHIGKEITEN",
       "items": [
         {
-          "title": "Remote-Support",
+          "title": "Fernunterstützung",
           "subtitle": "24/7"
         },
         {
@@ -2728,11 +2921,11 @@ export const translations = {
           "subtitle": "contact@preaumate.com"
         },
         {
-          "title": "KI-gesteuert",
+          "title": "KI-betrieben",
           "subtitle": "Entscheidungen"
         },
         {
-          "title": "Prädiktive",
+          "title": "Vorausschauend",
           "subtitle": "Analytik"
         },
         {
@@ -2754,179 +2947,179 @@ export const translations = {
       ]
     },
     "contactSection": {
-      "badge": "KONTAKT",
-      "title": "Bereit, Ihre Produktionsherausforderungen zu Lösen?",
-      "subtitle": "Sprechen Sie direkt mit einem Ingenieur über Ihre betrieblichen Probleme. Kein Verkaufsgespräch — nur ein technisches Gespräch."
+      "badge": "Nehmen Sie Kontakt auf",
+      "title": "Sind Sie bereit, Ihre Produktionsherausforderungen zu lösen?",
+      "subtitle": "Sprechen Sie direkt mit einem Techniker über Ihre betrieblichen Probleme. Keine Verkaufsskripte – nur ein technisches Gespräch."
     },
     "form": {
-      "title": "Kontakt aufnehmen",
-      "subtitle": "Bereit, Ihre industriellen Abläufe zu transformieren? Lassen Sie uns Ihre Bedürfnisse besprechen.",
-      "companyName": "Firmenname",
+      "title": "Nehmen Sie Kontakt auf",
+      "subtitle": "Sind Sie bereit, Ihre Industrieabläufe zu transformieren? Lassen Sie uns Ihre Bedürfnisse besprechen.",
+      "companyName": "Name der Firma",
       "companyPlaceholder": "Geben Sie Ihren Firmennamen ein",
-      "email": "E-Mail-Adresse",
-      "emailPlaceholder": "ihre.email@unternehmen.com",
-      "phone": "Telefonnummer",
-      "phonePlaceholder": "+49 (0) 000 000 000",
-      "serviceInterest": "Leistungsinteresse",
-      "servicePlaceholder": "Wählen Sie eine Leistung...",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@company.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+31 (0) 000 000 000",
+      "serviceInterest": "Dienstinteresse",
+      "servicePlaceholder": "Wählen Sie einen Dienst aus...",
       "message": "Nachricht",
-      "messagePlaceholder": "Erzählen Sie uns von Ihren Automatisierungsanforderungen...",
-      "send": "Nachricht Senden",
-      "sending": "Wird gesendet...",
+      "messagePlaceholder": "Erzählen Sie uns von Ihren Automatisierungsanforderungen ...",
+      "send": "Nachricht senden",
+      "sending": "Senden...",
       "services": [
-        "Roboterprozessautomatisierung",
+        "Robotische Prozessautomatisierung",
         "IoT-Integration",
-        "Smart-Factory-Lösungen",
+        "Intelligente Fabriklösungen",
         "Prädiktive Analytik",
         "Allgemeine Beratung"
       ],
       "errors": {
         "companyRequired": "Firmenname ist erforderlich",
-        "emailRequired": "E-Mail-Adresse ist erforderlich",
+        "emailRequired": "E-Mail ist erforderlich",
         "emailInvalid": "Ungültiges E-Mail-Format",
         "phoneRequired": "Telefonnummer ist erforderlich",
-        "serviceRequired": "Bitte wählen Sie eine Leistung",
+        "serviceRequired": "Bitte wählen Sie eine Dienstleistung aus",
         "messageRequired": "Nachricht ist erforderlich",
-        "validationTitle": "Formularvalidierungsfehler",
+        "validationTitle": "Fehler bei der Formularvalidierung",
         "validationDesc": "Bitte füllen Sie alle Pflichtfelder korrekt aus.",
-        "errorTitle": "Etwas ist schiefgelaufen",
+        "errorTitle": "Etwas ist schief gelaufen",
         "errorDesc": "Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
-        "successTitle": "Nachricht erfolgreich gesendet! 🎉",
-        "successDesc": "Vielen Dank! Wir werden uns bald mit Ihnen in Verbindung setzen."
+        "successTitle": "Nachricht erfolgreich gesendet!",
+        "successDesc": "Danke schön! Wir werden uns in Kürze mit Ihnen in Verbindung setzen, um Ihren Automatisierungsbedarf zu besprechen."
       }
     },
     "footer": {
       "tagline": "INDUSTRIELLE AUTOMATISIERUNG",
-      "description": "Praktische Automatisierungstechnik — Fabriksysteme, Maschinendaten und Produktionsintelligenz verbunden.",
+      "description": "Praktische industrielle Automatisierungstechnik – Verknüpfung von Fabriksystemen, Maschinendaten und Produktionsintelligenz.",
       "navHeading": "NAVIGATION",
       "resourcesHeading": "RESSOURCEN",
       "contactHeading": "KONTAKT",
       "navLinks": [
-        "Startseite",
-        "Über uns",
-        "Leistungen",
+        "Heim",
+        "Um",
+        "Dienstleistungen",
         "Kontakt"
       ],
       "resourceLinks": [
         "Blog",
-        "FAQ",
-        "Datenschutz",
-        "AGB"
+        "Fragen und Antworten",
+        "Datenschutzrichtlinie",
+        "Allgemeine Geschäftsbedingungen"
       ],
       "rights": "Alle Rechte vorbehalten.",
-      "privacyPolicy": "Datenschutz",
-      "terms": "AGB"
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "terms": "Allgemeine Geschäftsbedingungen"
     },
     "consent": {
       "title": "🍪 Wir verwenden Cookies",
-      "text": "Wir verwenden notwendige Cookies, damit unsere Website funktioniert. Mit Ihrer Zustimmung verwenden wir auch Analyse-Cookies. Ihre Daten werden gemäß unserer",
+      "text": "Wir verwenden unbedingt erforderliche Cookies, damit unsere Website funktioniert. Mit Ihrer Zustimmung verwenden wir auch Analysecookies, um zu verstehen, wie Sie unsere Website nutzen, und um Ihr Erlebnis zu verbessern. Die Verarbeitung Ihrer Daten erfolgt gemäß unseren",
       "privacyPolicy": "Datenschutzrichtlinie",
-      "and": "und",
+      "and": "Und",
       "cookiePolicy": "Cookie-Richtlinie",
-      "reject": "Nicht Notwendige Ablehnen",
-      "accept": "Alle Akzeptieren"
+      "reject": "Unwesentliches ablehnen",
+      "accept": "Alle akzeptieren"
     },
     "aboutPage": {
       "heroBadge": "ÜBER PREAUMATE",
       "heroTitle1": "Von Ingenieuren gebaut.",
-      "heroTitle2": "Von Leidenschaft angetrieben.",
-      "heroSubtitle": "Preaumate ist eine Unternehmensberatung für industrielle Automatisierung mit über 20 Jahren kombinierter Erfahrung, weltweit tätig von den Niederlanden und Mexiko aus.",
+      "heroTitle2": "Angetrieben von Leidenschaft.",
+      "heroSubtitle": "Preaumate ist ein Beratungsunternehmen für industrielle Automatisierung mit über 30 Jahren Erfahrung, das weltweit von den Niederlanden und Mexiko aus tätig ist.",
       "locations": [
         "Niederlande",
         "Mexiko",
-        "Weltweite Aktivitäten"
+        "Globale Operationen"
       ],
       "whoWeAreBadge": "WER WIR SIND",
       "whoWeAreTitle": "Unsere Geschichte",
-      "whoWeArePara1": "Preaumate ist eine Unternehmensberatung für industrielle Automatisierung, gegründet von Ingenieuren mit echter und enthusiastischer Leidenschaft für die Branche. Wir sind ein junges Unternehmen — aber kein neues Team. Gemeinsam bringen wir über 20 Jahre praktische Automatisierungserfahrung in jedes Projekt ein.",
-      "whoWeArePara2": "Unser Team sitzt in den Niederlanden und Mexiko. Wir arbeiten weltweit, reagieren schnell und sind darauf ausgerichtet, Kunden onshore, offshore und remote über Zeitzonen hinweg zu unterstützen.",
-      "whoWeArePara3": "Wir haben Preaumate gegründet, weil wir glauben, dass die beste Automatisierungsarbeit entsteht, wenn die Menschen nah am Problem sind, persönlich investiert sind und nicht durch Unternehmensschichten verlangsamt werden.",
-      "whoWeArePara4": "Wir kennen die klassische Welt der industriellen Automatisierung gut — denn wir kommen aus ihr. Und wir verstehen die laufende Transformation.",
+      "whoWeArePara1": "Preaumate ist ein Beratungsunternehmen für industrielle Automatisierung, das von Ingenieuren mit einer enthusiastischen und echten Leidenschaft für die Branche gegründet wurde. Wir sind ein junges Unternehmen – aber wir sind kein neues Team. Zusammen bringen wir über 30 Jahre praktische Automatisierungserfahrung in jedes Projekt ein, das wir übernehmen.",
+      "whoWeArePara2": "Unser Team hat seinen Sitz in den Niederlanden und in Mexiko – eine geografische Verteilung, die nicht zufällig, sondern gewollt ist. Wir arbeiten weltweit, reagieren schnell und sind darauf eingestellt, Kunden onshore, offshore und remote über Zeitzonen hinweg zu unterstützen. Ganz gleich, ob sich Ihre Installation in einer Produktionshalle in Europa, auf einer Plattform in der Nordsee oder in einer Anlage am anderen Ende der Welt befindet – wir sind da.",
+      "whoWeArePara3": "Wir haben Preaumate ins Leben gerufen, weil wir glauben, dass die beste Automatisierungsarbeit gelingt, wenn die Menschen, die sie ausführen, nah am Problem sind, sich persönlich für das Ergebnis einsetzen und nicht durch Unternehmensebenen ausgebremst werden. Wir kombinieren die bewährte Zuverlässigkeit der traditionellen industriellen Automatisierung mit der sich schnell entwickelnden Technologielandschaft – KI-Integration, IoT-Konnektivität, Cloud- und Edge-Computing, Cybersicherheit – um jede Art von Automatisierungsprojekt effizienter, vernetzter und zukunftsfähiger zu machen, als es sonst der Fall wäre.",
+      "whoWeArePara4": "Wir kennen die klassische Welt der industriellen Automatisierung gut – weil wir aus ihr stammen. Und wir verstehen den Wandel, der im Gange ist. Unsere Aufgabe besteht darin, Kunden dabei zu helfen, sich in beiden Bereichen zurechtzufinden.",
       "whatWeDoBadge": "WAS WIR TUN",
       "whatWeDoTitle": "Unsere Leistungen",
-      "whatWeDoIntro": "Wir sind Automatisierungsspezialisten, die sich im Serverraum genauso wohl fühlen wie auf dem Fabrikboden. Wir engagieren uns dort, wo es darauf ankommt — hands-on und lösungsorientiert.",
+      "whatWeDoIntro": "Wir sind Automatisierungsspezialisten, die sich in einem Serverraum genauso wohl fühlen wie in einer Fabrikhalle. Wir engagieren uns dort, wo es darauf ankommt – praxisnah, problemlösend und mit vollem Engagement dafür, dass die Dinge funktionieren. Unser Hauptaugenmerk liegt auf Software, aber wir sind in erster Linie ein Service- und Lösungsteam. Wenn ein Problem gelöst werden muss, lösen wir es.",
       "servicesList": [
         {
           "title": "SPS-Programmierung",
-          "description": "Wir programmieren auf den großen Plattformen — Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) und CoDeSys-basierte Controller. Wir arbeiten mit traditionellen Hardware-SPS-Aufbauten sowie modernen Software-SPS-Umgebungen, Virtualisierungs- und Containerisierungsplattformen. Wir programmieren auch Safety-SPSen."
+          "description": "Wir programmieren auf den wichtigsten Plattformen – Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) und CoDeSys-basierten Steuerungen. Wir arbeiten mit traditionellen Hardware-SPS-Setups sowie modernen Software-SPS-Umgebungen, Virtualisierungs- und Containerisierungsplattformen. Wir programmieren auch Sicherheits-SPS – funktionale Sicherheit entsprechend den wichtigen Standards. Wenn ein Kunde ein klassisches, bewährtes Hardware-basiertes Setup benötigt, liefern wir dieses mit Zuversicht. Wenn ein Kunde eine Modernisierung in Angriff nehmen möchte, beraten wir ihn und helfen ihm bei der Auswahl dessen, was für seine spezifische Situation wirklich am besten ist."
         },
         {
           "title": "HMI-Entwicklung",
-          "description": "Wir entwerfen und bauen Bedieneroberflächen, die intuitiv, klar und für die Menschen gebaut sind, die sie tatsächlich verwenden."
+          "description": "Wir entwerfen und bauen Bedienoberflächen, die intuitiv, klar und auf die Menschen zugeschnitten sind, die sie tatsächlich nutzen. Gutes HMI-Design wird immer wieder unterschätzt – wir nehmen es ernst."
         },
         {
           "title": "Datenerfassung, IoT, Cloud und Edge",
-          "description": "Wir verbinden Maschinen, Sensoren und Systeme — OPC-UA, MQTT, Datenbankanbindung, MES- und SCADA-Integration. Wir implementieren cloud-basierte und Edge-Datenverarbeitungsarchitekturen."
+          "description": "Wir verbinden Maschinen, Sensoren und Systeme, damit die Daten dorthin fließen, wo sie hin müssen – OPC-UA, MQTT, Datenbankanbindung, MES- und SCADA-Integration. Wir implementieren sowohl cloudbasierte als auch Edge-Datenverarbeitungsarchitekturen, je nachdem, was die Anwendung erfordert."
         },
         {
           "title": "Cybersicherheit",
-          "description": "Industrielle Cybersicherheit ist keine Option mehr. Wir entwerfen Automatisierungsarchitekturen mit integrierter Sicherheit von Anfang an: Netzsegmentierung, sicherer Fernzugriff, gehärtete Konfigurationen."
+          "description": "Industrielle Cybersicherheit ist nicht mehr optional. Je stärker Automatisierungssysteme vernetzt werden, desto größer wird die Angriffsfläche – und die Folgen eines Sicherheitsverstoßes in einer industriellen Umgebung können schwerwiegend sein. Wir entwerfen und implementieren Automatisierungsarchitekturen mit von Anfang an integrierter Sicherheit: Netzwerksegmentierung, sicherer Fernzugriff, gehärtete Konfigurationen und Einhaltung relevanter industrieller Sicherheitsstandards."
         },
         {
           "title": "KI-Integration",
-          "description": "Wir integrieren KI-gesteuerte Fähigkeiten in Automatisierungsprojekte — prädiktive Instandhaltung, Anomalieerkennung, Prozessoptimierung."
+          "description": "Wir integrieren KI-gesteuerte Funktionen in Automatisierungsprojekte – vorausschauende Wartung, Anomalieerkennung, Prozessoptimierung. Nicht als Schlagworte, sondern als praktische Werkzeuge, die industrielle Systeme leistungsfähiger und intelligenter machen."
         },
         {
-          "title": "Remote-Services",
-          "description": "Wir sind für Remote-Arbeit gebaut. Wir unterstützen und beheben Störungen von überall auf der Welt — sicher, zuverlässig und mit minimalen Betriebsunterbrechungen."
+          "title": "Remote-Dienste",
+          "description": "Wir sind für Remote-Arbeit konzipiert. Wir unterstützen, beheben und modifizieren Systeme von überall auf der Welt – sicher, zuverlässig und mit minimaler Unterbrechung Ihres Betriebs. Dank unserer Präsenz in ganz Europa und Amerika können wir eine Vielzahl von Zeitzonen ohne Verzögerung abdecken. Remote bedeutet nicht gleich distanziert – wir sind reaktionsschnell, verfügbar und engagiert."
         },
         {
-          "title": "Projektvorbereitung und Management",
-          "description": "Wir unterstützen Kunden von den frühesten Phasen — funktionale Spezifikationen, Softwarearchitektur, Scoping — bis zur Inbetriebnahme und Übergabe."
+          "title": "Projektvorbereitung und -management",
+          "description": "Wir unterstützen Kunden von den frühesten Phasen – Funktionsspezifikationen, Softwarearchitektur, Umfangsdefinition – bis hin zur Inbetriebnahme und Übergabe. Eine gute Vorbereitung im Frontend verhindert teure Probleme im Backend."
         }
       ],
       "industriesBadge": "ERFAHRUNG",
-      "industriesTitle": "Branchen, in denen wir tätig waren",
-      "industriesIntro": "Die Erfahrung unseres Teams erstreckt sich über ein breites Spektrum industrieller Umgebungen — an Land, offshore und auf allen Kontinenten.",
+      "industriesTitle": "Branchen, in denen wir gearbeitet haben",
+      "industriesIntro": "Die Erfahrung unseres Teams erstreckt sich über ein breites Spektrum industrieller Umgebungen – an Land, auf See und über Kontinente hinweg. Jede dieser Branchen hat ihre eigenen Anforderungen, ihre eigenen Standards und ihre eigene Arbeitsweise.",
       "industries": [
         {
-          "label": "Roboterfertigung",
+          "label": "Robotic Manufacturing",
           "icon": "🦾"
         },
         {
-          "label": "Lebensmittel- & Getränkeindustrie",
+          "label": "Food & Beverage Production",
           "icon": "🏭"
         },
         {
-          "label": "Wasseraufbereitung & Versorgung",
+          "label": "Water Treatment & Utilities",
           "icon": "💧"
         },
         {
-          "label": "HLK & Gebäudeautomation",
+          "label": "HVAC & Building Automation",
           "icon": "🌡️"
         },
         {
-          "label": "Lagerung & Logistik",
+          "label": "Warehousing & Logistics",
           "icon": "📦"
         },
         {
-          "label": "Offshore-Anlagen",
+          "label": "Offshore Installations",
           "icon": "⚓"
         }
       ],
       "philosophyBadge": "UNSERE PHILOSOPHIE",
       "philosophyTitle": "Klassische Automatisierung und die neue industrielle Realität",
-      "philosophyPara1": "Wir haben tiefen Respekt vor den Ingenieurstraditionen, die die Branche aufgebaut haben. Die Normen, die Methoden, die Hardwareplattformen — sie existieren, weil sie funktionieren.",
-      "philosophyPara2": "Aber die Branche verändert sich. Software-SPSen, Virtualisierung, Containerisierung, Edge-Computing, KI-Analytik und industrielle Cybersicherheit sind produktionsreif.",
-      "philosophyPara3": "Wir verstehen beide Welten. Wir liefern klassische, zuverlässige Projekte. Und wir helfen Kunden bei der Modernisierung.",
+      "philosophyPara1": "Wir haben großen Respekt vor den Ingenieurstraditionen, die die industrielle Automatisierungsbranche aufgebaut haben. Die Standards, die Methoden, die Hardwareplattformen – sie existieren, weil sie funktionieren, und sie werden auch weiterhin funktionieren. Wir kennen diese Welt gut und sind voll und ganz in der Lage, darin zu agieren.",
+      "philosophyPara2": "Aber die Branche verändert sich. Software-SPS, Virtualisierung, Containerisierung, Edge Computing, KI-gesteuerte Analysen, Cloud-Konnektivität und industrielle Cybersicherheit sind nicht mehr experimentell – sie sind serienreif und verändern die Möglichkeiten der Automatisierung.",
+      "philosophyPara3": "Unser Wert für unsere Kunden besteht darin, dass wir beide Welten verstehen. Wir können ein klassisches, zuverlässiges und standardkonformes Automatisierungsprojekt liefern. Und wir können Kunden, die zur Modernisierung bereit sind, dabei helfen, zu verstehen, was das für sie bedeutet – was es kostet, welche Vorteile es bringt und wie sie ohne unnötiges Risiko dorthin gelangen.",
       "classicalTitle": "Klassische Automatisierung",
-      "classicalDesc": "Bewährte Hardwareplattformen, etablierte Normen, zuverlässige Architekturen. Wenn Ihr Projekt das braucht — wir liefern es mit vollem Vertrauen.",
+      "classicalDesc": "Bewährte Hardwareplattformen, etablierte Standards, zuverlässige Architekturen, die seit Jahrzehnten in der Industrie funktionieren. Wenn dies das ist, was Ihr Projekt benötigt, liefern wir es mit vollem Vertrauen und Respekt für das, was funktioniert.",
       "modernTitle": "Moderne Automatisierung",
-      "modernDesc": "Software-SPSen, Cloud-Konnektivität, KI-Einblicke, Edge-Computing, Cybersicherheit. Bereit für die Modernisierung — wir helfen Ihnen den richtigen Weg zu wählen.",
-      "finalNote": "Wir glauben nicht, dass jedes Projekt die neueste Technologie braucht. Wir glauben, jedes Projekt verdient die richtige Technologie.",
+      "modernDesc": "Software-SPS, Cloud-Konnektivität, KI-gesteuerte Erkenntnisse, Edge Computing, industrielle Cybersicherheit. Wenn Sie bereit für eine Modernisierung sind, helfen wir Ihnen, den richtigen Weg im richtigen Tempo für Ihre spezifischen Anforderungen zu wählen.",
+      "finalNote": "Wir glauben nicht, dass jedes Projekt die neueste Technologie benötigt. Wir glauben, dass jedes Projekt die richtige Technologie verdient – ​​und wir haben die Erfahrung und den Blickwinkel, um den Unterschied zu erkennen.",
       "ctaTitle": "Bereit zur Zusammenarbeit?",
-      "ctaSubtitle": "Suchen Sie einen Partner, der Ihr Projekt wie sein eigenes behandelt, ohne Verzögerung reagiert und standfeste Arbeit liefert — wir würden gerne sprechen.",
-      "ctaButton": "Kontakt aufnehmen"
+      "ctaSubtitle": "Wenn Sie auf der Suche nach einem Partner sind, der Ihr Projekt wie sein eigenes behandelt, ohne Verzögerung reagiert und eine überzeugende Arbeit liefert, würden wir gerne mit Ihnen reden.",
+      "ctaButton": "Nehmen Sie Kontakt auf"
     },
     "crossover": {
       "badge": "DIE KONVERGENZ",
-      "title": "Wo der Fabrikboden auf die Datenschicht Trifft",
-      "subtitle": "Die meisten Automatisierungsingenieure verstehen Steuerungssysteme. Die meisten Dateningenieure verstehen Konnektivität. Sehr wenige verstehen beides tiefgreifend — und noch weniger wissen, wie sie KI praktisch einbringen können.",
-      "statement": "Wir befinden uns an genau diesem Schnittpunkt. Und wir glauben, dass es der wichtigste Ort in der industriellen Automatisierung gerade jetzt ist.",
+      "title": "Wo die Fabrikhalle auf die Datenschicht trifft",
+      "subtitle": "Die meisten Automatisierungsingenieure verstehen Steuerungssysteme. Die meisten Dateningenieure verstehen Konnektivität. Nur sehr wenige verstehen beides gründlich – und noch weniger wissen, wie man KI praktisch in dieses Bild einbezieht.",
+      "statement": "Wir sitzen an dieser Kreuzung. Und wir glauben, dass dies derzeit der wichtigste Ort in der industriellen Automatisierung ist.",
       "pillar1": {
-        "label": "Klassische Steuerung",
+        "label": "Classical Control",
         "heading": "Die Maschine läuft zuverlässig.",
-        "description": "Siemens, Rockwell, CoDeSys — strukturierter SPS-Code, der für die Langlebigkeit geschrieben ist, Sicherheitssysteme nach Norm programmiert, HMI und SCADA für den Bediener gebaut, der sie tatsächlich verwendet.",
+        "description": "Siemens, Rockwell, CoDeSys — structured PLC code written to last, Safety systems programmed to standard, HMI and SCADA built for the operator who actually uses it. The foundation everything else depends on.",
         "tags": [
           "SPS-Programmierung",
           "Sicherheitssysteme",
@@ -2935,9 +3128,9 @@ export const translations = {
         ]
       },
       "pillar2": {
-        "label": "Vernetzte Daten",
-        "heading": "Die Maschine kommuniziert.",
-        "description": "OPC-UA und MQTT-Pipelines, die Daten vom Fabrikboden dorthin transportieren, wo sie gebraucht werden. Edge Computing, das lokal verarbeitet, wenn die Cloud keine Option ist. Dashboards, die Bedienern zeigen, was gerade passiert.",
+        "label": "Connected Data",
+        "heading": "Die Maschine spricht.",
+        "description": "OPC-UA- und MQTT-Pipelines, die Daten von der Fabrikhalle dorthin transportieren, wo sie benötigt werden. Edge Computing, das lokal verarbeitet, wenn die Cloud keine Option ist. Dashboards, die den Bedienern zeigen, was gerade passiert – und Historiker, die sich an alles erinnern.",
         "tags": [
           "OPC-UA / MQTT",
           "Edge-Computing",
@@ -2946,94 +3139,94 @@ export const translations = {
         ]
       },
       "pillar3": {
-        "label": "KI & Intelligenz",
+        "label": "AI & Intelligence",
         "heading": "Die Maschine denkt.",
-        "description": "Prädiktive Wartungsmodelle, die Ausfälle signalisieren, bevor sie auftreten. Anomalieerkennung, die Prozessabweichungen in Echtzeit erkennt. Computer Vision für Qualitätsprüfung. KI-APIs in industrielle Software integriert — nicht als Feature, sondern als echtes Betriebswerkzeug.",
+        "description": "Vorausschauende Wartungsmodelle, die Ausfälle erkennen, bevor sie auftreten. Anomalieerkennung, die Prozessabweichungen in Echtzeit erkennt. Computer Vision zur Qualitätsprüfung. In Industriesoftware integrierte KI-APIs – nicht als Feature, sondern als echtes Betriebstool.",
         "tags": [
-          "Prädiktive Wartung",
+          "Vorausschauende Wartung",
           "Anomalieerkennung",
           "Computer Vision",
           "KI-API-Integration"
         ]
       },
-      "closing": "Das sind keine drei getrennten Leistungen. Es ist ein integrierter Ansatz — gebaut für die Generation industrieller Automatisierung, bei der Steuerungs- und Intelligenzschicht dasselbe System sind."
+      "closing": "Dabei handelt es sich nicht um drei separate Dienste. Es handelt sich um einen integrierten Ansatz – entwickelt für die Generation der industriellen Automatisierung, bei der die Steuerungsschicht und die Intelligenzschicht dasselbe System sind."
     },
     "howWeWork": {
       "badge": "WIE WIR ARBEITEN",
-      "title": "Wie Es Ist, Mit Uns zu Arbeiten",
-      "subtitle": "Wir halten es einfach, direkt und transparent — keine Account Manager, keine Übergaben. Sie arbeiten direkt mit den Ingenieuren, die die Arbeit leisten.",
+      "title": "So sieht die Zusammenarbeit mit uns aus",
+      "subtitle": "Wir halten es einfach, direkt und transparent – ​​keine Kundenbetreuer, keine Übergaben. Sie haben es mit den Ingenieuren zu tun, die die Arbeit erledigen.",
       "steps": [
         {
           "number": "01",
-          "title": "Wir Sprechen",
-          "description": "Sie schildern uns Ihre Herausforderung. Wir stellen die Fragen, die wichtig sind. Kein Verkaufsgespräch — nur ein ehrliches Gespräch darüber, ob wir die richtige Wahl für Ihr Projekt sind."
+          "title": "Wir reden",
+          "description": "Sie erzählen uns von Ihrer Herausforderung. Wir stellen die Fragen, die wichtig sind. Kein Verkaufsgespräch – nur ein ehrliches Gespräch darüber, ob wir zu Ihrem Projekt passen."
         },
         {
           "number": "02",
-          "title": "Wir Planen",
-          "description": "Wir definieren gemeinsam den Umfang, den Ansatz und den Zeitplan. Sie erhalten ein klares Bild davon, was wir liefern werden, wie lange es dauern wird und was es kosten wird."
+          "title": "Wir planen",
+          "description": "Wir definieren gemeinsam den Umfang, die Vorgehensweise und den Zeitplan. Sie erhalten ein klares Bild davon, was wir liefern, wie lange es dauern und was es kosten wird – bevor mit den Arbeiten begonnen wird."
         },
         {
           "number": "03",
-          "title": "Wir Bauen",
-          "description": "Wir leisten die Arbeit. Sie haben während des gesamten Projekts direkten Zugang zu den Ingenieuren, die Ihr System entwickeln. Probleme werden schnell gelöst."
+          "title": "Wir bauen",
+          "description": "Wir machen die Arbeit. Sie haben durchgehend direkten Zugriff auf die Ingenieure, die Ihr System aufbauen – kein Projektmanager, der Nachrichten weiterleitet. Probleme werden schnell gelöst, weil Entscheidungen von Menschen getroffen werden, die das Problem verstehen."
         },
         {
           "number": "04",
-          "title": "Wir Unterstützen",
-          "description": "Wir verschwinden nicht nach der Übergabe. Wir dokumentieren gründlich, schulen Ihr Team ordentlich und bleiben für Fragen und Support verfügbar."
+          "title": "Wir unterstützen",
+          "description": "Wir verschwinden nicht nach der Übergabe. Wir dokumentieren gründlich, schulen Ihr Team ordnungsgemäß und stehen für Fragen und Unterstützung zur Verfügung. Remote-First bedeutet, dass wir schnell reagieren können, unabhängig davon, wo Sie sich befinden."
         }
       ]
     },
     "whyPreaumate": {
-      "badge": "WARUM WIR",
-      "title": "Das Ehrliche Argument für die Zusammenarbeit mit einem Kleinen Team",
-      "intro": "Wir sind ein neues Unternehmen. Wir wissen, dass das der erste Einwand ist. Hier ist unsere ehrliche Antwort darauf.",
+      "badge": "WARUM UNS",
+      "title": "Das ehrlichste Argument für die Arbeit mit einem kleinen Team",
+      "intro": "Wir sind ein neues Unternehmen. Wir wissen, dass dies der erste Einwand ist. Hier ist unsere ehrliche Antwort darauf.",
       "cards": [
         {
-          "title": "Sie bekommen die Senior-Ingenieure — bei jedem Projekt",
-          "description": "Bei einem großen Integrator kann Ihr Projekt von einem Senior-Ingenieur konzipiert und von einem Junior-Ingenieur umgesetzt werden. Bei uns sind die Menschen, mit denen Sie sprechen, die Menschen, die die Arbeit leisten. Immer."
+          "title": "Sie bekommen die leitenden Ingenieure – für jeden Auftrag",
+          "description": "Bei einem großen Integrator kann es sein, dass Ihr Projekt von einem leitenden Ingenieur geplant und von einem Junior ausgeführt wird. Bei uns sind die Menschen, mit denen Sie sprechen, die Menschen, die die Arbeit erledigen. Jedes Mal."
         },
         {
-          "title": "Zwanzig Jahre Erfahrung ist keine kleine Zahl",
-          "description": "Preaumate ist neu. Die Expertise dahinter nicht. Unser Team hat Automatisierungsprojekte in mehreren Branchen, auf mehreren Plattformen und in mehreren Ländern geliefert."
+          "title": "Dreißig Jahre Erfahrung sind keine geringe Zahl",
+          "description": "Preaumate ist neu. Das Fachwissen dahinter ist es nicht. Unser Team hat Automatisierungsprojekte für mehrere Branchen, Plattformen und Länder durchgeführt. Diese Erfahrung bringen wir vom ersten Tag an in Ihr Projekt ein."
         },
         {
           "title": "Wir bewegen uns schneller, weil wir kleiner sind",
-          "description": "Keine internen Genehmigungsketten. Keine Terminierungskonflikte zwischen Abteilungen. Wenn etwas gelöst werden muss, lösen wir es."
+          "description": "Keine internen Genehmigungsketten. Keine Terminkonflikte zwischen Abteilungen. Wenn etwas gelöst werden muss, lösen wir es. Die Schnelligkeit eines kleinen Teams ist ein echter betrieblicher Vorteil."
         },
         {
-          "title": "Unser Unternehmen hängt davon ab, dass Ihr Projekt gut läuft",
-          "description": "Ein großes Unternehmen kann ein Projekt, das nicht gut lief, absorbieren. Wir können das nicht. Diese Asymmetrie arbeitet zu Ihren Gunsten."
+          "title": "Unser Geschäft hängt davon ab, dass Ihr Projekt gut läuft",
+          "description": "Ein großes Unternehmen kann ein Projekt auffangen, das nicht gut gelaufen ist. Wir können nicht. Diese Asymmetrie kommt Ihnen zugute – jedes Projekt, das wir übernehmen, erhält unsere volle Aufmerksamkeit, weil unser Ruf davon abhängt."
         }
       ]
     },
     "pricing": {
-      "signal": "Wir arbeiten auf Projekt- und Tagessatzbasis. Kontaktieren Sie uns für ein Angebot — wir antworten innerhalb eines Werktages."
+      "signal": "Wir arbeiten auf Projekt- und Tagessatzbasis. Kontaktieren Sie uns für ein Angebot – wir antworten innerhalb eines Werktages."
     },
     "endorsements": {
       "badge": "WAS KOLLEGEN SAGEN",
-      "title": "Vertraut von Ingenieuren, die die Arbeit kennen",
-      "subtitle": "Preaumate ist ein neues Unternehmen. Die Menschen dahinter sind es nicht. Das sagen diejenigen, die neben uns gearbeitet haben.",
+      "title": "Dem Vertrauen von Ingenieuren, die sich mit der Arbeit auskennen",
+      "subtitle": "Preaumate ist ein neues Unternehmen. Die Menschen dahinter sind es nicht. Hier ist, was diejenigen zu sagen haben, die mit uns zusammengearbeitet haben.",
       "cta": "Möchten Sie Ihr Projekt besprechen?",
-      "ctaButton": "Kontakt aufnehmen",
+      "ctaButton": "Nehmen Sie Kontakt auf",
       "quotes": [
         {
-          "text": "Einer der technisch fähigsten Automatisierungsingenieure, mit denen ich gearbeitet habe. Strukturierter Code, klares Denken und die Art von Problemlösungsfähigkeit, die sich zeigt, wenn es auf der Baustelle kompliziert wird.",
-          "author": "Senior Projektingenieur",
-          "company": "Früherer Arbeitgeber — Name auf Wunsch nicht genannt",
+          "text": "Einer der technisch kompetentesten Automatisierungsingenieure, mit denen ich je zusammengearbeitet habe. Strukturierter Code, klares Denken und die Fähigkeit zur Problemlösung, die sich zeigt, wenn es vor Ort kompliziert wird.",
+          "author": "Leitender Projektingenieur",
+          "company": "Ehemaliger Arbeitgeber – Name wird auf Anfrage nicht genannt",
           "initials": "SP"
         },
         {
-          "text": "Was dieses Team auszeichnet, ist, dass sie sowohl die Steuerungsschicht als auch die Datenschicht wirklich verstehen. Diese Kombination ist selten in der Branche und macht bei komplexen Integrationsprojekten einen echten Unterschied.",
+          "text": "Was dieses Team auszeichnet, ist, dass es sowohl die Kontrollschicht als auch die Datenschicht tatsächlich versteht. Diese Kombination ist in der Branche selten und macht bei komplexen Integrationsprojekten einen echten Unterschied.",
           "author": "Automatisierungsmanager",
-          "company": "Industriehersteller — Niederlande",
+          "company": "Industriehersteller – Niederlande",
           "initials": "BIN"
         },
         {
-          "text": "Zuverlässig, schnell in der Reaktion und wirklich investiert, das richtige Ergebnis zu erzielen. Die Dokumentation und Übergabe waren die besten, die ich bei einem Projekt dieser Art gesehen habe.",
-          "author": "Werksleiter Operations",
-          "company": "Lebensmittel- und Getränkeproduktionsanlage",
+          "text": "Zuverlässig, schnell reagierend und wirklich darauf bedacht, das richtige Ergebnis zu erzielen. Die Dokumentation und Übergabe war das Beste, was ich bei einem Projekt dieser Art gesehen habe.",
+          "author": "Betriebsleiter der Anlage",
+          "company": "Produktionsstätte für Lebensmittel und Getränke",
           "initials": "PO"
         }
       ]
@@ -3041,100 +3234,100 @@ export const translations = {
     "serviceArea": {
       "badge": "WO WIR TÄTIG SIND",
       "title": "Globale Reichweite. Persönliches Engagement.",
-      "subtitle": "Industrielle Automatisierungsarbeit erfordert oft physische Präsenz. So arbeiten wir über Grenzen hinweg.",
-      "intro": "Wir haben Standorte in den Niederlanden und Mexiko — zwei Standorte, die zusammen europäische und amerikanische Zeitzonen ohne Verzögerung abdecken. Wir arbeiten onshore, offshore und remote, und reisen weltweit für Vor-Ort-Inbetriebnahmen, FAT-Begleitung und Standortunterstützung.",
+      "subtitle": "Industrielle Automatisierungsarbeiten erfordern häufig physische Anwesenheit. So arbeiten wir grenzüberschreitend.",
+      "intro": "Wir sind in den Niederlanden und in Mexiko ansässig – zwei Standorte, die gemeinsam die europäische und amerikanische Zeitzone ohne Verzögerung abdecken. Wir arbeiten an Land, auf See und aus der Ferne und reisen weltweit für die Inbetriebnahme vor Ort, die FAT-Beglaubigung und die Unterstützung vor Ort.",
       "cards": [
         {
           "region": "Europa",
           "flag": "🇪🇺",
-          "description": "Unser Standort in den Niederlanden deckt Westeuropa ab. Wir arbeiten vor Ort in der gesamten EU und Großbritannien.",
+          "description": "Unsere niederländische Basis deckt Westeuropa ab. Wir sind in der gesamten EU und im Vereinigten Königreich vor Ort tätig und können schnell auf Projekte in der gesamten Region reagieren.",
           "highlights": [
-            "Niederlande — Hauptstandort",
-            "Vor Ort in EU und UK",
-            "Offshore — Nordsee und darüber hinaus"
+            "Niederlande – Hauptstützpunkt",
+            "Vor Ort in der gesamten EU und im Vereinigten Königreich",
+            "Offshore – Nordsee und darüber hinaus"
           ]
         },
         {
           "region": "Amerika",
           "flag": "🌎",
-          "description": "Unser Standort in Mexiko deckt Nord- und Lateinamerika ab. Von Offshore-Plattformen im Golf von Mexiko bis zu Produktionsanlagen auf dem Kontinent.",
+          "description": "Unsere Basis in Mexiko deckt Nord- und Lateinamerika ab. Von Offshore-Plattformen im Golf von Mexiko bis hin zu Produktionsanlagen auf dem ganzen Kontinent.",
           "highlights": [
-            "Mexiko — Hauptstandort",
+            "Mexiko – Hauptstützpunkt",
             "Nord- und Lateinamerika",
-            "Offshore Golf von Mexiko"
+            "Golf von Mexiko vor der Küste"
           ]
         },
         {
           "region": "Fern und global",
           "flag": "🌐",
-          "description": "Viele Automatisierungsaufgaben können vollständig remote erbracht werden. Wir verfügen über sichere Fernzugriffsinfrastruktur und kommunizieren zuverlässig über alle Zeitzonen.",
+          "description": "Viele Automatisierungsaufgaben – SPS-Programmierung, HMI-Entwicklung, SCADA-Arbeit, Datenplattformentwicklung – können vollständig aus der Ferne ausgeführt werden. Wir verfügen über eine sichere Fernzugriffsinfrastruktur und kommunizieren zuverlässig über Zeitzonen hinweg.",
           "highlights": [
             "Sicherer Fernzugriff",
-            "Vollständige Remote-Lieferung für Software-Arbeit",
+            "Vollständige Fernlieferung für Softwarearbeiten",
             "Weltweite Reisen für Vor-Ort-Phasen"
           ]
         }
       ],
-      "travelNote": "Reisekosten und Logistik werden transparent als Teil jedes Projektumfangs besprochen. Wir verstecken sie nicht im Stundensatz."
+      "travelNote": "Reisekosten und Logistik werden im Rahmen jedes Projektumfangs transparent besprochen. Wir verstecken sie nicht im Tarif."
     },
     "trust": {
-      "badge": "VON INGENIEUREN GEBAUT",
-      "title": "Echte Fabrik-Erfahrung",
-      "subtitle": "Preaumate wurde von Automatisierungsingenieuren gegründet, die jahrelang Probleme direkt in Produktionshallen gelöst haben.",
+      "badge": "VON INGENIEURE GEBAUT",
+      "title": "Echte Erfahrung in der Fabrikhalle",
+      "subtitle": "Preaumate wurde von Automatisierungsingenieuren gegründet, die jahrelang Probleme direkt in der Produktion gelöst haben. Wir verstehen den Druck von Ausfallzeiten, Integrationsproblemen, veralteter Ausrüstung und Produktionszuverlässigkeit – weil wir selbst in industriellen Umgebungen gearbeitet haben.",
       "cards": [
         {
-          "title": "Fabrikerfahrung",
-          "description": "Reale industrielle Inbetriebnahme, Fehlerdiagnose und Integrationserfahrung."
+          "title": "Erfahrung in der Fabrikhalle",
+          "description": "Praxisnahe industrielle Inbetriebnahme-, Fehlerbehebungs- und Integrationserfahrung in verschiedenen Produktionsumgebungen und Branchen."
         },
         {
-          "title": "Grenzüberschreitende Ingenieurleistung",
-          "description": "Technische Unterstützung in Europa und Lateinamerika, auch remote."
+          "title": "Grenzüberschreitendes Engineering",
+          "description": "Technischer Support in ganz Europa und Lateinamerika, mit Remote-Funktionen, die alle Zeitzonen abdecken."
         },
         {
-          "title": "Fokus auf Modernisierung",
-          "description": "Verbindung veralteter Systeme mit modernen Daten- und Automatisierungsplattformen."
+          "title": "Auf Modernisierung ausgerichtet",
+          "description": "Alte Industriesysteme mit modernen Daten- und Automatisierungsplattformen verbinden – Schritt für Schritt, ohne unnötige Komplexität."
         },
         {
           "title": "Praktische Umsetzung",
-          "description": "Lösungen für Betriebszuverlässigkeit und Produktionskontinuität — keine theoretischen Konzepte."
+          "description": "Lösungen, die auf Betriebszuverlässigkeit, Wartbarkeit und Produktionskontinuität ausgelegt sind. Keine theoretischen Rahmenbedingungen – funktionierende Systeme."
         }
       ]
     },
     "problems": {
-      "badge": "PROBLEME DIE WIR LÖSEN",
-      "title": "Industrielle Herausforderungen",
-      "subtitle": "Wir arbeiten mit Herstellern, die echte Betriebsprobleme haben.",
+      "badge": "PROBLEME, DIE WIR LÖSEN",
+      "title": "Industrielle Herausforderungen, denen wir uns stellen",
+      "subtitle": "Wir arbeiten mit Herstellern zusammen, die mit echten Betriebsproblemen konfrontiert sind – solchen, die die Produktion verlangsamen, Ausfallzeiten verursachen und die Systemverwaltung erschweren.",
       "cards": [
         {
-          "title": "Veraltete SPS-Systeme",
-          "description": "Migration ohne Produktionsunterbrechung."
+          "title": "Ältere SPS-Systeme",
+          "description": "Migration veralteter SPS-Systeme auf moderne Plattformen, ohne Produktionspläne zu stören oder wichtige Prozesskenntnisse zu verlieren."
         },
         {
           "title": "Fehlende Produktionstransparenz",
-          "description": "Maschinendaten erfassen und visualisieren."
+          "description": "Sammeln und Visualisieren von Maschinendaten in der gesamten Fabrikhalle, um bessere betriebliche Entscheidungen und schnellere Diagnosen zu unterstützen."
         },
         {
           "title": "Schwierige Systemintegrationen",
-          "description": "SPS, SCADA, MES, ERP und IoT zuverlässig verbinden."
+          "description": "Verbinden Sie SPS-, SCADA-, MES-, ERP- und IoT-Systeme zu einer zuverlässigen, einheitlichen Datenarchitektur, die tatsächlich in der Produktion funktioniert."
         },
         {
           "title": "Robotik-Implementierung",
-          "description": "Robotik sicher und zuverlässig integrieren."
+          "description": "Programmierung und Integration von Robotersystemen in Produktionsumgebungen mit Schwerpunkt auf Zuverlässigkeit, Sicherheit und Wartbarkeit."
         },
         {
-          "title": "Ausfallzeiten & Fehlersuche",
-          "description": "Wiederkehrende Automatisierungsfehler diagnostizieren."
+          "title": "Ausfallzeiten und Fehlerbehebung",
+          "description": "Wiederkehrende Automatisierungsfehler diagnostizieren, die Systemzuverlässigkeit verbessern und ungeplante Ausfallzeiten in der gesamten Produktionslinie reduzieren."
         },
         {
-          "title": "Industrial-KI-Einführung",
-          "description": "KI sinnvoll für messbare Betriebsvorteile einsetzen."
+          "title": "Einführung industrieller KI",
+          "description": "Setzen Sie KI dort ein, wo sie messbaren betrieblichen Wert schafft – Anomalieerkennung, vorausschauende Wartung und Produktionsanalysen."
         }
       ]
     },
     "technologies": {
       "badge": "PLATTFORMEN & WERKZEUGE",
-      "title": "Technologien mit denen wir Arbeiten",
-      "subtitle": "Wir arbeiten mit den Plattformen, die Ihre Produktionsumgebung bereits nutzt.",
+      "title": "Technologien, mit denen wir arbeiten",
+      "subtitle": "Wir arbeiten mit den industriellen Plattformen und Tools, die Ihre Produktionsumgebung bereits nutzt – keine Anbieterbindung, kein unnötiger Austausch.",
       "categories": [
         {
           "title": "Automatisierung",
@@ -3169,7 +3362,7 @@ export const translations = {
         {
           "title": "Infrastruktur",
           "items": [
-            "Industrienetzwerke",
+            "Industrielle Vernetzung",
             "Fernzugriff",
             "Virtualisierung",
             "Cloud-Integration",
@@ -3179,50 +3372,50 @@ export const translations = {
       ]
     },
     "industries": {
-      "badge": "BRANCHEN",
-      "title": "Branchen die wir Unterstützen",
-      "subtitle": "Wir haben praktische Erfahrung in einem breiten Spektrum industrieller Sektoren.",
+      "badge": "INDUSTRIEN",
+      "title": "Branchen, die wir unterstützen",
+      "subtitle": "Wir verfügen über praktische Erfahrung in einer Vielzahl von Industriesektoren – von Lebensmittelproduktionslinien bis hin zu Maschinenbauern.",
       "items": [
         {
-          "title": "Fertigung"
+          "title": "Herstellung"
         },
         {
           "title": "Verpackung"
         },
         {
-          "title": "Lebensmittel & Getränke"
+          "title": "Essen und Trinken"
         },
         {
           "title": "Automobil"
         },
         {
-          "title": "Lagerung & Logistik"
+          "title": "Lagerhaltung und Logistik"
         },
         {
-          "title": "Energie & Versorgung"
+          "title": "Energie und Versorgung"
         },
         {
-          "title": "Maschinenbau"
+          "title": "Maschinenbauer"
         },
         {
-          "title": "Industrieinfrastruktur"
+          "title": "Industrielle Infrastruktur"
         }
       ]
     },
     "projectProof": {
       "badge": "BEISPIELPROJEKTE",
       "title": "Industrieprojekte",
-      "subtitle": "Auswahl der Arten von Herausforderungen, die wir gelöst haben.",
+      "subtitle": "Eine Auswahl der Arten von Herausforderungen, die wir gelöst haben. Spezifische Fallstudien und Referenzen sind auf Anfrage erhältlich.",
       "resultsLabel": "Ergebnisse",
-      "note": "Kundendaten werden auf Anfrage vertraulich behandelt.",
+      "note": "Kundendaten werden auf Wunsch vertraulich behandelt. Kontaktieren Sie uns, um Referenzen zu besprechen, die für Ihre Branche relevant sind.",
       "projects": [
         {
           "title": "SPS-Migration für Legacy-Produktionssystem",
-          "summary": "[PROJEKTBESCHREIBUNG HINZUFÜGEN]",
+          "summary": "[ADD PROJECT SUMMARY — describe the production environment, the problem that triggered the migration, what was done and what systems were involved. Keep it factual and specific. Anonymize client name if needed.]",
           "results": [
-            "Weniger ungeplante Ausfallzeiten",
+            "Reduzierte ungeplante Ausfallzeiten",
             "Verbesserte Ferndiagnose",
-            "Modernere Wartbarkeit"
+            "Modernisierte Wartbarkeit"
           ],
           "tech": [
             "Siemens TIA Portal",
@@ -3231,11 +3424,11 @@ export const translations = {
           ]
         },
         {
-          "title": "Fabrik-Datenerfassung & Monitoring",
-          "summary": "[PROJEKTBESCHREIBUNG HINZUFÜGEN]",
+          "title": "Fabrikdatenerfassungs- und Überwachungssystem",
+          "summary": "[ADD PROJECT SUMMARY — describe the factory, the data challenge (e.g. no visibility into machine output), and what integration approach was used. Mention number of machines or lines if possible.]",
           "results": [
-            "Einheitliche Maschinentransparenz",
-            "Zentrales Monitoring",
+            "Einheitliche Maschinensichtbarkeit",
+            "Zentralisierte Produktionsüberwachung",
             "Ferndiagnose aktiviert"
           ],
           "tech": [
@@ -3246,12 +3439,12 @@ export const translations = {
           ]
         },
         {
-          "title": "Roboterzellen-Integration",
-          "summary": "[PROJEKTBESCHREIBUNG HINZUFÜGEN]",
+          "title": "Integration von Roboterzellen",
+          "summary": "[ADD PROJECT SUMMARY — describe the robotic cell context, what production step it handles, integration scope with existing PLC/SCADA and any safety considerations.]",
           "results": [
-            "Höherer Durchsatz",
-            "Bessere Wiederholgenauigkeit",
-            "Weniger Handarbeit"
+            "Erhöhter Produktionsdurchsatz",
+            "Verbesserte Wiederholgenauigkeit",
+            "Reduzierte manuelle Handhabung"
           ],
           "tech": [
             "Robotik",
@@ -3262,47 +3455,47 @@ export const translations = {
       ]
     },
     "founders": {
-      "badge": "UNSER TEAM",
-      "title": "Die Ingenieure Hinter Preaumate",
-      "subtitle": "Preaumate wurde von Ingenieuren mit praktischer Erfahrung in industrieller Automatisierung gegründet.",
+      "badge": "LERNEN SIE DAS TEAM LERNEN",
+      "title": "Die Ingenieure hinter Preaumate",
+      "subtitle": "Preaumate wurde von Ingenieuren mit praktischer Erfahrung in den Bereichen industrielle Automatisierung, Systemintegration und Fabrikbetrieb in ganz Europa und Lateinamerika gegründet.",
       "specializationsLabel": "Spezialisiert auf",
-      "industriesLabel": "Erfahrung in",
+      "industriesLabel": "Quer gearbeitet",
       "linkedinLabel": "LinkedIn ansehen",
       "founders": [
         {
-          "name": "[IHR NAME]",
+          "name": "[YOUR FULL NAME]",
           "role": "Automatisierungsingenieur",
           "location": "Niederlande",
-          "years": "30+ Jahre Erfahrung in industrieller Automatisierung.",
-          "bio": "[2–3 Sätze zu Ihrer Erfahrung.]",
+          "years": "Über 30 Jahre Erfahrung in der industriellen Automatisierung in verschiedenen Produktionssektoren.",
+          "bio": "[2–3 sentences about your background, what types of systems you have worked on, and what drives your approach to engineering.]",
           "photoUrl": "",
           "specializations": [
-            "[z.B. Siemens SPS]",
-            "[z.B. SCADA & HMI]",
-            "[z.B. Systemintegration]"
+            "[e.g. Siemens PLC programming]",
+            "[e.g. SCADA & HMI development]",
+            "[e.g. System integration]"
           ],
           "industries": [
-            "[z.B. Lebensmittel]",
-            "[z.B. Verpackung]",
+            "[e.g. Food & Beverage]",
+            "[e.g. Packaging]",
             "[e.g. Water treatment]"
           ],
           "linkedin": "#"
         },
         {
-          "name": "[IHR NAME]",
-          "role": "Automatisierungs- & Integrationsingenieur",
+          "name": "[YOUR FULL NAME]",
+          "role": "Automatisierungs- und Integrationsingenieur",
           "location": "Monterrey, Mexiko",
-          "years": "10+ Jahre Erfahrung in industriellen Systemen.",
-          "bio": "[2–3 Sätze zu Ihrer Erfahrung.]",
+          "years": "Über 10 Jahre Erfahrung in der industriellen System- und Integrationsbranche.",
+          "bio": "[2–3 sentences about your background, the types of automation work you have done, and what your engineering focus is.]",
           "photoUrl": "",
           "specializations": [
-            "[z.B. Industrial IoT]",
-            "[z.B. Rockwell]",
-            "[z.B. Inbetriebnahme]"
+            "[e.g. Industrial IoT & connectivity]",
+            "[e.g. Rockwell / CoDeSys programming]",
+            "[e.g. Machine commissioning]"
           ],
           "industries": [
-            "[z.B. Automotive]",
-            "[z.B. Logistik]",
+            "[e.g. Automotive]",
+            "[e.g. Logistics]",
             "[e.g. Manufacturing]"
           ],
           "linkedin": "#"
@@ -3310,96 +3503,98 @@ export const translations = {
       ]
     },
     "curriculum": {
-      "pageTitle": "Theo Rietveld — Lebenslauf | Preaumate",
-      "metaDescription": "Professioneller Lebenslauf von Theo Rietveld, Gründer und Automatisierungsingenieur bei Preaumate. 30+ Jahre SPS-, SCADA-, IoT- und Robotikerfahrung.",
+      "pageTitle": "Theo Rietveld – Lebenslauf | Vorbereiten",
+      "metaDescription": "Professioneller Lehrplan von Theo Rietveld, Gründer und Enthusiast der industriellen Automatisierung bei Preaumate. Über 30 Jahre Erfahrung in den Bereichen SPS, SCADA, IoT und Robotik.",
       "heroBadge": "LEBENSLAUF",
-      "heroSubtitle": "Gründer & Industrieller Automatisierungsingenieur bei Preaumate",
-      "heroTagline": "Über 20 Jahre praktische Erfahrung in SPS-Programmierung, SCADA-Entwicklung, Systemintegration und internationaler Inbetriebnahme.",
-      "photoAlt": "Theo Rietveld — Gründer von Preaumate",
-      "photoPlaceholder": "TR",
+      "heroSubtitle": "Gründer und Enthusiast für industrielle Automatisierung bei Preaumate",
+      "heroTagline": "Über 30 Jahre praktische Erfahrung in der SPS-Programmierung, SCADA-Entwicklung, Systemintegration und internationalen Inbetriebnahmen.",
+      "photoAlt": "Theo Rietveld – Gründer von Preaumate",
+      "photoPlaceholder": "TJR",
       "currentBadge": "Aktuell",
-      "presentLabel": "Heute",
-      "downloadPdf": "PDF Herunterladen",
-      "contactCta": "Ihr Projekt Besprechen",
-      "summaryBadge": "BERUFLICHES PROFIL",
-      "summaryTitle": "Ingenieurfachkenntnisse im Dienst Ihrer Produktionsziele",
-      "summaryText": "Theo Rietveld ist Automatisierungsingenieur und Gründer von Preaumate mit über 20 Jahren praktischer Erfahrung in SPS-Programmierung, SCADA-Entwicklung, Systemintegration und internationaler Projektinbetriebnahme. Mit Erfahrung in der maritimen Industrie, im Offshore-Bereich und in der Lebensmittelverarbeitung bringt er tiefgreifendes technisches Fachwissen mit. Er kommuniziert direkt auf Niederländisch, Englisch, Spanisch und Deutsch.",
+      "presentLabel": "Gegenwärtig",
+      "downloadPdf": "PDF herunterladen",
+      "contactCta": "Besprechen Sie Ihr Projekt",
+      "summaryBadge": "PROFESSIONELLE ZUSAMMENFASSUNG",
+      "summaryTitle": "Ingenieurskompetenz im Dienste Ihrer Produktionsziele",
+      "summaryText": "Theo Rietveld ist ein Industrieautomatisierungsingenieur und Gründer von Preaumate mit über 30 Jahren praktischer Erfahrung in den Bereichen SPS-Programmierung, SCADA-Entwicklung, Systemintegration und internationale Projektinbetriebnahme. Er hat in der Schifffahrts-, Offshore- und Lebensmittelverarbeitungsindustrie in Europa und international gearbeitet und bringt in jedes Projekt umfassendes technisches Fachwissen und eine nachgewiesene Erfolgsbilanz bei der Projektabwicklung ein. Er kommuniziert direkt auf Niederländisch, Englisch, Spanisch und Deutsch und ermöglicht so eine effektive Zusammenarbeit mit Kunden und Teams in ganz Europa und Lateinamerika.",
       "experienceBadge": "BERUFSERFAHRUNG",
-      "earlierCareerBadge": "FRÜHERE LAUFBAHN",
+      "earlierCareerBadge": "FRÜHERE KARRIERE",
       "roles": {
         "preaumate": {
-          "roleTitle": "Gründer & Industrieller Automatisierungsingenieur",
-          "description": "Preaumate gegründet, um praktische industrielle Automatisierungstechnik direkt an Hersteller in Europa und Lateinamerika zu liefern. SPS-Programmierung, SCADA-Entwicklung, industrielle IoT-Integration, Robotik und KI-gesteuerte Automatisierung.",
+          "roleTitle": "Gründer und Designer für industrielle Automatisierung",
+          "description": "Gründung von Preaumate, um Herstellern in ganz Europa und Lateinamerika praktische industrielle Automatisierungstechnik direkt anzubieten. Bereitstellung von SPS-Programmierung, SCADA-Entwicklung, industrieller IoT-Integration, Robotik und KI-gesteuerter Automatisierung – mit Erfahrung in der Fabrikhalle hinter jeder Lösung.",
           "highlights": [
-            "SPS-Programmierung für Siemens, Rockwell und CoDeSys",
-            "SCADA und HMI-Entwicklung für die Produktionsüberwachung",
-            "Industrielle IoT-Integration mit OPC UA und MQTT",
+            "SPS-Programmierung für Siemens-, Rockwell- und CoDeSys-Plattformen",
+            "SCADA- und HMI-Entwicklung zur Produktionsüberwachung",
+            "Industrielles IoT und Systemintegration",
             "Robotik-Integration und Inbetriebnahme",
-            "Industrielle KI für Anomalieerkennung und vorausschauende Wartung",
-            "Remote-Engineering-Support in Europa und Lateinamerika"
+            "Industrielle KI zur Anomalieerkennung und vorausschauenden Wartung",
+            "Weltweite Inbetriebnahme und Betreuung vor Ort",
+            "Remote-Engineering-Unterstützung",
+            "Beratung zu Automatisierungsarchitektur und Modernisierungsstrategien"
           ]
         },
         "kiremko": {
-          "roleTitle": "Softwareentwickler & Automatisierungsingenieur",
-          "description": "Projekt- und Maschinendesign, Engineering und Management für industrielle Lebensmittelverarbeitungsautomatisierung. Entwicklung im Team mit Hardware- und Softwareingenieuren, von der Funktionsspezifikation bis zur Inbetriebnahme und Übergabe.",
+          "roleTitle": "Softwareentwickler und Automatisierungsingenieur",
+          "description": "Projekt- und Maschinendesign, Engineering und Management für die Automatisierung der industriellen Lebensmittelverarbeitung. Entwicklung innerhalb eines Teams von Hardware- und Software-Ingenieuren, von der funktionalen Spezifikation über die Inbetriebnahme, Kundenübergabe und Schulung vor Ort.",
           "highlights": [
-            "Automatisierung von Lebensmittelverarbeitungsmaschinen",
-            "Funktionale Designspezifikationen",
+            "Automatisierung industrieller Lebensmittelverarbeitungsmaschinen",
+            "Funktionale Designvorgaben",
             "Softwareentwicklung, Test und Inbetriebnahme",
-            "Schulung vor Ort und Kundenübergabe"
+            "Schulung und Kundenübergabe vor Ort"
           ]
         },
         "gooiland": {
-          "roleTitle": "Softwareentwickler & Automatisierungsingenieur",
-          "description": "12 Jahre Spezialisierung auf maritime und Offshore-HVAC-Automatisierung. Vollständiger Projektlebenszyklus von der Planung bis zur internationalen Inbetriebnahme, mit praktischer Erfahrung auf Schiffen und Offshore-Anlagen weltweit.",
+          "roleTitle": "Softwareentwickler und Automatisierungsingenieur",
+          "description": "12 Jahre Erfahrung mit Spezialisierung auf maritime und Offshore-HLK-Automatisierung. Vollständiger Projektlebenszyklus vom Entwurf bis zur internationalen Inbetriebnahme, mit praktischer Erfahrung auf Schiffen und Offshore-Installationen weltweit. Starker Fokus auf Kundenbeziehungen und langfristigen Service.",
           "highlights": [
-            "Maritime und Offshore-HVAC-Steuerungsautomatisierung",
+            "Automatisierung der HVAC-Steuerung für den See- und Offshore-Bereich",
             "Internationale Inbetriebnahme weltweit",
-            "Vollständiger Softwareentwicklungs- und Bereitstellungszyklus",
-            "Kundenbeziehungen, Schulung vor Ort und Service"
+            "Vollständiger Softwareentwicklungs- und Bereitstellungslebenszyklus",
+            "Kundenbeziehungen, Schulungen und Service vor Ort"
           ]
         },
         "vandenPol": {
-          "roleTitle": "Softwareentwickler & Inbetriebnahmeingenieur",
-          "description": "Industrielle Lebensmittelverarbeitungsautomatisierung vom Projekt-Engineering bis zur Inbetriebnahme. Internationale Projektabwicklung, Schulung vor Ort und laufender Service.",
+          "roleTitle": "Softwareentwickler und Inbetriebnahmeingenieur",
+          "description": "Automatisierung der industriellen Lebensmittelverarbeitung von der Projektplanung bis zur Inbetriebnahme. Internationale Projektabwicklung, Schulung vor Ort und fortlaufender Service.",
           "highlights": [
-            "Industrielle Lebensmittelverarbeitungsautomatisierung",
+            "Automatisierung der industriellen Lebensmittelverarbeitung",
             "Internationale Inbetriebnahme und Projektabwicklung",
-            "Funktionale Designspezifikationen",
-            "Schulung vor Ort und Service"
+            "Funktionale Designvorgaben",
+            "Schulung und Service vor Ort"
           ]
         },
         "elero": {
-          "roleTitle": "Technischer Vertrieb, Beratung & IT-Management",
+          "roleTitle": "Technische Vertriebsunterstützung, Beratung & IT",
           "description": "Projekt- und Automatisierungstechnik, Vertrieb, Produktberatung, Kundenschulung und IT-Management für einen Spezialisten für Antriebe und Hausautomation.",
           "highlights": [
             "Automatisierungstechnik und technischer Vertrieb",
             "Produktberatung und Kundenschulung",
-            "IT-Management"
+            "IT management"
           ]
         }
       },
-      "skillsBadge": "KERNKOMPETENZEN",
-      "skillsTitle": "Meine Stärken",
+      "skillsBadge": "CORE COMPETENCIES",
+      "skillsTitle": "Was ich am besten kann",
       "skills": [
-        "Projektmanagement",
-        "Entscheidungsfähigkeit",
-        "Kreatives Design",
         "Innovative Entwicklung",
+        "Projektmanagement",
+        "Kundenbeziehungen",
+        "Beratung & Schulung",
         "Komplexe Problemlösung",
         "Inbetriebnahme",
-        "Kundenorientierung",
-        "Beratung & Schulung",
+        "Entscheidungsfindung",
+        "Kreatives Design",
         "Technische Übersetzung"
       ],
       "technicalBadge": "TECHNISCHE KOMPETENZ",
-      "technicalTitle": "Plattformen & Werkzeuge",
-      "techPlc": "SPS-Plattformen",
+      "technicalTitle": "Plattformen und Tools",
+      "techPlc": "PLC Platforms",
       "techScada": "SCADA & HMI",
       "techSoftware": "Software & Programmierung",
-      "techProtocols": "Protokolle & Sonstiges",
+      "techProtocols": "Protokolle und andere",
       "educationBadge": "AUSBILDUNG",
-      "degreeTitle": "Bachelor Computer Data Science & Informationssysteme",
+      "degreeTitle": "Bachelor of Computer Data Science & Informationssysteme",
       "certificationsBadge": "ZERTIFIZIERUNGEN",
       "certifications": {
         "siemens": {
@@ -3408,175 +3603,238 @@ export const translations = {
         },
         "offshore": {
           "title": "Offshore-Sicherheitszertifikate",
-          "detail": "GWO Seenot-Überleben, Arbeiten in der Höhe, Brandschutz, Erste Hilfe, Manuelle Handhabung"
+          "detail": "GWO Sea Survival, Arbeiten in der Höhe, Brandbewusstsein, Erste Hilfe, manuelle Handhabung"
         },
         "bosiet": {
-          "title": "BOSIET / HUET — OPITO-Zertifiziert",
-          "detail": "Hubschrauber-Unterwasser-Fluchttraining"
+          "title": "BOSIET / HUET – OPITO-zertifiziert",
+          "detail": "Helikopter-Unterwasser-Fluchttraining"
         }
       },
       "languagesBadge": "SPRACHEN",
       "spokenLanguages": {
         "dutch": {
           "language": "Niederländisch",
-          "level": "Muttersprache"
+          "level": "Einheimisch"
         },
         "english": {
           "language": "Englisch",
-          "level": "Fließend"
+          "level": "Kompetent"
         },
         "spanish": {
           "language": "Spanisch",
-          "level": "Fließend"
+          "level": "Kompetent"
         },
         "german": {
           "language": "Deutsch",
-          "level": "Fortgeschritten"
+          "level": "Fortschrittlich"
         }
       },
-      "contactBadge": "ZUSAMMENARBEITEN",
-      "contactTitle": "Ihr Projekt Besprechen?",
-      "contactSubtitle": "Wenn Sie besprechen möchten, wie Preaumate Ihr Automatisierungsprojekt unterstützen kann, spreche ich gerne direkt mit Ihnen.",
-      "contactButton": "Kontakt Aufnehmen"
+      "contactBadge": "LASST UNS ZUSAMMEN ARBEITEN",
+      "contactTitle": "Sind Sie bereit, Ihr Projekt zu besprechen?",
+      "contactSubtitle": "Wenn Sie besprechen möchten, wie Preaumate Ihr Automatisierungsprojekt unterstützen kann, stehe ich Ihnen gerne direkt zur Verfügung.",
+      "contactButton": "Nehmen Sie Kontakt auf"
+    },
+    "qualifier": {
+      "wizardui": "Beschriftungen der Assistenten-Benutzeroberfläche",
+      "stepLabel": "Frage {current} von {total}",
+      "skipButton": "Fragebogen überspringen",
+      "backButton": "Zurück",
+      "nextButton": "Nächste",
+      "finishButton": "Beenden",
+      "skipNote": "Wir freuen uns, dass Sie dieses Formular ausfüllen. Sie können aber auch jederzeit direkt zum Kontaktformular springen.",
+      "summaryHeading": "Fragebogen vor dem Kontakt",
+      "editAnswersButton": "Bearbeiten Sie meine Antworten",
+      "contextCapturedNote": "Vielen Dank – wir haben Ihre Antworten zur Kenntnis genommen. Sie werden Ihrer Nachricht beigefügt.",
+      "qualifierPreviewLabel": "Your questionnaire answers (included with this message)",
+      "q1_label": "Nutzen Sie derzeit Datenrückmeldung in Ihrem Produktionsprozess?",
+      "q1_description": "Von überhaupt keiner Datenverfolgung bis hin zu einer vollständig integrierten Feedbackschleife.",
+      "q1_scale_0": "Gar nicht",
+      "q1_scale_low": "Etwas manuelles Tracking",
+      "q1_scale_high": "Teilweise automatisiert",
+      "q1_scale_10": "Vollständig integriert",
+      "q2_label": "Wie groß ist Ihr Unternehmen?",
+      "q2_opt_freelance": "Freiberufler/Selbstständiger",
+      "q2_opt_small": "Klein (2–20 Mitarbeiter)",
+      "q2_opt_medium": "Mittel (21–50 Mitarbeiter)",
+      "q2_opt_large": "Groß (51–200 Mitarbeiter)",
+      "q2_opt_enterprise": "Unternehmen (200+ Mitarbeiter)",
+      "q3_label": "Wie groß ist Ihr Produktionsprozess?",
+      "q3_opt_single": "Eine einzelne Maschine oder Zelle",
+      "q3_opt_line": "Eine Produktionslinie",
+      "q3_opt_multi": "Mehrere Produktionslinien",
+      "q3_opt_sites": "Mehrere Standorte oder Einrichtungen",
+      "q4_label": "Was ist Ihre Produktionsart?",
+      "q4_opt_food": "Essen und Trinken",
+      "q4_opt_packaging": "Verpackung",
+      "q4_opt_automotive": "Automobil",
+      "q4_opt_maritime": "Maritim / Offshore / HVAC",
+      "q4_opt_manufacturing": "Allgemeine Fertigung",
+      "q4_opt_logistics": "Logistik und Lagerhaltung",
+      "q4_opt_other": "Andere",
+      "q5_label": "Welche Plattformen oder Marken nutzen Sie derzeit?",
+      "q5_description": "Wählen Sie alles aus, was zutrifft – das hilft uns, uns vor dem Gespräch vorzubereiten.",
+      "q5_opt_other": "Andere",
+      "q5_opt_unknown": "Ich bin mir nicht sicher / weiß es nicht",
+      "q6_label": "Wofür möchten Sie KI/Datenfeedback nutzen?",
+      "q6_description": "Optional – ein oder zwei Sätze reichen aus.",
+      "q6_placeholder": "z.B. Vorhersage des Wartungsbedarfs, Reduzierung von Verschwendung, Verbesserung der Qualitätskontrolle ...",
+      "q7_label": "Verfügen Sie über eigene technische Kapazitäten?",
+      "q7_opt_yes": "Ja, ein engagiertes Team",
+      "q7_opt_partial": "Einige – aber begrenzte Kapazität",
+      "q7_opt_no": "Kein eigenes Engineering",
+      "q8_label": "Vor welchen Herausforderungen stehen Sie derzeit in Ihrem Produktionsprozess?",
+      "q8_description": "Optional – sagen Sie es uns in Ihren eigenen Worten.",
+      "q8_placeholder": "z.B. ungeplante Ausfallzeiten, manuelle Datenerfassung, veraltete SPS-Systeme...",
+      "q9_label": "Wie viel erwägen Sie, in diese Verbesserung zu investieren?",
+      "q9_opt_exploring": "Ich schaue mir vorerst nur die Optionen an",
+      "q9_opt_under10k": "Unter 10.000 €",
+      "q9_opt_10to50k": "10.000 – 50.000 €",
+      "q9_opt_50to150k": "50.000 – 150.000 €",
+      "q9_opt_over150k": "150.000 €+",
+      "q10_label": "Wie sieht Ihr Zeitplan für dieses Projekt aus?",
+      "q10_opt_asap": "So schnell wie möglich",
+      "q10_opt_1to3": "1–3 Monate",
+      "q10_opt_3to6": "3–6 Monate",
+      "q10_opt_exploring": "Nur erkunden, kein fester Zeitplan"
     }
   },
   "fr": {
     "nav": {
-      "home": "Accueil",
+      "home": "Maison",
       "about": "À propos",
       "services": "Services",
       "blog": "Blogue",
-      "qa": "Q&R",
+      "qa": "Questions et réponses",
       "contact": "Contact"
     },
     "hero": {
-      "title1": "Experts en Automatisation Industrielle",
-      "title2": "De l'Atelier à la Couche de Données",
-      "subtitle": "Preaumate aide les fabricants à moderniser leurs systèmes industriels grâce à la programmation API, la robotique, le SCADA, l'IoT industriel et l'automatisation par IA. Conçu par des ingénieurs avec une expérience réelle en environnements de production.",
-      "cta": "Parler à un Ingénieur",
-      "cta2": "Voir Nos Services",
+      "title1": "Experts en automatisation industrielle",
+      "title2": "De l'usine à la couche de données",
+      "subtitle": "Preaumate aide les fabricants à moderniser les systèmes industriels grâce à la programmation API, à la robotique, au SCADA, à l'IoT industriel et à l'automatisation basée sur l'IA. Construit par des ingénieurs possédant une véritable expérience en usine en Europe et en Amérique latine.",
+      "cta": "Contacter un ingénieur",
+      "cta2": "Voir nos services",
       "trustBadges": [
-        "30+ ans d'expérience cumulée",
-        "Europe & Amérique Latine",
-        "API · SCADA · Robotique · IoT",
+        "Plus de 40 ans d'expérience combinée",
+        "Europe et Amériques",
+        "Automate · SCADA · Robotique · IoT · IA",
         "Siemens · Rockwell · CoDeSys"
       ]
     },
     "about": {
-      "badge": "À PROPOS DE PREAUMATE",
-      "title1": "Construit par des Ingénieurs.",
-      "title2": "Porté par la Passion.",
-      "para1": "Preaumate est un cabinet de conseil en automatisation industrielle créé par des ingénieurs, avec une véritable passion pour l'industrie. Notre équipe apporte plus de 20 ans d'expérience combinée sur les plateformes Siemens, Rockwell et CoDeSys — et nous sommes aussi à l'aise sur le plancher d'usine que dans une salle serveur.",
-      "para2": "Nous avons travaillé dans la fabrication robotique, l'alimentation et les boissons, le traitement de l'eau, le CVC, la logistique et les installations offshore. Basés aux Pays-Bas et au Mexique, nous opérons à l'échelle mondiale — onshore, offshore et à distance — avec des temps de réponse rapides.",
-      "para3": "Nous connaissons bien le monde classique de l'automatisation industrielle. Nous comprenons également la transformation en cours. Notre rôle est d'aider les clients à naviguer dans les deux.",
+      "badge": "À PROPOS DE PRÉAUMATE",
+      "title1": "Construit par des ingénieurs.",
+      "title2": "Animé par la passion.",
+      "para1": "Preaumate est un cabinet de conseil en automatisation industrielle construit par des ingénieurs passionnés par l'industrie. Notre équipe apporte plus de 30 ans d’expérience combinée sur les plateformes Siemens, Rockwell et CoDeSys – et nous sommes aussi à l’aise dans une usine que dans une salle de serveurs.",
+      "para2": "Nous avons travaillé dans les domaines de la fabrication robotique, de l'alimentation et des boissons, du traitement de l'eau, du CVC, de la logistique et des installations offshore. Basés aux Pays-Bas et au Mexique, nous opérons à l’échelle mondiale – sur terre, en mer et à distance – avec des temps de réponse rapides sur tous les fuseaux horaires.",
+      "para3": "Nous connaissons bien le monde classique de l’automatisation industrielle. Nous comprenons également la transformation en cours. Notre rôle est d'aider nos clients à naviguer entre les deux, qu'il s'agisse de fournir une solution matérielle éprouvée ou de les aider à faire les premiers pas vers la modernisation.",
       "readMore": "Lisez notre histoire complète",
       "features": [
         {
-          "title": "Automatisation Pilotée par l'IA",
-          "description": "Tirez parti de l'intelligence artificielle de pointe pour automatiser des processus industriels complexes avec une précision sans précédent."
+          "title": "Automatisation basée sur l'IA",
+          "description": "Tirez parti de l’intelligence artificielle de pointe pour automatiser des processus industriels complexes avec une précision sans précédent."
         },
         {
-          "title": "Surveillance en Temps Réel",
-          "description": "Surveillez chaque aspect de votre ligne de production en temps réel avec des réseaux de capteurs IoT avancés et des tableaux de bord."
+          "title": "Surveillance en temps réel",
+          "description": "Surveillez chaque aspect de votre ligne de production en temps réel grâce à des réseaux de capteurs et des tableaux de bord IoT avancés."
         },
         {
           "title": "Données, IoT et Cloud",
-          "description": "Acquisition de données en temps réel, connectivité IoT, traitement cloud et edge — faisant travailler les données de vos machines pour vous."
+          "description": "Acquisition de données en temps réel, connectivité IoT, traitement cloud et Edge : faites en sorte que les données de votre machine travaillent pour vous."
         },
         {
-          "title": "Optimisation Énergétique",
-          "description": "Réduisez la consommation d'énergie jusqu'à 40% grâce à l'équilibrage intelligent de charge."
+          "title": "Optimisation énergétique",
+          "description": "Réduisez la consommation d’énergie jusqu’à 40 % grâce à un équilibrage de charge intelligent et à une gestion prédictive de l’énergie."
         },
         {
-          "title": "Maintenance Prédictive",
-          "description": "Évitez les temps d'arrêt coûteux en prédisant les pannes d'équipement avant qu'elles ne surviennent."
+          "title": "Maintenance prédictive",
+          "description": "Évitez les temps d'arrêt coûteux en prévoyant les pannes d'équipement avant qu'elles ne surviennent à l'aide de modèles d'apprentissage automatique."
         }
       ],
       "stats": [
-        "Années d'Expérience Combinée",
-        "Secteurs Desservis",
-        "Grandes Plateformes API",
+        "Années d'expérience combinée",
+        "Industries desservies",
+        "Principales plates-formes API",
         "Continents"
       ]
     },
     "services": {
       "badge": "CE QUE NOUS FAISONS",
-      "title": "Services d'Automatisation Industrielle",
-      "subtitle": "De la programmation API à l'IoT industriel et à l'IA — des solutions d'ingénierie pratiques pour les fabricants.",
+      "title": "Services d'automatisation industrielle",
+      "subtitle": "De la programmation d'automates à l'IoT industriel et à l'IA : des solutions d'ingénierie pratiques pour les fabricants.",
       "items": [
         {
-          "title": "Programmation API/PLC",
-          "description": "Nous développons, migrons et dépannons des systèmes API pour les environnements de production industrielle.",
+          "title": "Programmation API",
+          "description": "Nous développons, migrons et dépannons des systèmes PLC pour les environnements de production industrielle. Les plates-formes prises en charge incluent les contrôleurs basés sur Siemens, Rockwell et CoDeSys.",
           "bullets": [
-            "Migrations API",
-            "Mise en service",
+            "Migrations et mises à niveau d'automates",
+            "Mise en service des machines",
             "Optimisation des processus",
             "Diagnostic à distance",
-            "Support dépannage"
+            "Assistance au dépannage"
           ],
-          "learnMore": "En savoir plus"
+          "learnMore": "Apprendre encore plus"
         },
         {
-          "title": "Développement SCADA & IHM",
-          "description": "Nous créons des interfaces opérateur et des systèmes SCADA pour améliorer la visibilité et la surveillance de production.",
+          "title": "Développement SCADA et IHM",
+          "description": "Nous construisons des interfaces opérateur et des systèmes SCADA qui améliorent la visibilité, les diagnostics et la surveillance de la production dans l'ensemble de l'usine.",
           "bullets": [
             "Tableaux de bord de production",
             "Gestion des alarmes",
-            "Intégration historian",
+            "Intégration des historiens",
             "Surveillance à distance",
-            "Optimisation workflow"
+            "Optimisation du flux de travail des opérateurs"
           ],
-          "learnMore": "En savoir plus"
+          "learnMore": "Apprendre encore plus"
         },
         {
-          "title": "IoT Industriel",
-          "description": "Nous connectons machines, APIs et équipements industriels aux systèmes de données modernes.",
+          "title": "IoT industriel",
+          "description": "Nous connectons les machines, les automates et les équipements industriels aux systèmes de données modernes à l'aide de protocoles de communication industriels sécurisés.",
           "bullets": [
-            "Intégration OPC UA",
-            "Infrastructure MQTT",
-            "Collecte de données machine",
-            "Connectivité cloud et edge",
-            "Configuration gateway"
+            "OPC UA integration",
+            "MQTT infrastructure",
+            "Collecte de données machines",
+            "Connectivité cloud et périphérique",
+            "Configuration d'une passerelle industrielle"
           ],
-          "learnMore": "En savoir plus"
+          "learnMore": "Apprendre encore plus"
         },
         {
-          "title": "Intégration Robotique",
-          "description": "Nous intégrons des systèmes robotiques dans les environnements de production avec fiabilité et sécurité.",
+          "title": "Intégration robotique",
+          "description": "Nous intégrons des systèmes robotiques dans les environnements de production en mettant l'accent sur la fiabilité, la sécurité et la maintenabilité à long terme.",
           "bullets": [
-            "Mise en service cellule robotique",
-            "Optimisation mouvement",
-            "Intégration sécurité",
-            "Synchronisation processus",
-            "Support production"
+            "Mise en service de cellules robotisées",
+            "Optimisation du mouvement",
+            "Intégration du système de sécurité",
+            "Synchronisation des processus",
+            "Aide à la production"
           ],
-          "learnMore": "En savoir plus"
+          "learnMore": "Apprendre encore plus"
         },
         {
-          "title": "IA Industrielle",
-          "description": "Nous aidons les fabricants à identifier et mettre en œuvre des applications pratiques de l'IA.",
+          "title": "IA industrielle",
+          "description": "Nous aidons les fabricants à identifier et à mettre en œuvre des opportunités pratiques d’IA en utilisant les données de production, les diagnostics des machines et les informations opérationnelles.",
           "bullets": [
             "Détection d'anomalies",
             "Maintenance prédictive",
-            "Analytique de production",
-            "Projets pilotes IA",
-            "Rapports opérationnels"
+            "Analyse de la production",
+            "Projets pilotes d'IA",
+            "Reporting opérationnel"
           ],
-          "learnMore": "En savoir plus"
+          "learnMore": "Apprendre encore plus"
         }
       ]
     },
     "statsBar": [
-      "Projets Livrés",
-      "Satisfaction Client",
-      "Années d'Expérience",
-      "Support à Distance"
+      "Projets livrés",
+      "Satisfaction des clients",
+      "Années d'expérience",
+      "Assistance à distance"
     ],
     "featuresBar": {
       "badge": "CAPACITÉS",
       "items": [
         {
-          "title": "Support à Distance",
+          "title": "Assistance à distance",
           "subtitle": "24h/24 et 7j/7"
         },
         {
@@ -3584,416 +3842,416 @@ export const translations = {
           "subtitle": "contact@preaumate.com"
         },
         {
-          "title": "Piloté par l'IA",
+          "title": "Alimenté par l'IA",
           "subtitle": "Décisions"
         },
         {
-          "title": "Analytique",
-          "subtitle": "Prédictive"
+          "title": "Prédictif",
+          "subtitle": "Analytique"
         },
         {
-          "title": "Usine",
-          "subtitle": "Intelligente"
+          "title": "Usine intelligente",
+          "subtitle": "Solutions"
         },
         {
           "title": "Cybersécurité",
-          "subtitle": "Prête"
+          "subtitle": "Prêt"
         },
         {
-          "title": "Intégration",
-          "subtitle": "IoT"
+          "title": "IdO",
+          "subtitle": "Intégration"
         },
         {
           "title": "Construit pour",
-          "subtitle": "l'Avenir"
+          "subtitle": "l'avenir"
         }
       ]
     },
     "contactSection": {
-      "badge": "CONTACTEZ-NOUS",
-      "title": "Prêt à Résoudre vos Défis de Production ?",
-      "subtitle": "Parlez directement à un ingénieur de vos problèmes opérationnels. Pas de discours commercial — juste une conversation technique."
+      "badge": "ENTRER EN CONTACT",
+      "title": "Prêt à résoudre vos défis de production ?",
+      "subtitle": "Discutez directement avec un ingénieur de vos problèmes opérationnels. Pas de scripts de vente, juste une conversation technique."
     },
     "form": {
-      "title": "Prendre Contact",
+      "title": "Entrer en contact",
       "subtitle": "Prêt à transformer vos opérations industrielles ? Discutons de vos besoins.",
-      "companyName": "Nom de l'Entreprise",
+      "companyName": "Nom de l'entreprise",
       "companyPlaceholder": "Entrez le nom de votre entreprise",
-      "email": "Adresse E-mail",
-      "emailPlaceholder": "votre.email@entreprise.com",
-      "phone": "Numéro de Téléphone",
-      "phonePlaceholder": "+33 (0) 000 000 000",
-      "serviceInterest": "Service Souhaité",
-      "servicePlaceholder": "Sélectionnez un service...",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@company.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+31 (0) 000 000 000",
+      "serviceInterest": "Intérêt pour le service",
+      "servicePlaceholder": "Sélectionnez une prestation...",
       "message": "Message",
       "messagePlaceholder": "Parlez-nous de vos besoins en automatisation...",
-      "send": "Envoyer le Message",
-      "sending": "Envoi en cours...",
+      "send": "Envoyer un message",
+      "sending": "Envoi...",
       "services": [
-        "Automatisation des Processus Robotiques",
+        "Automatisation des processus robotisés",
         "Intégration IoT",
-        "Solutions d'Usine Intelligente",
-        "Analytique Prédictive",
-        "Consultation Générale"
+        "Solutions d'usine intelligente",
+        "Analyse prédictive",
+        "Consultation générale"
       ],
       "errors": {
         "companyRequired": "Le nom de l'entreprise est requis",
-        "emailRequired": "L'adresse e-mail est requise",
+        "emailRequired": "L'e-mail est requis",
         "emailInvalid": "Format d'e-mail invalide",
         "phoneRequired": "Le numéro de téléphone est requis",
         "serviceRequired": "Veuillez sélectionner un service",
         "messageRequired": "Le message est requis",
-        "validationTitle": "Erreur de Validation du Formulaire",
-        "validationDesc": "Veuillez remplir tous les champs obligatoires correctement.",
+        "validationTitle": "Erreur de validation du formulaire",
+        "validationDesc": "Veuillez remplir correctement tous les champs obligatoires.",
         "errorTitle": "Quelque chose s'est mal passé",
-        "errorDesc": "Votre message n'a pas pu être envoyé. Réessayez ou contactez-nous directement.",
-        "successTitle": "Message Envoyé avec Succès ! 🎉",
-        "successDesc": "Merci ! Nous vous contacterons bientôt pour discuter de vos besoins en automatisation."
+        "errorDesc": "Votre message n'a pas pu être envoyé. Veuillez réessayer ou contactez-nous directement.",
+        "successTitle": "Message envoyé avec succès !",
+        "successDesc": "Merci! Nous vous contacterons bientôt pour discuter de vos besoins en automatisation."
       }
     },
     "footer": {
       "tagline": "AUTOMATISATION INDUSTRIELLE",
-      "description": "Ingénierie pratique en automatisation industrielle — systèmes d'usine, données machine et intelligence de production connectés.",
+      "description": "Ingénierie pratique de l’automatisation industrielle – connectant les systèmes d’usine, les données des machines et l’intelligence de production.",
       "navHeading": "NAVIGATION",
       "resourcesHeading": "RESSOURCES",
       "contactHeading": "CONTACT",
       "navLinks": [
-        "Accueil",
+        "Maison",
         "À propos",
         "Services",
         "Contact"
       ],
       "resourceLinks": [
         "Blogue",
-        "FAQ",
-        "Confidentialité",
-        "Conditions"
+        "Questions et réponses",
+        "politique de confidentialité",
+        "Conditions générales"
       ],
       "rights": "Tous droits réservés.",
-      "privacyPolicy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation"
+      "privacyPolicy": "politique de confidentialité",
+      "terms": "Conditions générales"
     },
     "consent": {
       "title": "🍪 Nous utilisons des cookies",
-      "text": "Nous utilisons des cookies essentiels pour faire fonctionner notre site. Avec votre consentement, nous utilisons également des cookies analytiques. Vos données sont traitées conformément à notre",
-      "privacyPolicy": "Politique de Confidentialité",
-      "and": "et notre",
-      "cookiePolicy": "Politique de Cookies",
-      "reject": "Refuser les Non-Essentiels",
-      "accept": "Tout Accepter"
+      "text": "Nous utilisons des cookies essentiels pour faire fonctionner notre site. Avec votre consentement, nous utilisons également des cookies d'analyse pour comprendre comment vous utilisez notre site et améliorer votre expérience. Vos données sont traitées conformément à nos",
+      "privacyPolicy": "politique de confidentialité",
+      "and": "et",
+      "cookiePolicy": "Politique en matière de cookies",
+      "reject": "Rejeter les produits non essentiels",
+      "accept": "Accepter tout"
     },
     "aboutPage": {
-      "heroBadge": "À PROPOS DE PREAUMATE",
-      "heroTitle1": "Construit par des Ingénieurs.",
-      "heroTitle2": "Porté par la Passion.",
-      "heroSubtitle": "Preaumate est un cabinet de conseil en automatisation industrielle avec plus de 20 ans d'expérience combinée, opérant à l'échelle mondiale depuis les Pays-Bas et le Mexique.",
+      "heroBadge": "À PROPOS DE PRÉAUMATE",
+      "heroTitle1": "Construit par des ingénieurs.",
+      "heroTitle2": "Animé par la passion.",
+      "heroSubtitle": "Preaumate est un cabinet de conseil en automatisation industrielle avec plus de 30 ans d'expérience combinée, opérant à l'échelle mondiale depuis les Pays-Bas et le Mexique.",
       "locations": [
         "Pays-Bas",
         "Mexique",
-        "Opérations Mondiales"
+        "Opérations mondiales"
       ],
       "whoWeAreBadge": "QUI NOUS SOMMES",
-      "whoWeAreTitle": "Notre Histoire",
-      "whoWeArePara1": "Preaumate est un cabinet de conseil créé par des ingénieurs avec un enthousiasme et une passion authentiques pour l'industrie. Nous sommes une jeune entreprise — mais pas une nouvelle équipe. Ensemble, nous apportons plus de 20 ans d'expérience pratique.",
-      "whoWeArePara2": "Notre équipe est basée aux Pays-Bas et au Mexique. Nous travaillons à l'échelle mondiale, répondons rapidement et soutenons les clients onshore, offshore et à distance dans tous les fuseaux horaires.",
-      "whoWeArePara3": "Nous avons fondé Preaumate parce que nous croyons que le meilleur travail d'automatisation se produit quand les personnes sont proches du problème, personnellement investies et non ralenties par des couches corporatives.",
-      "whoWeArePara4": "Nous connaissons bien le monde classique de l'automatisation industrielle — parce que nous en venons. Et nous comprenons la transformation en cours.",
+      "whoWeAreTitle": "Notre histoire",
+      "whoWeArePara1": "Preaumate est un cabinet de conseil en automatisation industrielle construit par des ingénieurs, avec une passion enthousiaste et authentique pour l'industrie. Nous sommes une jeune entreprise, mais nous ne sommes pas une nouvelle équipe. Entre nous, nous apportons plus de 30 ans d’expérience pratique en automatisation à chaque projet que nous entreprenons.",
+      "whoWeArePara2": "Notre équipe est basée aux Pays-Bas et au Mexique – une répartition géographique qui n’est pas fortuite, mais intentionnelle. Nous travaillons à l'échelle mondiale, réagissons rapidement et sommes configurés pour assister nos clients à terre, à l'étranger et à distance sur tous les fuseaux horaires. Que votre installation se trouve sur un site de production en Europe, sur une plate-forme en mer du Nord ou dans une installation à l'autre bout du monde, nous sommes là.",
+      "whoWeArePara3": "Nous avons lancé Preaumate parce que nous pensons que le meilleur travail d'automatisation se produit lorsque les personnes qui le réalisent sont proches du problème, personnellement investies dans le résultat et ne sont pas ralenties par les couches de l'entreprise. Nous combinons la fiabilité éprouvée de l'automatisation industrielle traditionnelle avec l'évolution rapide du paysage technologique (intégration de l'IA, connectivité IoT, cloud et edge computing, cybersécurité) pour rendre chaque type de projet d'automatisation plus efficace, plus connecté et plus prêt pour l'avenir qu'il ne le serait autrement.",
+      "whoWeArePara4": "Nous connaissons bien le monde classique de l’automatisation industrielle, car nous en sommes issus. Et nous comprenons la transformation qui est en cours. Notre rôle est d’aider les clients à naviguer dans les deux.",
       "whatWeDoBadge": "CE QUE NOUS FAISONS",
-      "whatWeDoTitle": "Nos Services",
-      "whatWeDoIntro": "Nous sommes des spécialistes de l'automatisation aussi à l'aise dans une salle serveur que sur le plancher d'usine. Nous nous impliquons là où cela compte — en direct et en résolution de problèmes.",
+      "whatWeDoTitle": "Nos prestations",
+      "whatWeDoIntro": "Nous sommes des spécialistes de l’automatisation aussi à l’aise dans une salle de serveurs que dans une usine. Nous nous impliquons là où cela compte : sur le terrain, dans la résolution de problèmes et pleinement engagés à faire fonctionner les choses. Notre objectif principal est le logiciel, mais nous sommes avant tout une équipe de services et de solutions. Si un problème doit être résolu, nous le résolvons.",
       "servicesList": [
         {
-          "title": "Programmation API/PLC",
-          "description": "Nous programmons sur les principales plateformes — Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) et les contrôleurs basés sur CoDeSys. Nous travaillons avec des configurations API matérielles traditionnelles et des environnements API logiciels modernes. Nous programmons également des API de sécurité."
+          "title": "Programmation API",
+          "description": "Nous programmons sur les principales plates-formes : Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) et les contrôleurs basés sur CoDeSys. Nous travaillons avec des configurations PLC matérielles traditionnelles ainsi qu'avec des environnements PLC logiciels modernes, des plates-formes de virtualisation et de conteneurisation. Nous programmons également des automates de sécurité : une sécurité fonctionnelle effectuée correctement, selon les normes qui comptent. Si un client a besoin d’une configuration matérielle classique et éprouvée, nous la lui fournissons en toute confiance. Si un client souhaite explorer la modernisation, nous le consultons, le conseillons et l’aidons à choisir ce qui convient vraiment le mieux à sa situation spécifique."
         },
         {
           "title": "Développement IHM",
-          "description": "Nous concevons et construisons des interfaces opérateur intuitives, claires et conçues pour les personnes qui les utilisent réellement."
+          "description": "Nous concevons et construisons des interfaces opérateur intuitives, claires et conçues pour les personnes qui les utilisent réellement. Une bonne conception d’IHM est systématiquement sous-estimée – nous la prenons au sérieux."
         },
         {
-          "title": "Acquisition de Données, IoT, Cloud et Edge",
-          "description": "Nous connectons machines, capteurs et systèmes — OPC-UA, MQTT, connectivité de bases de données, intégration MES et SCADA. Nous mettons en œuvre des architectures de traitement de données cloud et edge."
+          "title": "Acquisition de données, IoT, Cloud et Edge",
+          "description": "Nous connectons les machines, les capteurs et les systèmes afin que les données circulent là où elles doivent aller : OPC-UA, MQTT, connectivité de base de données, intégration MES et SCADA. Nous mettons en œuvre des architectures de traitement de données basées sur le cloud et en périphérie, en fonction des besoins de l'application."
         },
         {
           "title": "Cybersécurité",
-          "description": "La cybersécurité industrielle n'est plus optionnelle. Nous concevons des architectures d'automatisation avec la sécurité intégrée dès le départ."
+          "description": "La cybersécurité industrielle n’est plus une option. À mesure que les systèmes d'automatisation deviennent plus connectés, la surface d'attaque augmente et les conséquences d'une violation dans un environnement industriel peuvent être graves. Nous concevons et mettons en œuvre des architectures d'automatisation avec une sécurité intégrée dès le départ : segmentation du réseau, accès à distance sécurisé, configurations renforcées et conformité aux normes de sécurité industrielle pertinentes."
         },
         {
           "title": "Intégration de l'IA",
-          "description": "Nous intégrons des capacités pilotées par l'IA dans les projets d'automatisation — maintenance prédictive, détection d'anomalies, optimisation des processus."
+          "description": "Nous intégrons des capacités basées sur l'IA dans les projets d'automatisation : maintenance prédictive, détection d'anomalies, optimisation des processus. Non pas comme des mots à la mode, mais comme des outils pratiques qui rendent les systèmes industriels plus performants et plus intelligents."
         },
         {
-          "title": "Services à Distance",
-          "description": "Nous sommes construits pour le travail à distance. Nous supportons et dépannons des systèmes depuis n'importe où dans le monde."
+          "title": "Services à distance",
+          "description": "Nous sommes construits pour le travail à distance. Nous prenons en charge, dépannons et modifions les systèmes partout dans le monde — de manière sécurisée, fiable et avec une interruption minimale de vos opérations. Notre présence en Europe et en Amérique nous permet de couvrir sans délai un large éventail de fuseaux horaires. Éloigné ne veut pas dire éloigné : nous sommes réactifs, disponibles et engagés."
         },
         {
-          "title": "Préparation et Gestion de Projets",
-          "description": "Nous soutenons les clients depuis les premières étapes — spécifications fonctionnelles, architecture logicielle, définition du périmètre — jusqu'à la mise en service."
+          "title": "Préparation et gestion de projet",
+          "description": "Nous accompagnons nos clients dès les premières étapes (spécifications fonctionnelles, architecture logicielle, définition du périmètre) jusqu'à la mise en service et le transfert. Une bonne préparation en amont évite des problèmes coûteux en aval."
         }
       ],
       "industriesBadge": "EXPÉRIENCE",
-      "industriesTitle": "Secteurs dans Lesquels Nous Avons Travaillé",
-      "industriesIntro": "L'expérience de notre équipe couvre un large éventail d'environnements industriels — à terre, offshore et sur tous les continents.",
+      "industriesTitle": "Industries dans lesquelles nous avons travaillé",
+      "industriesIntro": "L'expérience de notre équipe couvre un large éventail d'environnements industriels — sur terre, en mer et sur tous les continents. Chacune de ces industries a ses propres exigences, ses propres normes et sa propre façon de travailler.",
       "industries": [
         {
-          "label": "Fabrication Robotique",
+          "label": "Robotic Manufacturing",
           "icon": "🦾"
         },
         {
-          "label": "Production Alimentaire et Boissons",
+          "label": "Food & Beverage Production",
           "icon": "🏭"
         },
         {
-          "label": "Traitement de l'Eau et Utilities",
+          "label": "Water Treatment & Utilities",
           "icon": "💧"
         },
         {
-          "label": "CVC et Automatisation du Bâtiment",
+          "label": "HVAC & Building Automation",
           "icon": "🌡️"
         },
         {
-          "label": "Entreposage et Logistique",
+          "label": "Warehousing & Logistics",
           "icon": "📦"
         },
         {
-          "label": "Installations Offshore",
+          "label": "Offshore Installations",
           "icon": "⚓"
         }
       ],
       "philosophyBadge": "NOTRE PHILOSOPHIE",
-      "philosophyTitle": "L'Automatisation Classique et la Nouvelle Réalité Industrielle",
-      "philosophyPara1": "Nous avons un profond respect pour les traditions d'ingénierie qui ont bâti l'industrie. Les normes, les méthodologies, les plateformes matérielles — elles existent parce qu'elles fonctionnent.",
-      "philosophyPara2": "Mais l'industrie évolue. Les API logiciels, la virtualisation, la conteneurisation, le edge computing, l'analytique IA et la cybersécurité industrielle sont prêts pour la production.",
-      "philosophyPara3": "Nous comprenons les deux mondes. Nous livrons des projets classiques et fiables. Et nous aidons les clients prêts à se moderniser.",
-      "classicalTitle": "Automatisation Classique",
-      "classicalDesc": "Plateformes matérielles éprouvées, normes établies, architectures fiables. Si c'est ce dont votre projet a besoin — nous le livrons avec pleine confiance.",
-      "modernTitle": "Automatisation Moderne",
-      "modernDesc": "API logiciels, connectivité cloud, insights IA, edge computing, cybersécurité industrielle. Si vous êtes prêt à vous moderniser — nous vous aidons à choisir la bonne voie.",
-      "finalNote": "Nous ne croyons pas que chaque projet ait besoin de la technologie la plus récente. Nous croyons que chaque projet mérite la bonne technologie.",
-      "ctaTitle": "Prêt à Travailler Ensemble ?",
-      "ctaSubtitle": "Si vous cherchez un partenaire qui traitera votre projet comme le sien, répondra sans délai et livrera un travail solide — nous aimerions discuter.",
-      "ctaButton": "Prendre Contact"
+      "philosophyTitle": "Automatisation classique et nouvelle réalité industrielle",
+      "philosophyPara1": "Nous avons un profond respect pour les traditions d’ingénierie qui ont bâti le secteur de l’automatisation industrielle. Les normes, les méthodologies, les plates-formes matérielles existent parce qu’elles fonctionnent et continueront de fonctionner. Nous connaissons bien ce monde et nous sommes pleinement capables d’y opérer.",
+      "philosophyPara2": "Mais le secteur évolue. Les automates logiciels, la virtualisation, la conteneurisation, l'informatique de pointe, l'analyse basée sur l'IA, la connectivité cloud et la cybersécurité industrielle ne sont plus expérimentaux : ils sont prêts pour la production et transforment ce qui est possible en matière d'automatisation.",
+      "philosophyPara3": "Notre valeur pour nos clients est que nous comprenons les deux mondes. Nous pouvons vous livrer un projet d'automatisation classique, fiable et conforme aux normes. Et nous pouvons aider les clients prêts à se moderniser à comprendre ce que cela signifie pour eux : ce que cela coûte, ce que cela rapporte et comment y parvenir sans risque inutile.",
+      "classicalTitle": "Automatisation classique",
+      "classicalDesc": "Des plates-formes matérielles éprouvées, des normes établies, des architectures fiables qui font tourner l'industrie depuis des décennies. Si c’est ce dont votre projet a besoin, nous le livrons en toute confiance et dans le respect de ce qui fonctionne.",
+      "modernTitle": "Automatisation moderne",
+      "modernDesc": "Automates logiciels, connectivité cloud, informations basées sur l'IA, informatique de pointe, cybersécurité industrielle. Si vous êtes prêt à vous moderniser, nous vous aidons à choisir la bonne voie, au bon rythme, pour vos besoins spécifiques.",
+      "finalNote": "Nous ne pensons pas que chaque projet nécessite la technologie la plus récente. Nous pensons que chaque projet mérite la bonne technologie – et nous avons l’expérience et la perspective nécessaires pour faire la différence.",
+      "ctaTitle": "Prêt à travailler ensemble ?",
+      "ctaSubtitle": "Si vous recherchez un partenaire qui traitera votre projet comme le sien, répondra sans délai et livrera un travail à la hauteur, nous aimerions en parler.",
+      "ctaButton": "Entrer en contact"
     },
     "crossover": {
       "badge": "LA CONVERGENCE",
-      "title": "Là où le Plancher d'Usine Rencontre la Couche de Données",
-      "subtitle": "La plupart des ingénieurs en automatisation comprennent les systèmes de contrôle. La plupart des ingénieurs en données comprennent la connectivité. Très peu comprennent les deux en profondeur — et encore moins savent comment intégrer l'IA de manière pratique.",
-      "statement": "Nous sommes à cette intersection. Et nous pensons que c'est l'endroit le plus important dans l'automatisation industrielle en ce moment.",
+      "title": "Là où l'usine rencontre la couche de données",
+      "subtitle": "La plupart des ingénieurs en automatisation comprennent les systèmes de contrôle. La plupart des ingénieurs de données comprennent la connectivité. Très peu de gens comprennent les deux en profondeur – et encore moins savent comment intégrer l’IA dans cette image de manière pratique.",
+      "statement": "Nous sommes assis à cette intersection. Et nous pensons que c’est actuellement le domaine le plus important dans le domaine de l’automatisation industrielle.",
       "pillar1": {
-        "label": "Contrôle Classique",
+        "label": "Classical Control",
         "heading": "La machine fonctionne de manière fiable.",
-        "description": "Siemens, Rockwell, CoDeSys — code API structuré écrit pour durer, systèmes de sécurité programmés selon les normes, IHM et SCADA conçus pour l'opérateur qui les utilise réellement.",
+        "description": "Siemens, Rockwell, CoDeSys — structured PLC code written to last, Safety systems programmed to standard, HMI and SCADA built for the operator who actually uses it. The foundation everything else depends on.",
         "tags": [
           "Programmation API",
-          "Systèmes de Sécurité",
+          "Systèmes de sécurité",
           "IHM / SCADA",
-          "Intégration de Systèmes"
+          "Intégration du système"
         ]
       },
       "pillar2": {
-        "label": "Données Connectées",
+        "label": "Connected Data",
         "heading": "La machine parle.",
-        "description": "Pipelines OPC-UA et MQTT qui déplacent les données du plancher d'usine vers là où elles doivent aller. Edge computing qui traite localement quand le cloud n'est pas une option. Tableaux de bord qui montrent aux opérateurs ce qui se passe.",
+        "description": "Pipelines OPC-UA et MQTT qui déplacent les données de l'usine vers l'endroit où elles doivent aller. Edge computing qui traite localement lorsque le cloud n'est pas une option. Des tableaux de bord qui montrent aux opérateurs ce qui se passe et aux historiens qui se souviennent de tout.",
         "tags": [
           "OPC-UA/MQTT",
           "Informatique de pointe",
-          "Connectivité Cloud",
-          "Pipelines de Données"
+          "Connectivité cloud",
+          "Pipelines de données"
         ]
       },
       "pillar3": {
-        "label": "IA & Intelligence",
+        "label": "AI & Intelligence",
         "heading": "La machine pense.",
-        "description": "Modèles de maintenance prédictive qui signalent les pannes avant qu'elles surviennent. Détection d'anomalies qui repère la dérive des processus en temps réel. Vision par ordinateur pour l'inspection qualité. APIs d'IA intégrées dans les logiciels industriels comme outil opérationnel réel.",
+        "description": "Modèles de maintenance prédictive qui signalent les pannes avant qu’elles ne surviennent. Détection des anomalies qui détecte la dérive du processus en temps réel. Vision par ordinateur pour le contrôle qualité. Des API d'IA intégrées aux logiciels industriels, non pas comme une fonctionnalité, mais comme un véritable outil opérationnel.",
         "tags": [
-          "Maintenance Prédictive",
-          "Détection d'Anomalies",
-          "Vision par Ordinateur",
-          "Intégration API IA"
+          "Maintenance prédictive",
+          "Détection des anomalies",
+          "Vision par ordinateur",
+          "Intégration de l'API IA"
         ]
       },
-      "closing": "Ce ne sont pas trois services séparés. C'est une approche intégrée — construite pour la génération d'automatisation industrielle où la couche de contrôle et la couche d'intelligence sont le même système."
+      "closing": "Il ne s’agit pas de trois services distincts. Il s'agit d'une approche intégrée, conçue pour la génération d'automatisation industrielle où la couche de contrôle et la couche d'intelligence constituent le même système."
     },
     "howWeWork": {
       "badge": "COMMENT NOUS TRAVAILLONS",
-      "title": "Ce que C'est de Travailler Avec Nous",
-      "subtitle": "Nous gardons les choses simples, directes et transparentes — pas de chefs de compte, pas de transferts. Vous traitez directement avec les ingénieurs qui font le travail.",
+      "title": "À quoi ressemble travailler avec nous",
+      "subtitle": "Nous gardons les choses simples, directes et transparentes : pas de gestionnaire de compte, pas de transfert. Vous traitez avec les ingénieurs qui effectuent le travail.",
       "steps": [
         {
           "number": "01",
-          "title": "Nous Parlons",
-          "description": "Vous nous parlez de votre défi. Nous posons les questions qui comptent. Pas de discours de vente — juste une conversation honnête sur notre adéquation à votre projet."
+          "title": "Nous parlons",
+          "description": "Vous nous parlez de votre défi. Nous posons les questions qui comptent. Pas d'argumentaire de vente, juste une conversation honnête pour savoir si nous sommes la bonne personne pour votre projet."
         },
         {
           "number": "02",
-          "title": "Nous Planifions",
-          "description": "Nous définissons ensemble le périmètre, l'approche et le calendrier. Vous obtenez une image claire de ce que nous livrerons, combien de temps cela prendra et ce que cela coûtera."
+          "title": "Nous planifions",
+          "description": "Nous définissons ensemble le périmètre, la démarche et le calendrier. Vous obtenez une idée claire de ce que nous allons livrer, du temps que cela prendra et de ce que cela coûtera – avant le début des travaux."
         },
         {
           "number": "03",
-          "title": "Nous Construisons",
-          "description": "Nous faisons le travail. Vous avez un accès direct aux ingénieurs qui construisent votre système tout au long du projet. Les problèmes sont résolus rapidement."
+          "title": "Nous construisons",
+          "description": "Nous faisons le travail. Vous avez un accès direct aux ingénieurs qui construisent votre système tout au long du processus, et non à un chef de projet qui relaye les messages. Les problèmes sont résolus rapidement parce que les décisions sont prises par des personnes qui comprennent le problème."
         },
         {
           "number": "04",
-          "title": "Nous Supportons",
-          "description": "Nous ne disparaissons pas après la livraison. Nous documentons soigneusement, formons correctement votre équipe et restons disponibles pour les questions et le support."
+          "title": "Nous soutenons",
+          "description": "Nous ne disparaissons pas après la passation de pouvoir. Nous documentons minutieusement, formons votre équipe correctement et restons disponibles pour toute question ou assistance. La conception axée d'abord sur le travail à distance signifie que nous pouvons répondre rapidement, où que vous soyez."
         }
       ]
     },
     "whyPreaumate": {
       "badge": "POURQUOI NOUS",
-      "title": "L'Argument Honnête pour Travailler avec une Petite Équipe",
+      "title": "Les arguments honnêtes en faveur du travail avec une petite équipe",
       "intro": "Nous sommes une nouvelle entreprise. Nous savons que c'est la première objection. Voici notre réponse honnête.",
       "cards": [
         {
-          "title": "Vous obtenez les ingénieurs seniors — sur chaque mission",
-          "description": "Avec un grand intégrateur, votre projet peut être conçu par un ingénieur senior et livré par un junior. Chez nous, les personnes avec qui vous parlez sont les personnes qui font le travail. Toujours."
+          "title": "Vous obtenez les ingénieurs seniors – sur chaque travail",
+          "description": "Avec un grand intégrateur, votre projet peut être défini par un ingénieur senior et réalisé par un junior. Chez nous, les interlocuteurs sont ceux qui font le travail. À chaque fois."
         },
         {
-          "title": "Vingt ans d'expérience n'est pas un petit nombre",
-          "description": "Preaumate est nouvelle. L'expertise derrière elle ne l'est pas. Notre équipe a livré des projets d'automatisation dans plusieurs industries, sur plusieurs plateformes et dans plusieurs pays."
+          "title": "Trente ans d'expérience, ce n'est pas un petit nombre",
+          "description": "Préaumate est nouveau. L’expertise derrière cela ne l’est pas. Notre équipe a réalisé des projets d’automatisation dans plusieurs secteurs, plateformes et pays. Nous apportons cette expérience à votre projet dès le premier jour."
         },
         {
-          "title": "Nous bougeons plus vite parce que nous sommes plus petits",
-          "description": "Pas de chaînes d'approbation internes. Pas de conflits de planification entre départements. Quand quelque chose doit être résolu, nous le résolvons."
+          "title": "Nous avançons plus vite parce que nous sommes plus petits",
+          "description": "Aucune chaîne d'approbation interne. Aucun conflit d'horaire entre les départements. Quand quelque chose doit être résolu, nous le résolvons. La rapidité d’une petite équipe est un véritable avantage opérationnel."
         },
         {
-          "title": "Notre entreprise dépend du succès de votre projet",
-          "description": "Une grande entreprise peut absorber un projet qui ne s'est pas bien passé. Nous ne le pouvons pas. Cette asymétrie joue en votre faveur."
+          "title": "Notre activité dépend du bon déroulement de votre projet",
+          "description": "Une grande entreprise peut absorber un projet qui ne s’est pas bien passé. Nous ne pouvons pas. Cette asymétrie joue en votre faveur : chaque projet que nous entreprenons retient toute notre attention car notre réputation en dépend."
         }
       ]
     },
     "pricing": {
-      "signal": "Nous travaillons sur la base de projets et de tarifs journaliers. Contactez-nous pour un devis — nous répondons dans un jour ouvrable."
+      "signal": "Nous travaillons par projet et à la journée. Contactez-nous pour un devis – nous répondons dans un délai d’un jour ouvrable."
     },
     "endorsements": {
       "badge": "CE QUE DISENT LES COLLÈGUES",
-      "title": "Approuvé par des Ingénieurs qui Connaissent le Travail",
-      "subtitle": "Preaumate est une nouvelle entreprise. Les personnes derrière elle ne le sont pas. Voici ce qu'ont à dire ceux qui ont travaillé à nos côtés.",
-      "cta": "Vous souhaitez discuter de votre projet ?",
-      "ctaButton": "Prendre Contact",
+      "title": "Approuvé par des ingénieurs qui connaissent le travail",
+      "subtitle": "Preaumate est une nouvelle entreprise. Les gens derrière cela ne le sont pas. Voici ce que disent ceux qui ont travaillé à nos côtés.",
+      "cta": "Envie de discuter de votre projet ?",
+      "ctaButton": "Entrer en contact",
       "quotes": [
         {
-          "text": "L'un des ingénieurs en automatisation les plus capables techniquement avec qui j'ai travaillé. Code structuré, pensée claire et le type de capacité de résolution de problèmes qui se manifeste quand les choses se compliquent sur site.",
-          "author": "Ingénieur Projet Senior",
-          "company": "Ancien employeur — nom retenu à la demande",
+          "text": "L'un des ingénieurs en automatisation les plus compétents techniquement avec qui j'ai travaillé. Un code structuré, une pensée claire et le genre de capacité à résoudre des problèmes qui se manifeste lorsque les choses se compliquent sur site.",
+          "author": "Ingénieur de projet senior",
+          "company": "Ancien employeur — nom caché sur demande",
           "initials": "PS"
         },
         {
-          "text": "Ce qui distingue cette équipe, c'est qu'elle comprend vraiment à la fois la couche de contrôle et la couche de données. Cette combinaison est rare dans l'industrie et fait une vraie différence sur les projets d'intégration complexes.",
-          "author": "Responsable Automatisation",
+          "text": "Ce qui distingue cette équipe, c'est qu'elle comprend réellement à la fois la couche de contrôle et la couche de données. Cette combinaison est rare dans l’industrie et fait une réelle différence sur les projets d’intégration complexes.",
+          "author": "Gestionnaire d'automatisation",
           "company": "Fabricant industriel — Pays-Bas",
           "initials": "SUIS"
         },
         {
-          "text": "Fiable, réactif et vraiment investi pour obtenir le bon résultat. La documentation et la remise étaient les meilleures que j'aie vues sur un projet de ce type.",
-          "author": "Responsable des Opérations d'Usine",
-          "company": "Installation de production agroalimentaire",
+          "text": "Fiable, rapide à réagir et véritablement investi pour obtenir le bon résultat. La documentation et la remise ont été les meilleures que j'ai vues sur un projet de ce genre.",
+          "author": "Responsable des opérations de l'usine",
+          "company": "Installation de production d'aliments et de boissons",
           "initials": "PO"
         }
       ]
     },
     "serviceArea": {
       "badge": "OÙ NOUS OPÉRONS",
-      "title": "Portée Mondiale. Engagement Personnel.",
-      "subtitle": "Le travail d'automatisation industrielle nécessite souvent une présence physique. Voici comment nous travaillons au-delà des frontières.",
-      "intro": "Nous sommes basés aux Pays-Bas et au Mexique — deux emplacements qui couvrent ensemble les fuseaux horaires européens et américains sans délai. Nous travaillons onshore, offshore et à distance, et nous voyageons mondialement pour la mise en service sur site, l'assistance FAT et le support sur site.",
+      "title": "Portée mondiale. Engagement personnel.",
+      "subtitle": "Les travaux d’automatisation industrielle nécessitent souvent une présence physique. Voici comment nous travaillons au-delà des frontières.",
+      "intro": "Nous sommes basés aux Pays-Bas et au Mexique, deux sites qui couvrent ensemble sans délai les fuseaux horaires européens et américains. Nous travaillons à terre, en mer et à distance, et nous voyageons dans le monde entier pour la mise en service sur site, l'observation FAT et l'assistance sur site.",
       "cards": [
         {
           "region": "Europe",
           "flag": "🇪🇺",
-          "description": "Notre base aux Pays-Bas couvre l'Europe occidentale. Nous travaillons sur site dans toute l'UE et au Royaume-Uni.",
+          "description": "Notre base aux Pays-Bas couvre l’Europe occidentale. Nous travaillons sur place dans toute l'UE et au Royaume-Uni et sommes configurés pour répondre rapidement aux projets dans toute la région.",
           "highlights": [
             "Pays-Bas — base principale",
-            "Sur site dans toute l'UE et UK",
-            "Offshore — Mer du Nord et au-delà"
+            "Sur place dans toute l'UE et au Royaume-Uni",
+            "Offshore – Mer du Nord et au-delà"
           ]
         },
         {
           "region": "Amériques",
           "flag": "🌎",
-          "description": "Notre base au Mexique couvre l'Amérique du Nord et l'Amérique latine. Des plateformes offshore du Golfe du Mexique aux installations de production sur le continent.",
+          "description": "Notre base au Mexique couvre l’Amérique du Nord et l’Amérique latine. Des plateformes offshore dans le golfe du Mexique aux installations de production sur tout le continent.",
           "highlights": [
-            "Mexique — base principale",
-            "Amérique du Nord et Latine",
-            "Offshore Golfe du Mexique"
+            "Mexique – base principale",
+            "Amérique du Nord et Amérique Latine",
+            "Au large du golfe du Mexique"
           ]
         },
         {
-          "region": "À Distance & Mondial",
+          "region": "À distance et mondial",
           "flag": "🌐",
-          "description": "De nombreuses tâches d'automatisation peuvent être livrées entièrement à distance. Nous disposons d'une infrastructure d'accès à distance sécurisée et communiquons de manière fiable sur tous les fuseaux horaires.",
+          "description": "De nombreuses tâches d'automatisation (programmation d'automate, développement d'IHM, travail SCADA, développement de plateforme de données) peuvent être réalisées entièrement à distance. Nous disposons d’une infrastructure d’accès à distance sécurisée et communiquons de manière fiable entre les fuseaux horaires.",
           "highlights": [
             "Accès à distance sécurisé",
-            "Livraison entièrement à distance pour le travail logiciel",
-            "Voyages mondiaux pour les phases sur site"
+            "Livraison complète à distance pour le travail logiciel",
+            "Déplacements dans le monde entier pour les phases sur site"
           ]
         }
       ],
-      "travelNote": "Les frais de déplacement et la logistique sont discutés de manière transparente dans le cadre de chaque périmètre de projet. Nous ne les cachons pas dans le tarif."
+      "travelNote": "Les frais de déplacement et la logistique sont discutés de manière transparente dans le cadre de chaque portée de projet. Nous ne les cachons pas dans le tarif."
     },
     "trust": {
       "badge": "CONSTRUIT PAR DES INGÉNIEURS",
-      "title": "Expérience Réelle en Atelier de Production",
-      "subtitle": "Preaumate a été fondée par des ingénieurs en automatisation qui ont passé des années à résoudre des problèmes directement dans les ateliers de production.",
+      "title": "Expérience réelle en usine",
+      "subtitle": "Preaumate a été fondée par des ingénieurs en automatisation qui ont passé des années à résoudre des problèmes directement dans les ateliers de production. Nous comprenons la pression des temps d'arrêt, les défis d'intégration, les équipements existants et la fiabilité de la production, car nous avons nous-mêmes travaillé dans des environnements industriels.",
       "cards": [
         {
-          "title": "Expérience en atelier",
-          "description": "Mise en service industrielle, diagnostic et intégration dans plusieurs environnements de production."
+          "title": "Expérience en usine",
+          "description": "Expérience réelle de mise en service industrielle, de dépannage et d'intégration dans plusieurs environnements et secteurs de production."
         },
         {
           "title": "Ingénierie transfrontalière",
-          "description": "Support technique en Europe et en Amérique Latine, avec capacités à distance."
+          "description": "Assistance technique en Europe et en Amérique latine, avec des capacités à distance couvrant tous les fuseaux horaires."
         },
         {
           "title": "Axé sur la modernisation",
-          "description": "Connexion des systèmes industriels hérités aux plateformes modernes, étape par étape."
+          "description": "Connecter les systèmes industriels existants aux plates-formes de données et d'automatisation modernes, étape par étape, sans complexité inutile."
         },
         {
           "title": "Mise en œuvre pratique",
-          "description": "Solutions conçues pour la fiabilité opérationnelle et la continuité de production — pas des cadres théoriques."
+          "description": "Des solutions conçues pour la fiabilité opérationnelle, la maintenabilité et la continuité de la production. Pas de cadres théoriques – des systèmes de travail."
         }
       ]
     },
     "problems": {
-      "badge": "PROBLÈMES QUE NOUS RÉSOLVONS",
-      "title": "Défis Industriels que Nous Traitons",
-      "subtitle": "Nous travaillons avec des fabricants confrontés à de vrais problèmes opérationnels.",
+      "badge": "PROBLÈMES QUE NOUS RÉSOLUONS",
+      "title": "Les défis industriels que nous relevons",
+      "subtitle": "Nous travaillons avec des fabricants confrontés à de réels problèmes opérationnels, de ceux qui ralentissent la production, provoquent des temps d'arrêt et rendent les systèmes difficiles à gérer.",
       "cards": [
         {
-          "title": "Systèmes API obsolètes",
-          "description": "Migration sans interrompre la production."
+          "title": "Systèmes API existants",
+          "description": "Migrez des systèmes API obsolètes vers des plates-formes modernes sans perturber les calendriers de production ni perdre les connaissances critiques des processus."
         },
         {
-          "title": "Manque de visibilité de production",
-          "description": "Collecte et visualisation des données machine."
+          "title": "Visibilité de production manquante",
+          "description": "Collecter et visualiser les données des machines dans toute l'usine pour prendre en charge de meilleures décisions opérationnelles et des diagnostics plus rapides."
         },
         {
-          "title": "Intégrations difficiles",
-          "description": "Connexion fiable des APIs, SCADA, MES, ERP et IoT."
+          "title": "Intégrations système difficiles",
+          "description": "Connecter les systèmes API, SCADA, MES, ERP et IoT dans une architecture de données fiable et unifiée qui fonctionne réellement en production."
         },
         {
-          "title": "Intégration robotique",
-          "description": "Programmation et intégration de systèmes robotiques."
+          "title": "Implémentation de la robotique",
+          "description": "Programmation et intégration de systèmes robotiques dans des environnements de production en mettant l'accent sur la fiabilité, la sécurité et la maintenabilité."
         },
         {
-          "title": "Temps d'arrêt & diagnostic",
-          "description": "Analyse des pannes et amélioration de la fiabilité."
+          "title": "Temps d'arrêt et dépannage",
+          "description": "Diagnostiquer les pannes d'automatisation récurrentes, améliorer la fiabilité du système et réduire les temps d'arrêt imprévus sur toute la chaîne de production."
         },
         {
-          "title": "Adoption de l'IA industrielle",
-          "description": "Application de l'IA pour une valeur opérationnelle mesurable."
+          "title": "Adoption de l’IA industrielle",
+          "description": "Appliquer l’IA là où elle crée une valeur opérationnelle mesurable : détection des anomalies, maintenance prédictive et analyse de la production."
         }
       ]
     },
     "technologies": {
-      "badge": "PLATEFORMES & OUTILS",
-      "title": "Technologies avec lesquelles nous Travaillons",
-      "subtitle": "Nous travaillons avec les plateformes que votre environnement de production utilise déjà.",
+      "badge": "PLATEFORMES ET OUTILS",
+      "title": "Technologies avec lesquelles nous travaillons",
+      "subtitle": "Nous travaillons avec les plates-formes et les outils industriels que votre environnement de production utilise déjà : pas de dépendance vis-à-vis d'un fournisseur, pas de remplacements inutiles.",
       "categories": [
         {
-          "title": "Automatisation",
+          "title": "Automation",
           "items": [
             "Siemens TIA Portal",
             "Rockwell Studio 5000",
@@ -4013,13 +4271,13 @@ export const translations = {
           ]
         },
         {
-          "title": "Données & Logiciels",
+          "title": "Données et logiciels",
           "items": [
             "Node-RED",
             "Python",
             "SQL",
             "REST APIs",
-            "Passerelles Edge"
+            "Edge Gateways"
           ]
         },
         {
@@ -4035,50 +4293,50 @@ export const translations = {
       ]
     },
     "industries": {
-      "badge": "SECTEURS",
-      "title": "Secteurs que Nous Supportons",
-      "subtitle": "Nous avons une expérience pratique dans de nombreux secteurs industriels.",
+      "badge": "INDUSTRIES",
+      "title": "Industries que nous soutenons",
+      "subtitle": "Nous possédons une expérience pratique dans un large éventail de secteurs industriels, des lignes de production alimentaire aux constructeurs de machines.",
       "items": [
         {
           "title": "Fabrication"
         },
         {
-          "title": "Emballage"
+          "title": "Conditionnement"
         },
         {
-          "title": "Alimentation & Boissons"
+          "title": "Nourriture et boissons"
         },
         {
           "title": "Automobile"
         },
         {
-          "title": "Entreposage & Logistique"
+          "title": "Entreposage et logistique"
         },
         {
-          "title": "Énergie & Services publics"
+          "title": "Énergie et services publics"
         },
         {
           "title": "Constructeurs de machines"
         },
         {
-          "title": "Infrastructure industrielle"
+          "title": "Infrastructures industrielles"
         }
       ]
     },
     "projectProof": {
       "badge": "EXEMPLES DE PROJETS",
-      "title": "Projets Industriels",
-      "subtitle": "Une sélection des types de défis que nous avons résolus.",
+      "title": "Projets industriels",
+      "subtitle": "Une sélection des types de défis que nous avons résolus. Études de cas spécifiques et références disponibles sur demande.",
       "resultsLabel": "Résultats",
-      "note": "Détails client confidentiels sur demande.",
+      "note": "Détails du client gardés confidentiels sur demande. Contactez-nous pour discuter des références pertinentes à votre secteur.",
       "projects": [
         {
-          "title": "Migration API pour système de production hérité",
-          "summary": "[AJOUTER RÉSUMÉ DU PROJET]",
+          "title": "Migration d'automate pour un système de production existant",
+          "summary": "[ADD PROJECT SUMMARY — describe the production environment, the problem that triggered the migration, what was done and what systems were involved. Keep it factual and specific. Anonymize client name if needed.]",
           "results": [
-            "Réduction des arrêts imprévus",
-            "Diagnostic à distance amélioré",
-            "Maintenance modernisée"
+            "Réduction des temps d'arrêt imprévus",
+            "Diagnostics à distance améliorés",
+            "Maintenabilité modernisée"
           ],
           "tech": [
             "Siemens TIA Portal",
@@ -4087,12 +4345,12 @@ export const translations = {
           ]
         },
         {
-          "title": "Collecte de données et surveillance d'usine",
-          "summary": "[AJOUTER RÉSUMÉ DU PROJET]",
+          "title": "Système de collecte et de surveillance des données d'usine",
+          "summary": "[ADD PROJECT SUMMARY — describe the factory, the data challenge (e.g. no visibility into machine output), and what integration approach was used. Mention number of machines or lines if possible.]",
           "results": [
             "Visibilité unifiée des machines",
-            "Surveillance centralisée",
-            "Diagnostic à distance activé"
+            "Suivi de production centralisé",
+            "Diagnostics à distance activés"
           ],
           "tech": [
             "MQTT",
@@ -4102,10 +4360,10 @@ export const translations = {
           ]
         },
         {
-          "title": "Intégration de cellule robotique",
-          "summary": "[AJOUTER RÉSUMÉ DU PROJET]",
+          "title": "Intégration de cellules robotiques",
+          "summary": "[ADD PROJECT SUMMARY — describe the robotic cell context, what production step it handles, integration scope with existing PLC/SCADA and any safety considerations.]",
           "results": [
-            "Débit de production accru",
+            "Augmentation du débit de production",
             "Répétabilité améliorée",
             "Manutention manuelle réduite"
           ],
@@ -4118,47 +4376,47 @@ export const translations = {
       ]
     },
     "founders": {
-      "badge": "NOTRE ÉQUIPE",
-      "title": "Les Ingénieurs Derrière Preaumate",
-      "subtitle": "Preaumate a été fondée par des ingénieurs avec une expérience pratique en automatisation industrielle.",
-      "specializationsLabel": "Spécialisé en",
-      "industriesLabel": "Expérience dans",
+      "badge": "RENCONTREZ L'ÉQUIPE",
+      "title": "Les ingénieurs derrière Preaumate",
+      "subtitle": "Preaumate a été fondée par des ingénieurs possédant une expérience pratique dans l'automatisation industrielle, l'intégration de systèmes et les opérations d'usine en Europe et en Amérique latine.",
+      "specializationsLabel": "Spécialisé dans",
+      "industriesLabel": "A travaillé à travers",
       "linkedinLabel": "Voir LinkedIn",
       "founders": [
         {
-          "name": "[VOTRE NOM]",
-          "role": "Ingénieur en automatisation",
+          "name": "[YOUR FULL NAME]",
+          "role": "Ingénieur en Automatisation",
           "location": "Pays-Bas",
-          "years": "30+ ans d'expérience en automatisation industrielle.",
-          "bio": "[2–3 phrases sur votre parcours.]",
+          "years": "Plus de 30 ans d'expérience en automatisation industrielle dans plusieurs secteurs de production.",
+          "bio": "[2–3 sentences about your background, what types of systems you have worked on, and what drives your approach to engineering.]",
           "photoUrl": "",
           "specializations": [
-            "[ex. Programmation Siemens]",
-            "[ex. SCADA & IHM]",
-            "[ex. Intégration]"
+            "[e.g. Siemens PLC programming]",
+            "[e.g. SCADA & HMI development]",
+            "[e.g. System integration]"
           ],
           "industries": [
-            "[ex. Alimentaire]",
-            "[ex. Emballage]",
+            "[e.g. Food & Beverage]",
+            "[e.g. Packaging]",
             "[e.g. Water treatment]"
           ],
           "linkedin": "#"
         },
         {
-          "name": "[VOTRE NOM]",
-          "role": "Ingénieur en automatisation & intégration",
+          "name": "[YOUR FULL NAME]",
+          "role": "Ingénieur Automatisation & Intégration",
           "location": "Monterrey, Mexique",
-          "years": "10+ ans d'expérience en systèmes industriels.",
-          "bio": "[2–3 phrases sur votre parcours.]",
+          "years": "Plus de 10 ans d'expérience en systèmes industriels et en intégration.",
+          "bio": "[2–3 sentences about your background, the types of automation work you have done, and what your engineering focus is.]",
           "photoUrl": "",
           "specializations": [
-            "[ex. IoT industriel]",
-            "[ex. Rockwell]",
-            "[ex. Mise en service]"
+            "[e.g. Industrial IoT & connectivity]",
+            "[e.g. Rockwell / CoDeSys programming]",
+            "[e.g. Machine commissioning]"
           ],
           "industries": [
-            "[ex. Automobile]",
-            "[ex. Logistique]",
+            "[e.g. Automotive]",
+            "[e.g. Logistics]",
             "[e.g. Manufacturing]"
           ],
           "linkedin": "#"
@@ -4166,124 +4424,126 @@ export const translations = {
       ]
     },
     "curriculum": {
-      "pageTitle": "Theo Rietveld — CV | Preaumate",
-      "metaDescription": "Curriculum professionnel de Theo Rietveld, fondateur et ingénieur en automatisation industrielle chez Preaumate. Plus de 20 ans d'expérience en API, SCADA, IoT et robotique.",
+      "pageTitle": "Théo Rietveld — CV | Préaumate",
+      "metaDescription": "Cursus professionnel de Theo Rietveld, fondateur et passionné d'automatisation industrielle chez Preaumate. Plus de 30 ans d'expérience en PLC, SCADA, IoT et robotique.",
       "heroBadge": "CURRICULUM VITAE",
-      "heroSubtitle": "Fondateur et Ingénieur en Automatisation Industrielle chez Preaumate",
-      "heroTagline": "Plus de 20 ans d'expérience pratique en programmation API, développement SCADA, intégration de systèmes et mise en service internationale.",
-      "photoAlt": "Theo Rietveld — Fondateur de Preaumate",
-      "photoPlaceholder": "TR",
+      "heroSubtitle": "Fondateur et passionné d'automatisation industrielle chez Preaumate",
+      "heroTagline": "Plus de 30 ans d'expérience pratique dans la programmation d'automates, le développement SCADA, l'intégration de systèmes et la mise en service internationale.",
+      "photoAlt": "Théo Rietveld — Fondateur de Préaumate",
+      "photoPlaceholder": "TJR",
       "currentBadge": "Actuel",
       "presentLabel": "Présent",
       "downloadPdf": "Télécharger le PDF",
-      "contactCta": "Discuter de votre Projet",
+      "contactCta": "Discutez de votre projet",
       "summaryBadge": "RÉSUMÉ PROFESSIONNEL",
-      "summaryTitle": "Expertise en Ingénierie au Service de vos Objectifs de Production",
-      "summaryText": "Theo Rietveld est ingénieur en automatisation industrielle et fondateur de Preaumate avec plus de 20 ans d'expérience pratique en programmation API, développement SCADA, intégration de systèmes et mise en service internationale de projets. Ayant travaillé dans les secteurs maritime, offshore et de la transformation alimentaire en Europe et à l'international, il apporte une expertise technique approfondie et un bilan éprouvé. Il communique directement en néerlandais, anglais, espagnol et allemand.",
+      "summaryTitle": "Une expertise en ingénierie au service de vos objectifs de production",
+      "summaryText": "Theo Rietveld est ingénieur en automatisation industrielle et fondateur de Preaumate avec plus de 30 ans d'expérience pratique dans la programmation d'automates, le développement SCADA, l'intégration de systèmes et la mise en service de projets internationaux. Ayant travaillé dans les industries maritimes, offshore et de transformation alimentaire en Europe et à l'international, il apporte à chaque engagement une expertise technique approfondie et une expérience éprouvée en matière de réalisation de projets. Il communique directement en néerlandais, anglais, espagnol et allemand, permettant une collaboration efficace avec les clients et les équipes en Europe et en Amérique latine.",
       "experienceBadge": "EXPÉRIENCE PROFESSIONNELLE",
-      "earlierCareerBadge": "CARRIÈRE ANTÉRIEURE",
+      "earlierCareerBadge": "ANTÉRIEUR DE CARRIÈRE",
       "roles": {
         "preaumate": {
-          "roleTitle": "Fondateur et Ingénieur en Automatisation Industrielle",
-          "description": "Fondé Preaumate pour fournir une ingénierie en automatisation industrielle pratique directement aux fabricants en Europe et en Amérique latine. Programmation API, développement SCADA, intégration IoT industriel, robotique et automatisation pilotée par IA.",
+          "roleTitle": "Fondateur et concepteur en automatisation industrielle",
+          "description": "Création de Preaumate pour fournir une ingénierie pratique d'automatisation industrielle directement aux fabricants d'Europe et d'Amérique latine. Nous proposons la programmation d'automates, le développement SCADA, l'intégration de l'IoT industriel, la robotique et l'automatisation basée sur l'IA, avec une expérience en usine derrière chaque solution.",
           "highlights": [
-            "Programmation API pour Siemens, Rockwell et CoDeSys",
-            "Développement SCADA et IHM pour la surveillance de la production",
-            "Intégration IoT industriel avec OPC UA et MQTT",
-            "Intégration et mise en service de robotique",
-            "IA industrielle pour la détection d'anomalies et la maintenance prédictive",
-            "Support d'ingénierie à distance en Europe et en Amérique latine"
+            "Programmation d'automates pour les plateformes Siemens, Rockwell et CoDeSys",
+            "Développement SCADA et IHM pour le suivi de production",
+            "IoT industriel et intégration de systèmes",
+            "Intégration et mise en service robotique",
+            "IA industrielle pour la détection d’anomalies et la maintenance prédictive",
+            "Mise en service et assistance sur site dans le monde entier",
+            "Assistance technique à distance",
+            "Conseil en architecture d'automatisation et stratégies de modernisation"
           ]
         },
         "kiremko": {
-          "roleTitle": "Développeur Logiciel et Ingénieur en Automatisation",
-          "description": "Conception, ingénierie et gestion de projets et de machines pour l'automatisation industrielle de la transformation alimentaire. Développement au sein d'une équipe d'ingénieurs matériel et logiciel, de la spécification fonctionnelle à la mise en service et à la remise au client.",
+          "roleTitle": "Développeur logiciel et ingénieur en automatisation",
+          "description": "Conception, ingénierie et gestion de projets et de machines pour l’automatisation de la transformation industrielle des aliments. Développement au sein d'une équipe d'ingénieurs matériels et logiciels, depuis la spécification fonctionnelle jusqu'à la mise en service, la passation client et la formation sur site.",
           "highlights": [
-            "Automatisation de machines de transformation alimentaire industrielle",
+            "Automatisation des machines industrielles de transformation des aliments",
             "Spécifications de conception fonctionnelle",
-            "Développement, test et mise en service de logiciels",
-            "Formation sur site et remise au client"
+            "Développement, tests et mise en service de logiciels",
+            "Formation sur site et transfert client"
           ]
         },
         "gooiland": {
-          "roleTitle": "Développeur Logiciel et Ingénieur en Automatisation",
-          "description": "12 ans de spécialisation en automatisation HVAC maritime et offshore. Cycle de vie complet du projet, de la conception à la mise en service internationale, avec une expérience directe sur des navires et des installations offshore dans le monde entier.",
+          "roleTitle": "Développeur logiciel et ingénieur en automatisation",
+          "description": "12 ans de spécialisation dans l'automatisation CVC maritime et offshore. Cycle de vie complet du projet, depuis la conception jusqu'à la mise en service internationale, avec une expérience pratique sur les navires et les installations offshore dans le monde entier. Forte concentration sur la relation client et le service à long terme.",
           "highlights": [
-            "Automatisation du contrôle HVAC maritime et offshore",
+            "Automatisation du contrôle CVC maritime et offshore",
             "Mise en service internationale dans le monde entier",
-            "Cycle complet de développement et déploiement de logiciels",
-            "Relations clients, formation sur site et service"
+            "Cycle de vie complet de développement et de déploiement de logiciels",
+            "Relation client, formation sur site et service"
           ]
         },
         "vandenPol": {
-          "roleTitle": "Développeur Logiciel et Ingénieur de Mise en Service",
-          "description": "Automatisation industrielle de la transformation alimentaire, de l'ingénierie de projet à la mise en service. Livraison internationale de projets, formation sur site et service continu.",
+          "roleTitle": "Développeur de logiciels et ingénieur de mise en service",
+          "description": "Automatisation de la transformation industrielle des aliments, de l'ingénierie du projet jusqu'à la mise en service. Livraison de projets internationaux, formation sur site et service continu.",
           "highlights": [
-            "Automatisation industrielle de la transformation alimentaire",
-            "Mise en service et livraison internationale de projets",
+            "Automatisation de la transformation alimentaire industrielle",
+            "Mise en service internationale et livraison de projets",
             "Spécifications de conception fonctionnelle",
-            "Formation sur site et service"
+            "Formation et service sur site"
           ]
         },
         "elero": {
-          "roleTitle": "Ventes Techniques, Conseil et Gestion IT",
-          "description": "Ingénierie de projets et d'automatisation, ventes, conseil produit, formation clients et gestion IT pour un spécialiste des entraînements et de la domotique.",
+          "roleTitle": "Support Technique Commercial, Conseil & Informatique",
+          "description": "Ingénierie de projet et d'automatisation, vente, conseil produit, formation client et gestion informatique pour un spécialiste des entraînements et de la domotique.",
           "highlights": [
-            "Ingénierie d'automatisation et ventes techniques",
-            "Conseil produit et formation clients",
-            "Gestion IT"
+            "Ingénierie en automatisation et ventes techniques",
+            "Conseil produit et formation client",
+            "Gestion informatique"
           ]
         }
       },
-      "skillsBadge": "COMPÉTENCES CLÉS",
-      "skillsTitle": "Mes Points Forts",
+      "skillsBadge": "COMPÉTENCES DE BASE",
+      "skillsTitle": "Ce que je fais de mieux",
       "skills": [
-        "Gestion de Projets",
-        "Prise de Décision",
-        "Conception Créative",
-        "Développement Innovant",
-        "Résolution de Problèmes Complexes",
-        "Mise en Service",
-        "Relations Clients",
-        "Conseil et Formation",
-        "Traduction Technique"
+        "Développement innovant",
+        "Gestion de projet",
+        "Relation Client",
+        "Conseil & Formation",
+        "Résolution de problèmes complexes",
+        "Mise en service",
+        "Prise de décision",
+        "Conception créative",
+        "Traduction technique"
       ],
       "technicalBadge": "EXPERTISE TECHNIQUE",
-      "technicalTitle": "Plateformes et Outils",
+      "technicalTitle": "Plateformes et outils",
       "techPlc": "Plateformes API",
       "techScada": "SCADA et IHM",
-      "techSoftware": "Logiciels et Programmation",
-      "techProtocols": "Protocoles et Autres",
-      "educationBadge": "FORMATION",
-      "degreeTitle": "Licence en Science des Données Informatiques et Systèmes d'Information",
+      "techSoftware": "Logiciels et programmation",
+      "techProtocols": "Protocoles et autres",
+      "educationBadge": "ÉDUCATION",
+      "degreeTitle": "Baccalauréat en science des données informatiques et systèmes d'information",
       "certificationsBadge": "CERTIFICATIONS",
       "certifications": {
         "siemens": {
-          "title": "Programmeur Siemens Certifié",
-          "detail": "TIA Portal et Step 7"
+          "title": "Programmeur Siemens certifié",
+          "detail": "Portail TIA et étape 7"
         },
         "offshore": {
-          "title": "Certificats de Sécurité Offshore",
-          "detail": "GWO Survie en Mer, Travail en Hauteur, Sensibilisation Incendie, Premiers Secours, Manutention Manuelle"
+          "title": "Certificats de sécurité offshore",
+          "detail": "GWO Sea Survival, Travaux en hauteur, Sensibilisation aux incendies, Premiers secours, Manutention manuelle"
         },
         "bosiet": {
           "title": "BOSIET / HUET — Certifié OPITO",
-          "detail": "Formation à l'Évacuation Sous-Marine par Hélicoptère"
+          "detail": "Formation à l'évasion sous-marine en hélicoptère"
         }
       },
       "languagesBadge": "LANGUES",
       "spokenLanguages": {
         "dutch": {
           "language": "Néerlandais",
-          "level": "Langue maternelle"
+          "level": "Indigène"
         },
         "english": {
           "language": "Anglais",
-          "level": "Courant"
+          "level": "Compétent"
         },
         "spanish": {
           "language": "Espagnol",
-          "level": "Courant"
+          "level": "Compétent"
         },
         "german": {
           "language": "Allemand",
@@ -4291,126 +4551,189 @@ export const translations = {
         }
       },
       "contactBadge": "TRAVAILLONS ENSEMBLE",
-      "contactTitle": "Prêt à Discuter de votre Projet ?",
-      "contactSubtitle": "Si vous souhaitez discuter de la manière dont Preaumate peut soutenir votre projet d'automatisation, je suis disponible pour un échange direct.",
-      "contactButton": "Prendre Contact"
+      "contactTitle": "Prêt à discuter de votre projet ?",
+      "contactSubtitle": "Si vous souhaitez discuter de la manière dont Preaumate peut soutenir votre projet d'automatisation, je serai ravi de vous connecter directement.",
+      "contactButton": "Entrer en contact"
+    },
+    "qualifier": {
+      "wizardui": "Libellés de l'interface utilisateur de l'assistant",
+      "stepLabel": "Question {actuelle} sur {total}",
+      "skipButton": "Passer le questionnaire",
+      "backButton": "Dos",
+      "nextButton": "Suivant",
+      "finishButton": "Finition",
+      "skipNote": "Nous vous remercions de remplir ce formulaire, mais n'hésitez pas à passer directement au formulaire de contact à tout moment.",
+      "summaryHeading": "Questionnaire pré-contact",
+      "editAnswersButton": "Modifier mes réponses",
+      "contextCapturedNote": "Merci, nous avons noté vos réponses. Ils seront inclus avec votre message.",
+      "qualifierPreviewLabel": "Your questionnaire answers (included with this message)",
+      "q1_label": "Utilisez-vous actuellement le retour de données dans votre processus de production ?",
+      "q1_description": "De l’absence de suivi des données à une boucle de rétroaction entièrement intégrée.",
+      "q1_scale_0": "Pas du tout",
+      "q1_scale_low": "Un peu de suivi manuel",
+      "q1_scale_high": "Partiellement automatisé",
+      "q1_scale_10": "Entièrement intégré",
+      "q2_label": "Quelle est la taille de votre entreprise ?",
+      "q2_opt_freelance": "Indépendant/indépendant",
+      "q2_opt_small": "Petit (2 à 20 employés)",
+      "q2_opt_medium": "Moyen (21 à 50 employés)",
+      "q2_opt_large": "Grande (51 à 200 employés)",
+      "q2_opt_enterprise": "Entreprise (200+ employés)",
+      "q3_label": "Quelle est la taille de votre processus de production ?",
+      "q3_opt_single": "Une seule machine ou cellule",
+      "q3_opt_line": "Une ligne de production",
+      "q3_opt_multi": "Plusieurs lignes de production",
+      "q3_opt_sites": "Plusieurs sites ou installations",
+      "q4_label": "Quel est votre type de production ?",
+      "q4_opt_food": "Nourriture et boissons",
+      "q4_opt_packaging": "Conditionnement",
+      "q4_opt_automotive": "Automobile",
+      "q4_opt_maritime": "Maritime / Offshore / CVC",
+      "q4_opt_manufacturing": "Fabrication générale",
+      "q4_opt_logistics": "Logistique et entreposage",
+      "q4_opt_other": "Autre",
+      "q5_label": "Quelles plateformes ou marques utilisez-vous actuellement ?",
+      "q5_description": "Sélectionnez tout ce qui s’applique – cela nous aide à nous préparer avant de parler.",
+      "q5_opt_other": "Autre",
+      "q5_opt_unknown": "Je ne suis pas sûr / je ne sais pas",
+      "q6_label": "Dans quel but souhaiteriez-vous utiliser l’IA/le feedback de données ?",
+      "q6_description": "Facultatif : une phrase ou deux suffisent.",
+      "q6_placeholder": "par ex. prévoir les besoins de maintenance, réduire les déchets, améliorer le contrôle qualité…",
+      "q7_label": "Avez-vous des capacités d'ingénierie en interne ?",
+      "q7_opt_yes": "Oui, une équipe dédiée",
+      "q7_opt_partial": "Certains – mais capacité limitée",
+      "q7_opt_no": "Pas d'ingénierie en interne",
+      "q8_label": "À quels défis êtes-vous actuellement confrontés dans votre processus de production ?",
+      "q8_description": "Facultatif : dites-le-nous dans vos propres mots.",
+      "q8_placeholder": "par ex. temps d'arrêt imprévus, collecte manuelle des données, systèmes API obsolètes...",
+      "q9_label": "Combien envisagez-vous d’investir dans cette amélioration ?",
+      "q9_opt_exploring": "J'explore simplement les options pour le moment",
+      "q9_opt_under10k": "Moins de 10 000 €",
+      "q9_opt_10to50k": "10 000 € – 50 000 €",
+      "q9_opt_50to150k": "50 000 € – 150 000 €",
+      "q9_opt_over150k": "150 000 €+",
+      "q10_label": "Quel est votre calendrier pour ce projet ?",
+      "q10_opt_asap": "Dès que possible",
+      "q10_opt_1to3": "1 à 3 mois",
+      "q10_opt_3to6": "3 à 6 mois",
+      "q10_opt_exploring": "Juste une exploration, pas de calendrier fixe"
     }
   },
   "pt": {
     "nav": {
-      "home": "Início",
-      "about": "Sobre nós",
+      "home": "Lar",
+      "about": "Sobre",
       "services": "Serviços",
       "blog": "Blogue",
-      "qa": "P&R",
+      "qa": "Perguntas e respostas",
       "contact": "Contato"
     },
     "hero": {
-      "title1": "Especialistas em Automação Industrial",
-      "title2": "Do Chão de Fábrica à Camada de Dados",
-      "subtitle": "A Preaumate ajuda fabricantes a modernizar sistemas industriais através de programação CLP, robótica, SCADA, IoT industrial e automação com IA. Desenvolvido por engenheiros com experiência real em chão de fábrica na Europa e América Latina.",
-      "cta": "Falar com um Engenheiro",
-      "cta2": "Ver Nossos Serviços",
+      "title1": "Especialistas em automação industrial",
+      "title2": "Do chão da fábrica à camada de dados",
+      "subtitle": "A Preaumate ajuda os fabricantes a modernizar sistemas industriais por meio de programação PLC, robótica, SCADA, IoT industrial e automação orientada por IA. Construído por engenheiros com experiência real em fábrica na Europa e na América Latina.",
+      "cta": "Entre em contato com um engenheiro",
+      "cta2": "Veja nossos serviços",
       "trustBadges": [
-        "30+ anos de experiência combinada",
-        "Europa e América Latina",
-        "CLP · SCADA · Robótica · IoT",
+        "Mais de 40 anos de experiência combinada",
+        "Europa e Américas",
+        "PLC · SCADA · Robótica · IoT · IA",
         "Siemens · Rockwell · CoDeSys"
       ]
     },
     "about": {
-      "badge": "SOBRE A PREAUMATE",
+      "badge": "SOBRE O PREAUMATE",
       "title1": "Construído por Engenheiros.",
       "title2": "Movido pela Paixão.",
-      "para1": "Preaumate é uma consultoria de automação industrial criada por engenheiros, com genuína paixão pelo setor. Nossa equipe traz mais de 20 anos de experiência combinada nas plataformas Siemens, Rockwell e CoDeSys — e nos sentimos tão confortáveis no chão de fábrica quanto em uma sala de servidores.",
-      "para2": "Trabalhamos em manufatura robótica, alimentos e bebidas, tratamento de água, HVAC, logística e instalações offshore. Com sede nos Países Baixos e no México, operamos globalmente — onshore, offshore e remotamente — com tempos de resposta rápidos em todos os fusos horários.",
-      "para3": "Conhecemos bem o mundo clássico da automação industrial. Também entendemos a transformação que está em curso. Nosso papel é ajudar os clientes a navegar por ambos.",
+      "para1": "A Preaumate é uma consultoria de automação industrial construída por engenheiros, com uma paixão genuína pela indústria. Nossa equipe traz mais de 30 anos de experiência combinada nas plataformas Siemens, Rockwell e CoDeSys — e nos sentimos tão confortáveis ​​no chão de fábrica quanto em uma sala de servidores.",
+      "para2": "Trabalhamos em fabricação robótica, alimentos e bebidas, tratamento de água, HVAC, logística e instalações offshore. Com sede na Holanda e no México, operamos globalmente — onshore, offshore e remotamente — com tempos de resposta rápidos em todos os fusos horários.",
+      "para3": "Conhecemos bem o mundo clássico da automação industrial. Também entendemos a transformação que está em curso. Nosso papel é ajudar os clientes a navegar por ambos — quer isso signifique fornecer uma solução comprovada baseada em hardware ou ajudá-los a dar os primeiros passos em direção à modernização.",
       "readMore": "Leia nossa história completa",
       "features": [
         {
-          "title": "Automação com IA",
+          "title": "Automação alimentada por IA",
           "description": "Aproveite a inteligência artificial de ponta para automatizar processos industriais complexos com precisão sem precedentes."
         },
         {
-          "title": "Monitoramento em Tempo Real",
-          "description": "Monitore cada aspecto de sua linha de produção em tempo real com redes avançadas de sensores IoT e painéis de controle."
+          "title": "Monitoramento em tempo real",
+          "description": "Monitore todos os aspectos da sua linha de produção em tempo real com redes e painéis de sensores IoT avançados."
         },
         {
-          "title": "Dados, IoT e Nuvem",
-          "description": "Aquisição de dados em tempo real, conectividade IoT, processamento em nuvem e borda — fazendo os dados de suas máquinas trabalharem para você."
+          "title": "Dados, IoT e nuvem",
+          "description": "Aquisição de dados em tempo real, conectividade IoT, processamento na nuvem e na borda — fazendo com que os dados da sua máquina trabalhem para você."
         },
         {
           "title": "Otimização Energética",
-          "description": "Reduza o consumo de energia em até 40% por meio de balanceamento inteligente de carga e gestão preditiva de energia."
+          "description": "Reduza o consumo de energia em até 40% por meio de balanceamento de carga inteligente e gerenciamento preditivo de energia."
         },
         {
           "title": "Manutenção Preditiva",
-          "description": "Evite paradas custosas prevendo falhas de equipamentos antes que ocorram usando modelos de aprendizado de máquina."
+          "description": "Evite paralisações dispendiosas prevendo falhas de equipamentos antes que elas aconteçam usando modelos de aprendizado de máquina."
         }
       ],
       "stats": [
-        "Anos de Experiência Combinada",
-        "Setores Atendidos",
-        "Principais Plataformas CLP",
+        "Anos de experiência combinada",
+        "Indústrias atendidas",
+        "Principais plataformas PLC",
         "Continentes"
       ]
     },
     "services": {
       "badge": "O QUE FAZEMOS",
-      "title": "Serviços de Automação Industrial",
-      "subtitle": "Da programação CLP ao IoT industrial e IA — soluções práticas de engenharia para fabricantes.",
+      "title": "Serviços de automação industrial",
+      "subtitle": "Da programação PLC à IoT industrial e IA — soluções práticas de engenharia para fabricantes.",
       "items": [
         {
           "title": "Programação CLP",
-          "description": "Desenvolvemos, migramos e diagnosticamos sistemas CLP para ambientes industriais. Siemens, Rockwell e CoDeSys.",
+          "description": "Desenvolvemos, migramos e solucionamos problemas de sistemas PLC para ambientes de produção industrial. As plataformas suportadas incluem controladores baseados em Siemens, Rockwell e CoDeSys.",
           "bullets": [
-            "Migrações de CLP",
+            "Migrações e atualizações de PLC",
             "Comissionamento de máquinas",
             "Otimização de processos",
             "Diagnóstico remoto",
-            "Suporte a falhas"
+            "Suporte para solução de problemas"
           ],
-          "learnMore": "Saiba mais"
+          "learnMore": "Saber mais"
         },
         {
-          "title": "Desenvolvimento SCADA & IHM",
-          "description": "Criamos interfaces de operador e sistemas SCADA para visibilidade e monitoramento de produção.",
+          "title": "Desenvolvimento SCADA e IHM",
+          "description": "Construímos interfaces de operação e sistemas SCADA que melhoram a visibilidade, o diagnóstico e o monitoramento da produção em todo o chão de fábrica.",
           "bullets": [
             "Painéis de produção",
-            "Gestão de alarmes",
-            "Integração com historian",
+            "Tratamento de alarme",
+            "Integração do historiador",
             "Monitoramento remoto",
-            "Otimização de fluxo"
+            "Otimização do fluxo de trabalho do operador"
           ],
-          "learnMore": "Saiba mais"
+          "learnMore": "Saber mais"
         },
         {
           "title": "IoT Industrial",
-          "description": "Conectamos máquinas, CLPs e equipamentos industriais a sistemas de dados modernos.",
+          "description": "Conectamos máquinas, PLCs e equipamentos industriais a sistemas de dados modernos usando protocolos de comunicação industrial seguros.",
           "bullets": [
-            "Integração OPC UA",
-            "Infraestrutura MQTT",
-            "Coleta de dados de máquinas",
-            "Conectividade cloud e edge",
-            "Configuração de gateways"
+            "OPC UA integration",
+            "MQTT infrastructure",
+            "Coleta de dados da máquina",
+            "Conectividade na nuvem e na borda",
+            "Configuração de gateway industrial"
           ],
-          "learnMore": "Saiba mais"
+          "learnMore": "Saber mais"
         },
         {
-          "title": "Integração de Robótica",
-          "description": "Integramos sistemas robóticos em ambientes de produção com foco em confiabilidade, segurança e manutenibilidade.",
+          "title": "Integração Robótica",
+          "description": "Integramos sistemas robóticos em ambientes de produção com foco na confiabilidade, segurança e manutenção a longo prazo.",
           "bullets": [
             "Comissionamento de células robóticas",
             "Otimização de movimento",
-            "Integração de sistemas de segurança",
+            "Integração do sistema de segurança",
             "Sincronização de processos",
             "Suporte à produção"
           ],
-          "learnMore": "Saiba mais"
+          "learnMore": "Saber mais"
         },
         {
-          "title": "IA Industrial",
-          "description": "Ajudamos fabricantes a identificar e implementar oportunidades práticas de IA usando dados de produção.",
+          "title": "IA industrial",
+          "description": "Ajudamos os fabricantes a identificar e implementar oportunidades práticas de IA usando dados de produção, diagnósticos de máquinas e insights operacionais.",
           "bullets": [
             "Detecção de anomalias",
             "Manutenção preditiva",
@@ -4418,14 +4741,14 @@ export const translations = {
             "Projetos piloto de IA",
             "Relatórios operacionais"
           ],
-          "learnMore": "Saiba mais"
+          "learnMore": "Saber mais"
         }
       ]
     },
     "statsBar": [
-      "Projetos Entregues",
+      "Projetos entregues",
       "Satisfação do Cliente",
-      "Anos de Experiência",
+      "Anos de experiência",
       "Suporte Remoto"
     ],
     "featuresBar": {
@@ -4436,75 +4759,75 @@ export const translations = {
           "subtitle": "24 horas por dia, 7 dias por semana"
         },
         {
-          "title": "Fale Conosco",
+          "title": "Contate-nos",
           "subtitle": "contact@preaumate.com"
         },
         {
-          "title": "Baseado em IA",
+          "title": "Alimentado por IA",
           "subtitle": "Decisões"
         },
         {
-          "title": "Análise",
-          "subtitle": "Preditiva"
+          "title": "Preditivo",
+          "subtitle": "Análise"
         },
         {
-          "title": "Fábrica",
-          "subtitle": "Inteligente"
+          "title": "Fábrica Inteligente",
+          "subtitle": "Soluções"
         },
         {
           "title": "Cibersegurança",
-          "subtitle": "Pronta"
+          "subtitle": "Preparar"
         },
         {
-          "title": "Integração",
-          "subtitle": "IoT"
+          "title": "IoT",
+          "subtitle": "Integração"
         },
         {
           "title": "Construído para",
-          "subtitle": "o Futuro"
+          "subtitle": "o futuro"
         }
       ]
     },
     "contactSection": {
       "badge": "ENTRE EM CONTATO",
-      "title": "Pronto para Resolver seus Desafios de Produção?",
-      "subtitle": "Converse diretamente com um engenheiro sobre seus problemas operacionais. Sem discurso de vendas — apenas uma conversa técnica."
+      "title": "Pronto para resolver seus desafios de produção?",
+      "subtitle": "Fale diretamente com um engenheiro sobre seus problemas operacionais. Sem scripts de vendas – apenas uma conversa técnica."
     },
     "form": {
-      "title": "Entre em Contato",
+      "title": "Entre em contato",
       "subtitle": "Pronto para transformar suas operações industriais? Vamos discutir suas necessidades.",
-      "companyName": "Nome da Empresa",
-      "companyPlaceholder": "Digite o nome de sua empresa",
-      "email": "Endereço de E-mail",
-      "emailPlaceholder": "seu.email@empresa.com",
-      "phone": "Número de Telefone",
-      "phonePlaceholder": "+55 (00) 00000-0000",
-      "serviceInterest": "Serviço de Interesse",
+      "companyName": "nome da empresa",
+      "companyPlaceholder": "Digite o nome da sua empresa",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@company.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+31 (0) 000 000 000",
+      "serviceInterest": "Interesse de serviço",
       "servicePlaceholder": "Selecione um serviço...",
       "message": "Mensagem",
       "messagePlaceholder": "Conte-nos sobre suas necessidades de automação...",
-      "send": "Enviar Mensagem",
+      "send": "Enviar mensagem",
       "sending": "Enviando...",
       "services": [
-        "Automação de Processos Robóticos",
+        "Automação Robótica de Processos",
         "Integração IoT",
-        "Soluções de Fábrica Inteligente",
+        "Soluções inteligentes para fábricas",
         "Análise Preditiva",
-        "Consultoria Geral"
+        "Consulta Geral"
       ],
       "errors": {
         "companyRequired": "O nome da empresa é obrigatório",
-        "emailRequired": "O endereço de e-mail é obrigatório",
+        "emailRequired": "O e-mail é obrigatório",
         "emailInvalid": "Formato de e-mail inválido",
         "phoneRequired": "O número de telefone é obrigatório",
-        "serviceRequired": "Por favor selecione um serviço",
+        "serviceRequired": "Selecione um serviço",
         "messageRequired": "A mensagem é obrigatória",
-        "validationTitle": "Erro de Validação do Formulário",
-        "validationDesc": "Por favor, preencha todos os campos obrigatórios corretamente.",
+        "validationTitle": "Erro de validação de formulário",
+        "validationDesc": "Por favor preencha todos os campos obrigatórios corretamente.",
         "errorTitle": "Algo deu errado",
-        "errorDesc": "Sua mensagem não pôde ser enviada. Tente novamente ou entre em contato diretamente.",
-        "successTitle": "Mensagem Enviada com Sucesso! 🎉",
-        "successDesc": "Obrigado! Entraremos em contato em breve para discutir suas necessidades de automação."
+        "errorDesc": "Não foi possível enviar sua mensagem. Por favor, tente novamente ou entre em contato conosco diretamente.",
+        "successTitle": "Mensagem enviada com sucesso!",
+        "successDesc": "Obrigado! Entraremos em contato com você em breve para discutir suas necessidades de automação."
       }
     },
     "footer": {
@@ -4514,234 +4837,237 @@ export const translations = {
       "resourcesHeading": "RECURSOS",
       "contactHeading": "CONTATO",
       "navLinks": [
-        "Início",
-        "Sobre nós",
+        "Lar",
+        "Sobre",
         "Serviços",
         "Contato"
       ],
       "resourceLinks": [
         "Blogue",
-        "Perguntas",
-        "Privacidade",
-        "Termos"
+        "Perguntas e respostas",
+        "política de Privacidade",
+        "Termos e Condições"
       ],
       "rights": "Todos os direitos reservados.",
-      "privacyPolicy": "Política de Privacidade",
+      "privacyPolicy": "política de Privacidade",
       "terms": "Termos e Condições"
     },
     "consent": {
       "title": "🍪 Usamos cookies",
-      "text": "Usamos cookies essenciais para que nosso site funcione. Com seu consentimento, também usamos cookies analíticos para entender como você usa nosso site. Seus dados são processados de acordo com nossa",
-      "privacyPolicy": "Política de Privacidade",
-      "and": "e nossa",
+      "text": "Usamos cookies essenciais para fazer nosso site funcionar. Com o seu consentimento, também utilizamos cookies analíticos para compreender como utiliza o nosso site e melhorar a sua experiência. Os seus dados são processados ​​de acordo com a nossa",
+      "privacyPolicy": "política de Privacidade",
+      "and": "e",
       "cookiePolicy": "Política de Cookies",
-      "reject": "Rejeitar Não Essenciais",
-      "accept": "Aceitar Tudo"
+      "reject": "Rejeitar não essencial",
+      "accept": "Aceitar tudo"
     },
     "aboutPage": {
-      "heroBadge": "SOBRE A PREAUMATE",
+      "heroBadge": "SOBRE O PREAUMATE",
       "heroTitle1": "Construído por Engenheiros.",
       "heroTitle2": "Movido pela Paixão.",
-      "heroSubtitle": "Preaumate é uma consultoria de automação industrial com mais de 20 anos de experiência combinada, operando globalmente a partir dos Países Baixos e do México.",
+      "heroSubtitle": "Preaumate é uma consultoria de automação industrial com mais de 30 anos de experiência combinada, operando globalmente na Holanda e no México.",
       "locations": [
-        "Países Baixos",
+        "Holanda",
         "México",
         "Operações Globais"
       ],
       "whoWeAreBadge": "QUEM SOMOS",
-      "whoWeAreTitle": "Nossa História",
-      "whoWeArePara1": "Preaumate é uma consultoria de automação industrial criada por engenheiros, com entusiasmo genuíno e paixão pela indústria. Somos uma empresa jovem — mas não uma equipe nova. Juntos, trazemos mais de 20 anos de experiência prática em automação.",
-      "whoWeArePara2": "Nossa equipe está sediada nos Países Baixos e no México. Trabalhamos globalmente, respondemos rapidamente e apoiamos clientes onshore, offshore e remotamente em todos os fusos horários.",
-      "whoWeArePara3": "Fundamos a Preaumate porque acreditamos que o melhor trabalho de automação acontece quando as pessoas estão próximas do problema, pessoalmente investidas no resultado.",
-      "whoWeArePara4": "Conhecemos bem o mundo clássico da automação industrial — porque viemos dele. E entendemos a transformação que está em curso.",
+      "whoWeAreTitle": "Nossa história",
+      "whoWeArePara1": "A Preaumate é uma consultoria de automação industrial construída por engenheiros, com uma paixão entusiasta e genuína pela indústria. Somos uma empresa jovem – mas não somos uma equipe nova. Entre nós, trazemos mais de 30 anos de experiência prática em automação para cada projeto que assumimos.",
+      "whoWeArePara2": "Nossa equipe está baseada na Holanda e no México — uma distribuição geográfica que não é acidental, mas intencional. Trabalhamos globalmente, respondemos rapidamente e estamos preparados para oferecer suporte a clientes onshore, offshore e remotamente em diferentes fusos horários. Quer a sua instalação seja numa área de produção na Europa, numa plataforma no Mar do Norte ou numa instalação no outro lado do mundo – nós estamos lá.",
+      "whoWeArePara3": "Iniciamos a Preaumate porque acreditamos que o melhor trabalho de automação acontece quando as pessoas que o realizam estão próximas do problema, investem pessoalmente no resultado e não são retardadas pelas camadas corporativas. Combinamos a confiabilidade comprovada da automação industrial tradicional com o cenário tecnológico em rápida evolução – integração de IA, conectividade IoT, computação em nuvem e de ponta, segurança cibernética – para tornar cada tipo de projeto de automação mais eficiente, mais conectado e mais preparado para o futuro do que seria de outra forma.",
+      "whoWeArePara4": "Conhecemos bem o mundo clássico da automação industrial — porque viemos dele. E entendemos a transformação que está em curso. Nosso papel é ajudar os clientes a navegar por ambos.",
       "whatWeDoBadge": "O QUE FAZEMOS",
-      "whatWeDoTitle": "Nossos Serviços",
-      "whatWeDoIntro": "Somos especialistas em automação tão confortáveis em uma sala de servidores quanto no chão de fábrica. Nos envolvemos onde importa — mão na massa, resolvendo problemas.",
+      "whatWeDoTitle": "Nossos serviços",
+      "whatWeDoIntro": "Somos especialistas em automação que se sentem tão confortáveis ​​em uma sala de servidores quanto no chão de fábrica. Envolvemo-nos onde é importante: de forma prática, na resolução de problemas e totalmente comprometidos em fazer as coisas funcionarem. Nosso foco principal é o software, mas somos uma equipe de serviços e soluções em primeiro lugar. Se um problema precisa ser resolvido, nós o resolvemos.",
       "servicesList": [
         {
           "title": "Programação CLP",
-          "description": "Programamos nas principais plataformas — Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) e controladores baseados em CoDeSys. Trabalhamos com CLPs hardware tradicionais e ambientes de CLP software modernos, virtualização e conteinerização. Também programamos CLPs de Segurança."
+          "description": "Programamos nas principais plataformas — Siemens (TIA Portal, S7-1200/1500), Rockwell Automation (Studio 5000) e controladores baseados em CoDeSys. Trabalhamos com configurações tradicionais de hardware PLC, bem como ambientes modernos de software PLC, plataformas de virtualização e conteinerização. Também programamos CLPs de Segurança – segurança funcional realizada corretamente, de acordo com os padrões que importam. Se um cliente precisar de uma configuração clássica e comprovada baseada em hardware, nós a entregaremos com confiança. Se um cliente pretende explorar a modernização, nós consultamos, aconselhamos e ajudamos a escolher o que é genuinamente melhor para a sua situação específica."
         },
         {
-          "title": "Desenvolvimento IHM",
-          "description": "Projetamos e construímos interfaces de operador intuitivas, claras e construídas para as pessoas que realmente as usam."
+          "title": "Desenvolvimento de IHM",
+          "description": "Projetamos e construímos interfaces de operação que são intuitivas, claras e construídas para as pessoas que realmente as utilizam. Um bom design de IHM é constantemente subestimado – nós levamos isso a sério."
         },
         {
-          "title": "Aquisição de Dados, IoT, Nuvem e Edge",
-          "description": "Conectamos máquinas, sensores e sistemas — OPC-UA, MQTT, conectividade de banco de dados, integração MES e SCADA. Implementamos arquiteturas em nuvem e edge."
+          "title": "Aquisição de dados, IoT, Cloud e Edge",
+          "description": "Conectamos máquinas, sensores e sistemas para que os dados fluam para onde precisam ir — OPC-UA, MQTT, conectividade de banco de dados, integração MES e SCADA. Implementamos arquiteturas de processamento de dados baseadas em nuvem e de borda, dependendo do que a aplicação exige."
         },
         {
           "title": "Cibersegurança",
-          "description": "A cibersegurança industrial não é mais opcional. Projetamos arquiteturas com segurança integrada desde o início: segmentação de rede, acesso remoto seguro, configurações reforçadas."
+          "description": "A cibersegurança industrial não é mais opcional. À medida que os sistemas de automação se tornam mais conectados, a superfície de ataque aumenta — e as consequências de uma violação num ambiente industrial podem ser graves. Projetamos e implementamos arquiteturas de automação com segurança integrada desde o início: segmentação de rede, acesso remoto seguro, configurações reforçadas e conformidade com padrões de segurança industrial relevantes."
         },
         {
           "title": "Integração de IA",
-          "description": "Integramos capacidades baseadas em IA — manutenção preditiva, detecção de anomalias, otimização de processos."
+          "description": "Integramos recursos orientados por IA em projetos de automação — manutenção preditiva, detecção de anomalias, otimização de processos. Não como chavões, mas como ferramentas práticas que fazem com que os sistemas industriais tenham um desempenho melhor e mais inteligente."
         },
         {
-          "title": "Serviços Remotos",
-          "description": "Somos construídos para trabalho remoto. Suportamos e solucionamos problemas de qualquer lugar do mundo — com segurança e mínima interrupção."
+          "title": "Serviços remotos",
+          "description": "Somos construídos para trabalho remoto. Damos suporte, solucionamos problemas e modificamos sistemas de qualquer lugar do mundo — de forma segura, confiável e com o mínimo de interrupção em suas operações. A nossa presença na Europa e nas Américas significa que cobrimos sem demora uma vasta gama de fusos horários. Remoto não significa distante – somos receptivos, disponíveis e engajados."
         },
         {
           "title": "Preparação e Gestão de Projetos",
-          "description": "Apoiamos clientes desde as fases mais iniciais — especificações funcionais, arquitetura de software, escopo — até o comissionamento e entrega."
+          "description": "Apoiamos os clientes desde os estágios iniciais – especificações funcionais, arquitetura de software, definição de escopo – até o comissionamento e entrega. Uma boa preparação no front-end evita problemas caros no back-end."
         }
       ],
       "industriesBadge": "EXPERIÊNCIA",
-      "industriesTitle": "Setores em que Trabalhamos",
-      "industriesIntro": "A experiência de nossa equipe abrange uma ampla gama de ambientes industriais — em terra, offshore e em todos os continentes.",
+      "industriesTitle": "Indústrias em que trabalhamos",
+      "industriesIntro": "A experiência da nossa equipe abrange uma ampla variedade de ambientes industriais — em terra, offshore e em todos os continentes. Cada uma dessas indústrias tem seus próprios requisitos, seus próprios padrões e sua própria forma de trabalhar.",
       "industries": [
         {
-          "label": "Manufatura Robótica",
+          "label": "Robotic Manufacturing",
           "icon": "🦾"
         },
         {
-          "label": "Produção de Alimentos e Bebidas",
+          "label": "Food & Beverage Production",
           "icon": "🏭"
         },
         {
-          "label": "Tratamento de Água e Utilities",
+          "label": "Water Treatment & Utilities",
           "icon": "💧"
         },
         {
-          "label": "HVAC e Automação Predial",
+          "label": "HVAC & Building Automation",
           "icon": "🌡️"
         },
         {
-          "label": "Armazenagem e Logística",
+          "label": "Warehousing & Logistics",
           "icon": "📦"
         },
         {
-          "label": "Instalações Offshore",
+          "label": "Offshore Installations",
           "icon": "⚓"
         }
       ],
       "philosophyBadge": "NOSSA FILOSOFIA",
       "philosophyTitle": "Automação Clássica e a Nova Realidade Industrial",
-      "philosophyPara1": "Temos profundo respeito pelas tradições de engenharia que construíram a indústria de automação industrial. Os padrões, as metodologias, as plataformas de hardware — existem porque funcionam.",
-      "philosophyPara2": "Mas a indústria está mudando. CLPs de software, virtualização, conteinerização, edge computing, análise baseada em IA e cibersegurança industrial estão prontos para produção.",
-      "philosophyPara3": "Entendemos ambos os mundos. Podemos entregar projetos clássicos e confiáveis. E podemos ajudar clientes prontos para modernização.",
+      "philosophyPara1": "Temos profundo respeito pelas tradições de engenharia que construíram a indústria de automação industrial. Os padrões, as metodologias, as plataformas de hardware – existem porque funcionam e continuarão a funcionar. Conhecemos bem esse mundo e somos plenamente capazes de operar nele.",
+      "philosophyPara2": "Mas a indústria está mudando. PLCs de software, virtualização, conteinerização, computação de ponta, análises baseadas em IA, conectividade em nuvem e segurança cibernética industrial não são mais experimentais – eles estão prontos para produção e estão transformando o que é possível na automação.",
+      "philosophyPara3": "Nosso valor para os clientes é que entendemos os dois mundos. Podemos entregar um projeto de automação clássico, confiável e compatível com os padrões. E podemos ajudar os clientes que estão prontos para a modernização a compreender o que isso significa para eles – quanto custa, o que ganha e como chegar lá sem riscos desnecessários.",
       "classicalTitle": "Automação Clássica",
-      "classicalDesc": "Plataformas de hardware comprovadas, padrões estabelecidos, arquiteturas confiáveis que têm movido a indústria por décadas.",
+      "classicalDesc": "Plataformas de hardware comprovadas, padrões estabelecidos, arquiteturas confiáveis ​​que comandam a indústria há décadas. Se é isso que o seu projeto precisa, nós o entregamos com total confiança e respeito pelo que funciona.",
       "modernTitle": "Automação Moderna",
-      "modernDesc": "CLPs de software, conectividade em nuvem, insights baseados em IA, edge computing, cibersegurança industrial.",
-      "finalNote": "Não acreditamos que todo projeto precise da tecnologia mais recente. Acreditamos que todo projeto merece a tecnologia certa.",
-      "ctaTitle": "Pronto para Trabalharmos Juntos?",
-      "ctaSubtitle": "Se você está procurando um parceiro que trate seu projeto como seu, responda sem demora e entregue trabalho sólido — gostaríamos de conversar.",
-      "ctaButton": "Entre em Contato"
+      "modernDesc": "PLCs de software, conectividade em nuvem, insights baseados em IA, computação de ponta, segurança cibernética industrial. Se você está pronto para se modernizar, nós o ajudamos a escolher o caminho certo, no ritmo certo, para suas necessidades específicas.",
+      "finalNote": "Não acreditamos que todo projeto precise da tecnologia mais recente. Acreditamos que cada projeto merece a tecnologia certa — e temos a experiência e a perspectiva para fazer a diferença.",
+      "ctaTitle": "Pronto para trabalhar juntos?",
+      "ctaSubtitle": "Se você está procurando um parceiro que trate seu projeto como se fosse seu, responda sem demora e entregue um trabalho que se mantenha, gostaríamos de conversar.",
+      "ctaButton": "Entre em contato"
     },
     "crossover": {
       "badge": "A CONVERGÊNCIA",
-      "title": "Onde o Chão de Fábrica Encontra a Camada de Dados",
-      "subtitle": "A maioria dos engenheiros de automação entende sistemas de controle. A maioria dos engenheiros de dados entende conectividade. Muito poucos entendem ambos profundamente — e menos ainda sabem como integrar IA de forma prática.",
-      "statement": "Estamos nessa interseção. E acreditamos que é o lugar mais importante na automação industrial agora.",
+      "title": "Onde o chão de fábrica encontra a camada de dados",
+      "subtitle": "A maioria dos engenheiros de automação entende de sistemas de controle. A maioria dos engenheiros de dados entende de conectividade. Muito poucos entendem ambos profundamente – e menos ainda sabem como trazer a IA para esse cenário de forma prática.",
+      "statement": "Sentamos naquele cruzamento. E achamos que é o lugar mais importante para se estar na automação industrial no momento.",
       "pillar1": {
-        "label": "Controle Clássico",
+        "label": "Classical Control",
         "heading": "A máquina funciona de forma confiável.",
-        "description": "Siemens, Rockwell, CoDeSys — código CLP estruturado escrito para durar, sistemas de segurança programados conforme norma, IHM e SCADA construídos para o operador que realmente os usa.",
+        "description": "Siemens, Rockwell, CoDeSys — structured PLC code written to last, Safety systems programmed to standard, HMI and SCADA built for the operator who actually uses it. The foundation everything else depends on.",
         "tags": [
           "Programação CLP",
           "Sistemas de Segurança",
-          "IHM / SCADA",
+          "IHM/SCADA",
           "Integração de Sistemas"
         ]
       },
       "pillar2": {
-        "label": "Dados Conectados",
+        "label": "Connected Data",
         "heading": "A máquina fala.",
-        "description": "Pipelines OPC-UA e MQTT que movem dados do chão de fábrica para onde precisam ir. Edge computing que processa localmente quando a nuvem não é uma opção. Dashboards que mostram aos operadores o que está acontecendo.",
+        "description": "Pipelines OPC-UA e MQTT que movem dados do chão de fábrica para onde eles precisam ir. Edge computing que processa localmente quando a nuvem não é uma opção. Painéis que mostram aos operadores o que está acontecendo — e historiadores que lembram de tudo.",
         "tags": [
           "OPC-UA/MQTT",
           "Computação de borda",
-          "Conectividade Cloud",
-          "Pipelines de Dados"
+          "Conectividade em nuvem",
+          "Pipelines de dados"
         ]
       },
       "pillar3": {
-        "label": "IA & Inteligência",
+        "label": "AI & Intelligence",
         "heading": "A máquina pensa.",
-        "description": "Modelos de manutenção preditiva que sinalizam falhas antes de ocorrerem. Detecção de anomalias que capta desvios de processo em tempo real. Visão computacional para inspeção de qualidade. APIs de IA integradas em software industrial como ferramenta operacional real.",
+        "description": "Modelos de manutenção preditiva que sinalizam falhas antes que elas aconteçam. Detecção de anomalias que detecta desvios do processo em tempo real. Visão computacional para inspeção de qualidade. APIs de IA integradas em software industrial — não como um recurso, mas como uma ferramenta operacional genuína.",
         "tags": [
           "Manutenção Preditiva",
-          "Detecção de Anomalias",
+          "Detecção de anomalias",
           "Visão Computacional",
-          "Integração API IA"
+          "Integração de API de IA"
         ]
       },
-      "closing": "Não são três serviços separados. É uma abordagem integrada — construída para a geração de automação industrial onde a camada de controle e a camada de inteligência são o mesmo sistema."
+      "closing": "Não se trata de três serviços separados. É uma abordagem integrada – construída para a geração de automação industrial onde a camada de controle e a camada de inteligência são o mesmo sistema."
     },
     "howWeWork": {
       "badge": "COMO TRABALHAMOS",
-      "title": "Como É Trabalhar Conosco",
-      "subtitle": "Mantemos tudo simples, direto e transparente — sem gerentes de conta, sem transferências. Você lida diretamente com os engenheiros que fazem o trabalho.",
+      "title": "Como é trabalhar conosco",
+      "subtitle": "Mantemos tudo simples, direto e transparente — sem gerentes de conta, sem transferências. Você lida com os engenheiros que fazem o trabalho.",
       "steps": [
         {
           "number": "01",
-          "title": "Conversamos",
-          "description": "Você nos conta sobre seu desafio. Fazemos as perguntas que importam. Sem discurso de vendas — apenas uma conversa honesta sobre se somos a escolha certa para seu projeto."
+          "title": "Nós conversamos",
+          "description": "Você nos conta sobre seu desafio. Fazemos as perguntas que importam. Sem discurso de vendas – apenas uma conversa honesta sobre se somos a opção certa para o seu projeto."
         },
         {
           "number": "02",
-          "title": "Planejamos",
-          "description": "Definimos juntos o escopo, a abordagem e o cronograma. Você obtém uma imagem clara do que entregaremos, quanto tempo levará e quanto custará."
+          "title": "Nós planejamos",
+          "description": "Definimos o escopo, a abordagem e o cronograma juntos. Você terá uma ideia clara do que entregaremos, quanto tempo levará e quanto custará – antes de qualquer trabalho começar."
         },
         {
           "number": "03",
-          "title": "Construímos",
-          "description": "Fazemos o trabalho. Você tem acesso direto aos engenheiros que constroem seu sistema durante todo o projeto. Problemas são resolvidos rapidamente."
+          "title": "Nós construímos",
+          "description": "Nós fazemos o trabalho. Você tem acesso direto aos engenheiros que estão construindo todo o seu sistema - não a um gerente de projeto retransmitindo mensagens. Os problemas são resolvidos rapidamente porque as decisões são tomadas por pessoas que entendem o problema."
         },
         {
           "number": "04",
-          "title": "Apoiamos",
-          "description": "Não desaparecemos após a entrega. Documentamos detalhadamente, treinamos sua equipe adequadamente e permanecemos disponíveis para perguntas e suporte."
+          "title": "Nós apoiamos",
+          "description": "Eu não desapareço depois da entrega. Documentamos minuciosamente, treinamos sua equipe adequadamente e permanecemos disponíveis para dúvidas e suporte. A prioridade remota por design significa que podemos responder rapidamente, independentemente de onde você estiver."
         }
       ]
     },
     "whyPreaumate": {
       "badge": "POR QUE NÓS",
-      "title": "O Argumento Honesto para Trabalhar com uma Equipe Pequena",
-      "intro": "Somos uma empresa nova. Sabemos que essa é a primeira objeção. Aqui está nossa resposta honesta.",
+      "title": "O argumento honesto para trabalhar com uma equipe pequena",
+      "intro": "Somos uma empresa nova. Sabemos que essa é a primeira objeção. Aqui está nossa resposta honesta para isso.",
       "cards": [
         {
-          "title": "Você obtém os engenheiros seniores — em cada trabalho",
-          "description": "Com um integrador grande, seu projeto pode ser concebido por um engenheiro sênior e entregue por um júnior. Conosco, as pessoas com quem você fala são as pessoas que fazem o trabalho. Sempre."
+          "title": "Você conta com engenheiros seniores – em todos os trabalhos",
+          "description": "Com um grande integrador, seu projeto pode ser definido por um engenheiro sênior e entregue por um engenheiro júnior. Conosco, as pessoas com quem você fala são as pessoas que fazem o trabalho. Toda vez."
         },
         {
-          "title": "Vinte anos de experiência não é um número pequeno",
-          "description": "Preaumate é nova. A expertise por trás dela não é. Nossa equipe entregou projetos de automação em múltiplas indústrias, plataformas e países."
+          "title": "Trinta anos de experiência não é um número pequeno",
+          "description": "Preaumate é novo. A experiência por trás disso não é. Nossa equipe entregou projetos de automação em vários setores, plataformas e países. Trazemos essa experiência para o seu projeto desde o primeiro dia."
         },
         {
-          "title": "Nos movemos mais rápido porque somos menores",
-          "description": "Sem cadeias de aprovação internas. Sem conflitos de agendamento entre departamentos. Quando algo precisa ser resolvido, resolvemos."
+          "title": "Nós nos movemos mais rápido porque somos menores",
+          "description": "Sem cadeias de aprovação internas. Sem conflitos de agendamento entre departamentos. Quando algo precisa ser resolvido, nós resolvemos. A velocidade de uma equipe pequena é uma vantagem operacional genuína."
         },
         {
-          "title": "Nosso negócio depende do sucesso do seu projeto",
-          "description": "Uma empresa grande pode absorver um projeto que não correu bem. Nós não podemos. Essa assimetria trabalha a seu favor."
+          "title": "Nosso negócio depende do bom andamento do seu projeto",
+          "description": "Uma grande empresa pode absorver um projeto que não deu certo. Não podemos. Essa assimetria funciona a seu favor – cada projeto que assumimos recebe toda a nossa atenção porque a nossa reputação depende disso."
         }
       ]
     },
+    "pricing": {
+      "signal": "Trabalhamos com base em projeto e diária. Contate-nos para um orçamento – respondemos em um dia útil."
+    },
     "endorsements": {
       "badge": "O QUE DIZEM OS COLEGAS",
-      "title": "Aprovado por Engenheiros que Conhecem o Trabalho",
-      "subtitle": "Preaumate é uma empresa nova. As pessoas por trás dela não são. Aqui está o que têm a dizer aqueles que trabalharam ao nosso lado.",
+      "title": "Aprovado por engenheiros que conhecem o trabalho",
+      "subtitle": "Preaumate é uma empresa nova. As pessoas por trás disso não estão. Aqui está o que aqueles que trabalharam ao nosso lado têm a dizer.",
       "cta": "Quer discutir seu projeto?",
-      "ctaButton": "Entre em Contato",
+      "ctaButton": "Entre em contato",
       "quotes": [
         {
-          "text": "Um dos engenheiros de automação tecnicamente mais capazes com quem trabalhei. Código estruturado, pensamento claro e o tipo de capacidade de resolução de problemas que aparece quando as coisas ficam complicadas no local.",
+          "text": "Um dos engenheiros de automação mais capacitados tecnicamente com quem trabalhei. Código estruturado, pensamento claro e o tipo de capacidade de resolução de problemas que aparece quando as coisas ficam complicadas no local.",
           "author": "Engenheiro de Projetos Sênior",
-          "company": "Empregador anterior — nome retido a pedido",
+          "company": "Ex-empregador - nome omitido mediante solicitação",
           "initials": "SP"
         },
         {
-          "text": "O que distingue esta equipe é que eles realmente entendem tanto a camada de controle quanto a camada de dados. Essa combinação é rara na indústria e faz uma diferença real em projetos de integração complexos.",
+          "text": "O que diferencia essa equipe é que eles realmente entendem tanto a camada de controle quanto a camada de dados. Essa combinação é rara no setor e faz uma diferença real em projetos de integração complexos.",
           "author": "Gerente de Automação",
-          "company": "Fabricante industrial — Países Baixos",
+          "company": "Fabricante industrial — Holanda",
           "initials": "SOU"
         },
         {
-          "text": "Confiável, rápido em responder e genuinamente comprometido em obter o resultado certo. A documentação e a entrega foram as melhores que vi em um projeto desse tipo.",
-          "author": "Gerente de Operações de Planta",
+          "text": "Confiável, rápido para responder e genuinamente investido em obter o resultado certo. A documentação e a entrega foram as melhores que já vi em um projeto desse tipo.",
+          "author": "Gerente de Operações da Planta",
           "company": "Instalação de produção de alimentos e bebidas",
           "initials": "PO"
         }
@@ -4749,101 +5075,101 @@ export const translations = {
     },
     "serviceArea": {
       "badge": "ONDE OPERAMOS",
-      "title": "Alcance Global. Comprometimento Pessoal.",
-      "subtitle": "O trabalho de automação industrial frequentemente requer presença física. Veja como trabalhamos além das fronteiras.",
-      "intro": "Estamos sediados nos Países Baixos e no México — duas localizações que juntas cobrem os fusos horários europeus e americanos sem demora. Trabalhamos onshore, offshore e remotamente, e viajamos globalmente para comissionamento no local, supervisão de FAT e suporte no local.",
+      "title": "Alcance global. Engajamento Pessoal.",
+      "subtitle": "O trabalho de automação industrial muitas vezes requer presença física. Veja como trabalhamos além das fronteiras.",
+      "intro": "Estamos sediados na Holanda e no México — dois locais que juntos cobrem os fusos horários europeus e americanos sem demora. Trabalhamos onshore, offshore e remotamente, e viajamos globalmente para comissionamento no local, testemunho de FAT e suporte no local.",
       "cards": [
         {
           "region": "Europa",
           "flag": "🇪🇺",
-          "description": "Nossa base nos Países Baixos cobre a Europa Ocidental. Trabalhamos no local em toda a UE e no Reino Unido.",
+          "description": "A nossa base na Holanda cobre a Europa Ocidental. Trabalhamos no local em toda a UE e no Reino Unido e estamos preparados para responder rapidamente a projetos em toda a região.",
           "highlights": [
-            "Países Baixos — base principal",
-            "No local em toda a UE e UK",
-            "Offshore — Mar do Norte e além"
+            "Holanda — base primária",
+            "No local na UE e no Reino Unido",
+            "Offshore – Mar do Norte e além"
           ]
         },
         {
           "region": "Américas",
           "flag": "🌎",
-          "description": "Nossa base no México cobre a América do Norte e a América Latina. De plataformas offshore no Golfo do México a instalações de produção em todo o continente.",
+          "description": "Nossa base no México cobre a América do Norte e a América Latina. Desde plataformas offshore no Golfo do México até instalações de produção em todo o continente.",
           "highlights": [
-            "México — base principal",
+            "México — base primária",
             "América do Norte e Latina",
-            "Offshore Golfo do México"
+            "Golfo do México offshore"
           ]
         },
         {
           "region": "Remoto e Global",
           "flag": "🌐",
-          "description": "Muitas tarefas de automação podem ser entregues totalmente de forma remota. Temos infraestrutura de acesso remoto seguro e nos comunicamos de forma confiável em todos os fusos horários.",
+          "description": "Muitas tarefas de automação — programação de PLC, desenvolvimento de IHM, trabalho SCADA, desenvolvimento de plataforma de dados — podem ser realizadas de forma totalmente remota. Temos infraestrutura de acesso remoto segura e nos comunicamos de maneira confiável entre fusos horários.",
           "highlights": [
             "Acesso remoto seguro",
             "Entrega remota completa para trabalho de software",
-            "Viagens mundiais para fases no local"
+            "Viagens mundiais para fases presenciais"
           ]
         }
       ],
-      "travelNote": "Custos de viagem e logística são discutidos de forma transparente como parte de cada escopo de projeto. Não os escondemos na taxa."
+      "travelNote": "Os custos de viagem e a logística são discutidos de forma transparente como parte de cada escopo do projeto. Não os escondemos na tarifa."
     },
     "trust": {
       "badge": "CONSTRUÍDO POR ENGENHEIROS",
-      "title": "Experiência Real no Chão de Fábrica",
-      "subtitle": "A Preaumate foi fundada por engenheiros de automação que passaram anos resolvendo problemas diretamente em plantas de produção.",
+      "title": "Experiência real no chão de fábrica",
+      "subtitle": "A Preaumate foi fundada por engenheiros de automação que passaram anos resolvendo problemas diretamente nas áreas de produção. Compreendemos a pressão do tempo de inatividade, dos desafios de integração, dos equipamentos legados e da confiabilidade da produção — porque nós mesmos trabalhamos em ambientes industriais.",
       "cards": [
         {
-          "title": "Experiência em Fábrica",
-          "description": "Comissionamento, diagnóstico e integração industrial em múltiplos ambientes de produção."
+          "title": "Experiência no chão de fábrica",
+          "description": "Experiência real em comissionamento industrial, solução de problemas e integração em vários ambientes e setores de produção."
         },
         {
           "title": "Engenharia Transfronteiriça",
-          "description": "Suporte técnico na Europa e América Latina, com capacidades remotas."
+          "description": "Suporte de engenharia em toda a Europa e América Latina, com recursos remotos que abrangem todos os fusos horários."
         },
         {
-          "title": "Foco em Modernização",
-          "description": "Conectando sistemas legados a plataformas modernas, passo a passo."
+          "title": "Foco na modernização",
+          "description": "Conectando sistemas industriais legados com plataformas modernas de dados e automação — passo a passo, sem complexidade desnecessária."
         },
         {
           "title": "Implementação Prática",
-          "description": "Soluções para confiabilidade operacional e continuidade de produção — não frameworks teóricos."
+          "description": "Soluções projetadas para confiabilidade operacional, facilidade de manutenção e continuidade de produção. Não são estruturas teóricas – sistemas de trabalho."
         }
       ]
     },
     "problems": {
       "badge": "PROBLEMAS QUE RESOLVEMOS",
       "title": "Desafios Industriais que Abordamos",
-      "subtitle": "Trabalhamos com fabricantes que enfrentam problemas operacionais reais.",
+      "subtitle": "Trabalhamos com fabricantes que enfrentam problemas operacionais reais — do tipo que retarda a produção, causa tempo de inatividade e dificulta o gerenciamento dos sistemas.",
       "cards": [
         {
-          "title": "Sistemas CLP Legados",
-          "description": "Migração sem interromper a produção."
+          "title": "Sistemas PLC legados",
+          "description": "Migração de sistemas PLC desatualizados para plataformas modernas sem interromper cronogramas de produção ou perder conhecimento crítico de processos."
         },
         {
-          "title": "Falta de Visibilidade de Produção",
-          "description": "Coleta e visualização de dados de máquinas."
+          "title": "Falta de visibilidade da produção",
+          "description": "Coleta e visualização de dados de máquinas em todo o chão de fábrica para apoiar melhores decisões operacionais e diagnósticos mais rápidos."
         },
         {
-          "title": "Integrações Difíceis",
-          "description": "Conectar CLPs, SCADA, MES, ERP e IoT de forma confiável."
+          "title": "Integrações de sistemas difíceis",
+          "description": "Conectando sistemas PLCs, SCADA, MES, ERP e IoT em uma arquitetura de dados unificada e confiável que realmente funciona na produção."
         },
         {
           "title": "Implementação de Robótica",
-          "description": "Programar e integrar sistemas robóticos com segurança."
+          "description": "Programação e integração de sistemas robóticos em ambientes de produção com foco em confiabilidade, segurança e facilidade de manutenção."
         },
         {
-          "title": "Paradas e Diagnóstico",
-          "description": "Diagnosticar falhas e melhorar a confiabilidade."
+          "title": "Tempo de inatividade e solução de problemas",
+          "description": "Diagnosticando falhas recorrentes de automação, melhorando a confiabilidade do sistema e reduzindo o tempo de inatividade não planejado em toda a linha de produção."
         },
         {
           "title": "Adoção de IA Industrial",
-          "description": "Aplicar IA onde cria valor operacional mensurável."
+          "description": "Aplicar IA onde ela cria valor operacional mensurável — detecção de anomalias, manutenção preditiva e análise de produção."
         }
       ]
     },
     "technologies": {
-      "badge": "PLATAFORMAS & FERRAMENTAS",
-      "title": "Tecnologias com as quais Trabalhamos",
-      "subtitle": "Trabalhamos com as plataformas que seu ambiente de produção já utiliza.",
+      "badge": "PLATAFORMAS E FERRAMENTAS",
+      "title": "Tecnologias com as quais trabalhamos",
+      "subtitle": "Trabalhamos com as plataformas e ferramentas industriais que seu ambiente de produção já utiliza — sem dependência de fornecedor, sem substituições desnecessárias.",
       "categories": [
         {
           "title": "Automação",
@@ -4866,49 +5192,49 @@ export const translations = {
           ]
         },
         {
-          "title": "Dados & Software",
+          "title": "Dados e software",
           "items": [
             "Node-RED",
             "Python",
             "SQL",
             "REST APIs",
-            "Gateways de Borda"
+            "Edge Gateways"
           ]
         },
         {
           "title": "Infraestrutura",
           "items": [
             "Redes Industriais",
-            "Acesso Remoto",
+            "Acesso remoto",
             "Virtualização",
-            "Integração Cloud",
-            "PCs Industriais"
+            "Integração na nuvem",
+            "Computadores Industriais"
           ]
         }
       ]
     },
     "industries": {
-      "badge": "SETORES",
-      "title": "Setores que Apoiamos",
-      "subtitle": "Temos experiência prática em uma ampla gama de setores industriais.",
+      "badge": "INDÚSTRIAS",
+      "title": "Indústrias que apoiamos",
+      "subtitle": "Temos experiência prática em uma ampla variedade de setores industriais — desde linhas de produção de alimentos até fabricantes de máquinas.",
       "items": [
         {
-          "title": "Manufatura"
+          "title": "Fabricação"
         },
         {
           "title": "Embalagem"
         },
         {
-          "title": "Alimentos & Bebidas"
+          "title": "Alimentos e Bebidas"
         },
         {
           "title": "Automotivo"
         },
         {
-          "title": "Armazenagem & Logística"
+          "title": "Armazenagem e Logística"
         },
         {
-          "title": "Energia & Utilidades"
+          "title": "Energia e serviços públicos"
         },
         {
           "title": "Construtores de Máquinas"
@@ -4919,18 +5245,18 @@ export const translations = {
       ]
     },
     "projectProof": {
-      "badge": "PROJETOS DE EXEMPLO",
+      "badge": "EXEMPLO DE PROJETOS",
       "title": "Projetos Industriais",
-      "subtitle": "Uma seleção dos tipos de desafios que resolvemos. Estudos de caso disponíveis sob solicitação.",
+      "subtitle": "Uma seleção dos tipos de desafios que resolvemos. Estudos de caso específicos e referências disponíveis mediante solicitação.",
       "resultsLabel": "Resultados",
-      "note": "Dados do cliente mantidos confidenciais sob solicitação.",
+      "note": "Os detalhes do cliente são mantidos em sigilo mediante solicitação. Contate-nos para discutir referências relevantes para o seu setor.",
       "projects": [
         {
-          "title": "Migração de CLP para Sistema de Produção Legado",
-          "summary": "[ADICIONAR RESUMO DO PROJETO]",
+          "title": "Migração de PLC para sistema de produção legado",
+          "summary": "[ADD PROJECT SUMMARY — describe the production environment, the problem that triggered the migration, what was done and what systems were involved. Keep it factual and specific. Anonymize client name if needed.]",
           "results": [
-            "Redução de paradas não planejadas",
-            "Diagnóstico remoto melhorado",
+            "Tempo de inatividade não planejado reduzido",
+            "Diagnóstico remoto aprimorado",
             "Manutenção modernizada"
           ],
           "tech": [
@@ -4940,12 +5266,12 @@ export const translations = {
           ]
         },
         {
-          "title": "Coleta de Dados e Monitoramento de Fábrica",
-          "summary": "[ADICIONAR RESUMO DO PROJETO]",
+          "title": "Sistema de coleta e monitoramento de dados de fábrica",
+          "summary": "[ADD PROJECT SUMMARY — describe the factory, the data challenge (e.g. no visibility into machine output), and what integration approach was used. Mention number of machines or lines if possible.]",
           "results": [
-            "Visibilidade unificada de máquinas",
-            "Monitoramento centralizado",
-            "Diagnóstico remoto habilitado"
+            "Visibilidade unificada da máquina",
+            "Monitoramento centralizado da produção",
+            "Diagnóstico remoto ativado"
           ],
           "tech": [
             "MQTT",
@@ -4955,11 +5281,11 @@ export const translations = {
           ]
         },
         {
-          "title": "Integração de Célula Robótica",
-          "summary": "[ADICIONAR RESUMO DO PROJETO]",
+          "title": "Integração de células robóticas",
+          "summary": "[ADD PROJECT SUMMARY — describe the robotic cell context, what production step it handles, integration scope with existing PLC/SCADA and any safety considerations.]",
           "results": [
-            "Maior produtividade",
-            "Repetibilidade melhorada",
+            "Maior rendimento de produção",
+            "Repetibilidade aprimorada",
             "Manuseio manual reduzido"
           ],
           "tech": [
@@ -4971,47 +5297,47 @@ export const translations = {
       ]
     },
     "founders": {
-      "badge": "NOSSA EQUIPE",
-      "title": "Os Engenheiros por Trás da Preaumate",
-      "subtitle": "A Preaumate foi fundada por engenheiros com experiência prática em automação industrial.",
+      "badge": "CONHEÇA A EQUIPE",
+      "title": "Os engenheiros por trás do Preaumate",
+      "subtitle": "A Preaumate foi fundada por engenheiros com experiência prática em automação industrial, integração de sistemas e operações de fábrica em toda a Europa e América Latina.",
       "specializationsLabel": "Especializado em",
-      "industriesLabel": "Experiência em",
+      "industriesLabel": "Trabalhou em",
       "linkedinLabel": "Ver LinkedIn",
       "founders": [
         {
-          "name": "[SEU NOME COMPLETO]",
+          "name": "[YOUR FULL NAME]",
           "role": "Engenheiro de Automação",
-          "location": "Países Baixos",
-          "years": "30+ anos de experiência em automação industrial.",
-          "bio": "[2–3 frases sobre sua trajetória.]",
+          "location": "Holanda",
+          "years": "Mais de 30 anos de experiência em automação industrial em vários setores de produção.",
+          "bio": "[2–3 sentences about your background, what types of systems you have worked on, and what drives your approach to engineering.]",
           "photoUrl": "",
           "specializations": [
-            "[ex. Programação Siemens]",
-            "[ex. SCADA & IHM]",
-            "[ex. Integração]"
+            "[e.g. Siemens PLC programming]",
+            "[e.g. SCADA & HMI development]",
+            "[e.g. System integration]"
           ],
           "industries": [
-            "[ex. Alimentos]",
-            "[ex. Embalagem]",
+            "[e.g. Food & Beverage]",
+            "[e.g. Packaging]",
             "[e.g. Water treatment]"
           ],
           "linkedin": "#"
         },
         {
-          "name": "[SEU NOME COMPLETO]",
+          "name": "[YOUR FULL NAME]",
           "role": "Engenheiro de Automação e Integração",
-          "location": "Monterrey, México",
-          "years": "10+ anos de experiência em sistemas industriais.",
-          "bio": "[2–3 frases sobre sua trajetória.]",
+          "location": "Monterrei, México",
+          "years": "Mais de 10 anos de sistemas industriais e experiência em integração.",
+          "bio": "[2–3 sentences about your background, the types of automation work you have done, and what your engineering focus is.]",
           "photoUrl": "",
           "specializations": [
-            "[ex. IoT Industrial]",
-            "[ex. Rockwell]",
-            "[ex. Comissionamento]"
+            "[e.g. Industrial IoT & connectivity]",
+            "[e.g. Rockwell / CoDeSys programming]",
+            "[e.g. Machine commissioning]"
           ],
           "industries": [
-            "[ex. Automotivo]",
-            "[ex. Logística]",
+            "[e.g. Automotive]",
+            "[e.g. Logistics]",
             "[e.g. Manufacturing]"
           ],
           "linkedin": "#"
@@ -5020,67 +5346,69 @@ export const translations = {
     },
     "curriculum": {
       "pageTitle": "Theo Rietveld – CV | Pré-aumato",
-      "metaDescription": "Currículo profissional de Theo Rietveld, fundador e engenheiro de automação industrial na Preaumate. Mais de 20 anos de experiência em CLP, SCADA, IoT e robótica.",
+      "metaDescription": "Currículo profissional de Theo Rietveld, fundador e entusiasta da automação industrial da Preaumate. Mais de 30 anos de experiência em PLC, SCADA, IoT e robótica.",
       "heroBadge": "CURRICULUM VITAE",
-      "heroSubtitle": "Fundador e Engenheiro de Automação Industrial na Preaumate",
-      "heroTagline": "Mais de 20 anos de experiência prática em programação CLP, desenvolvimento SCADA, integração de sistemas e comissionamento internacional.",
-      "photoAlt": "Theo Rietveld — Fundador da Preaumate",
-      "photoPlaceholder": "TR",
+      "heroSubtitle": "Fundador e Entusiasta de Automação Industrial na Preaumate",
+      "heroTagline": "Mais de 30 anos de experiência prática em programação de PLC, desenvolvimento de SCADA, integração de sistemas e comissionamento internacional.",
+      "photoAlt": "Theo Rietveld - Fundador da Preaumate",
+      "photoPlaceholder": "TJR",
       "currentBadge": "Atual",
       "presentLabel": "Presente",
       "downloadPdf": "Baixar PDF",
-      "contactCta": "Discutir seu Projeto",
+      "contactCta": "Discuta seu projeto",
       "summaryBadge": "RESUMO PROFISSIONAL",
-      "summaryTitle": "Experiência em Engenharia a Serviço dos seus Objetivos de Produção",
-      "summaryText": "Theo Rietveld é engenheiro de automação industrial e fundador da Preaumate com mais de 20 anos de experiência prática em programação CLP, desenvolvimento SCADA, integração de sistemas e comissionamento internacional de projetos. Com experiência nos setores marítimo, offshore e de processamento de alimentos na Europa e internacionalmente, traz profunda expertise técnica e um histórico comprovado de entrega de projetos. Ele se comunica diretamente em holandês, inglês, espanhol e alemão.",
+      "summaryTitle": "Experiência em engenharia a serviço de suas metas de produção",
+      "summaryText": "Theo Rietveld é engenheiro de automação industrial e fundador da Preaumate com mais de 30 anos de experiência prática em programação de PLC, desenvolvimento de SCADA, integração de sistemas e comissionamento de projetos internacionais. Tendo trabalhado nas indústrias marítima, offshore e de processamento de alimentos na Europa e internacionalmente, ele traz profundo conhecimento técnico e um histórico comprovado de entrega de projetos para todos os compromissos. Ele comunica diretamente em holandês, inglês, espanhol e alemão — permitindo uma colaboração eficaz com clientes e equipas em toda a Europa e América Latina.",
       "experienceBadge": "EXPERIÊNCIA PROFISSIONAL",
-      "earlierCareerBadge": "CARREIRA ANTERIOR",
+      "earlierCareerBadge": "CARREIRA ANTECIPADA",
       "roles": {
         "preaumate": {
-          "roleTitle": "Fundador e Engenheiro de Automação Industrial",
-          "description": "Fundou a Preaumate para fornecer engenharia de automação industrial prática diretamente a fabricantes na Europa e América Latina. Programação CLP, desenvolvimento SCADA, integração IoT industrial, robótica e automação orientada por IA.",
+          "roleTitle": "Fundador e Designer de Automação Industrial",
+          "description": "Fundou a Preaumate para fornecer engenharia prática de automação industrial diretamente para fabricantes na Europa e na América Latina. Fornecendo programação PLC, desenvolvimento SCADA, integração industrial de IoT, robótica e automação orientada por IA — com experiência de chão de fábrica por trás de cada solução.",
           "highlights": [
-            "Programação CLP para Siemens, Rockwell e CoDeSys",
+            "Programação PLC para plataformas Siemens, Rockwell e CoDeSys",
             "Desenvolvimento SCADA e IHM para monitoramento de produção",
-            "Integração IoT industrial com OPC UA e MQTT",
-            "Integração e comissionamento de robótica",
+            "IoT industrial e integração de sistemas",
+            "Integração e comissionamento robótico",
             "IA industrial para detecção de anomalias e manutenção preditiva",
-            "Suporte de engenharia remota na Europa e América Latina"
+            "Comissionamento e suporte no local em todo o mundo",
+            "Suporte remoto de engenharia",
+            "Consultoria em arquitetura de automação e estratégias de modernização"
           ]
         },
         "kiremko": {
-          "roleTitle": "Desenvolvedor de Software e Engenheiro de Automação",
-          "description": "Design, engenharia e gestão de projetos e máquinas para automação industrial de processamento de alimentos. Desenvolvimento dentro de uma equipe de engenheiros de hardware e software, da especificação funcional ao comissionamento e entrega ao cliente.",
+          "roleTitle": "Desenvolvedor de software e engenheiro de automação",
+          "description": "Projeto e projeto de máquinas, engenharia e gerenciamento para automação industrial de processamento de alimentos. Desenvolvimento dentro de uma equipe de engenheiros de hardware e software, desde a especificação funcional até o comissionamento, entrega ao cliente e treinamento no local.",
           "highlights": [
-            "Automação de máquinas de processamento de alimentos industrial",
+            "Automação de máquinas industriais de processamento de alimentos",
             "Especificações de design funcional",
             "Desenvolvimento, teste e comissionamento de software",
             "Treinamento no local e entrega ao cliente"
           ]
         },
         "gooiland": {
-          "roleTitle": "Desenvolvedor de Software e Engenheiro de Automação",
-          "description": "12 anos especializando-se em automação HVAC marítima e offshore. Ciclo de vida completo do projeto, do design ao comissionamento internacional, com experiência prática em embarcações e instalações offshore em todo o mundo.",
+          "roleTitle": "Desenvolvedor de software e engenheiro de automação",
+          "description": "12 anos especializado em automação HVAC marítima e offshore. Ciclo de vida completo do projeto, desde a concepção até o comissionamento internacional, com experiência prática em embarcações e instalações offshore em todo o mundo. Forte foco no relacionamento com o cliente e no serviço de longo prazo.",
           "highlights": [
-            "Automação de controle HVAC marítima e offshore",
+            "Automação de controle HVAC marítimo e offshore",
             "Comissionamento internacional em todo o mundo",
-            "Ciclo completo de desenvolvimento e implantação de software",
-            "Relações com clientes, treinamento no local e serviço"
+            "Ciclo de vida completo de desenvolvimento e implantação de software",
+            "Relacionamento com o cliente, treinamento e serviço no local"
           ]
         },
         "vandenPol": {
-          "roleTitle": "Desenvolvedor de Software e Engenheiro de Comissionamento",
-          "description": "Automação industrial de processamento de alimentos, da engenharia de projetos ao comissionamento. Entrega internacional de projetos, treinamento no local e serviço contínuo.",
+          "roleTitle": "Desenvolvedor de software e engenheiro de comissionamento",
+          "description": "Automação do processamento industrial de alimentos, desde a engenharia do projeto até o comissionamento. Entrega de projetos internacionais, treinamento no local e serviço contínuo.",
           "highlights": [
-            "Automação industrial de processamento de alimentos",
-            "Comissionamento e entrega internacional de projetos",
+            "Automação de processamento industrial de alimentos",
+            "Comissionamento internacional e entrega de projetos",
             "Especificações de design funcional",
-            "Treinamento no local e serviço"
+            "Treinamento e serviço no local"
           ]
         },
         "elero": {
-          "roleTitle": "Vendas Técnicas, Consultoria e Gestão de TI",
-          "description": "Engenharia de projetos e automação, vendas, consultoria de produtos, treinamento de clientes e gestão de TI para um especialista em acionamentos e automação residencial.",
+          "roleTitle": "Suporte Técnico de Vendas, Consultoria e TI",
+          "description": "Engenharia de projetos e automação, vendas, consultoria de produtos, treinamento de clientes e gestão de TI para especialista em drives e automação residencial.",
           "highlights": [
             "Engenharia de automação e vendas técnicas",
             "Consultoria de produtos e treinamento de clientes",
@@ -5088,40 +5416,40 @@ export const translations = {
           ]
         }
       },
-      "skillsBadge": "COMPETÊNCIAS PRINCIPAIS",
-      "skillsTitle": "Meus Pontos Fortes",
+      "skillsBadge": "COMPETÊNCIAS ESSENCIAIS",
+      "skillsTitle": "O que eu faço de melhor",
       "skills": [
-        "Gestão de Projetos",
-        "Tomada de Decisão",
-        "Design Criativo",
         "Desenvolvimento Inovador",
-        "Resolução de Problemas Complexos",
-        "Comissionamento",
+        "Gerenciamento de projetos",
         "Relações com Clientes",
         "Consultoria e Treinamento",
+        "Resolução de problemas complexos",
+        "Comissionamento",
+        "Tomando uma decisão",
+        "Design Criativo",
         "Tradução Técnica"
       ],
-      "technicalBadge": "EXPERTISE TÉCNICA",
-      "technicalTitle": "Plataformas e Ferramentas",
+      "technicalBadge": "EXPERIÊNCIA TÉCNICA",
+      "technicalTitle": "Plataformas e ferramentas",
       "techPlc": "Plataformas CLP",
       "techScada": "SCADA e IHM",
-      "techSoftware": "Software e Programação",
-      "techProtocols": "Protocolos e Outros",
-      "educationBadge": "FORMAÇÃO",
-      "degreeTitle": "Bacharelado em Ciência de Dados Computacional e Sistemas de Informação",
+      "techSoftware": "Software e programação",
+      "techProtocols": "Protocolos e outros",
+      "educationBadge": "EDUCAÇÃO",
+      "degreeTitle": "Bacharel em Ciência de Dados de Computação e Sistemas de Informação",
       "certificationsBadge": "CERTIFICAÇÕES",
       "certifications": {
         "siemens": {
-          "title": "Programador Siemens Certificado",
-          "detail": "TIA Portal e Step 7"
+          "title": "Programador Certificado Siemens",
+          "detail": "Portal TIA e Etapa 7"
         },
         "offshore": {
-          "title": "Certificados de Segurança Offshore",
-          "detail": "GWO Sobrevivência no Mar, Trabalho em Altura, Conscientização sobre Incêndios, Primeiros Socorros, Manuseio Manual"
+          "title": "Certificados de segurança offshore",
+          "detail": "GWO Sea Survival, Trabalho em Altura, Conscientização sobre Incêndios, Primeiros Socorros, Manuseio Manual"
         },
         "bosiet": {
-          "title": "BOSIET / HUET — Certificado OPITO",
-          "detail": "Treinamento de Fuga Subaquática de Helicóptero"
+          "title": "BOSIET / HUET - Certificado OPITO",
+          "detail": "Treinamento de fuga subaquática de helicóptero"
         }
       },
       "languagesBadge": "IDIOMAS",
@@ -5144,12 +5472,73 @@ export const translations = {
         }
       },
       "contactBadge": "VAMOS TRABALHAR JUNTOS",
-      "contactTitle": "Pronto para Discutir seu Projeto?",
-      "contactSubtitle": "Se quiser discutir como a Preaumate pode apoiar seu projeto de automação, fico feliz em conversar diretamente.",
-      "contactButton": "Entrar em Contato"
+      "contactTitle": "Pronto para discutir seu projeto?",
+      "contactSubtitle": "Se você quiser discutir como o Preaumate pode apoiar seu projeto de automação, ficarei feliz em entrar em contato diretamente.",
+      "contactButton": "Entre em contato"
     },
-    "pricing": {
-      "signal": "Trabalhamos com base em projeto e diária. Contate-nos para um orçamento – respondemos em um dia útil."
+    "qualifier": {
+      "wizardui": "Rótulos da IU do assistente",
+      "stepLabel": "Pergunta {atual} de {total}",
+      "skipButton": "Pular questionário",
+      "backButton": "Voltar",
+      "nextButton": "Próximo",
+      "finishButton": "Terminar",
+      "skipNote": "Agradecemos por preencher este formulário, mas sinta-se à vontade para ir direto para o formulário de contato a qualquer momento.",
+      "summaryHeading": "Questionário pré-contato",
+      "editAnswersButton": "Editar minhas respostas",
+      "contextCapturedNote": "Obrigado - anotamos suas respostas. Eles serão incluídos em sua mensagem.",
+      "qualifierPreviewLabel": "Your questionnaire answers (included with this message)",
+      "q1_label": "Você atualmente usa feedback de dados em seu processo de produção?",
+      "q1_description": "Desde nenhum rastreamento de dados até um ciclo de feedback totalmente integrado.",
+      "q1_scale_0": "De jeito nenhum",
+      "q1_scale_low": "Algum rastreamento manual",
+      "q1_scale_high": "Parcialmente automatizado",
+      "q1_scale_10": "Totalmente integrado",
+      "q2_label": "Qual é o tamanho do seu negócio?",
+      "q2_opt_freelance": "Autônomo/autônomo",
+      "q2_opt_small": "Pequeno (2–20 funcionários)",
+      "q2_opt_medium": "Médio (21–50 funcionários)",
+      "q2_opt_large": "Grande (51–200 funcionários)",
+      "q2_opt_enterprise": "Empresa (mais de 200 funcionários)",
+      "q3_label": "Qual é o tamanho do seu processo de produção?",
+      "q3_opt_single": "Uma única máquina ou célula",
+      "q3_opt_line": "Uma linha de produção",
+      "q3_opt_multi": "Várias linhas de produção",
+      "q3_opt_sites": "Vários locais ou instalações",
+      "q4_label": "Qual é o seu tipo de produção?",
+      "q4_opt_food": "Alimentos e Bebidas",
+      "q4_opt_packaging": "Embalagem",
+      "q4_opt_automotive": "Automotivo",
+      "q4_opt_maritime": "Marítimo / Offshore / HVAC",
+      "q4_opt_manufacturing": "Fabricação Geral",
+      "q4_opt_logistics": "Logística e Armazenagem",
+      "q4_opt_other": "Outro",
+      "q5_label": "Quais plataformas ou marcas você usa atualmente?",
+      "q5_description": "Selecione todas as opções aplicáveis ​​— isso nos ajuda a nos preparar antes de conversarmos.",
+      "q5_opt_other": "Outro",
+      "q5_opt_unknown": "Não tenho certeza/não sei",
+      "q6_label": "Para que você gostaria de usar o feedback de IA/dados?",
+      "q6_description": "Opcional – uma ou duas frases são suficientes.",
+      "q6_placeholder": "por exemplo prever necessidades de manutenção, reduzir desperdícios, melhorar o controle de qualidade...",
+      "q7_label": "Você tem capacidade de engenharia interna?",
+      "q7_opt_yes": "Sim, uma equipe dedicada",
+      "q7_opt_partial": "Alguns – mas com capacidade limitada",
+      "q7_opt_no": "Sem engenharia interna",
+      "q8_label": "Que desafios você enfrenta atualmente em seu processo de produção?",
+      "q8_description": "Opcional – conte-nos com suas próprias palavras.",
+      "q8_placeholder": "por exemplo tempo de inatividade não planejado, coleta manual de dados, sistemas PLC desatualizados...",
+      "q9_label": "Quanto você está pensando em investir nessa melhoria?",
+      "q9_opt_exploring": "Apenas explorando opções por enquanto",
+      "q9_opt_under10k": "Menos de 10.000€",
+      "q9_opt_10to50k": "10.000€ – 50.000€",
+      "q9_opt_50to150k": "50.000€ – 150.000€",
+      "q9_opt_over150k": "150.000€+",
+      "q10_label": "Qual é o seu cronograma para este projeto?",
+      "q10_opt_asap": "O mais breve possível",
+      "q10_opt_1to3": "1–3 meses",
+      "q10_opt_3to6": "3–6 meses",
+      "q10_opt_exploring": "Apenas explorando, sem cronograma fixo"
     }
-  }
+  },
+  "it": {}
 };

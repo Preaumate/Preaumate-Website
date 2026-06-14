@@ -4,6 +4,7 @@ import { Linkedin, MapPin, Award, Globe } from 'lucide-react';
 import { useLanguage }      from '@/context/LanguageContext';
 import { curriculumData }   from '@/data/curriculum';
 import { images, getImage } from '@/data/images';
+import { Link } from 'react-router-dom';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Colour tokens
@@ -174,7 +175,7 @@ const TheoCard = ({ cv, fo }) => {
           </div>
         </div>
 
-        {/* ── LinkedIn ────────────────────────────────────────────────────── */}
+        {/* ── LinkedIn ────────────────────────────────────────────────────── 
         <a
           href={d.linkedIn}
           target="_blank"
@@ -184,7 +185,20 @@ const TheoCard = ({ cv, fo }) => {
         >
           <Linkedin className="w-4 h-4" />
           {fo?.linkedinLabel || 'View LinkedIn'}
-        </a>
+        </a> */}
+
+         {/* ── Link to full profile / curriculum ──────────────────────────── */}
+
+          <Link to="profile/tjrietveld#summary" style={{ color: '#8899bb' }}>
+          <a className="inline-flex items-center gap-2 text-sm font-semibold w-fit transition-opacity duration-200 hover:opacity-70"
+          style={{ color: GREEN }}
+          >
+          Full profile
+          </a>
+          </Link>
+
+        
+
 
       </div>
     </motion.div>
